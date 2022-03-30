@@ -1,0 +1,477 @@
+{
+  "address": "0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_parameters",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "subtractedValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "decreaseAllowance",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "addedValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseAllowance",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vaultParameters",
+      "outputs": [
+        {
+          "internalType": "contract SuVaultParameters",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x7cae77ba0cec674acbc9293a2631fe52b12e8754150b17089c8633b0c589e14e",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE",
+    "transactionIndex": 0,
+    "gasUsed": "867443",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x6864c92716d309da539c91a9e56374745a0112976a8a13ede7380d8bef39d302",
+    "transactionHash": "0x7cae77ba0cec674acbc9293a2631fe52b12e8754150b17089c8633b0c589e14e",
+    "logs": [],
+    "blockNumber": 18,
+    "cumulativeGasUsed": "867443",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x3Aa5ebB10DC797CAC828524e59A333d0A371443c"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "9c90b91cdbeee1bffa3ac0f5ee01f939",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_parameters\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"subtractedValue\",\"type\":\"uint256\"}],\"name\":\"decreaseAllowance\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"addedValue\",\"type\":\"uint256\"}],\"name\":\"increaseAllowance\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"vaultParameters\",\"outputs\":[{\"internalType\":\"contract SuVaultParameters\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"version\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"mint(address,uint256)\":{\"details\":\"Mints 'amount' of tokens to address 'to', and MUST fire the Transfer event\",\"params\":{\"amount\":\"The amount of token to be minted*\",\"to\":\"The address of the recipient\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"mint(address,uint256)\":{\"notice\":\"Only Vault can mint USDP\"},\"version()\":{\"notice\":\"i think it useless\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/SuUSD.sol\":\"SuUSD\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"contracts/SuUSD.sol\":{\"content\":\"// SPDX-License-Identifier: BSL 1.1\\n\\n/*\\n  Copyright 2020 Unit Protocol: Artem Zakharov (az@unit.xyz).\\n*/\\npragma solidity ^0.8.0;\\n\\nimport \\\"./SuVaultParameters.sol\\\";\\nimport \\\"./original-unit-contracts/helpers/SafeMath.sol\\\";\\n\\ncontract SuUSD is Auth {\\n    using SafeMath for uint;\\n\\n    // our name will be UNIT\\n    string public constant name = \\\"USDP Stablecoin\\\";\\n\\n    // symbol UNIT\\n    string public constant symbol = \\\"USDP\\\";\\n\\n    // can it be redeployed? can it be any other value?\\n    /// i think it useless\\n    string public constant version = \\\"1\\\";\\n\\n    // always 18 decimals the same like ETH\\n    uint8 public constant decimals = 18;\\n\\n    // how many dollars in circulation\\n    uint public totalSupply;\\n\\n    // balance of each account\\n    mapping(address => uint) public balanceOf;\\n\\n    // how many dollars one address is allowed to transfer from another\\n    mapping(address => mapping(address => uint)) public allowance;\\n\\n    event Approval(address indexed owner, address indexed spender, uint value);\\n    event Transfer(address indexed from, address indexed to, uint value);\\n\\n    constructor(address _parameters) Auth(_parameters) {}\\n\\n    /**\\n      * @notice Only Vault can mint USDP\\n      * @dev Mints 'amount' of tokens to address 'to', and MUST fire the\\n      * Transfer event\\n      * @param to The address of the recipient\\n      * @param amount The amount of token to be minted\\n     **/\\n\\n     // dollars can be minted by vault (once user deposited collateral)\\n    function mint(address to, uint amount) external onlyVault {\\n        require(to != address(0), \\\"Unit Protocol: ZERO_ADDRESS\\\");\\n\\n        balanceOf[to] = balanceOf[to].add(amount);\\n        totalSupply = totalSupply.add(amount);\\n\\n        emit Transfer(address(0), to, amount);\\n    }\\n\\n    // dollars can be burned by manager but only his own dollars\\n    // which managers will be using this feature? burning protocol fees?\\n    function burn(uint amount) external onlyManager {\\n        _burn(msg.sender, amount);\\n    }\\n\\n     // also vault is allowed to burn dollars of any account\\n     // when user repays his loan and takes back his collateral\\n    function burn(address from, uint amount) external onlyVault {\\n        _burn(from, amount);\\n    }\\n\\n    // I think transfer and transferFrom should execute the same internal function\\n    // instead of transfer executing transferFrom\\n    function transfer(address to, uint amount) external returns (bool) {\\n        return transferFrom(msg.sender, to, amount);\\n    }\\n\\n    // implementation by standard - allows one user to transfer from another account\\n    // in which cases our contracts will utilize this ability?\\n    function transferFrom(address from, address to, uint amount) public returns (bool) {\\n        require(to != address(0), \\\"Unit Protocol: ZERO_ADDRESS\\\");\\n        require(balanceOf[from] >= amount, \\\"Unit Protocol: INSUFFICIENT_BALANCE\\\");\\n\\n        if (from != msg.sender) {\\n            require(allowance[from][msg.sender] >= amount, \\\"Unit Protocol: INSUFFICIENT_ALLOWANCE\\\");\\n            _approve(from, msg.sender, allowance[from][msg.sender].sub(amount));\\n        }\\n        balanceOf[from] = balanceOf[from].sub(amount);\\n        balanceOf[to] = balanceOf[to].add(amount);\\n\\n        emit Transfer(from, to, amount);\\n        return true;\\n    }\\n\\n    // at which point in user experience will he send approve transaction?\\n    function approve(address spender, uint amount) external returns (bool) {\\n        _approve(msg.sender, spender, amount);\\n        return true;\\n    }\\n\\n    // alternative to approve\\n    function increaseAllowance(address spender, uint addedValue) public virtual returns (bool) {\\n        _approve(msg.sender, spender, allowance[msg.sender][spender].add(addedValue));\\n        return true;\\n    }\\n\\n    // to manage amount granuarly\\n    function decreaseAllowance(address spender, uint subtractedValue) public virtual returns (bool) {\\n        _approve(msg.sender, spender, allowance[msg.sender][spender].sub(subtractedValue));\\n        return true;\\n    }\\n\\n    // in our case we inherit from OZ and these function are there\\n    function _approve(address owner, address spender, uint amount) internal virtual {\\n        require(owner != address(0), \\\"Unit Protocol: approve from the zero address\\\");\\n        require(spender != address(0), \\\"Unit Protocol: approve to the zero address\\\");\\n\\n        allowance[owner][spender] = amount;\\n        emit Approval(owner, spender, amount);\\n    }\\n\\n    // as well this one inherited from OZ\\n    function _burn(address from, uint amount) internal virtual {\\n        balanceOf[from] = balanceOf[from].sub(amount);\\n        totalSupply = totalSupply.sub(amount);\\n\\n        emit Transfer(from, address(0), amount);\\n    }\\n}\\n\",\"keccak256\":\"0x0b6e8d1efa066bf716ec687fa09eb16882d905a31a5caf3522c0485fe8844ee5\",\"license\":\"BSL 1.1\"},\"contracts/SuVaultParameters.sol\":{\"content\":\"// SPDX-License-Identifier: BSL 1.1\\r\\n\\r\\n/*\\r\\n  Copyright 2020 Unit Protocol: Artem Zakharov (az@unit.xyz).\\r\\n*/\\r\\npragma solidity ^0.8.0;\\r\\n\\r\\n\\r\\n// proxy for VaultParameters - other contracts should be inherited from here\\r\\n// this contract contains modifiers used in VaultParameters contract\\r\\n// it should be an abstract class because it cannot by instantiated/deployed directly,\\r\\n// its supposed to be inherited by VaultParameters contract which is deployed \\r\\n/// yes\\r\\ncontract Auth {\\r\\n    // but actually it does store address to vaultParameters contract?\\r\\n    SuVaultParameters public vaultParameters;\\r\\n\\r\\n    // its the same time parent of VaultParameters (inheritance)\\r\\n    // and same time its linking to VaultParameters (composition)\\r\\n    // one approach should be chosen: either inheritance or composition\\r\\n    // otherwise its very confusing\\r\\n    /// No, it's singleton\\r\\n    constructor(address _parameters) {\\r\\n        vaultParameters = SuVaultParameters(_parameters);\\r\\n    }\\r\\n\\r\\n    // check manager permission\\r\\n    modifier onlyManager() {\\r\\n        require(vaultParameters.isManager(msg.sender), \\\"Unit Protocol: onlyManager AUTH_FAILED\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    // check permission to modify vault\\r\\n    modifier hasVaultAccess() {\\r\\n        require(vaultParameters.canModifyVault(msg.sender), \\\"Unit Protocol: hasVaultAccess AUTH_FAILED\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    // check vault permission\\r\\n    modifier onlyVault() {\\r\\n        require(msg.sender == vaultParameters.vault(), \\\"Unit Protocol: onlyVault AUTH_FAILED\\\");\\r\\n        _;\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n// VaultParameters is Singleton for Access Control\\r\\n// this looks like configuration contract\\r\\n// what are the rules to determine these configs for each new allowed collateral?\\r\\n/// yes, and for all collaterals\\r\\n// is DAO allowed to choose parameters for existing collaterals?\\r\\n/// \\r\\n// are there any limits to be enforced? i.e. fee cannot be over 100% percent\\r\\n/// No, but it's a good idea to have it\\r\\ncontract SuVaultParameters is Auth {\\r\\n    // stability fee can be different for each collateral\\r\\n    /// yes\\r\\n    mapping(address => uint) public stabilityFee;\\r\\n\\r\\n    // liquidation fee too can be different\\r\\n    /// yes\\r\\n    mapping(address => uint) public liquidationFee;\\r\\n\\r\\n    // map token to USDP mint limit\\r\\n    /// yes, limit for each collateral-assert\\r\\n    mapping(address => uint) public tokenDebtLimit;\\r\\n\\r\\n    // permissions to modify the Vault\\r\\n    mapping(address => bool) public canModifyVault;\\r\\n\\r\\n    // whether an account is manager\\r\\n    mapping(address => bool) public isManager;\\r\\n\\r\\n    // whether an oracle is enabled\\r\\n    /// TODO:\\r\\n    mapping(uint => mapping (address => bool)) public isOracleTypeEnabled;\\r\\n\\r\\n    // linked to the vault contract\\r\\n    // I think its better to inherit Vault from VaultParameters\\r\\n    /// NO, needed for onlyVault modifier\\r\\n    address payable public vault;\\r\\n\\r\\n    // what is foundation, DAO?\\r\\n    /// Beneficiaty as VotingEscrow.vy\\r\\n    address public foundation;\\r\\n\\r\\n    // creator of contract is manager, can it be the same as DAO or can it be removed later?\\r\\n    /// YES\\r\\n    // how can vault address be known at this moment?\\r\\n    /// Precult based on CREATE spec\\r\\n    // can be created another function to set vault address once deployed?\\r\\n    /// Yes, possibly with some logic change\\r\\n    constructor(address payable _vault, address _foundation) Auth(address(this)) {\\r\\n        require(_vault != address(0), \\\"Unit Protocol: ZERO_ADDRESS\\\");\\r\\n        require(_foundation != address(0), \\\"Unit Protocol: ZERO_ADDRESS\\\");\\r\\n\\r\\n        isManager[msg.sender] = true;\\r\\n        vault = _vault;\\r\\n        foundation = _foundation;\\r\\n    }\\r\\n\\r\\n     // existing managers can enable other managers\\r\\n     // one manager can disable all other managers - dangerous?\\r\\n     /// YES, could be dangerous\\r\\n    function setManager(address who, bool permit) external onlyManager {\\r\\n        isManager[who] = permit;\\r\\n    }\\r\\n\\r\\n    // similar function can be added to setVault\\r\\n    function setFoundation(address newFoundation) external onlyManager {\\r\\n        require(newFoundation != address(0), \\\"Unit Protocol: ZERO_ADDRESS\\\");\\r\\n        foundation = newFoundation;\\r\\n    }\\r\\n\\r\\n     // manager is allowed to add new collaterals and modify existing ones\\r\\n     // I think creating new collaterals and modifying existing ones should be separate functions\\r\\n     /// Yes, for sercurity reason, it's possible to add events for creating and edititing \\r\\n     // also different event should be emitted NewCollateral UpdatedCollateral accordingly\\r\\n     // those events can be handled on frontend to notify user about any changes in rules\\r\\n     /// Not sure it makes sense to split into create/edit functions\\r\\n    function setCollateral(\\r\\n        address asset,\\r\\n        uint stabilityFeeValue,\\r\\n        uint liquidationFeeValue,\\r\\n        uint usdpLimit\\r\\n    ) external onlyManager {\\r\\n        // stability fee should be validated in range, what is stability fee should be described here?\\r\\n        setStabilityFee(asset, stabilityFeeValue);\\r\\n        // liquidation fee should be validated in range, what is liquidation fee should be explained?\\r\\n        setLiquidationFee(asset, liquidationFeeValue);\\r\\n        // why debt limit for collateral is necessary? to manage risks in case of collateral failure?\\r\\n        setTokenDebtLimit(asset, usdpLimit);\\r\\n    }\\r\\n\\r\\n     // manager can choose who is allowed to modify vault, \\r\\n     // what does it mean to modify vault and why permission separate from manager himself?\\r\\n     /// https://en.wikipedia.org/wiki/Principle_of_least_privilege \\r\\n    function setVaultAccess(address who, bool permit) external onlyManager {\\r\\n        canModifyVault[who] = permit;\\r\\n    }\\r\\n\\r\\n    // stability fee is measured as the number of coins per year or percentage? \\r\\n    // this should be clarified in argument name i.e. stabilityFeePercentageYearly\\r\\n    /// No, it's APR ( per year, see calculateFee) percentrage, fee percentage; 3 decimals.\\r\\n    /// YES, self-documented code-style is the best practice.\\r\\n    function setStabilityFee(address asset, uint newValue) public onlyManager {\\r\\n        stabilityFee[asset] = newValue;\\r\\n    }\\r\\n\\r\\n    // the same with liquidation fee is not clear\\r\\n    /// % 0 decimals, needede to get better variable names\\r\\n    function setLiquidationFee(address asset, uint newValue) public onlyManager {\\r\\n        require(newValue <= 100, \\\"Unit Protocol: VALUE_OUT_OF_RANGE\\\");\\r\\n        liquidationFee[asset] = newValue;\\r\\n    }\\r\\n\\r\\n     // what are allowed types? enum should be defined\\r\\n     // types out of range should fail transaction\\r\\n    /// All oracles implementation are numbered, so some of them support this particular asset\\r\\n    function setOracleType(uint _type, address asset, bool enabled) public onlyManager {\\r\\n        isOracleTypeEnabled[_type][asset] = enabled;\\r\\n    }\\r\\n\\r\\n     // debt limit can be changed for any collateral along with liquidation and stability fees\\r\\n     // seems like managers have too much power - that can be dangerous given multiple managers?\\r\\n     /// Yes, application of  principle of least priviledge needed\\r\\n    function setTokenDebtLimit(address asset, uint limit) public onlyManager {\\r\\n        tokenDebtLimit[asset] = limit;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0xbc2ccb04d4de0500943dc32b624de04fb451b928c8a65c6928ca78ee39d99693\",\"license\":\"BSL 1.1\"},\"contracts/original-unit-contracts/helpers/SafeMath.sol\":{\"content\":\"// SPDX-License-Identifier: BSL 1.1\\r\\n\\r\\n/*\\r\\n  Copyright 2020 Unit Protocol: Artem Zakharov (az@unit.xyz).\\r\\n*/\\r\\npragma solidity ^0.8.0;\\r\\n\\r\\nlibrary SafeMath {\\r\\n    function mul(uint256 a, uint256 b) internal pure returns (uint256 c) {\\r\\n        if (a == 0) {\\r\\n            return 0;\\r\\n        }\\r\\n        c = a * b;\\r\\n        assert(c / a == b);\\r\\n        return c;\\r\\n    }\\r\\n\\r\\n    function div(uint256 a, uint256 b) internal pure returns (uint256) {\\r\\n        require(b != 0, \\\"SafeMath: division by zero\\\");\\r\\n        return a / b;\\r\\n    }\\r\\n\\r\\n    function sub(uint256 a, uint256 b) internal pure returns (uint256) {\\r\\n        assert(b <= a);\\r\\n        return a - b;\\r\\n    }\\r\\n\\r\\n    function add(uint256 a, uint256 b) internal pure returns (uint256 c) {\\r\\n        c = a + b;\\r\\n        assert(c >= a);\\r\\n        return c;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x4a7e8b8106c4b6992296938b2537dd8f55006faacbfa026fedd74c532aabd4ab\",\"license\":\"BSL 1.1\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50604051610ee6380380610ee683398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610082565b600060208284031215610065578081fd5b81516001600160a01b038116811461007b578182fd5b9392505050565b610e55806100916000396000f3fe608060405234801561001057600080fd5b50600436106101005760003560e01c806354fd4d5011610097578063a457c2d711610066578063a457c2d7146102a4578063a9059cbb146102b7578063aca345ee146102ca578063dd62ed3e146102f557600080fd5b806354fd4d50146101f957806370a082311461023557806395d89b41146102555780639dc29fac1461029157600080fd5b8063313ce567116100d3578063313ce567146101a457806339509351146101be57806340c10f19146101d157806342966c68146101e657600080fd5b806306fdde0314610105578063095ea7b31461015757806318160ddd1461017a57806323b872dd14610191575b600080fd5b6101416040518060400160405280600f81526020017f5553445020537461626c65636f696e000000000000000000000000000000000081525081565b60405161014e9190610d72565b60405180910390f35b61016a610165366004610d0f565b610320565b604051901515815260200161014e565b61018360015481565b60405190815260200161014e565b61016a61019f366004610ccf565b610337565b6101ac601281565b60405160ff909116815260200161014e565b61016a6101cc366004610d0f565b6105bd565b6101e46101df366004610d0f565b6105f3565b005b6101e46101f4366004610d5a565b6107cb565b6101416040518060400160405280600181526020017f310000000000000000000000000000000000000000000000000000000000000081525081565b610183610243366004610c5f565b60026020526000908152604090205481565b6101416040518060400160405280600481526020017f555344500000000000000000000000000000000000000000000000000000000081525081565b6101e461029f366004610d0f565b6108de565b61016a6102b2366004610d0f565b6109dc565b61016a6102c5366004610d0f565b610a12565b6000546102dd906001600160a01b031681565b6040516001600160a01b03909116815260200161014e565b610183610303366004610c97565b600360209081526000928352604080842090915290825290205481565b600061032d338484610a26565b5060015b92915050565b60006001600160a01b0383166103945760405162461bcd60e51b815260206004820152601b60248201527f556e69742050726f746f636f6c3a205a45524f5f41444452455353000000000060448201526064015b60405180910390fd5b6001600160a01b0384166000908152600260205260409020548211156104225760405162461bcd60e51b815260206004820152602360248201527f556e69742050726f746f636f6c3a20494e53554646494349454e545f42414c4160448201527f4e43450000000000000000000000000000000000000000000000000000000000606482015260840161038b565b6001600160a01b0384163314610505576001600160a01b03841660009081526003602090815260408083203384529091529020548211156104cb5760405162461bcd60e51b815260206004820152602560248201527f556e69742050726f746f636f6c3a20494e53554646494349454e545f414c4c4f60448201527f57414e4345000000000000000000000000000000000000000000000000000000606482015260840161038b565b6001600160a01b0384166000908152600360209081526040808320338085529252909120546105059186916105009086610b7f565b610a26565b6001600160a01b0384166000908152600260205260409020546105289083610b7f565b6001600160a01b0380861660009081526002602052604080822093909355908516815220546105579083610ba9565b6001600160a01b0380851660008181526002602052604090819020939093559151908616907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef906105ab9086815260200190565b60405180910390a35060019392505050565b3360008181526003602090815260408083206001600160a01b0387168452909152812054909161032d9185906105009086610ba9565b60008054906101000a90046001600160a01b03166001600160a01b031663fbfa77cf6040518163ffffffff1660e01b815260040160206040518083038186803b15801561063f57600080fd5b505afa158015610653573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106779190610c7b565b6001600160a01b0316336001600160a01b0316146106e35760405162461bcd60e51b8152602060048201526024808201527f556e69742050726f746f636f6c3a206f6e6c795661756c7420415554485f46416044820152631253115160e21b606482015260840161038b565b6001600160a01b0382166107395760405162461bcd60e51b815260206004820152601b60248201527f556e69742050726f746f636f6c3a205a45524f5f414444524553530000000000604482015260640161038b565b6001600160a01b03821660009081526002602052604090205461075c9082610ba9565b6001600160a01b0383166000908152600260205260409020556001546107829082610ba9565b6001556040518181526001600160a01b038316906000907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef906020015b60405180910390a35050565b6000546040517ff3ae24150000000000000000000000000000000000000000000000000000000081523360048201526001600160a01b039091169063f3ae24159060240160206040518083038186803b15801561082757600080fd5b505afa15801561083b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061085f9190610d3a565b6108d15760405162461bcd60e51b815260206004820152602660248201527f556e69742050726f746f636f6c3a206f6e6c794d616e6167657220415554485f60448201527f4641494c45440000000000000000000000000000000000000000000000000000606482015260840161038b565b6108db3382610bd5565b50565b60008054906101000a90046001600160a01b03166001600160a01b031663fbfa77cf6040518163ffffffff1660e01b815260040160206040518083038186803b15801561092a57600080fd5b505afa15801561093e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109629190610c7b565b6001600160a01b0316336001600160a01b0316146109ce5760405162461bcd60e51b8152602060048201526024808201527f556e69742050726f746f636f6c3a206f6e6c795661756c7420415554485f46416044820152631253115160e21b606482015260840161038b565b6109d88282610bd5565b5050565b3360008181526003602090815260408083206001600160a01b0387168452909152812054909161032d9185906105009086610b7f565b6000610a1f338484610337565b9392505050565b6001600160a01b038316610aa25760405162461bcd60e51b815260206004820152602c60248201527f556e69742050726f746f636f6c3a20617070726f76652066726f6d207468652060448201527f7a65726f20616464726573730000000000000000000000000000000000000000606482015260840161038b565b6001600160a01b038216610b1e5760405162461bcd60e51b815260206004820152602a60248201527f556e69742050726f746f636f6c3a20617070726f766520746f20746865207a6560448201527f726f206164647265737300000000000000000000000000000000000000000000606482015260840161038b565b6001600160a01b0383811660008181526003602090815260408083209487168084529482529182902085905590518481527f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925910160405180910390a3505050565b600082821115610b9f57634e487b7160e01b600052600160045260246000fd5b610a1f8284610ddd565b6000610bb58284610dc5565b90508281101561033157634e487b7160e01b600052600160045260246000fd5b6001600160a01b038216600090815260026020526040902054610bf89082610b7f565b6001600160a01b038316600090815260026020526040902055600154610c1e9082610b7f565b6001556040518181526000906001600160a01b038416907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef906020016107bf565b600060208284031215610c70578081fd5b8135610a1f81610e0a565b600060208284031215610c8c578081fd5b8151610a1f81610e0a565b60008060408385031215610ca9578081fd5b8235610cb481610e0a565b91506020830135610cc481610e0a565b809150509250929050565b600080600060608486031215610ce3578081fd5b8335610cee81610e0a565b92506020840135610cfe81610e0a565b929592945050506040919091013590565b60008060408385031215610d21578182fd5b8235610d2c81610e0a565b946020939093013593505050565b600060208284031215610d4b578081fd5b81518015158114610a1f578182fd5b600060208284031215610d6b578081fd5b5035919050565b6000602080835283518082850152825b81811015610d9e57858101830151858201604001528201610d82565b81811115610daf5783604083870101525b50601f01601f1916929092016040019392505050565b60008219821115610dd857610dd8610df4565b500190565b600082821015610def57610def610df4565b500390565b634e487b7160e01b600052601160045260246000fd5b6001600160a01b03811681146108db57600080fdfea26469706673582212201a0c5678bf8262633ad423b9df6806d3a02044b8ee81f3bfdb888cf17b42e24a64736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106101005760003560e01c806354fd4d5011610097578063a457c2d711610066578063a457c2d7146102a4578063a9059cbb146102b7578063aca345ee146102ca578063dd62ed3e146102f557600080fd5b806354fd4d50146101f957806370a082311461023557806395d89b41146102555780639dc29fac1461029157600080fd5b8063313ce567116100d3578063313ce567146101a457806339509351146101be57806340c10f19146101d157806342966c68146101e657600080fd5b806306fdde0314610105578063095ea7b31461015757806318160ddd1461017a57806323b872dd14610191575b600080fd5b6101416040518060400160405280600f81526020017f5553445020537461626c65636f696e000000000000000000000000000000000081525081565b60405161014e9190610d72565b60405180910390f35b61016a610165366004610d0f565b610320565b604051901515815260200161014e565b61018360015481565b60405190815260200161014e565b61016a61019f366004610ccf565b610337565b6101ac601281565b60405160ff909116815260200161014e565b61016a6101cc366004610d0f565b6105bd565b6101e46101df366004610d0f565b6105f3565b005b6101e46101f4366004610d5a565b6107cb565b6101416040518060400160405280600181526020017f310000000000000000000000000000000000000000000000000000000000000081525081565b610183610243366004610c5f565b60026020526000908152604090205481565b6101416040518060400160405280600481526020017f555344500000000000000000000000000000000000000000000000000000000081525081565b6101e461029f366004610d0f565b6108de565b61016a6102b2366004610d0f565b6109dc565b61016a6102c5366004610d0f565b610a12565b6000546102dd906001600160a01b031681565b6040516001600160a01b03909116815260200161014e565b610183610303366004610c97565b600360209081526000928352604080842090915290825290205481565b600061032d338484610a26565b5060015b92915050565b60006001600160a01b0383166103945760405162461bcd60e51b815260206004820152601b60248201527f556e69742050726f746f636f6c3a205a45524f5f41444452455353000000000060448201526064015b60405180910390fd5b6001600160a01b0384166000908152600260205260409020548211156104225760405162461bcd60e51b815260206004820152602360248201527f556e69742050726f746f636f6c3a20494e53554646494349454e545f42414c4160448201527f4e43450000000000000000000000000000000000000000000000000000000000606482015260840161038b565b6001600160a01b0384163314610505576001600160a01b03841660009081526003602090815260408083203384529091529020548211156104cb5760405162461bcd60e51b815260206004820152602560248201527f556e69742050726f746f636f6c3a20494e53554646494349454e545f414c4c4f60448201527f57414e4345000000000000000000000000000000000000000000000000000000606482015260840161038b565b6001600160a01b0384166000908152600360209081526040808320338085529252909120546105059186916105009086610b7f565b610a26565b6001600160a01b0384166000908152600260205260409020546105289083610b7f565b6001600160a01b0380861660009081526002602052604080822093909355908516815220546105579083610ba9565b6001600160a01b0380851660008181526002602052604090819020939093559151908616907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef906105ab9086815260200190565b60405180910390a35060019392505050565b3360008181526003602090815260408083206001600160a01b0387168452909152812054909161032d9185906105009086610ba9565b60008054906101000a90046001600160a01b03166001600160a01b031663fbfa77cf6040518163ffffffff1660e01b815260040160206040518083038186803b15801561063f57600080fd5b505afa158015610653573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106779190610c7b565b6001600160a01b0316336001600160a01b0316146106e35760405162461bcd60e51b8152602060048201526024808201527f556e69742050726f746f636f6c3a206f6e6c795661756c7420415554485f46416044820152631253115160e21b606482015260840161038b565b6001600160a01b0382166107395760405162461bcd60e51b815260206004820152601b60248201527f556e69742050726f746f636f6c3a205a45524f5f414444524553530000000000604482015260640161038b565b6001600160a01b03821660009081526002602052604090205461075c9082610ba9565b6001600160a01b0383166000908152600260205260409020556001546107829082610ba9565b6001556040518181526001600160a01b038316906000907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef906020015b60405180910390a35050565b6000546040517ff3ae24150000000000000000000000000000000000000000000000000000000081523360048201526001600160a01b039091169063f3ae24159060240160206040518083038186803b15801561082757600080fd5b505afa15801561083b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061085f9190610d3a565b6108d15760405162461bcd60e51b815260206004820152602660248201527f556e69742050726f746f636f6c3a206f6e6c794d616e6167657220415554485f60448201527f4641494c45440000000000000000000000000000000000000000000000000000606482015260840161038b565b6108db3382610bd5565b50565b60008054906101000a90046001600160a01b03166001600160a01b031663fbfa77cf6040518163ffffffff1660e01b815260040160206040518083038186803b15801561092a57600080fd5b505afa15801561093e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109629190610c7b565b6001600160a01b0316336001600160a01b0316146109ce5760405162461bcd60e51b8152602060048201526024808201527f556e69742050726f746f636f6c3a206f6e6c795661756c7420415554485f46416044820152631253115160e21b606482015260840161038b565b6109d88282610bd5565b5050565b3360008181526003602090815260408083206001600160a01b0387168452909152812054909161032d9185906105009086610b7f565b6000610a1f338484610337565b9392505050565b6001600160a01b038316610aa25760405162461bcd60e51b815260206004820152602c60248201527f556e69742050726f746f636f6c3a20617070726f76652066726f6d207468652060448201527f7a65726f20616464726573730000000000000000000000000000000000000000606482015260840161038b565b6001600160a01b038216610b1e5760405162461bcd60e51b815260206004820152602a60248201527f556e69742050726f746f636f6c3a20617070726f766520746f20746865207a6560448201527f726f206164647265737300000000000000000000000000000000000000000000606482015260840161038b565b6001600160a01b0383811660008181526003602090815260408083209487168084529482529182902085905590518481527f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925910160405180910390a3505050565b600082821115610b9f57634e487b7160e01b600052600160045260246000fd5b610a1f8284610ddd565b6000610bb58284610dc5565b90508281101561033157634e487b7160e01b600052600160045260246000fd5b6001600160a01b038216600090815260026020526040902054610bf89082610b7f565b6001600160a01b038316600090815260026020526040902055600154610c1e9082610b7f565b6001556040518181526000906001600160a01b038416907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef906020016107bf565b600060208284031215610c70578081fd5b8135610a1f81610e0a565b600060208284031215610c8c578081fd5b8151610a1f81610e0a565b60008060408385031215610ca9578081fd5b8235610cb481610e0a565b91506020830135610cc481610e0a565b809150509250929050565b600080600060608486031215610ce3578081fd5b8335610cee81610e0a565b92506020840135610cfe81610e0a565b929592945050506040919091013590565b60008060408385031215610d21578182fd5b8235610d2c81610e0a565b946020939093013593505050565b600060208284031215610d4b578081fd5b81518015158114610a1f578182fd5b600060208284031215610d6b578081fd5b5035919050565b6000602080835283518082850152825b81811015610d9e57858101830151858201604001528201610d82565b81811115610daf5783604083870101525b50601f01601f1916929092016040019392505050565b60008219821115610dd857610dd8610df4565b500190565b600082821015610def57610def610df4565b500390565b634e487b7160e01b600052601160045260246000fd5b6001600160a01b03811681146108db57600080fdfea26469706673582212201a0c5678bf8262633ad423b9df6806d3a02044b8ee81f3bfdb888cf17b42e24a64736f6c63430008040033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "mint(address,uint256)": {
+        "details": "Mints 'amount' of tokens to address 'to', and MUST fire the Transfer event",
+        "params": {
+          "amount": "The amount of token to be minted*",
+          "to": "The address of the recipient"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "mint(address,uint256)": {
+        "notice": "Only Vault can mint USDP"
+      },
+      "version()": {
+        "notice": "i think it useless"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 4608,
+        "contract": "contracts/SuUSD.sol:SuUSD",
+        "label": "vaultParameters",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(SuVaultParameters)4917"
+      },
+      {
+        "astId": 2882,
+        "contract": "contracts/SuUSD.sol:SuUSD",
+        "label": "totalSupply",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 2886,
+        "contract": "contracts/SuUSD.sol:SuUSD",
+        "label": "balanceOf",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 2892,
+        "contract": "contracts/SuUSD.sol:SuUSD",
+        "label": "allowance",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_contract(SuVaultParameters)4917": {
+        "encoding": "inplace",
+        "label": "contract SuVaultParameters",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(address => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_uint256)"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "address": "0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_vaultParameters",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "CollateralAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "CollateralRemoved",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "addCollateral",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "collateralId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "collateralList",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collaterals",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collateralsCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "isCollateral",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "removeCollateral",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vaultParameters",
+      "outputs": [
+        {
+          "internalType": "contract SuVaultParameters",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x909e6c164a1a2cde9dbb7333a2bffc012d06e74756ea9e400dfbd539e627fbb8",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44",
+    "transactionIndex": 0,
+    "gasUsed": "608376",
+    "logsBloom": "0x00000000000000000000000000000000000000100000000000000000000000000000000000200000000000000000000000000000000000000000000000000008000000000000800000000000000000000000000000000000001000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000010000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x467029da626b56d06c7aeb742dc77f8a63983337f81832a812008e7e355867b9",
+    "transactionHash": "0x909e6c164a1a2cde9dbb7333a2bffc012d06e74756ea9e400dfbd539e627fbb8",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 24,
+        "transactionHash": "0x909e6c164a1a2cde9dbb7333a2bffc012d06e74756ea9e400dfbd539e627fbb8",
+        "address": "0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44",
+        "topics": [
+          "0x7db05e63d635a68c62fd7fd8f3107ae8ab584a383e102d1bd8a40f4c977e465f",
+          "0x0000000000000000000000004a679253410272dd5232b3ff7cf5dbb88f295319"
+        ],
+        "data": "0x",
+        "logIndex": 0,
+        "blockHash": "0x467029da626b56d06c7aeb742dc77f8a63983337f81832a812008e7e355867b9"
+      }
+    ],
+    "blockNumber": 24,
+    "cumulativeGasUsed": "608376",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x3Aa5ebB10DC797CAC828524e59A333d0A371443c",
+    [
+      "0x4A679253410272dd5232B3Ff7cF5dbB88f295319"
+    ]
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "9c90b91cdbeee1bffa3ac0f5ee01f939",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_vaultParameters\",\"type\":\"address\"},{\"internalType\":\"address[]\",\"name\":\"assets\",\"type\":\"address[]\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"CollateralAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"CollateralRemoved\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"addCollateral\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"collateralId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"collateralList\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"collaterals\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"collateralsCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"isCollateral\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"removeCollateral\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"vaultParameters\",\"outputs\":[{\"internalType\":\"contract SuVaultParameters\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/SuCollateralRegistry.sol\":\"SuCollateralRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"contracts/SuCollateralRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: BSL 1.1\\r\\n\\r\\n/*\\r\\n  Copyright 2020 Unit Protocol: Artem Zakharov (az@unit.xyz).\\r\\n*/\\r\\npragma solidity ^0.8.0;\\r\\npragma experimental ABIEncoderV2;\\r\\n\\r\\n\\r\\nimport \\\"./SuVaultParameters.sol\\\";\\r\\n\\r\\n// contract for mapping of collaterals\\r\\ncontract SuCollateralRegistry is Auth {\\r\\n\\r\\n    event CollateralAdded(address indexed asset);\\r\\n    event CollateralRemoved(address indexed asset);\\r\\n\\r\\n    // mapping of collateral to its index in collateralList\\r\\n    // it allowed to find collateral by address in the list without loop\\r\\n    mapping(address => uint) public collateralId;\\r\\n\\r\\n    address[] public collateralList;\\r\\n    \\r\\n    // collateral registry is deployed after vaultParameters contract and it initializes list of collaterals\\r\\n    constructor(address _vaultParameters, address[] memory assets) Auth(_vaultParameters) {\\r\\n        for (uint i = 0; i < assets.length; i++) {\\r\\n            require(!isCollateral(assets[i]), \\\"Unit Protocol: ALREADY_EXIST\\\");\\r\\n            collateralList.push(assets[i]);\\r\\n            collateralId[assets[i]] = i;\\r\\n            emit CollateralAdded(assets[i]);\\r\\n        }\\r\\n    }\\r\\n\\r\\n    // after deployment more collaterals can be added by managers\\r\\n    function addCollateral(address asset) public onlyManager {\\r\\n        require(asset != address(0), \\\"Unit Protocol: ZERO_ADDRESS\\\");\\r\\n\\r\\n        require(!isCollateral(asset), \\\"Unit Protocol: ALREADY_EXIST\\\");\\r\\n\\r\\n        collateralId[asset] = collateralList.length;\\r\\n        collateralList.push(asset);\\r\\n\\r\\n        emit CollateralAdded(asset);\\r\\n    }\\r\\n\\r\\n    // as well collaterals can be removed\\r\\n    function removeCollateral(address asset) public onlyManager {\\r\\n        require(asset != address(0), \\\"Unit Protocol: ZERO_ADDRESS\\\");\\r\\n\\r\\n        require(isCollateral(asset), \\\"Unit Protocol: DOES_NOT_EXIST\\\");\\r\\n\\r\\n        uint id = collateralId[asset];\\r\\n\\r\\n        delete collateralId[asset];\\r\\n\\r\\n        uint lastId = collateralList.length - 1;\\r\\n\\r\\n        if (id != lastId) {\\r\\n            address lastCollateral = collateralList[lastId];\\r\\n            collateralList[id] = lastCollateral;\\r\\n            collateralId[lastCollateral] = id;\\r\\n        }\\r\\n\\r\\n        collateralList.pop();\\r\\n\\r\\n        emit CollateralRemoved(asset);\\r\\n    }\\r\\n\\r\\n    // check whether asset is collateral\\r\\n    function isCollateral(address asset) public view returns(bool) {\\r\\n        if (collateralList.length == 0) { return false; }\\r\\n        return collateralId[asset] != 0 || collateralList[0] == asset;\\r\\n    }\\r\\n\\r\\n    // return all collateral assets\\r\\n    function collaterals() external view returns (address[] memory) {\\r\\n        return collateralList;\\r\\n    }\\r\\n\\r\\n    // return total number of collateral assets\\r\\n    function collateralsCount() external view returns (uint) {\\r\\n        return collateralList.length;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x0112b8265e632d258560ae82f20828ae273e3f67d0d8199b39e5aa1bc1c4c040\",\"license\":\"BSL 1.1\"},\"contracts/SuVaultParameters.sol\":{\"content\":\"// SPDX-License-Identifier: BSL 1.1\\r\\n\\r\\n/*\\r\\n  Copyright 2020 Unit Protocol: Artem Zakharov (az@unit.xyz).\\r\\n*/\\r\\npragma solidity ^0.8.0;\\r\\n\\r\\n\\r\\n// proxy for VaultParameters - other contracts should be inherited from here\\r\\n// this contract contains modifiers used in VaultParameters contract\\r\\n// it should be an abstract class because it cannot by instantiated/deployed directly,\\r\\n// its supposed to be inherited by VaultParameters contract which is deployed \\r\\n/// yes\\r\\ncontract Auth {\\r\\n    // but actually it does store address to vaultParameters contract?\\r\\n    SuVaultParameters public vaultParameters;\\r\\n\\r\\n    // its the same time parent of VaultParameters (inheritance)\\r\\n    // and same time its linking to VaultParameters (composition)\\r\\n    // one approach should be chosen: either inheritance or composition\\r\\n    // otherwise its very confusing\\r\\n    /// No, it's singleton\\r\\n    constructor(address _parameters) {\\r\\n        vaultParameters = SuVaultParameters(_parameters);\\r\\n    }\\r\\n\\r\\n    // check manager permission\\r\\n    modifier onlyManager() {\\r\\n        require(vaultParameters.isManager(msg.sender), \\\"Unit Protocol: onlyManager AUTH_FAILED\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    // check permission to modify vault\\r\\n    modifier hasVaultAccess() {\\r\\n        require(vaultParameters.canModifyVault(msg.sender), \\\"Unit Protocol: hasVaultAccess AUTH_FAILED\\\");\\r\\n        _;\\r\\n    }\\r\\n\\r\\n    // check vault permission\\r\\n    modifier onlyVault() {\\r\\n        require(msg.sender == vaultParameters.vault(), \\\"Unit Protocol: onlyVault AUTH_FAILED\\\");\\r\\n        _;\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n// VaultParameters is Singleton for Access Control\\r\\n// this looks like configuration contract\\r\\n// what are the rules to determine these configs for each new allowed collateral?\\r\\n/// yes, and for all collaterals\\r\\n// is DAO allowed to choose parameters for existing collaterals?\\r\\n/// \\r\\n// are there any limits to be enforced? i.e. fee cannot be over 100% percent\\r\\n/// No, but it's a good idea to have it\\r\\ncontract SuVaultParameters is Auth {\\r\\n    // stability fee can be different for each collateral\\r\\n    /// yes\\r\\n    mapping(address => uint) public stabilityFee;\\r\\n\\r\\n    // liquidation fee too can be different\\r\\n    /// yes\\r\\n    mapping(address => uint) public liquidationFee;\\r\\n\\r\\n    // map token to USDP mint limit\\r\\n    /// yes, limit for each collateral-assert\\r\\n    mapping(address => uint) public tokenDebtLimit;\\r\\n\\r\\n    // permissions to modify the Vault\\r\\n    mapping(address => bool) public canModifyVault;\\r\\n\\r\\n    // whether an account is manager\\r\\n    mapping(address => bool) public isManager;\\r\\n\\r\\n    // whether an oracle is enabled\\r\\n    /// TODO:\\r\\n    mapping(uint => mapping (address => bool)) public isOracleTypeEnabled;\\r\\n\\r\\n    // linked to the vault contract\\r\\n    // I think its better to inherit Vault from VaultParameters\\r\\n    /// NO, needed for onlyVault modifier\\r\\n    address payable public vault;\\r\\n\\r\\n    // what is foundation, DAO?\\r\\n    /// Beneficiaty as VotingEscrow.vy\\r\\n    address public foundation;\\r\\n\\r\\n    // creator of contract is manager, can it be the same as DAO or can it be removed later?\\r\\n    /// YES\\r\\n    // how can vault address be known at this moment?\\r\\n    /// Precult based on CREATE spec\\r\\n    // can be created another function to set vault address once deployed?\\r\\n    /// Yes, possibly with some logic change\\r\\n    constructor(address payable _vault, address _foundation) Auth(address(this)) {\\r\\n        require(_vault != address(0), \\\"Unit Protocol: ZERO_ADDRESS\\\");\\r\\n        require(_foundation != address(0), \\\"Unit Protocol: ZERO_ADDRESS\\\");\\r\\n\\r\\n        isManager[msg.sender] = true;\\r\\n        vault = _vault;\\r\\n        foundation = _foundation;\\r\\n    }\\r\\n\\r\\n     // existing managers can enable other managers\\r\\n     // one manager can disable all other managers - dangerous?\\r\\n     /// YES, could be dangerous\\r\\n    function setManager(address who, bool permit) external onlyManager {\\r\\n        isManager[who] = permit;\\r\\n    }\\r\\n\\r\\n    // similar function can be added to setVault\\r\\n    function setFoundation(address newFoundation) external onlyManager {\\r\\n        require(newFoundation != address(0), \\\"Unit Protocol: ZERO_ADDRESS\\\");\\r\\n        foundation = newFoundation;\\r\\n    }\\r\\n\\r\\n     // manager is allowed to add new collaterals and modify existing ones\\r\\n     // I think creating new collaterals and modifying existing ones should be separate functions\\r\\n     /// Yes, for sercurity reason, it's possible to add events for creating and edititing \\r\\n     // also different event should be emitted NewCollateral UpdatedCollateral accordingly\\r\\n     // those events can be handled on frontend to notify user about any changes in rules\\r\\n     /// Not sure it makes sense to split into create/edit functions\\r\\n    function setCollateral(\\r\\n        address asset,\\r\\n        uint stabilityFeeValue,\\r\\n        uint liquidationFeeValue,\\r\\n        uint usdpLimit\\r\\n    ) external onlyManager {\\r\\n        // stability fee should be validated in range, what is stability fee should be described here?\\r\\n        setStabilityFee(asset, stabilityFeeValue);\\r\\n        // liquidation fee should be validated in range, what is liquidation fee should be explained?\\r\\n        setLiquidationFee(asset, liquidationFeeValue);\\r\\n        // why debt limit for collateral is necessary? to manage risks in case of collateral failure?\\r\\n        setTokenDebtLimit(asset, usdpLimit);\\r\\n    }\\r\\n\\r\\n     // manager can choose who is allowed to modify vault, \\r\\n     // what does it mean to modify vault and why permission separate from manager himself?\\r\\n     /// https://en.wikipedia.org/wiki/Principle_of_least_privilege \\r\\n    function setVaultAccess(address who, bool permit) external onlyManager {\\r\\n        canModifyVault[who] = permit;\\r\\n    }\\r\\n\\r\\n    // stability fee is measured as the number of coins per year or percentage? \\r\\n    // this should be clarified in argument name i.e. stabilityFeePercentageYearly\\r\\n    /// No, it's APR ( per year, see calculateFee) percentrage, fee percentage; 3 decimals.\\r\\n    /// YES, self-documented code-style is the best practice.\\r\\n    function setStabilityFee(address asset, uint newValue) public onlyManager {\\r\\n        stabilityFee[asset] = newValue;\\r\\n    }\\r\\n\\r\\n    // the same with liquidation fee is not clear\\r\\n    /// % 0 decimals, needede to get better variable names\\r\\n    function setLiquidationFee(address asset, uint newValue) public onlyManager {\\r\\n        require(newValue <= 100, \\\"Unit Protocol: VALUE_OUT_OF_RANGE\\\");\\r\\n        liquidationFee[asset] = newValue;\\r\\n    }\\r\\n\\r\\n     // what are allowed types? enum should be defined\\r\\n     // types out of range should fail transaction\\r\\n    /// All oracles implementation are numbered, so some of them support this particular asset\\r\\n    function setOracleType(uint _type, address asset, bool enabled) public onlyManager {\\r\\n        isOracleTypeEnabled[_type][asset] = enabled;\\r\\n    }\\r\\n\\r\\n     // debt limit can be changed for any collateral along with liquidation and stability fees\\r\\n     // seems like managers have too much power - that can be dangerous given multiple managers?\\r\\n     /// Yes, application of  principle of least priviledge needed\\r\\n    function setTokenDebtLimit(address asset, uint limit) public onlyManager {\\r\\n        tokenDebtLimit[asset] = limit;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0xbc2ccb04d4de0500943dc32b624de04fb451b928c8a65c6928ca78ee39d99693\",\"license\":\"BSL 1.1\"}},\"version\":1}",
+  "bytecode": "0x60806040523480156200001157600080fd5b5060405162000c5f38038062000c5f8339810160408190526200003491620002ad565b600080546001600160a01b0319166001600160a01b0384161781555b81518110156200020857620000938282815181106200007f57634e487b7160e01b600052603260045260246000fd5b60200260200101516200021160201b60201c565b15620000e55760405162461bcd60e51b815260206004820152601c60248201527f556e69742050726f746f636f6c3a20414c52454144595f455849535400000000604482015260640160405180910390fd5b60028282815181106200010857634e487b7160e01b600052603260045260246000fd5b60209081029190910181015182546001808201855560009485529284200180546001600160a01b0319166001600160a01b0390921691909117905583518392908590849081106200016957634e487b7160e01b600052603260045260246000fd5b60200260200101516001600160a01b03166001600160a01b0316815260200190815260200160002081905550818181518110620001b657634e487b7160e01b600052603260045260246000fd5b60200260200101516001600160a01b03167f7db05e63d635a68c62fd7fd8f3107ae8ab584a383e102d1bd8a40f4c977e465f60405160405180910390a280620001ff8162000398565b91505062000050565b505050620003d6565b6002546000906200022457506000919050565b6001600160a01b0382166000908152600160205260409020541515806200028a5750816001600160a01b031660026000815481106200027357634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b0316145b92915050565b80516001600160a01b0381168114620002a857600080fd5b919050565b60008060408385031215620002c0578182fd5b620002cb8362000290565b602084810151919350906001600160401b0380821115620002ea578384fd5b818601915086601f830112620002fe578384fd5b815181811115620003135762000313620003c0565b8060051b604051601f19603f830116810181811085821117156200033b576200033b620003c0565b604052828152858101935084860182860187018b10156200035a578788fd5b8795505b838610156200038757620003728162000290565b8552600195909501949386019386016200035e565b508096505050505050509250929050565b6000600019821415620003b957634e487b7160e01b81526011600452602481fd5b5060010190565b634e487b7160e01b600052604160045260246000fd5b61087980620003e66000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c80634f7304551161005b5780634f73045514610107578063aca345ee14610127578063c99d3a061461013a578063f0d2d5a81461014f57600080fd5b80630ee21e541461008d5780631bcff06c146100b55780633024a912146100c75780634113e5ca146100f2575b600080fd5b6100a061009b36600461076d565b610162565b60405190151581526020015b60405180910390f35b6002545b6040519081526020016100ac565b6100da6100d53660046107bb565b6101de565b6040516001600160a01b0390911681526020016100ac565b6100fa610208565b6040516100ac91906107d3565b6100b961011536600461076d565b60016020526000908152604090205481565b6000546100da906001600160a01b031681565b61014d61014836600461076d565b61026a565b005b61014d61015d36600461076d565b610557565b60025460009061017457506000919050565b6001600160a01b0382166000908152600160205260409020541515806101d85750816001600160a01b031660026000815481106101c157634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b0316145b92915050565b600281815481106101ee57600080fd5b6000918252602090912001546001600160a01b0316905081565b6060600280548060200260200160405190810160405280929190818152602001828054801561026057602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610242575b5050505050905090565b60005460405163f3ae241560e01b81523360048201526001600160a01b039091169063f3ae24159060240160206040518083038186803b1580156102ad57600080fd5b505afa1580156102c1573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102e5919061079b565b6103455760405162461bcd60e51b815260206004820152602660248201527f556e69742050726f746f636f6c3a206f6e6c794d616e6167657220415554485f60448201526511905253115160d21b60648201526084015b60405180910390fd5b6001600160a01b03811661039b5760405162461bcd60e51b815260206004820152601b60248201527f556e69742050726f746f636f6c3a205a45524f5f414444524553530000000000604482015260640161033c565b6103a481610162565b6103f05760405162461bcd60e51b815260206004820152601d60248201527f556e69742050726f746f636f6c3a20444f45535f4e4f545f4558495354000000604482015260640161033c565b6001600160a01b0381166000908152600160208190526040822080549083905560025490929161041f91610820565b90508082146104d05760006002828154811061044b57634e487b7160e01b600052603260045260246000fd5b600091825260209091200154600280546001600160a01b03909216925082918590811061048857634e487b7160e01b600052603260045260246000fd5b6000918252602080832091909101805473ffffffffffffffffffffffffffffffffffffffff19166001600160a01b039485161790559290911681526001909152604090208290555b60028054806104ef57634e487b7160e01b600052603160045260246000fd5b6000828152602081208201600019908101805473ffffffffffffffffffffffffffffffffffffffff191690559091019091556040516001600160a01b038516917fd89d2ee68ab04dca0193f48a4aff55e20fa5ec0429a8a8c1c51b8dad6178a59391a2505050565b60005460405163f3ae241560e01b81523360048201526001600160a01b039091169063f3ae24159060240160206040518083038186803b15801561059a57600080fd5b505afa1580156105ae573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105d2919061079b565b61062d5760405162461bcd60e51b815260206004820152602660248201527f556e69742050726f746f636f6c3a206f6e6c794d616e6167657220415554485f60448201526511905253115160d21b606482015260840161033c565b6001600160a01b0381166106835760405162461bcd60e51b815260206004820152601b60248201527f556e69742050726f746f636f6c3a205a45524f5f414444524553530000000000604482015260640161033c565b61068c81610162565b156106d95760405162461bcd60e51b815260206004820152601c60248201527f556e69742050726f746f636f6c3a20414c52454144595f455849535400000000604482015260640161033c565b600280546001600160a01b038316600081815260016020819052604080832085905590840185559381527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace909201805473ffffffffffffffffffffffffffffffffffffffff19168217905591517f7db05e63d635a68c62fd7fd8f3107ae8ab584a383e102d1bd8a40f4c977e465f9190a250565b60006020828403121561077e578081fd5b81356001600160a01b0381168114610794578182fd5b9392505050565b6000602082840312156107ac578081fd5b81518015158114610794578182fd5b6000602082840312156107cc578081fd5b5035919050565b6020808252825182820181905260009190848201906040850190845b818110156108145783516001600160a01b0316835292840192918401916001016107ef565b50909695505050505050565b60008282101561083e57634e487b7160e01b81526011600452602481fd5b50039056fea264697066735822122003c7affc969f052b0366b0b2ac8f790008eb7cbbe671ff285a719381bb280eef64736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c80634f7304551161005b5780634f73045514610107578063aca345ee14610127578063c99d3a061461013a578063f0d2d5a81461014f57600080fd5b80630ee21e541461008d5780631bcff06c146100b55780633024a912146100c75780634113e5ca146100f2575b600080fd5b6100a061009b36600461076d565b610162565b60405190151581526020015b60405180910390f35b6002545b6040519081526020016100ac565b6100da6100d53660046107bb565b6101de565b6040516001600160a01b0390911681526020016100ac565b6100fa610208565b6040516100ac91906107d3565b6100b961011536600461076d565b60016020526000908152604090205481565b6000546100da906001600160a01b031681565b61014d61014836600461076d565b61026a565b005b61014d61015d36600461076d565b610557565b60025460009061017457506000919050565b6001600160a01b0382166000908152600160205260409020541515806101d85750816001600160a01b031660026000815481106101c157634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b0316145b92915050565b600281815481106101ee57600080fd5b6000918252602090912001546001600160a01b0316905081565b6060600280548060200260200160405190810160405280929190818152602001828054801561026057602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610242575b5050505050905090565b60005460405163f3ae241560e01b81523360048201526001600160a01b039091169063f3ae24159060240160206040518083038186803b1580156102ad57600080fd5b505afa1580156102c1573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102e5919061079b565b6103455760405162461bcd60e51b815260206004820152602660248201527f556e69742050726f746f636f6c3a206f6e6c794d616e6167657220415554485f60448201526511905253115160d21b60648201526084015b60405180910390fd5b6001600160a01b03811661039b5760405162461bcd60e51b815260206004820152601b60248201527f556e69742050726f746f636f6c3a205a45524f5f414444524553530000000000604482015260640161033c565b6103a481610162565b6103f05760405162461bcd60e51b815260206004820152601d60248201527f556e69742050726f746f636f6c3a20444f45535f4e4f545f4558495354000000604482015260640161033c565b6001600160a01b0381166000908152600160208190526040822080549083905560025490929161041f91610820565b90508082146104d05760006002828154811061044b57634e487b7160e01b600052603260045260246000fd5b600091825260209091200154600280546001600160a01b03909216925082918590811061048857634e487b7160e01b600052603260045260246000fd5b6000918252602080832091909101805473ffffffffffffffffffffffffffffffffffffffff19166001600160a01b039485161790559290911681526001909152604090208290555b60028054806104ef57634e487b7160e01b600052603160045260246000fd5b6000828152602081208201600019908101805473ffffffffffffffffffffffffffffffffffffffff191690559091019091556040516001600160a01b038516917fd89d2ee68ab04dca0193f48a4aff55e20fa5ec0429a8a8c1c51b8dad6178a59391a2505050565b60005460405163f3ae241560e01b81523360048201526001600160a01b039091169063f3ae24159060240160206040518083038186803b15801561059a57600080fd5b505afa1580156105ae573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105d2919061079b565b61062d5760405162461bcd60e51b815260206004820152602660248201527f556e69742050726f746f636f6c3a206f6e6c794d616e6167657220415554485f60448201526511905253115160d21b606482015260840161033c565b6001600160a01b0381166106835760405162461bcd60e51b815260206004820152601b60248201527f556e69742050726f746f636f6c3a205a45524f5f414444524553530000000000604482015260640161033c565b61068c81610162565b156106d95760405162461bcd60e51b815260206004820152601c60248201527f556e69742050726f746f636f6c3a20414c52454144595f455849535400000000604482015260640161033c565b600280546001600160a01b038316600081815260016020819052604080832085905590840185559381527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace909201805473ffffffffffffffffffffffffffffffffffffffff19168217905591517f7db05e63d635a68c62fd7fd8f3107ae8ab584a383e102d1bd8a40f4c977e465f9190a250565b60006020828403121561077e578081fd5b81356001600160a01b0381168114610794578182fd5b9392505050565b6000602082840312156107ac578081fd5b81518015158114610794578182fd5b6000602082840312156107cc578081fd5b5035919050565b6020808252825182820181905260009190848201906040850190845b818110156108145783516001600160a01b0316835292840192918401916001016107ef565b50909695505050505050565b60008282101561083e57634e487b7160e01b81526011600452602481fd5b50039056fea264697066735822122003c7affc969f052b0366b0b2ac8f790008eb7cbbe671ff285a719381bb280eef64736f6c63430008040033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 4608,
+        "contract": "contracts/SuCollateralRegistry.sol:SuCollateralRegistry",
+        "label": "vaultParameters",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(SuVaultParameters)4917"
+      },
+      {
+        "astId": 2633,
+        "contract": "contracts/SuCollateralRegistry.sol:SuCollateralRegistry",
+        "label": "collateralId",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 2636,
+        "contract": "contracts/SuCollateralRegistry.sol:SuCollateralRegistry",
+        "label": "collateralList",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_contract(SuVaultParameters)4917": {
+        "encoding": "inplace",
+        "label": "contract SuVaultParameters",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
