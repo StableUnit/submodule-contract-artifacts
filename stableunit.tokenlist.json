@@ -76,6 +76,42 @@
       "name": "1INCH Token",
       "symbol": "1INCH",
       "decimals": 18
+    },
+
+    {
+      "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+      "chainId": 137,
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "decimals": 18
+    },
+    {
+      "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+      "chainId": 137,
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "decimals": 8
+    },
+    {
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "chainId": 137,
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6
+    },
+    {
+      "address": "0x6f8a06447Ff6FcF75d803135a7de15CE88C1d4ec",
+      "chainId": 137,
+      "name": "SHIBA INU",
+      "symbol": "SHIB",
+      "decimals": 18
+    },
+    {
+      "address": "0x9c2C5fd7b07E95EE044DDeba0E97a665F142394f",
+      "chainId": 137,
+      "name": "1INCH Token",
+      "symbol": "1INCH",
+      "decimals": 18
     }
   ],
   "version": {
