@@ -77,6 +77,13 @@
       "symbol": "1INCH",
       "decimals": 18
     },
+    {
+      "address": "0x86bc9E097a0A2Ca736AB31B53Ad93Ab3E5B332e1",
+      "chainId": 4,
+      "name": "StableUnit USD",
+      "symbol": "SuUSD",
+      "decimals": 18
+    },
 
     {
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
