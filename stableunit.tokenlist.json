@@ -43,42 +43,42 @@
     },
 
     {
-      "address": "0xDF1C4eAeAdA9E649b2fb55B7d38B20E74Ad32430",
+      "address": "0x7189C2F69Ed1D8e9C61aF5955e9B312966B2F81B",
       "chainId": 4,
       "name": "Wrapped Ether",
       "symbol": "WETH",
       "decimals": 18
     },
     {
-      "address": "0xD75CF1195D03bed8d3d456Ed9A41C2250150E353",
+      "address": "0x8586594412DAC2621ABde8d422885EfFE63eCdff",
       "chainId": 4,
       "name": "Wrapped BTC",
       "symbol": "WBTC",
       "decimals": 8
     },
     {
-      "address": "0xF5395B1DE880326e4188236767baac4085F2C3d6",
+      "address": "0xb61538Be717bA0d8BAb46E0699d7abb9C02D66fA",
       "chainId": 4,
       "name": "Tether USD",
       "symbol": "USDT",
       "decimals": 6
     },
     {
-      "address": "0x43c7f632B8Bd00Ba40AD3d9e98B38667d7AC138d",
+      "address": "0xD90182FF01630B5343B17FA32b02113CbEFB2ed8",
       "chainId": 4,
       "name": "SHIBA INU",
       "symbol": "SHIB",
       "decimals": 18
     },
     {
-      "address": "0x695888Af798820C70345103e69492B4242584E42",
+      "address": "0x2b52Aff165104f14ad30e867E9D69F7d74194FC9",
       "chainId": 4,
       "name": "1INCH Token",
       "symbol": "1INCH",
       "decimals": 18
     },
     {
-      "address": "0x9E092a5bbE556f7d860C98aCE19F9CD627CE850a",
+      "address": "0x7Ddd92A76d93A94393e2C1BA02853Fc3188288BB",
       "chainId": 4,
       "name": "StableUnit USD",
       "symbol": "SuUSD",
