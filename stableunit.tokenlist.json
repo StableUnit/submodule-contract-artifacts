@@ -81,8 +81,8 @@
     {
       "address": "0x7Ddd92A76d93A94393e2C1BA02853Fc3188288BB",
       "chainId": 4,
-      "name": "StableUnit USD",
-      "symbol": "SuUSD",
+      "name": "USD Pro",
+      "symbol": "USDPro",
       "decimals": 18
     },
 
@@ -125,8 +125,8 @@
     {
       "address": "0xe53bdf250Ce49df9A8A7D396A125405963628731",
       "chainId": 5,
-      "name": "StableUnit USD",
-      "symbol": "SuUSD",
+      "name": "USD Pro",
+      "symbol": "USDPro",
       "decimals": 18
     },
 
