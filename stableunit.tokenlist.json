@@ -165,6 +165,13 @@
       "name": "1INCH Token",
       "symbol": "1INCH",
       "decimals": 18
+    },
+    {
+      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "chainId": 137,
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "decimals": 18
     }
   ],
   "version": {
