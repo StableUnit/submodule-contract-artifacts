@@ -129,7 +129,13 @@
       "symbol": "USDPro",
       "decimals": 18
     },
-
+    {
+      "address": "0xcf2A83caD7859C7809E88E374BA5e5c7cA76ac66",
+      "chainId": 5,
+      "name": "test DAI",
+      "symbol": "DAI",
+      "decimals": 18
+    },
 
     {
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
