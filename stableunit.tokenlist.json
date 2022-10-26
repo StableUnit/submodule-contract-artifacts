@@ -136,6 +136,13 @@
       "symbol": "DAI",
       "decimals": 18
     },
+    {
+      "address": "0xA92AD12CA88923Fe5C84F37031131C60cfCf4CEf",
+      "chainId": 5,
+      "name": "test USDT",
+      "symbol": "tUSDT",
+      "decimals": 6
+    },
 
     {
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
