@@ -143,6 +143,13 @@
       "symbol": "tUSDT",
       "decimals": 6
     },
+    {
+      "address": "0xade0666299b24147b9498780ca581faaeB5Cd72D",
+      "chainId": 5,
+      "name": "vested escrow StableUnit DAO",
+      "symbol": "veSuDAO",
+      "decimals": 18
+    },
 
     {
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
