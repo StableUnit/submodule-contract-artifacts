@@ -8,11 +8,6 @@
     },
     {
       "inputs": [],
-      "name": "LessThanMinimum",
-      "type": "error"
-    },
-    {
-      "inputs": [],
       "name": "NotEnoughAmount",
       "type": "error"
     },
@@ -196,11 +191,6 @@
           "internalType": "uint256",
           "name": "stablecoinAmountEDecimal",
           "type": "uint256"
-        },
-        {
-          "internalType": "uint256",
-          "name": "minAssetAmountEDecimal",
-          "type": "uint256"
         }
       ],
       "name": "flashSwapStablecoinToAssetAndSwapBack",
@@ -353,57 +343,8 @@
           "type": "uint256"
         },
         {
-          "internalType": "uint256",
-          "name": "minAssetAmountEDecimal",
-          "type": "uint256"
-        }
-      ],
-      "name": "swapStablecoinToAsset",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        },
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "asset",
-          "type": "address"
-        },
-        {
-          "internalType": "address",
-          "name": "owner",
-          "type": "address"
-        },
-        {
-          "internalType": "address",
-          "name": "stablecoinToken",
-          "type": "address"
-        },
-        {
-          "internalType": "uint256",
-          "name": "stablecoinAmountEDecimal",
-          "type": "uint256"
-        },
-        {
-          "internalType": "uint256",
-          "name": "minAssetAmountEDecimal",
-          "type": "uint256"
-        },
-        {
           "internalType": "bool",
-          "name": "shouldUserReceiveStablecoin",
+          "name": "flashLoanIsUsed",
           "type": "bool"
         }
       ],
@@ -433,11 +374,6 @@
         {
           "internalType": "uint256",
           "name": "stablecoinAmountE18",
-          "type": "uint256"
-        },
-        {
-          "internalType": "uint256",
-          "name": "minAssetAmountEDecimal",
           "type": "uint256"
         }
       ],
