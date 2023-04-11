@@ -21,13 +21,6 @@
       "decimals": 8
     },
     {
-      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "chainId": 1,
-      "name": "Tether USD",
-      "symbol": "USDT",
-      "decimals": 6
-    },
-    {
       "address": "0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE",
       "chainId": 1,
       "name": "SHIBA INU",
@@ -56,13 +49,6 @@
       "name": "Wrapped BTC",
       "symbol": "WBTC",
       "decimals": 8
-    },
-    {
-      "address": "0xb61538Be717bA0d8BAb46E0699d7abb9C02D66fA",
-      "chainId": 4,
-      "name": "Tether USD",
-      "symbol": "USDT",
-      "decimals": 6
     },
     {
       "address": "0xD90182FF01630B5343B17FA32b02113CbEFB2ed8",
@@ -102,13 +88,6 @@
       "decimals": 8
     },
     {
-      "address": "0x48f01586Ed233380609CB4B7eFa099712128e679",
-      "chainId": 5,
-      "name": "Tether USD",
-      "symbol": "USDT",
-      "decimals": 6
-    },
-    {
       "address": "0x62B6e6A8fc35935E5ce076cEFe32cAeBCA96D7D7",
       "chainId": 5,
       "name": "SHIBA INU",
@@ -135,13 +114,6 @@
       "name": "test DAI",
       "symbol": "DAI",
       "decimals": 18
-    },
-    {
-      "address": "0x48f01586Ed233380609CB4B7eFa099712128e679",
-      "chainId": 5,
-      "name": "test USDT",
-      "symbol": "tUSDT",
-      "decimals": 6
     },
     {
       "address": "0xf365D5C53080cabAB47C14bFB29E5Eb022636300",
