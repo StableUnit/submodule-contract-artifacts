@@ -1,6 +1,6 @@
 {
   "name": "StableUnit tokens",
-  "logoURI": "https://suui.netlify.app//logo96.png",
+  "logoURI": "https://suui.netlify.app/logo96.png",
   "keywords": [
     "verified"
   ],
@@ -78,7 +78,16 @@
       "chainId": 5,
       "name": "Wrapped Ether",
       "symbol": "WETH",
-      "decimals": 18
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
+      "address": "0xe940cb81F8A613Fe826E5b79D1D9D71a4be9844e",
+      "chainId": 5,
+      "name": "Lido Staked Ether",
+      "symbol": "stETH",
+      "decimals": 18,
+      "group": "ETH"
     },
     {
       "address": "0x2B6342308Ad173A398250faDcdeeA2463CbF1a5E",
