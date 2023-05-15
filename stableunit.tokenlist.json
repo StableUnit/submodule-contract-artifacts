@@ -118,6 +118,13 @@
       "decimals": 18
     },
     {
+      "address": "0x1d54F6110e865264b8fF1C88E8221A47bb320f30",
+      "chainId": 5,
+      "name": "StableUnit EURO Pro",
+      "symbol": "EURPro",
+      "decimals": 18
+    },
+    {
       "address": "0x368b73AbF229135b35b1b07987a6a1A74C577A7a",
       "chainId": 5,
       "name": "test DAI",
