@@ -331,6 +331,61 @@
       "type": "function"
     },
     {
+      "inputs": [],
+      "name": "getAllOrders",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token2sell",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountLeft",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "token2buy",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "token2buyAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "beneficiary",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "creationTimestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "enum DiscountType",
+              "name": "discountType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "address",
+              "name": "caller",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct Order[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
       "inputs": [
         {
           "internalType": "uint256",
@@ -386,6 +441,80 @@
           "internalType": "struct Order",
           "name": "",
           "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getOrderAt",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token2sell",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amountLeft",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "token2buy",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "token2buyAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "beneficiary",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "creationTimestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "enum DiscountType",
+              "name": "discountType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "address",
+              "name": "caller",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct Order",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getOrdersCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
         }
       ],
       "stateMutability": "view",
