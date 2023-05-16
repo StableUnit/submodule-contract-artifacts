@@ -337,47 +337,59 @@
         {
           "components": [
             {
-              "internalType": "address",
-              "name": "token2sell",
-              "type": "address"
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "token2sell",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amountLeft",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "token2buy",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "token2buyAmount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "beneficiary",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "creationTimestamp",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "enum DiscountType",
+                  "name": "discountType",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "address",
+                  "name": "caller",
+                  "type": "address"
+                }
+              ],
+              "internalType": "struct Order",
+              "name": "order",
+              "type": "tuple"
             },
             {
               "internalType": "uint256",
-              "name": "amountLeft",
+              "name": "orderId",
               "type": "uint256"
-            },
-            {
-              "internalType": "address",
-              "name": "token2buy",
-              "type": "address"
-            },
-            {
-              "internalType": "uint256",
-              "name": "token2buyAmount",
-              "type": "uint256"
-            },
-            {
-              "internalType": "address",
-              "name": "beneficiary",
-              "type": "address"
-            },
-            {
-              "internalType": "uint256",
-              "name": "creationTimestamp",
-              "type": "uint256"
-            },
-            {
-              "internalType": "enum DiscountType",
-              "name": "discountType",
-              "type": "uint8"
-            },
-            {
-              "internalType": "address",
-              "name": "caller",
-              "type": "address"
             }
           ],
-          "internalType": "struct Order[]",
+          "internalType": "struct OrderWithId[]",
           "name": "",
           "type": "tuple[]"
         }
