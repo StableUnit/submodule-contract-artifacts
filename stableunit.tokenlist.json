@@ -132,10 +132,17 @@
       "decimals": 18
     },
     {
-      "address": "0xf365D5C53080cabAB47C14bFB29E5Eb022636300",
+      "address": "0x9a0d679EB96b774DC1ada8c5382631E107BE879d",
       "chainId": 5,
       "name": "vested escrow StableUnit DAO",
       "symbol": "veSuDAO",
+      "decimals": 18
+    },
+    {
+      "address": "0x7bF6b2E5C70bd2F3e8CbE51635bB5b40f5E86e02",
+      "chainId": 5,
+      "name": "StableUnit DAO",
+      "symbol": "SuDAO",
       "decimals": 18
     },
 
