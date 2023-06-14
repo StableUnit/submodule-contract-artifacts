@@ -97,20 +97,6 @@
       "decimals": 8
     },
     {
-      "address": "0x62B6e6A8fc35935E5ce076cEFe32cAeBCA96D7D7",
-      "chainId": 5,
-      "name": "SHIBA INU",
-      "symbol": "SHIB",
-      "decimals": 18
-    },
-    {
-      "address": "0x801f0ccAA93d620041ecd9E9Bb9FC5cE8bdE1349",
-      "chainId": 5,
-      "name": "1INCH Token",
-      "symbol": "1INCH",
-      "decimals": 18
-    },
-    {
       "address": "0x5f719D9748be31Ae44d8590D7f2035F8C8ea484f",
       "chainId": 5,
       "name": "StableUnit USD Pro",
