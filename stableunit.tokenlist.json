@@ -82,14 +82,6 @@
       "group": "ETH"
     },
     {
-      "address": "0xe940cb81F8A613Fe826E5b79D1D9D71a4be9844e",
-      "chainId": 5,
-      "name": "Lido Staked Ether",
-      "symbol": "stETH",
-      "decimals": 18,
-      "group": "ETH"
-    },
-    {
       "address": "0x2B6342308Ad173A398250faDcdeeA2463CbF1a5E",
       "chainId": 5,
       "name": "Wrapped BTC",
@@ -130,6 +122,30 @@
       "name": "StableUnit DAO",
       "symbol": "SuDAO",
       "decimals": 18
+    },
+    {
+      "address": "0x0b9A6075ac24D5352F4FC5105e2CF7D03692bca7",
+      "chainId": 5,
+      "name": "Staked Frax Ether",
+      "symbol": "sfrxETH",
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
+      "address": "0x64CFC4C1661b100f891EDcFFD8D2144524eCe37d",
+      "chainId": 5,
+      "name": "Lido Staked ETH",
+      "symbol": "stETH",
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
+      "address": "0x04D047aDBD23421a6b60D18eBD61a782380A26e7",
+      "chainId": 5,
+      "name": "Lido's wrapped stETH to ETH LP",
+      "symbol": "wstETH-ETH LP",
+      "decimals": 18,
+      "group": "ETH"
     },
 
     {
