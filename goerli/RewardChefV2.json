@@ -13,6 +13,11 @@
     },
     {
       "inputs": [],
+      "name": "OnlyAlerterError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
       "name": "OnlyDAOError",
       "type": "error"
     },
@@ -24,11 +29,6 @@
     {
       "inputs": [],
       "name": "OnlyMintAccessError",
-      "type": "error"
-    },
-    {
-      "inputs": [],
-      "name": "OnlyPauserError",
       "type": "error"
     },
     {
@@ -263,6 +263,19 @@
     },
     {
       "inputs": [],
+      "name": "ALERTER_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
       "name": "DAO_ROLE",
       "outputs": [
         {
@@ -308,19 +321,6 @@
           "internalType": "contract ISuOracle",
           "name": "",
           "type": "address"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "PAUSER_ROLE",
-      "outputs": [
-        {
-          "internalType": "bytes32",
-          "name": "",
-          "type": "bytes32"
         }
       ],
       "stateMutability": "view",
@@ -425,6 +425,30 @@
         }
       ],
       "name": "decreaseAmountRewardPenalty",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_asset",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "getHarvestLockupEndTimestamp",
       "outputs": [
         {
           "internalType": "uint256",
