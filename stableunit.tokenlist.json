@@ -140,6 +140,22 @@
       "group": "ETH"
     },
     {
+      "address": "0x22D42Fd2449045a7F92ccA408Fc84a64E4ec6850",
+      "chainId": 5,
+      "name": "swETH",
+      "symbol": "swETH",
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
+      "address": "0x6fD57c9D53c84BE51CF11F9e724a73833f8e811d",
+      "chainId": 5,
+      "name": "Rocket Pool ETH",
+      "symbol": "rETH",
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
       "address": "0x04D047aDBD23421a6b60D18eBD61a782380A26e7",
       "chainId": 5,
       "name": "Lido's wrapped stETH to ETH LP",
