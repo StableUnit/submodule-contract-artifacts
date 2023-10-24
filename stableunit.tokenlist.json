@@ -172,6 +172,13 @@
       "decimals": 18
     },
     {
+      "address": "0x04207C3D48Bf1659e77C64E5FDa6fE2eab19E50e",
+      "chainId": 137,
+      "name": "Euro Pro",
+      "symbol": "EURPro",
+      "decimals": 18
+    },
+    {
       "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
       "chainId": 137,
       "name": "Wrapped BTC",
@@ -179,31 +186,17 @@
       "decimals": 8
     },
     {
-      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
-      "chainId": 137,
-      "name": "Tether USD",
-      "symbol": "USDT",
-      "decimals": 6
-    },
-    {
-      "address": "0x6f8a06447Ff6FcF75d803135a7de15CE88C1d4ec",
-      "chainId": 137,
-      "name": "SHIBA INU",
-      "symbol": "SHIB",
-      "decimals": 18
-    },
-    {
-      "address": "0x9c2C5fd7b07E95EE044DDeba0E97a665F142394f",
-      "chainId": 137,
-      "name": "1INCH Token",
-      "symbol": "1INCH",
-      "decimals": 18
-    },
-    {
       "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
       "chainId": 137,
       "name": "Dai Stablecoin",
       "symbol": "DAI",
+      "decimals": 18
+    },
+    {
+      "address": "0xe7a24ef0c5e95ffb0f6684b813a78f2a3ad7d171",
+      "chainId": 137,
+      "name": "Curve AAVE LP",
+      "symbol": "am3CRV",
       "decimals": 18
     }
   ],
