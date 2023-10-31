@@ -226,7 +226,7 @@
       "chainId": 42161,
       "name": "Pendle GLP LP",
       "symbol": "PENDLE-LPT",
-      "decimals": 8
+      "decimals": 18
     }
   ],
   "version": {
