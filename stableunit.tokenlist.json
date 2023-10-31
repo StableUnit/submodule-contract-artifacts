@@ -198,6 +198,35 @@
       "name": "Curve AAVE LP",
       "symbol": "am3CRV",
       "decimals": 18
+    },
+
+    {
+      "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "chainId": 42161,
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "decimals": 18
+    },
+    {
+      "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "chainId": 42161,
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "decimals": 18
+    },
+    {
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "chainId": 42161,
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "decimals": 8
+    },
+    {
+      "address": "0x7d49e5adc0eaad9c027857767638613253ef125f",
+      "chainId": 42161,
+      "name": "Pendle GLP LP",
+      "symbol": "PENDLE-LPT",
+      "decimals": 8
     }
   ],
   "version": {
