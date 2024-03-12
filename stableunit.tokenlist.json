@@ -165,6 +165,29 @@
     },
 
     {
+      "address": "0xE0A14861Ae164D23f3360A0253e0c75e0b840d8a",
+      "chainId": 11155111,
+      "name": "Wrapped ETH",
+      "symbol": "WETH",
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
+      "address": "0xe3841d3F270a7AA7ad0713e83a5E2cc0860E89CF",
+      "chainId": 11155111,
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "decimals": 8
+    },
+    {
+      "address": "0xb4EF7797e69042F9188D4E8717bF5B131345D547",
+      "chainId": 11155111,
+      "name": "USDT",
+      "symbol": "USDT",
+      "decimals": 6
+    },
+
+    {
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
       "chainId": 137,
       "name": "Wrapped Ether",
