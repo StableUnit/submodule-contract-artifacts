@@ -1,0 +1,779 @@
+{
+  "address": "0x8062963e08659cC8c461121C889DEF4ED1C6f85b",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "safeEngine_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "NotAuthorized",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "AddAuthorization",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "DisableContract",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "cdp",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "lockedCollateral",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "generatedDebt",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "due",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "liquidator",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "LiquidateCDP",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "data",
+          "type": "uint256"
+        }
+      ],
+      "name": "ModifyParameters",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "data",
+          "type": "address"
+        }
+      ],
+      "name": "ModifyParameters",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "data",
+          "type": "uint256"
+        }
+      ],
+      "name": "ModifyParameters",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "liquidator",
+          "type": "address"
+        }
+      ],
+      "name": "ModifyParameters",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "rad",
+          "type": "uint256"
+        }
+      ],
+      "name": "ReduceActiveLiquidationAmount",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "RemoveAuthorization",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "ActiveLiquidationAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "GlobalLiquidationLimit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LiquidatorReward",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "accountingEngine",
+      "outputs": [
+        {
+          "internalType": "contract AccountingEngineLike",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "addAuthorization",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_stablecoin",
+          "type": "address"
+        }
+      ],
+      "name": "addWhitelistStablecoin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "authorizedAccounts",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "collateralTypes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "liquidationPenalty",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "liquidationLimit",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "activeLiquidationAmount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "contractEnabled",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "disableContract",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_stablecoin",
+          "type": "address"
+        }
+      ],
+      "name": "hasWhitelistStablecoin",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "cdp",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "incentivesReceiver",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "collateralJoin",
+          "type": "address"
+        }
+      ],
+      "name": "liquidateCDP",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        }
+      ],
+      "name": "liquidationPenalty",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "liquidator",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "data",
+          "type": "address"
+        }
+      ],
+      "name": "modifyParameters",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "data",
+          "type": "uint256"
+        }
+      ],
+      "name": "modifyParameters",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "data",
+          "type": "uint256"
+        }
+      ],
+      "name": "modifyParameters",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rad",
+          "type": "uint256"
+        }
+      ],
+      "name": "reduceActiveLiquidationAmount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "removeAuthorization",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_stablecoin",
+          "type": "address"
+        }
+      ],
+      "name": "removeWhitelistStablecoin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "safeEngine",
+      "outputs": [
+        {
+          "internalType": "contract ISafeEngine",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "5a3048d5b2f56301a323a2276b6562ea",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"safeEngine_\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"NotAuthorized\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"AddAuthorization\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"DisableContract\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"cdp\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"lockedCollateral\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"generatedDebt\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"due\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"liquidator\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"LiquidateCDP\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"data\",\"type\":\"uint256\"}],\"name\":\"ModifyParameters\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"data\",\"type\":\"address\"}],\"name\":\"ModifyParameters\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"data\",\"type\":\"uint256\"}],\"name\":\"ModifyParameters\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"liquidator\",\"type\":\"address\"}],\"name\":\"ModifyParameters\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"rad\",\"type\":\"uint256\"}],\"name\":\"ReduceActiveLiquidationAmount\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"RemoveAuthorization\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"ActiveLiquidationAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"GlobalLiquidationLimit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"LiquidatorReward\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"accountingEngine\",\"outputs\":[{\"internalType\":\"contract AccountingEngineLike\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"addAuthorization\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_stablecoin\",\"type\":\"address\"}],\"name\":\"addWhitelistStablecoin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"authorizedAccounts\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"collateralTypes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"liquidationPenalty\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"liquidationLimit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"activeLiquidationAmount\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"contractEnabled\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"disableContract\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_stablecoin\",\"type\":\"address\"}],\"name\":\"hasWhitelistStablecoin\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"cdp\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"incentivesReceiver\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"collateralJoin\",\"type\":\"address\"}],\"name\":\"liquidateCDP\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"}],\"name\":\"liquidationPenalty\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"liquidator\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"data\",\"type\":\"address\"}],\"name\":\"modifyParameters\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"data\",\"type\":\"uint256\"}],\"name\":\"modifyParameters\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"data\",\"type\":\"uint256\"}],\"name\":\"modifyParameters\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"rad\",\"type\":\"uint256\"}],\"name\":\"reduceActiveLiquidationAmount\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"removeAuthorization\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_stablecoin\",\"type\":\"address\"}],\"name\":\"removeWhitelistStablecoin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"safeEngine\",\"outputs\":[{\"internalType\":\"contract ISafeEngine\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"liquidateCDP(bytes32,address,address,address)\":{\"details\":\"The entire Vault will be liquidated except when the target amount of DAI to be raised in the resulting auction (debt of Vault + liquidation penalty) causes either ActiveLiquidationAmount to exceed GlobalLiquidationLimit or collateralType.activeLiquidationAmount to exceed collateralType.liquidationLimit by an economically significant amount. In that case, a partial liquidation is performed to respect the global and per-collateralType limits on outstanding DAI target. The one exception is if the resulting auction would likely have too little collateral to be interesting to Keepers (debt taken from Vault < collateralType.debtFloor), in which case the function reverts. Please refer to the code and comments within if more detail is desired.\",\"params\":{\"cdp\":\"- address of cdp position\",\"collateralJoin\":\"- address of collateral adapter*\",\"collateralType\":\"- collateral type\",\"incentivesReceiver\":\"- address that will receive the liquidation reward, if any.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"liquidateCDP(bytes32,address,address,address)\":{\"notice\":\"Liquidate a Vault and start a Dutch auction to sell its collateral for DAI.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/makerdao/externalContracts/LiquidationEngine.sol\":\"LiquidationEngine\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[],\"viaIR\":true},\"sources\":{\"@openzeppelin/contracts-upgradeable/utils/structs/EnumerableSetUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (utils/structs/EnumerableSet.sol)\\n// This file was procedurally generated from scripts/generate/templates/EnumerableSet.js.\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Library for managing\\n * https://en.wikipedia.org/wiki/Set_(abstract_data_type)[sets] of primitive\\n * types.\\n *\\n * Sets have the following properties:\\n *\\n * - Elements are added, removed, and checked for existence in constant time\\n * (O(1)).\\n * - Elements are enumerated in O(n). No guarantees are made on the ordering.\\n *\\n * ```solidity\\n * contract Example {\\n *     // Add the library methods\\n *     using EnumerableSet for EnumerableSet.AddressSet;\\n *\\n *     // Declare a set state variable\\n *     EnumerableSet.AddressSet private mySet;\\n * }\\n * ```\\n *\\n * As of v3.3.0, sets of type `bytes32` (`Bytes32Set`), `address` (`AddressSet`)\\n * and `uint256` (`UintSet`) are supported.\\n *\\n * [WARNING]\\n * ====\\n * Trying to delete such a structure from storage will likely result in data corruption, rendering the structure\\n * unusable.\\n * See https://github.com/ethereum/solidity/pull/11843[ethereum/solidity#11843] for more info.\\n *\\n * In order to clean an EnumerableSet, you can either remove all elements one by one or create a fresh instance using an\\n * array of EnumerableSet.\\n * ====\\n */\\nlibrary EnumerableSetUpgradeable {\\n    // To implement this library for multiple types with as little code\\n    // repetition as possible, we write it in terms of a generic Set type with\\n    // bytes32 values.\\n    // The Set implementation uses private functions, and user-facing\\n    // implementations (such as AddressSet) are just wrappers around the\\n    // underlying Set.\\n    // This means that we can only create new EnumerableSets for types that fit\\n    // in bytes32.\\n\\n    struct Set {\\n        // Storage of set values\\n        bytes32[] _values;\\n        // Position of the value in the `values` array, plus 1 because index 0\\n        // means a value is not in the set.\\n        mapping(bytes32 => uint256) _indexes;\\n    }\\n\\n    /**\\n     * @dev Add a value to a set. O(1).\\n     *\\n     * Returns true if the value was added to the set, that is if it was not\\n     * already present.\\n     */\\n    function _add(Set storage set, bytes32 value) private returns (bool) {\\n        if (!_contains(set, value)) {\\n            set._values.push(value);\\n            // The value is stored at length-1, but we add 1 to all indexes\\n            // and use 0 as a sentinel value\\n            set._indexes[value] = set._values.length;\\n            return true;\\n        } else {\\n            return false;\\n        }\\n    }\\n\\n    /**\\n     * @dev Removes a value from a set. O(1).\\n     *\\n     * Returns true if the value was removed from the set, that is if it was\\n     * present.\\n     */\\n    function _remove(Set storage set, bytes32 value) private returns (bool) {\\n        // We read and store the value's index to prevent multiple reads from the same storage slot\\n        uint256 valueIndex = set._indexes[value];\\n\\n        if (valueIndex != 0) {\\n            // Equivalent to contains(set, value)\\n            // To delete an element from the _values array in O(1), we swap the element to delete with the last one in\\n            // the array, and then remove the last element (sometimes called as 'swap and pop').\\n            // This modifies the order of the array, as noted in {at}.\\n\\n            uint256 toDeleteIndex = valueIndex - 1;\\n            uint256 lastIndex = set._values.length - 1;\\n\\n            if (lastIndex != toDeleteIndex) {\\n                bytes32 lastValue = set._values[lastIndex];\\n\\n                // Move the last value to the index where the value to delete is\\n                set._values[toDeleteIndex] = lastValue;\\n                // Update the index for the moved value\\n                set._indexes[lastValue] = valueIndex; // Replace lastValue's index to valueIndex\\n            }\\n\\n            // Delete the slot where the moved value was stored\\n            set._values.pop();\\n\\n            // Delete the index for the deleted slot\\n            delete set._indexes[value];\\n\\n            return true;\\n        } else {\\n            return false;\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns true if the value is in the set. O(1).\\n     */\\n    function _contains(Set storage set, bytes32 value) private view returns (bool) {\\n        return set._indexes[value] != 0;\\n    }\\n\\n    /**\\n     * @dev Returns the number of values on the set. O(1).\\n     */\\n    function _length(Set storage set) private view returns (uint256) {\\n        return set._values.length;\\n    }\\n\\n    /**\\n     * @dev Returns the value stored at position `index` in the set. O(1).\\n     *\\n     * Note that there are no guarantees on the ordering of values inside the\\n     * array, and it may change when more values are added or removed.\\n     *\\n     * Requirements:\\n     *\\n     * - `index` must be strictly less than {length}.\\n     */\\n    function _at(Set storage set, uint256 index) private view returns (bytes32) {\\n        return set._values[index];\\n    }\\n\\n    /**\\n     * @dev Return the entire set in an array\\n     *\\n     * WARNING: This operation will copy the entire storage to memory, which can be quite expensive. This is designed\\n     * to mostly be used by view accessors that are queried without any gas fees. Developers should keep in mind that\\n     * this function has an unbounded cost, and using it as part of a state-changing function may render the function\\n     * uncallable if the set grows to a point where copying to memory consumes too much gas to fit in a block.\\n     */\\n    function _values(Set storage set) private view returns (bytes32[] memory) {\\n        return set._values;\\n    }\\n\\n    // Bytes32Set\\n\\n    struct Bytes32Set {\\n        Set _inner;\\n    }\\n\\n    /**\\n     * @dev Add a value to a set. O(1).\\n     *\\n     * Returns true if the value was added to the set, that is if it was not\\n     * already present.\\n     */\\n    function add(Bytes32Set storage set, bytes32 value) internal returns (bool) {\\n        return _add(set._inner, value);\\n    }\\n\\n    /**\\n     * @dev Removes a value from a set. O(1).\\n     *\\n     * Returns true if the value was removed from the set, that is if it was\\n     * present.\\n     */\\n    function remove(Bytes32Set storage set, bytes32 value) internal returns (bool) {\\n        return _remove(set._inner, value);\\n    }\\n\\n    /**\\n     * @dev Returns true if the value is in the set. O(1).\\n     */\\n    function contains(Bytes32Set storage set, bytes32 value) internal view returns (bool) {\\n        return _contains(set._inner, value);\\n    }\\n\\n    /**\\n     * @dev Returns the number of values in the set. O(1).\\n     */\\n    function length(Bytes32Set storage set) internal view returns (uint256) {\\n        return _length(set._inner);\\n    }\\n\\n    /**\\n     * @dev Returns the value stored at position `index` in the set. O(1).\\n     *\\n     * Note that there are no guarantees on the ordering of values inside the\\n     * array, and it may change when more values are added or removed.\\n     *\\n     * Requirements:\\n     *\\n     * - `index` must be strictly less than {length}.\\n     */\\n    function at(Bytes32Set storage set, uint256 index) internal view returns (bytes32) {\\n        return _at(set._inner, index);\\n    }\\n\\n    /**\\n     * @dev Return the entire set in an array\\n     *\\n     * WARNING: This operation will copy the entire storage to memory, which can be quite expensive. This is designed\\n     * to mostly be used by view accessors that are queried without any gas fees. Developers should keep in mind that\\n     * this function has an unbounded cost, and using it as part of a state-changing function may render the function\\n     * uncallable if the set grows to a point where copying to memory consumes too much gas to fit in a block.\\n     */\\n    function values(Bytes32Set storage set) internal view returns (bytes32[] memory) {\\n        bytes32[] memory store = _values(set._inner);\\n        bytes32[] memory result;\\n\\n        /// @solidity memory-safe-assembly\\n        assembly {\\n            result := store\\n        }\\n\\n        return result;\\n    }\\n\\n    // AddressSet\\n\\n    struct AddressSet {\\n        Set _inner;\\n    }\\n\\n    /**\\n     * @dev Add a value to a set. O(1).\\n     *\\n     * Returns true if the value was added to the set, that is if it was not\\n     * already present.\\n     */\\n    function add(AddressSet storage set, address value) internal returns (bool) {\\n        return _add(set._inner, bytes32(uint256(uint160(value))));\\n    }\\n\\n    /**\\n     * @dev Removes a value from a set. O(1).\\n     *\\n     * Returns true if the value was removed from the set, that is if it was\\n     * present.\\n     */\\n    function remove(AddressSet storage set, address value) internal returns (bool) {\\n        return _remove(set._inner, bytes32(uint256(uint160(value))));\\n    }\\n\\n    /**\\n     * @dev Returns true if the value is in the set. O(1).\\n     */\\n    function contains(AddressSet storage set, address value) internal view returns (bool) {\\n        return _contains(set._inner, bytes32(uint256(uint160(value))));\\n    }\\n\\n    /**\\n     * @dev Returns the number of values in the set. O(1).\\n     */\\n    function length(AddressSet storage set) internal view returns (uint256) {\\n        return _length(set._inner);\\n    }\\n\\n    /**\\n     * @dev Returns the value stored at position `index` in the set. O(1).\\n     *\\n     * Note that there are no guarantees on the ordering of values inside the\\n     * array, and it may change when more values are added or removed.\\n     *\\n     * Requirements:\\n     *\\n     * - `index` must be strictly less than {length}.\\n     */\\n    function at(AddressSet storage set, uint256 index) internal view returns (address) {\\n        return address(uint160(uint256(_at(set._inner, index))));\\n    }\\n\\n    /**\\n     * @dev Return the entire set in an array\\n     *\\n     * WARNING: This operation will copy the entire storage to memory, which can be quite expensive. This is designed\\n     * to mostly be used by view accessors that are queried without any gas fees. Developers should keep in mind that\\n     * this function has an unbounded cost, and using it as part of a state-changing function may render the function\\n     * uncallable if the set grows to a point where copying to memory consumes too much gas to fit in a block.\\n     */\\n    function values(AddressSet storage set) internal view returns (address[] memory) {\\n        bytes32[] memory store = _values(set._inner);\\n        address[] memory result;\\n\\n        /// @solidity memory-safe-assembly\\n        assembly {\\n            result := store\\n        }\\n\\n        return result;\\n    }\\n\\n    // UintSet\\n\\n    struct UintSet {\\n        Set _inner;\\n    }\\n\\n    /**\\n     * @dev Add a value to a set. O(1).\\n     *\\n     * Returns true if the value was added to the set, that is if it was not\\n     * already present.\\n     */\\n    function add(UintSet storage set, uint256 value) internal returns (bool) {\\n        return _add(set._inner, bytes32(value));\\n    }\\n\\n    /**\\n     * @dev Removes a value from a set. O(1).\\n     *\\n     * Returns true if the value was removed from the set, that is if it was\\n     * present.\\n     */\\n    function remove(UintSet storage set, uint256 value) internal returns (bool) {\\n        return _remove(set._inner, bytes32(value));\\n    }\\n\\n    /**\\n     * @dev Returns true if the value is in the set. O(1).\\n     */\\n    function contains(UintSet storage set, uint256 value) internal view returns (bool) {\\n        return _contains(set._inner, bytes32(value));\\n    }\\n\\n    /**\\n     * @dev Returns the number of values in the set. O(1).\\n     */\\n    function length(UintSet storage set) internal view returns (uint256) {\\n        return _length(set._inner);\\n    }\\n\\n    /**\\n     * @dev Returns the value stored at position `index` in the set. O(1).\\n     *\\n     * Note that there are no guarantees on the ordering of values inside the\\n     * array, and it may change when more values are added or removed.\\n     *\\n     * Requirements:\\n     *\\n     * - `index` must be strictly less than {length}.\\n     */\\n    function at(UintSet storage set, uint256 index) internal view returns (uint256) {\\n        return uint256(_at(set._inner, index));\\n    }\\n\\n    /**\\n     * @dev Return the entire set in an array\\n     *\\n     * WARNING: This operation will copy the entire storage to memory, which can be quite expensive. This is designed\\n     * to mostly be used by view accessors that are queried without any gas fees. Developers should keep in mind that\\n     * this function has an unbounded cost, and using it as part of a state-changing function may render the function\\n     * uncallable if the set grows to a point where copying to memory consumes too much gas to fit in a block.\\n     */\\n    function values(UintSet storage set) internal view returns (uint256[] memory) {\\n        bytes32[] memory store = _values(set._inner);\\n        uint256[] memory result;\\n\\n        /// @solidity memory-safe-assembly\\n        assembly {\\n            result := store\\n        }\\n\\n        return result;\\n    }\\n}\\n\",\"keccak256\":\"0x1c65595a26548a1b2263315b08a56334a2d7087319814437559c3c96025e939f\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address from, address to, uint256 amount) external returns (bool);\\n}\\n\",\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/IERC20Metadata.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../IERC20.sol\\\";\\n\\n/**\\n * @dev Interface for the optional metadata functions from the ERC20 standard.\\n *\\n * _Available since v4.1._\\n */\\ninterface IERC20Metadata is IERC20 {\\n    /**\\n     * @dev Returns the name of the token.\\n     */\\n    function name() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the symbol of the token.\\n     */\\n    function symbol() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the decimals places of the token.\\n     */\\n    function decimals() external view returns (uint8);\\n}\\n\",\"keccak256\":\"0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca\",\"license\":\"MIT\"},\"contracts/exchange/interfaces/IExchange.sol\":{\"content\":\"// SPDX-License-Identifier: BSL 1.1\\npragma solidity ^0.8.0;\\n\\nenum DiscountType {\\n    aggressive,\\n    middle,\\n    conservative\\n}\\n\\nstruct Order {\\n    address token2sell;\\n    uint256 amountLeft;\\n    address token2buy;\\n    uint256 token2buyAmount;\\n    address beneficiary;\\n    uint256 creationTimestamp;\\n    DiscountType discountType;\\n    address caller;\\n}\\n\\nstruct OrderWithId {\\n    Order order;\\n    uint256 orderId;\\n}\\n\\ninterface IExchange {\\n    /* ===================== ERRORS ===================== */\\n    error OrderExist(uint256 orderId);\\n    error OrderNotExist(uint256 orderId);\\n    error IncorrectToken(address orderToken2buy, address inToken);\\n    error SmallAmountLeft();\\n    error UserIsNotBeneficiary();\\n    error IsNotTopStaker(address staker);\\n    error OrderNotForThisStaker(uint256 orderId, address staker);\\n    error NotEnoughReturnValue();\\n    error CallbackError();\\n\\n    /* ======================== EVENTS ========================= */\\n    event OrderAdded(uint256 orderId);\\n    event OrderCanceled(uint256 orderId);\\n    event OrderFilled(uint256 orderId);\\n    event OrderFilledPartially(uint256 orderId);\\n    event LpOrdersAdded(address LPToken, uint256[] orderIds);\\n\\n    /* ==================== MUTABLE METHODS ==================== */\\n\\n    /**\\n      * @notice Add order to swap {token2sell} to {token2buy}.\\n      * @dev This swap is async, because depends on how arbitrage bots will fill this order. Emits OrderAdded() event.\\n      * Before addOrder user needs to approve token2sell for exchange contract\\n      * @param token2sell - Address of token to sell\\n      * @param amount2sell - Amount of {token2sell} to sell\\n      * @param token2buy - Address of token to buy\\n      * @param beneficiary - Address that will receive {token2buy} after filling order.\\n      * @param discountType - Speed of decreasing swap price. { 0 - aggressive, 1 - middle, 2 - conservative }\\n      * @param collateralJoin - address of collateral adapter\\n     **/\\n    function addOrder (\\n        address token2sell,\\n        uint256 amount2sell,\\n        address token2buy,\\n        address beneficiary,\\n        DiscountType discountType,\\n        address collateralJoin\\n    ) external returns (uint256);\\n\\n    /**\\n      * @notice Only user who place order or who is beneficiary can cancelOrder();\\n      * @param orderId - Id of order to cancel.\\n     **/\\n    function cancelOrder (uint256 orderId) external;\\n\\n    /**\\n      * @notice Fill order with flash-loan like logic\\n      * @dev Caller contract receive orders {token2sell} and after that his stableunitFillOrderCallback() is called.\\n      * At the end of thi callback contract should send some amount of another token back to Exchange contract.\\n      * @param orderId - Id of order to fill.\\n      * @param inAmount - Amount of {token2sell} to receive\\n      * @param data - encoded data to pass to callback function\\n     **/\\n    function fillOrderAsFlashLoan (\\n        uint256 orderId,\\n        uint256 inAmount,\\n        bytes memory data\\n    ) external returns (uint256 outAmount);\\n\\n    /**\\n      * @notice Function to update price curve - how fast {token2sell} price will decrease/increase\\n      * @param discountType - discount type to change\\n      * @param newPriceCurve - parameters of formula\\n     **/\\n    function setPriceCurve(DiscountType discountType, uint256[2] calldata newPriceCurve) external;\\n\\n    /* ==================== VIEW METHODS ==================== */\\n    /**\\n      * @return The amount of outcome that caller will receive if he will fill {orderId} with {inAmount} of {token2sell}\\n     **/\\n    function getExpectedOrderOutcome (uint256 orderId, uint256 inAmount) external view returns (uint256);\\n\\n    /**\\n      * @return Order with id = {orderId}\\n     **/\\n    function getOrder (uint256 orderId) external view returns (Order memory);\\n\\n    /**\\n      * @return The amount of not full-filled orders\\n     **/\\n    function getOrdersCount () external view returns (uint256);\\n\\n    /**\\n      * @return The array of all not-filled orders. May be deleted after adding GraphQL for orderIds\\n     **/\\n    function getAllOrders () external view returns (OrderWithId[] memory);\\n}\\n\",\"keccak256\":\"0x53787e6c6540f7972889e73059e082c37982a613beb038684d49aa1192c39074\",\"license\":\"BSL 1.1\"},\"contracts/makerdao/externalContracts/LiquidationEngine.sol\":{\"content\":\"// SPDX-License-Identifier: AGPL-3.0-or-later\\n\\n/// dog.sol -- Dai liquidation module 2.0\\n\\n// Copyright (C) 2020-2022 Dai Foundation\\n//\\n// This program is free software: you can redistribute it and/or modify\\n// it under the terms of the GNU Affero General Public License as published by\\n// the Free Software Foundation, either version 3 of the License, or\\n// (at your option) any later version.\\n//\\n// This program is distributed in the hope that it will be useful,\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\n// GNU Affero General Public License for more details.\\n//\\n// You should have received a copy of the GNU Affero General Public License\\n// along with this program.  If not, see <https://www.gnu.org/licenses/>.\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/utils/structs/EnumerableSetUpgradeable.sol\\\";\\n\\nimport {AuthWithoutContractEnabled} from \\\"../utils/AuthWithoutContractEnabled.sol\\\";\\nimport \\\"../interfaces/ILiquidationEngine.sol\\\";\\nimport \\\"../interfaces/ISafeEngine.sol\\\";\\nimport \\\"../interfaces/ICollateralJoin.sol\\\";\\nimport \\\"../../exchange/interfaces/IExchange.sol\\\";\\n\\nimport {Math} from \\\"../utils/Math.sol\\\";\\n\\ninterface AccountingEngineLike {\\n    function pushDebtToQueue(uint256) external;\\n}\\n\\ncontract LiquidationEngine is AuthWithoutContractEnabled, ILiquidationEngine, Math {\\n    ISafeEngine immutable public safeEngine;  // CDP Engine\\n\\n    mapping (bytes32 => CollateralType) public collateralTypes;\\n\\n    AccountingEngineLike public accountingEngine;   // Debt Engine\\n    uint256 public GlobalLiquidationLimit;  // Max DAI needed to cover debt+fees of active auctions [rad]\\n    uint256 public ActiveLiquidationAmount;  // Amt DAI needed to cover debt+fees of active auctions [rad]\\n    uint256 public LiquidatorReward;  // Reward in percent (1e18 == 1) for liquidation [wad]\\n    address public liquidator;  // Liquidator, Exchange module\\n\\n    // --- Init ---\\n    constructor(address safeEngine_) public {\\n        safeEngine = ISafeEngine(safeEngine_);\\n        contractEnabled = 1;\\n        authorizedAccounts[msg.sender] = 1;\\n        emit AddAuthorization(msg.sender);\\n    }\\n\\n    // --- Administration ---\\n    function modifyParameters(bytes32 what, address data) external isAuthorized {\\n        if (what == \\\"accountingEngine\\\") accountingEngine = AccountingEngineLike(data);\\n        else if (what == \\\"liquidator\\\") liquidator = data;\\n        else revert(\\\"LiquidationEngine/file-unrecognized-param\\\");\\n        emit ModifyParameters(what, data);\\n    }\\n    function modifyParameters(bytes32 what, uint256 data) external isAuthorized {\\n        if (what == \\\"GlobalLiquidationLimit\\\") GlobalLiquidationLimit = data;\\n        else if (what == \\\"LiquidatorReward\\\") LiquidatorReward = data;\\n        else revert(\\\"LiquidationEngine/file-unrecognized-param\\\");\\n        emit ModifyParameters(what, data);\\n    }\\n    function modifyParameters(bytes32 collateralType, bytes32 what, uint256 data) external isAuthorized {\\n        if (what == \\\"liquidationPenalty\\\") {\\n            require(data >= WAD, \\\"LiquidationEngine/file-liquidationPenalty-lt-WAD\\\");\\n            collateralTypes[collateralType].liquidationPenalty = data;\\n        } else if (what == \\\"liquidationLimit\\\") collateralTypes[collateralType].liquidationLimit = data;\\n        else revert(\\\"LiquidationEngine/file-unrecognized-param\\\");\\n        emit ModifyParameters(collateralType, what, data);\\n    }\\n\\n    function liquidationPenalty(bytes32 collateralType) external view returns (uint256) {\\n        return collateralTypes[collateralType].liquidationPenalty;\\n    }\\n\\n    // --- CDP Liquidation: all bark and no bite ---\\n    function liquidateCDP(bytes32 collateralType, address cdp, address incentivesReceiver, address collateralJoin) external returns (uint256 id) {\\n        require(contractEnabled == 1, \\\"LiquidationEngine/not-contractEnabled\\\");\\n\\n        (uint256 collateralAmount, uint256 generatedDebt) = safeEngine.safes(collateralType, cdp);\\n        CollateralType memory _cType = collateralTypes[collateralType];\\n        uint256 deltaGeneratedDebt;\\n        uint256 accumulatedRate;\\n        uint256 debtFloor;\\n        {\\n            uint256 safetyPrice;\\n            (, accumulatedRate, safetyPrice,, debtFloor) = safeEngine.collateralTypes(collateralType);\\n            require(safetyPrice > 0 && _mul(collateralAmount, safetyPrice) < _mul(generatedDebt, accumulatedRate), \\\"LiquidationEngine/not-unsafe\\\");\\n\\n            // Get the minimum value between:\\n            // 1) Remaining space in the general GlobalLiquidationLimit\\n            // 2) Remaining space in the collateral liquidationLimit\\n            require(GlobalLiquidationLimit > ActiveLiquidationAmount && _cType.liquidationLimit > _cType.activeLiquidationAmount, \\\"LiquidationEngine/liquidation-limit-hit\\\");\\n            uint256 room = min(GlobalLiquidationLimit - ActiveLiquidationAmount, _cType.liquidationLimit - _cType.activeLiquidationAmount);\\n\\n            // uint256.max()/(RAD*WAD) = 115,792,089,237,316\\n            deltaGeneratedDebt = min(generatedDebt, _mul(room, WAD) / accumulatedRate / _cType.liquidationPenalty);\\n\\n            // Partial liquidation edge case logic\\n            if (generatedDebt > deltaGeneratedDebt) {\\n                if (_mul(generatedDebt - deltaGeneratedDebt, accumulatedRate) < debtFloor) {\\n\\n                    // If the leftover Vault would be dusty, just liquidate it entirely.\\n                    // This will result in at least one of activeLiquidationAmount_i > liquidationLimit_i or ActiveLiquidationAmount > GlobalLiquidationLimit becoming true.\\n                    // The amount of excess will be bounded above by ceiling(debtFloor_i * liquidationPenalty_i / WAD).\\n                    // This deviation is assumed to be small compared to both liquidationLimit_i and GlobalLiquidationLimit, so that\\n                    // the extra amount of target DAI over the limits intended is not of economic concern.\\n                    deltaGeneratedDebt = generatedDebt;\\n                } else {\\n\\n                    // In a partial liquidation, the resulting auction should also be non-dusty.\\n                    require(_mul(deltaGeneratedDebt, accumulatedRate) >= debtFloor, \\\"LiquidationEngine/dusty-auction-from-partial-liquidation\\\");\\n                }\\n            }\\n        }\\n\\n        uint256 deltaCollateral = _mul(collateralAmount, deltaGeneratedDebt) / generatedDebt;\\n\\n        require(deltaCollateral > 0, \\\"LiquidationEngine/null-auction\\\");\\n        require(deltaGeneratedDebt <= 2**255 && deltaCollateral <= 2**255, \\\"LiquidationEngine/overflow\\\");\\n\\n        uint256 rewardCollateral = _mul(deltaCollateral, LiquidatorReward) / WAD;\\n        uint256 collateral2sell = _sub(deltaCollateral, rewardCollateral);\\n        safeEngine.confiscateSAFECollateralAndDebt(\\n            collateralType, cdp, incentivesReceiver, address(accountingEngine), -int256(rewardCollateral), 0\\n        );\\n        safeEngine.confiscateSAFECollateralAndDebt(\\n            collateralType, cdp, liquidator, address(accountingEngine), -int256(collateral2sell), -int256(deltaGeneratedDebt)\\n        );\\n\\n        uint256 due = _mul(deltaGeneratedDebt, accumulatedRate);\\n        accountingEngine.pushDebtToQueue(due);\\n\\n        {   // Avoid stack too deep\\n            // This calcuation will overflow if deltaGeneratedDebt*rate exceeds ~10^14\\n            uint256 amountToRaise = _mul(due, _cType.liquidationPenalty) / WAD;\\n            ActiveLiquidationAmount = _add(ActiveLiquidationAmount, amountToRaise);\\n            collateralTypes[collateralType].activeLiquidationAmount = _add(_cType.activeLiquidationAmount, amountToRaise);\\n\\n//            id = AuctionLike(_cType.liquidator).startAuction({\\n//                debt: amountToRaise,\\n//                collateralToSell: deltaCollateral,\\n//                colReceiver: cdp,\\n//                incentivesReceiver: incentivesReceiver\\n//            });\\n\\n            // TODO: create algorithm, how to choose stablecoin\\n            address stablecoin = EnumerableSetUpgradeable.at(_stablecoinWhitelist, 0);\\n            id = IExchange(liquidator).addOrder(\\n                address(ICollateralJoin(collateralJoin).collateral()),\\n                collateral2sell,\\n                // amountToRaise, TODO: add minAmount?\\n                stablecoin,\\n                address(accountingEngine),\\n                DiscountType.middle, // TODO: should depend on HF\\n                collateralJoin\\n            );\\n        }\\n\\n        emit LiquidateCDP(collateralType, cdp, deltaCollateral, deltaGeneratedDebt, due, liquidator, id);\\n    }\\n\\n    function reduceActiveLiquidationAmount(bytes32 collateralType, uint256 rad) external isAuthorized {\\n        ActiveLiquidationAmount = _sub(ActiveLiquidationAmount, rad);\\n        collateralTypes[collateralType].activeLiquidationAmount = _sub(collateralTypes[collateralType].activeLiquidationAmount, rad);\\n        emit ReduceActiveLiquidationAmount(collateralType, rad);\\n    }\\n\\n    // --- Stablecoin Whitelist ---\\n    EnumerableSetUpgradeable.AddressSet internal _stablecoinWhitelist;\\n\\n    function addWhitelistStablecoin(address _stablecoin) public isAuthorized {\\n        EnumerableSetUpgradeable.add(_stablecoinWhitelist, _stablecoin);\\n    }\\n\\n    function removeWhitelistStablecoin(address _stablecoin) public isAuthorized {\\n        EnumerableSetUpgradeable.remove(_stablecoinWhitelist, _stablecoin);\\n    }\\n\\n    function hasWhitelistStablecoin(address _stablecoin) public view returns(bool) {\\n        return EnumerableSetUpgradeable.contains(_stablecoinWhitelist, _stablecoin);\\n    }\\n}\\n\",\"keccak256\":\"0x0f1b843a8679ee00dc1e0fe72190830ccdf9d833666b085db3b60c6ab556a48f\",\"license\":\"AGPL-3.0-or-later\"},\"contracts/makerdao/interfaces/IAuth.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\ninterface IAuth {\\n    function addAuthorization(address usr) external;\\n    function removeAuthorization(address usr) external;\\n}\\n\",\"keccak256\":\"0x0ba65ef98ccabdaae896001950518dbbfbea94c2f3ac84b064abe0cbeddd9b89\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/IAuthWithContractEnabled.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\nimport {IAuth} from \\\"./IAuth.sol\\\";\\n\\ninterface IAuthWithContractEnabled is IAuth {\\n    event DisableContract();\\n\\n    function disableContract() external;\\n}\\n\",\"keccak256\":\"0x2c6b500483ce79cf7f277949eed8f8f1322227c031eb504ccf316b3ad49aa49c\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/ICollateralJoin.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\\\";\\nimport {IAuthWithContractEnabled} from \\\"./IAuthWithContractEnabled.sol\\\";\\n\\n/**\\n * @title ITaxCollector\\n **/\\ninterface ICollateralJoin is IAuthWithContractEnabled {\\n    /* ==================== METHODS ==================== */\\n\\n    function collateral() external view returns(IERC20Metadata);\\n\\n    /**\\n    * @notice Join collateral in the system\\n    * @param usr Account from which we transferFrom collateral and add it in the system\\n    * @param wad Amount of collateral to transfer in the system (represented as a number with 18 decimals)\\n    **/\\n    function join(address usr, uint wad) external;\\n\\n    /**\\n    * @notice Exit collateral from the system\\n    * @param usr Account to which we transfer the collateral\\n    * @param wad Amount of collateral to transfer to 'account' (represented as a number with 18 decimals)\\n    **/\\n    function exit(address usr, uint wad) external;\\n}\\n\",\"keccak256\":\"0xac3c5caf0b77793b80e69273531b93a40c60ac18532ac3e5a104c0cb13e03821\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/ILiquidationEngine.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title ITaxCollector\\n **/\\ninterface ILiquidationEngine {\\n    /* ==================== STRUCTS ==================== */\\n\\n    struct CollateralType {\\n        uint256 liquidationPenalty;  // Liquidation Penalty                                          [wad]\\n        uint256 liquidationLimit;  // Max DAI needed to cover debt+fees of active auctions per collateralType [rad]\\n        uint256 activeLiquidationAmount;  // Amt DAI needed to cover debt+fees of active auctions per collateralType [rad]\\n    }\\n\\n    /* ==================== EVENTS ===============-===== */\\n\\n    event AddAuthorization(address indexed usr);\\n    event RemoveAuthorization(address indexed usr);\\n\\n    event ModifyParameters(bytes32 indexed what, uint256 data);\\n    event ModifyParameters(bytes32 indexed what, address data);\\n    event ModifyParameters(bytes32 indexed collateralType, bytes32 indexed what, uint256 data);\\n    event ModifyParameters(bytes32 indexed collateralType, bytes32 indexed what, address liquidator);\\n\\n    event LiquidateCDP(\\n        bytes32 indexed collateralType,\\n        address indexed cdp,\\n        uint256 lockedCollateral,\\n        uint256 generatedDebt,\\n        uint256 due,\\n        address liquidator,\\n        uint256 indexed id\\n    );\\n    event ReduceActiveLiquidationAmount(bytes32 indexed collateralType, uint256 rad);\\n\\n    /* ==================== MUTABLE METHODS ==================== */\\n\\n    // --- Administration ---\\n    function modifyParameters(bytes32 what, uint data) external;\\n    function modifyParameters(bytes32 what, address data) external;\\n    function modifyParameters(bytes32 collateralType, bytes32 what, uint data) external;\\n\\n    /**\\n      * @notice Liquidate a Vault and start a Dutch auction to sell its collateral for DAI.\\n      * @dev The entire Vault will be liquidated except when the target amount of DAI to be raised in\\n      * the resulting auction (debt of Vault + liquidation penalty) causes either ActiveLiquidationAmount to exceed\\n      * GlobalLiquidationLimit or collateralType.activeLiquidationAmount to exceed collateralType.liquidationLimit by an economically significant amount. In that\\n      * case, a partial liquidation is performed to respect the global and per-collateralType limits on\\n      * outstanding DAI target. The one exception is if the resulting auction would likely\\n      * have too little collateral to be interesting to Keepers (debt taken from Vault < collateralType.debtFloor),\\n      * in which case the function reverts. Please refer to the code and comments within if\\n      * more detail is desired.\\n      * @param collateralType - collateral type\\n      * @param cdp - address of cdp position\\n      * @param incentivesReceiver - address that will receive the liquidation reward, if any.\\n      * @param collateralJoin - address of collateral adapter\\n    **/\\n    function liquidateCDP(bytes32 collateralType, address cdp, address incentivesReceiver, address collateralJoin) external returns (uint256 id);\\n\\n    function reduceActiveLiquidationAmount(bytes32 collateralType, uint256 rad) external;\\n\\n    // --- Whitelist ---\\n    function addWhitelistStablecoin(address _stablecoin) external;\\n    function removeWhitelistStablecoin(address _stablecoin) external;\\n\\n    /* ==================== VIEW METHODS ==================== */\\n\\n    function liquidationPenalty(bytes32 collateralType) external view returns (uint256);\\n\\n    function hasWhitelistStablecoin(address _stablecoin) external view returns(bool);\\n}\\n\",\"keccak256\":\"0x412d5a03b7d52d95c4d41e1ace82513fd6bfa3e4fd5b4262c7bca6540699cb76\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/ISafeEngine.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title SafeEngine\\n * @notice The single source of truth for the Maker Protocol. It contains the accounting system of the core Vault,\\n * Internal Dai balances, and collateral state. It houses the public interface for Vault management,\\n * allowing safe(= CDP or Vault) owners to adjust their Vault state balances. It also contains the public interface\\n * for Vault fungibility, allowing safe (Vault) owners to transfer, split, and merge Vaults.\\n * Excluding these interfaces, SAFEEngine is accessed through trusted smart contract modules.\\n **/\\ninterface ISafeEngine {\\n    /* ==================== METHODS ==================== */\\n\\n    // --- Data ---\\n    struct CollateralType {\\n        uint256 debtAmount;       // Total debt issued for this specific collateral type                          [wad]\\n        uint256 accumulatedRate;  // Accumulator for interest accrued on this collateral type                     [ray]\\n        uint256 safetyPrice;      // Floor price at which a CDP is allowed to generate debt                       [ray]\\n        uint256 debtCeiling;      // Maximum amount of debt that can be generated with this collateral type       [rad]\\n        uint256 debtFloor;        // Minimum amount of debt that must be generated by a CDP using this collateral [rad]\\n    }\\n    struct SAFE {\\n        uint256 lockedCollateral; // Total amount of collateral locked in a SAFE/CDP  [wad]\\n        uint256 generatedDebt;    // Total amount of debt generated by a SAFE/CDP     [wad]\\n    }\\n\\n    // --- VARS ---\\n\\n    function safes(bytes32, address) external view returns (uint, uint);\\n\\n    function collateralTypes(bytes32) external view returns (\\n        uint256 debtAmount,   // [wad]\\n        uint256 accumulatedRate,   // [ray]\\n        uint256 safetyPrice,\\n        uint256 debtCeiling,\\n        uint256 debtFloor\\n    );\\n\\n    function tokenCollateral(bytes32, address) external view returns (uint256);\\n\\n    function coinBalance(address) external view returns (uint256);\\n\\n    function debtBalance(address) external view returns (uint256);\\n\\n    // --- Auth ---\\n    /**\\n     * @notice Allow an address to modify your CDP\\n     * @param usr Account to give CDP permissions to\\n     */\\n    function approveSAFEModification(address usr) external;\\n\\n    /**\\n     * @notice Deny an address the rights to modify your CDP\\n     * @param usr Account to give CDP permissions to\\n     */\\n    function denySAFEModification(address usr) external;\\n\\n    // --- Administration ---\\n\\n    function initializeCollateralType(bytes32 collateralType) external;\\n    function modifyParameters(bytes32 what, uint data) external;\\n    function modifyParameters(bytes32 collateralType, bytes32 what, uint data) external;\\n\\n    // --- Fungibility ---\\n    function modifyCollateralBalance(bytes32 collateralType, address usr, int256 wad) external;\\n    function transferCollateral(bytes32 collateralType, address src, address dst, uint256 wad) external;\\n    function transferInternalCoins(address src, address dst, uint256 rad) external;\\n\\n    // --- CDP Manipulation ---\\n    /**\\n     * @notice Add/remove collateral or put back/generate more debt in a CDP\\n     * @param collateralType Type of collateral to withdraw/deposit in and from the CDP\\n     * @param cdp Target CDP\\n     * @param collateralSource Account we take collateral from/put collateral into\\n     * @param debtDestination Account from which we credit/debit coins and debt\\n     * @param deltaCollateral Amount of collateral added/extract from the CDP\\n     * @param deltaDebt Amount of debt to generate/repay\\n     */\\n    function modifySAFECollateralization(bytes32 collateralType, address cdp, address collateralSource, address debtDestination, int deltaCollateral, int deltaDebt) external;\\n\\n    // --- CDP Fungibility ---\\n    /**\\n     * @notice Transfer collateral and/or debt between CDPs\\n     * @param collateralType Collateral type transferred between CDPs\\n     * @param src Source CDP\\n     * @param dst Destination CDP\\n     * @param deltaCollateral Amount of collateral to take/add into src and give/take from dst\\n     * @param deltaDebt Amount of debt to take/add into src and give/take from dst\\n     */\\n    function transferSAFECollateralAndDebt(bytes32 collateralType, address src, address dst, int deltaCollateral, int deltaDebt) external;\\n\\n    // --- CDP Confiscation ---\\n    /**\\n     * @notice Normally used by the LiquidationEngine in order to confiscate collateral and\\n       debt from a CDP and give them to someone else\\n     * @param collateralType Collateral type the CDP has locked inside\\n     * @param cdp Target CDP\\n     * @param collateralCounterparty Who we take/give collateral to\\n     * @param debtCounterparty Who we take/give debt to\\n     * @param deltaCollateral Amount of collateral taken/added into the CDP\\n     * @param deltaDebt Amount of debt taken/added into the CDP\\n     */\\n    function confiscateSAFECollateralAndDebt(bytes32 collateralType, address cdp, address collateralCounterparty, address debtCounterparty, int deltaCollateral, int deltaDebt) external;\\n\\n    // --- Settlement ---\\n    /**\\n     * @notice Nullify an amount of coins with an equal amount of debt\\n     * @param rad Amount of debt & coins to destroy (expressed as a number with 45 decimals)\\n     */\\n    function settleDebt(uint rad) external;\\n\\n    /**\\n     * @notice Usually called by CoinSavingsAccount in order to create unbacked debt\\n     * @param debtDestination Usually AccountingEngine that can settle decreaseSoldAmount with surplus\\n     * @param coinDestination Usually CoinSavingsAccount who passes the new coins to depositors\\n     * @param rad Amount of debt to create (expressed as a number with 45 decimals)\\n     */\\n    function createUnbackedDebt(address debtDestination, address coinDestination, uint rad) external;\\n\\n    // --- Rates ---\\n    /**\\n     * @notice Usually called by TaxCollector in order to accrue interest on a specific collateral type\\n     * @param collateralType Collateral type we accrue interest for\\n     * @param surplusDst Destination for amount of surplus created by applying the interest rate\\n       to debt created by CDPs with 'collateralType'\\n     * @param accumulatedRate Multiplier applied to the debtAmount in order to calculate the surplus\\n     */\\n    function updateAccumulatedRate(bytes32 collateralType, address surplusDst, int accumulatedRate) external;\\n}\\n\",\"keccak256\":\"0xf1e715f60362b95b7788deb8531bfefbcc45ab70497f84a13eac55544ad42bb1\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/utils/AuthWithoutContractEnabled.sol\":{\"content\":\"// SPDX-License-Identifier: AGPL-3.0-or-later\\n\\npragma solidity ^0.8.0;\\n\\nimport {IAuthWithContractEnabled} from \\\"../interfaces/IAuthWithContractEnabled.sol\\\";\\n\\nabstract contract AuthWithoutContractEnabled is IAuthWithContractEnabled {\\n    error NotAuthorized();\\n\\n    // --- Auth ---\\n    mapping (address => uint) public authorizedAccounts;\\n    function addAuthorization(address usr) external isAuthorized { authorizedAccounts[usr] = 1; }\\n    function removeAuthorization(address usr) external isAuthorized { authorizedAccounts[usr] = 0; }\\n    modifier isAuthorized {\\n        if (authorizedAccounts[msg.sender] != 1) revert NotAuthorized();\\n        _;\\n    }\\n\\n    uint256 public contractEnabled; // Access flag, indicates whether this contract is still active\\n    function disableContract() external isAuthorized {\\n        contractEnabled = 0;\\n        emit DisableContract();\\n    }\\n}\\n\",\"keccak256\":\"0x44f65b4acce8fcda0ad1026c491b1479f2246d56a20eecf099398f8f4c786431\",\"license\":\"AGPL-3.0-or-later\"},\"contracts/makerdao/utils/Math.sol\":{\"content\":\"// SPDX-License-Identifier: AGPL-3.0-or-later\\n\\npragma solidity ^0.8.0;\\n\\nabstract contract Math {\\n    uint256 constant WAD = 10 ** 18;\\n\\n    /**\\n    * @notice Calculates the sum of an unsigned integer and a signed integer\\n    * @param  x Unsigned integer\\n    * @param  y Signed integer\\n    * @return z Unsigned sum of `x` and `y`\\n    */\\n    function _add(uint x, int y) internal pure returns (uint z) {\\n        if (y >= 0) {\\n            z = x + uint256(y);\\n        } else {\\n            z = x - uint256(-y);\\n        }\\n        require(y >= 0 || z <= x);\\n        require(y <= 0 || z >= x);\\n    }\\n\\n    /**\\n    * @notice Calculates the substraction of an unsigned integer and a signed integer\\n    * @param  x Unsigned integer\\n    * @param  y Signed integer\\n    * @return z Unsigned substraction of `x` and `y`\\n    */\\n    function _sub(uint x, int y) internal pure returns (uint z) {\\n        if (y >= 0) {\\n            z = x - uint256(y);\\n        } else {\\n            z = x + uint256(-y);\\n        }\\n        require(y <= 0 || z <= x);\\n        require(y >= 0 || z >= x);\\n    }\\n    function _mul(uint x, int y) internal pure returns (int z) {\\n        z = int(x) * y;\\n        require(int(x) >= 0);\\n        require(y == 0 || z / y == int(x));\\n    }\\n\\n    function _add(uint x, uint y) internal pure returns (uint z) {\\n        require((z = x + y) >= x);\\n    }\\n    function _sub(uint x, uint y) internal pure returns (uint z) {\\n        require((z = x - y) <= x);\\n    }\\n    function _mul(uint x, uint y) internal pure returns (uint z) {\\n        require(y == 0 || (z = x * y) / y == x);\\n    }\\n\\n    function min(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        z = x <= y ? x : y;\\n    }\\n\\n    function either(bool x, bool y) internal pure returns (bool z) {\\n        assembly{ z := or(x, y)}\\n    }\\n    function both(bool x, bool y) internal pure returns (bool z) {\\n        assembly{ z := and(x, y)}\\n    }\\n}\\n\",\"keccak256\":\"0xcc88ae73c3c41786ae52f22a516bc57dbd66ffb4de9ea42d2344231b3d82dd3f\",\"license\":\"AGPL-3.0-or-later\"}},\"version\":1}",
+  "bytecode": "0x60a0346100d157601f61161638819003918201601f19168301916001600160401b038311848410176100d6578084926020946040528339810103126100d157516001600160a01b038116908190036100d157608052600180553360005260006020526001604060002055604051337f599a298163e1678bb1c676052a8930bf0b8a1261ed6e01b8a2391e55f7000102600080a261152990816100ed823960805181818161028a0152818161032c015281816104850152818161050301528181610559015281816105ce0152610fbe0152f35b600080fd5b634e487b7160e01b600052604160045260246000fdfe608080604052600436101561001357600080fd5b600090813560e01c90816318e81571146111c45750806324ba58841461118c57806335b28153146111445780634046ebae1461111b57806341b3a0d9146110fd57806351a8cd87146110df578063556617c7146110c15780636614f01014610fed57806367aea31314610fa85780636efb72ce14610f105780637ae8b2e114610ed1578063894ba83314610e8257806394f3f81d14610e3b578063961d45c414610e12578063d07900bb14610dd0578063d09a79dd14610d8d578063d4b9311d14610c6a578063de51eefd14610c2f578063e8d769a714610c11578063eb9ff0b41461020b5763fe4f58901461010857600080fd5b34610208576101163661121c565b3383528260205260016040842054036101f6577511db1bd8985b131a5c5d5a59185d1a5bdb931a5b5a5d60521b820361016a57602081600080516020611494833981519152926004555b604051908152a280f35b6f131a5c5d5a59185d1bdc94995dd85c9960821b820361019f5760208160008051602061149483398151915292600655610160565b60405162461bcd60e51b815260206004820152602960248201527f4c69717569646174696f6e456e67696e652f66696c652d756e7265636f676e696044820152687a65642d706172616d60b81b6064820152608490fd5b60405163ea8e4eb560e01b8152600490fd5b80fd5b503461020857608036600319011261020857610225611206565b90604435906001600160a01b038216820361020857606435916001600160a01b0383168303610c0d576001805403610bba5760408051630f50894160e21b815260048035908201526001600160a01b03868116602483015290929190839060449082907f0000000000000000000000000000000000000000000000000000000000000000165afa928315610bae5780928194610b73575b50600435815260026020526040808220905192906001600160401b036060850190811190851117610b5f576060840160409081528154855260018201546020860152600290910154818501525163d07900bb60e01b815260048035908201529460a0866024816001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000165afa948515610b5457839684908597610b0f575b508015159081610af3575b5015610aaf5760045460055480821180610a9e575b15610a495761038e9161127e565b6103a1602087015160408801519061127e565b808211610a4257505b80670de0b6b3a7640000810204670de0b6b3a76400001481151715610a2e5780670de0b6b3a7640000808202040361085b576103f388670de0b6b3a76400006103fb93026112a1565b8651906112a1565b808311610a28575081955b878780851161096c575b505050906104218661042693611456565b6112a1565b94851561092757600160ff1b80861115908161091c575b50156108da57670de0b6b3a764000061045860065488611456565b0491610464838861127e565b9287841161085b576003546001600160a01b031690610482906112c1565b907f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03163b156108005760405192634e14a96760e01b8452600435600485015260018060a01b038c16602485015260018060a01b03166044840152606483015260848201528360a4820152838160c4818360018060a01b037f0000000000000000000000000000000000000000000000000000000000000000165af180156108a0576108c7575b506007546003546001600160a01b03918216911661054d846112c1565b610556886112c1565b917f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03163b156108c35760405193634e14a96760e01b8552600435600486015260018060a01b038d16602486015260448501526064840152608483015260a4820152838160c4818360018060a01b037f0000000000000000000000000000000000000000000000000000000000000000165af180156108a0579084916108af575b505061060a9085611456565b6003549093906001600160a01b0316803b156108ab5783809160246040518094819363a8b30a9f60e01b83528a60048401525af180156108a057908491610888575b5050806040670de0b6b3a7640000610668610680945188611456565b049161067683600554611442565b6005550151611442565b600435835260026020526002604084200155600854156108725760086000527ff3f7a9fe364faab93b216da50a3214154f22a0a2b415b23a84c8169e8b636ee35460075460405163d8dfeb4560e01b81526001600160a01b03928316989092918216916020908490600490829085165afa92831561086757908592918394610819575b50600354604051633bcce46f60e21b81526001600160a01b0395861660048201526024810196909652604486019a909a529883166064850152600160848501529790911660a48301529095602091879160c49183915af194851561080c5781956107c9575b60208680878a888860018060a01b036007541691604051948552878501526040840152606083015260018060a01b0316907f3e68ae8e518de004a5c7f6407b51d7b729e26ddb6bcd135fe2f9e58df1b75b45608060043592a4604051908152f35b909591939294506020813d602011610804575b816107e96020938361125b565b810103126108005751909450929091602038610768565b8580fd5b3d91506107dc565b50604051903d90823e3d90fd5b91925092506020813d60201161085f575b816108376020938361125b565b8101031261085b57516001600160a01b038116810361085b579184919060c4610703565b8480fd5b3d915061082a565b6040513d87823e3d90fd5b634e487b7160e01b600052603260045260246000fd5b61089190611232565b61089c57823861064c565b8280fd5b6040513d86823e3d90fd5b8380fd5b6108b890611232565b61089c5782386105fe565b8680fd5b6108d390939193611232565b9138610530565b60405162461bcd60e51b815260206004820152601a6024820152794c69717569646174696f6e456e67696e652f6f766572666c6f7760301b6044820152606490fd5b90508611153861043d565b60405162461bcd60e51b815260206004820152601e60248201527f4c69717569646174696f6e456e67696e652f6e756c6c2d61756374696f6e00006044820152606490fd5b826109838361097e84899d989d61127e565b611456565b10156109a25750505050806104216104269280975b9293899150610410565b906109b09198949398611456565b106109c2576104218661042693610998565b60405162461bcd60e51b815260206004820152603860248201527f4c69717569646174696f6e456e67696e652f64757374792d61756374696f6e2d604482015277333937b696b830b93a34b0b616b634b8bab4b230ba34b7b760411b6064820152608490fd5b95610406565b634e487b7160e01b85526011600452602485fd5b90506103aa565b60405162461bcd60e51b815260206004820152602760248201527f4c69717569646174696f6e456e67696e652f6c69717569646174696f6e2d6c696044820152661b5a5d0b5a1a5d60ca1b6064820152608490fd5b506020870151604088015110610380565b60405162461bcd60e51b815260206004820152601c60248201527b4c69717569646174696f6e456e67696e652f6e6f742d756e7361666560201b6044820152606490fd5b610afe915082611456565b610b088884611456565b113861036b565b975050945060a0863d8211610b4c575b81610b2c60a0938361125b565b8101031261089c5760208601519460806040880151970151959638610360565b3d9150610b1f565b6040513d85823e3d90fd5b634e487b7160e01b83526041600452602483fd5b925092506040823d604011610ba6575b81610b906040938361125b565b8101031261089c576020825192015192386102bc565b3d9150610b83565b604051903d90823e3d90fd5b60405162461bcd60e51b815260206004820152602560248201527f4c69717569646174696f6e456e67696e652f6e6f742d636f6e7472616374456e60448201526418589b195960da1b6064820152608490fd5b5080fd5b50346102085780600319360112610208576020600654604051908152f35b5034610208576020366003190112610208576020906040906001600160a01b03610c576111eb565b1681526009835220541515604051908152f35b503461020857606036600319011261020857600435602435906044353384528360205260016040852054036101f657716c69717569646174696f6e50656e616c747960701b8303610d4c57670de0b6b3a76400008110610cee5760206000805160206114b483398151915291838652600282528060408720555b604051908152a380f35b60405162461bcd60e51b815260206004820152603060248201527f4c69717569646174696f6e456e67696e652f66696c652d6c697175696461746960448201526f1bdb94195b985b1d1e4b5b1d0b55d05160821b6064820152608490fd5b6f1b1a5c5d5a59185d1a5bdb931a5b5a5d60821b830361019f5760206000805160206114b48339815191529183865260028252806001604088200155610ce4565b503461020857602036600319011261020857610da76111eb565b3382528160205260016040832054036101f657610dcc906001600160a01b03166112ed565b5080f35b50346102085760203660031901126102085760406060916004358152600260205220805490600260018201549101549060405192835260208301526040820152f35b50346102085780600319360112610208576003546040516001600160a01b039091168152602090f35b503461020857602036600319011261020857610e556111eb565b3382528160205260016040832054036101f6576001600160a01b0316815260208190526040812081905580f35b50346102085780600319360112610208573381528060205260016040822054036101f657806001557f2d4b4ecff7bd7503135271925520a2f6c0d98c9473ffc1a1e72c92502f51b25e8180a180f35b503461020857602036600319011261020857610eeb6111eb565b3382528160205260016040832054036101f657610dcc906001600160a01b031661136c565b503461020857610f1f3661121c565b3383528260205260016040842054036101f657600554610f3f828261127e565b9081116108ab5760055581835260026020526002604084200154610f63828261127e565b9081116108ab577f78430dc03266569e2b73ec40d7107a5bc7047f2244bbca5d04294edb4a6f6ae391602091848652600283526002604087200155604051908152a280f35b50346102085780600319360112610208576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b50346102085760403660031901126102085760043561100a611206565b3383528260205260016040842054036101f6576f6163636f756e74696e67456e67696e6560801b820361107a57600380546001600160a01b0319166001600160a01b0383161790556000805160206114d4833981519152906020905b6040516001600160a01b039091168152a280f35b693634b8bab4b230ba37b960b11b820361019f57600780546001600160a01b0319166001600160a01b0383161790556000805160206114d483398151915290602090611066565b50346102085780600319360112610208576020600554604051908152f35b50346102085780600319360112610208576020600454604051908152f35b50346102085780600319360112610208576020600154604051908152f35b50346102085780600319360112610208576007546040516001600160a01b039091168152602090f35b50346102085760203660031901126102085761115e6111eb565b3382528160205260016040832054036101f6576001600160a01b031681526020819052604081206001905580f35b5034610208576020366003190112610208576020906040906001600160a01b036111b46111eb565b1681528083522054604051908152f35b905034610c0d576020366003190112610c0d57604060209260043581526002845220548152f35b600435906001600160a01b038216820361120157565b600080fd5b602435906001600160a01b038216820361120157565b6040906003190112611201576004359060243590565b6001600160401b03811161124557604052565b634e487b7160e01b600052604160045260246000fd5b601f909101601f19168101906001600160401b0382119082101761124557604052565b9190820391821161128b57565b634e487b7160e01b600052601160045260246000fd5b81156112ab570490565b634e487b7160e01b600052601260045260246000fd5b600160ff1b811461128b5760000390565b60085481101561087257600860005260206000200190600090565b60008181526009602052604081205461136757600854600160401b81101561135357908261133f611326846001604096016008556112d2565b819391549060031b600019811b9283911b169119161790565b905560085492815260096020522055600190565b634e487b7160e01b82526041600452602482fd5b905090565b600081815260096020526040812054909190801561143d5760001990808201818111610a2e5760085490838201918211611429578082036113f5575b50505060085480156113e1578101906113c0826112d2565b909182549160031b1b19169055600855815260096020526040812055600190565b634e487b7160e01b84526031600452602484fd5b611413611404611326936112d2565b90549060031b1c9283926112d2565b90558452600960205260408420553880806113a8565b634e487b7160e01b86526011600452602486fd5b505090565b919082019182811161128b57821061120157565b60009291801591821561146d575b50501561120157565b8082029450915081158285048214171561128b5761148b90846112a1565b14388061146456feac7c5c1afaef770ec56ac6268cd3f2fbb1035858ead2601d6553157c33036c3ac59b1109b54f213212d2f5af5c1dae5e887f9daa63b595578fae847cb048e8f4d91f38cf03346b5dc15fb60f9076f866295231ad3c3841a1051f8443f25170d1a264697066735822122058030136db74045d45c652970ba363ff05023b13f9c9b66f91e11278aaba441364736f6c63430008110033",
+  "deployedBytecode": "0x608080604052600436101561001357600080fd5b600090813560e01c90816318e81571146111c45750806324ba58841461118c57806335b28153146111445780634046ebae1461111b57806341b3a0d9146110fd57806351a8cd87146110df578063556617c7146110c15780636614f01014610fed57806367aea31314610fa85780636efb72ce14610f105780637ae8b2e114610ed1578063894ba83314610e8257806394f3f81d14610e3b578063961d45c414610e12578063d07900bb14610dd0578063d09a79dd14610d8d578063d4b9311d14610c6a578063de51eefd14610c2f578063e8d769a714610c11578063eb9ff0b41461020b5763fe4f58901461010857600080fd5b34610208576101163661121c565b3383528260205260016040842054036101f6577511db1bd8985b131a5c5d5a59185d1a5bdb931a5b5a5d60521b820361016a57602081600080516020611494833981519152926004555b604051908152a280f35b6f131a5c5d5a59185d1bdc94995dd85c9960821b820361019f5760208160008051602061149483398151915292600655610160565b60405162461bcd60e51b815260206004820152602960248201527f4c69717569646174696f6e456e67696e652f66696c652d756e7265636f676e696044820152687a65642d706172616d60b81b6064820152608490fd5b60405163ea8e4eb560e01b8152600490fd5b80fd5b503461020857608036600319011261020857610225611206565b90604435906001600160a01b038216820361020857606435916001600160a01b0383168303610c0d576001805403610bba5760408051630f50894160e21b815260048035908201526001600160a01b03868116602483015290929190839060449082907f0000000000000000000000000000000000000000000000000000000000000000165afa928315610bae5780928194610b73575b50600435815260026020526040808220905192906001600160401b036060850190811190851117610b5f576060840160409081528154855260018201546020860152600290910154818501525163d07900bb60e01b815260048035908201529460a0866024816001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000165afa948515610b5457839684908597610b0f575b508015159081610af3575b5015610aaf5760045460055480821180610a9e575b15610a495761038e9161127e565b6103a1602087015160408801519061127e565b808211610a4257505b80670de0b6b3a7640000810204670de0b6b3a76400001481151715610a2e5780670de0b6b3a7640000808202040361085b576103f388670de0b6b3a76400006103fb93026112a1565b8651906112a1565b808311610a28575081955b878780851161096c575b505050906104218661042693611456565b6112a1565b94851561092757600160ff1b80861115908161091c575b50156108da57670de0b6b3a764000061045860065488611456565b0491610464838861127e565b9287841161085b576003546001600160a01b031690610482906112c1565b907f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03163b156108005760405192634e14a96760e01b8452600435600485015260018060a01b038c16602485015260018060a01b03166044840152606483015260848201528360a4820152838160c4818360018060a01b037f0000000000000000000000000000000000000000000000000000000000000000165af180156108a0576108c7575b506007546003546001600160a01b03918216911661054d846112c1565b610556886112c1565b917f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03163b156108c35760405193634e14a96760e01b8552600435600486015260018060a01b038d16602486015260448501526064840152608483015260a4820152838160c4818360018060a01b037f0000000000000000000000000000000000000000000000000000000000000000165af180156108a0579084916108af575b505061060a9085611456565b6003549093906001600160a01b0316803b156108ab5783809160246040518094819363a8b30a9f60e01b83528a60048401525af180156108a057908491610888575b5050806040670de0b6b3a7640000610668610680945188611456565b049161067683600554611442565b6005550151611442565b600435835260026020526002604084200155600854156108725760086000527ff3f7a9fe364faab93b216da50a3214154f22a0a2b415b23a84c8169e8b636ee35460075460405163d8dfeb4560e01b81526001600160a01b03928316989092918216916020908490600490829085165afa92831561086757908592918394610819575b50600354604051633bcce46f60e21b81526001600160a01b0395861660048201526024810196909652604486019a909a529883166064850152600160848501529790911660a48301529095602091879160c49183915af194851561080c5781956107c9575b60208680878a888860018060a01b036007541691604051948552878501526040840152606083015260018060a01b0316907f3e68ae8e518de004a5c7f6407b51d7b729e26ddb6bcd135fe2f9e58df1b75b45608060043592a4604051908152f35b909591939294506020813d602011610804575b816107e96020938361125b565b810103126108005751909450929091602038610768565b8580fd5b3d91506107dc565b50604051903d90823e3d90fd5b91925092506020813d60201161085f575b816108376020938361125b565b8101031261085b57516001600160a01b038116810361085b579184919060c4610703565b8480fd5b3d915061082a565b6040513d87823e3d90fd5b634e487b7160e01b600052603260045260246000fd5b61089190611232565b61089c57823861064c565b8280fd5b6040513d86823e3d90fd5b8380fd5b6108b890611232565b61089c5782386105fe565b8680fd5b6108d390939193611232565b9138610530565b60405162461bcd60e51b815260206004820152601a6024820152794c69717569646174696f6e456e67696e652f6f766572666c6f7760301b6044820152606490fd5b90508611153861043d565b60405162461bcd60e51b815260206004820152601e60248201527f4c69717569646174696f6e456e67696e652f6e756c6c2d61756374696f6e00006044820152606490fd5b826109838361097e84899d989d61127e565b611456565b10156109a25750505050806104216104269280975b9293899150610410565b906109b09198949398611456565b106109c2576104218661042693610998565b60405162461bcd60e51b815260206004820152603860248201527f4c69717569646174696f6e456e67696e652f64757374792d61756374696f6e2d604482015277333937b696b830b93a34b0b616b634b8bab4b230ba34b7b760411b6064820152608490fd5b95610406565b634e487b7160e01b85526011600452602485fd5b90506103aa565b60405162461bcd60e51b815260206004820152602760248201527f4c69717569646174696f6e456e67696e652f6c69717569646174696f6e2d6c696044820152661b5a5d0b5a1a5d60ca1b6064820152608490fd5b506020870151604088015110610380565b60405162461bcd60e51b815260206004820152601c60248201527b4c69717569646174696f6e456e67696e652f6e6f742d756e7361666560201b6044820152606490fd5b610afe915082611456565b610b088884611456565b113861036b565b975050945060a0863d8211610b4c575b81610b2c60a0938361125b565b8101031261089c5760208601519460806040880151970151959638610360565b3d9150610b1f565b6040513d85823e3d90fd5b634e487b7160e01b83526041600452602483fd5b925092506040823d604011610ba6575b81610b906040938361125b565b8101031261089c576020825192015192386102bc565b3d9150610b83565b604051903d90823e3d90fd5b60405162461bcd60e51b815260206004820152602560248201527f4c69717569646174696f6e456e67696e652f6e6f742d636f6e7472616374456e60448201526418589b195960da1b6064820152608490fd5b5080fd5b50346102085780600319360112610208576020600654604051908152f35b5034610208576020366003190112610208576020906040906001600160a01b03610c576111eb565b1681526009835220541515604051908152f35b503461020857606036600319011261020857600435602435906044353384528360205260016040852054036101f657716c69717569646174696f6e50656e616c747960701b8303610d4c57670de0b6b3a76400008110610cee5760206000805160206114b483398151915291838652600282528060408720555b604051908152a380f35b60405162461bcd60e51b815260206004820152603060248201527f4c69717569646174696f6e456e67696e652f66696c652d6c697175696461746960448201526f1bdb94195b985b1d1e4b5b1d0b55d05160821b6064820152608490fd5b6f1b1a5c5d5a59185d1a5bdb931a5b5a5d60821b830361019f5760206000805160206114b48339815191529183865260028252806001604088200155610ce4565b503461020857602036600319011261020857610da76111eb565b3382528160205260016040832054036101f657610dcc906001600160a01b03166112ed565b5080f35b50346102085760203660031901126102085760406060916004358152600260205220805490600260018201549101549060405192835260208301526040820152f35b50346102085780600319360112610208576003546040516001600160a01b039091168152602090f35b503461020857602036600319011261020857610e556111eb565b3382528160205260016040832054036101f6576001600160a01b0316815260208190526040812081905580f35b50346102085780600319360112610208573381528060205260016040822054036101f657806001557f2d4b4ecff7bd7503135271925520a2f6c0d98c9473ffc1a1e72c92502f51b25e8180a180f35b503461020857602036600319011261020857610eeb6111eb565b3382528160205260016040832054036101f657610dcc906001600160a01b031661136c565b503461020857610f1f3661121c565b3383528260205260016040842054036101f657600554610f3f828261127e565b9081116108ab5760055581835260026020526002604084200154610f63828261127e565b9081116108ab577f78430dc03266569e2b73ec40d7107a5bc7047f2244bbca5d04294edb4a6f6ae391602091848652600283526002604087200155604051908152a280f35b50346102085780600319360112610208576040517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b50346102085760403660031901126102085760043561100a611206565b3383528260205260016040842054036101f6576f6163636f756e74696e67456e67696e6560801b820361107a57600380546001600160a01b0319166001600160a01b0383161790556000805160206114d4833981519152906020905b6040516001600160a01b039091168152a280f35b693634b8bab4b230ba37b960b11b820361019f57600780546001600160a01b0319166001600160a01b0383161790556000805160206114d483398151915290602090611066565b50346102085780600319360112610208576020600554604051908152f35b50346102085780600319360112610208576020600454604051908152f35b50346102085780600319360112610208576020600154604051908152f35b50346102085780600319360112610208576007546040516001600160a01b039091168152602090f35b50346102085760203660031901126102085761115e6111eb565b3382528160205260016040832054036101f6576001600160a01b031681526020819052604081206001905580f35b5034610208576020366003190112610208576020906040906001600160a01b036111b46111eb565b1681528083522054604051908152f35b905034610c0d576020366003190112610c0d57604060209260043581526002845220548152f35b600435906001600160a01b038216820361120157565b600080fd5b602435906001600160a01b038216820361120157565b6040906003190112611201576004359060243590565b6001600160401b03811161124557604052565b634e487b7160e01b600052604160045260246000fd5b601f909101601f19168101906001600160401b0382119082101761124557604052565b9190820391821161128b57565b634e487b7160e01b600052601160045260246000fd5b81156112ab570490565b634e487b7160e01b600052601260045260246000fd5b600160ff1b811461128b5760000390565b60085481101561087257600860005260206000200190600090565b60008181526009602052604081205461136757600854600160401b81101561135357908261133f611326846001604096016008556112d2565b819391549060031b600019811b9283911b169119161790565b905560085492815260096020522055600190565b634e487b7160e01b82526041600452602482fd5b905090565b600081815260096020526040812054909190801561143d5760001990808201818111610a2e5760085490838201918211611429578082036113f5575b50505060085480156113e1578101906113c0826112d2565b909182549160031b1b19169055600855815260096020526040812055600190565b634e487b7160e01b84526031600452602484fd5b611413611404611326936112d2565b90549060031b1c9283926112d2565b90558452600960205260408420553880806113a8565b634e487b7160e01b86526011600452602486fd5b505090565b919082019182811161128b57821061120157565b60009291801591821561146d575b50501561120157565b8082029450915081158285048214171561128b5761148b90846112a1565b14388061146456feac7c5c1afaef770ec56ac6268cd3f2fbb1035858ead2601d6553157c33036c3ac59b1109b54f213212d2f5af5c1dae5e887f9daa63b595578fae847cb048e8f4d91f38cf03346b5dc15fb60f9076f866295231ad3c3841a1051f8443f25170d1a264697066735822122058030136db74045d45c652970ba363ff05023b13f9c9b66f91e11278aaba441364736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "liquidateCDP(bytes32,address,address,address)": {
+        "details": "The entire Vault will be liquidated except when the target amount of DAI to be raised in the resulting auction (debt of Vault + liquidation penalty) causes either ActiveLiquidationAmount to exceed GlobalLiquidationLimit or collateralType.activeLiquidationAmount to exceed collateralType.liquidationLimit by an economically significant amount. In that case, a partial liquidation is performed to respect the global and per-collateralType limits on outstanding DAI target. The one exception is if the resulting auction would likely have too little collateral to be interesting to Keepers (debt taken from Vault < collateralType.debtFloor), in which case the function reverts. Please refer to the code and comments within if more detail is desired.",
+        "params": {
+          "cdp": "- address of cdp position",
+          "collateralJoin": "- address of collateral adapter*",
+          "collateralType": "- collateral type",
+          "incentivesReceiver": "- address that will receive the liquidation reward, if any."
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "liquidateCDP(bytes32,address,address,address)": {
+        "notice": "Liquidate a Vault and start a Dutch auction to sell its collateral for DAI."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 5608,
+        "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+        "label": "authorizedAccounts",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 5652,
+        "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+        "label": "contractEnabled",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 4276,
+        "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+        "label": "collateralTypes",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_bytes32,t_struct(CollateralType)5124_storage)"
+      },
+      {
+        "astId": 4279,
+        "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+        "label": "accountingEngine",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_contract(AccountingEngineLike)4262"
+      },
+      {
+        "astId": 4281,
+        "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+        "label": "GlobalLiquidationLimit",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 4283,
+        "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+        "label": "ActiveLiquidationAmount",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 4285,
+        "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+        "label": "LiquidatorReward",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 4287,
+        "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+        "label": "liquidator",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_address"
+      },
+      {
+        "astId": 4811,
+        "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+        "label": "_stablecoinWhitelist",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_struct(AddressSet)325_storage"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_bytes32)dyn_storage": {
+        "base": "t_bytes32",
+        "encoding": "dynamic_array",
+        "label": "bytes32[]",
+        "numberOfBytes": "32"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_contract(AccountingEngineLike)4262": {
+        "encoding": "inplace",
+        "label": "contract AccountingEngineLike",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_mapping(t_bytes32,t_struct(CollateralType)5124_storage)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => struct ILiquidationEngine.CollateralType)",
+        "numberOfBytes": "32",
+        "value": "t_struct(CollateralType)5124_storage"
+      },
+      "t_mapping(t_bytes32,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_struct(AddressSet)325_storage": {
+        "encoding": "inplace",
+        "label": "struct EnumerableSetUpgradeable.AddressSet",
+        "members": [
+          {
+            "astId": 324,
+            "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+            "label": "_inner",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_struct(Set)10_storage"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_struct(CollateralType)5124_storage": {
+        "encoding": "inplace",
+        "label": "struct ILiquidationEngine.CollateralType",
+        "members": [
+          {
+            "astId": 5119,
+            "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+            "label": "liquidationPenalty",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 5121,
+            "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+            "label": "liquidationLimit",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 5123,
+            "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+            "label": "activeLiquidationAmount",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "96"
+      },
+      "t_struct(Set)10_storage": {
+        "encoding": "inplace",
+        "label": "struct EnumerableSetUpgradeable.Set",
+        "members": [
+          {
+            "astId": 5,
+            "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+            "label": "_values",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_array(t_bytes32)dyn_storage"
+          },
+          {
+            "astId": 9,
+            "contract": "contracts/makerdao/externalContracts/LiquidationEngine.sol:LiquidationEngine",
+            "label": "_indexes",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_bytes32,t_uint256)"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

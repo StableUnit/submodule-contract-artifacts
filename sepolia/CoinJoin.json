@@ -1,0 +1,320 @@
+{
+  "address": "0xfF5C0fB36Ce7010863bbcC0026Eb9c25B4D8cDaD",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "safeEngine_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "systemCoin_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "AddAuthorization",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "DisableContract",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "Exit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "Join",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "RemoveAuthorization",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "addAuthorization",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "authorizedAccounts",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "contractEnabled",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "disableContract",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "exit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "join",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "removeAuthorization",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "safeEngine",
+      "outputs": [
+        {
+          "internalType": "contract ISafeEngine",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "systemCoin",
+      "outputs": [
+        {
+          "internalType": "contract ICoin",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "5a3048d5b2f56301a323a2276b6562ea",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"safeEngine_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"systemCoin_\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"AddAuthorization\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"DisableContract\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"Exit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"Join\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"RemoveAuthorization\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"addAuthorization\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"authorizedAccounts\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"contractEnabled\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"disableContract\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"exit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"join\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"removeAuthorization\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"safeEngine\",\"outputs\":[{\"internalType\":\"contract ISafeEngine\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"systemCoin\",\"outputs\":[{\"internalType\":\"contract ICoin\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"exit(address,uint256)\":{\"details\":\"Inside the system, coins have 45 (rad) decimals but outside they have 18 decimals (wad). When we exit, we specify a wad amount of coins and then the contract automatically multiplies wad by 10**27 to move the correct 45 decimal coin amount to this adapter\",\"params\":{\"usr\":\"Account that will receive the exited coins\",\"wad\":\"Amount of internal coins to join (18 decimal number that will be multiplied by ray)*\"}},\"join(address,uint256)\":{\"details\":\"Exited coins have 18 decimals but inside the system they have 45 (rad) decimals. When we join, the amount (wad) is multiplied by 10**27 (ray)\",\"params\":{\"usr\":\"Account that will receive the joined coins\",\"wad\":\"Amount of external coins to join (18 decimal number)*\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"exit(address,uint256)\":{\"notice\":\"Exit pegged-coins from the system and inside 'Coin.sol'\"},\"join(address,uint256)\":{\"notice\":\"Join pegged-coins in the system\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/makerdao/core/adapters/CoinJoin.sol\":\"CoinJoin\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[],\"viaIR\":true},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address from, address to, uint256 amount) external returns (bool);\\n}\\n\",\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/IERC20Metadata.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../IERC20.sol\\\";\\n\\n/**\\n * @dev Interface for the optional metadata functions from the ERC20 standard.\\n *\\n * _Available since v4.1._\\n */\\ninterface IERC20Metadata is IERC20 {\\n    /**\\n     * @dev Returns the name of the token.\\n     */\\n    function name() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the symbol of the token.\\n     */\\n    function symbol() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the decimals places of the token.\\n     */\\n    function decimals() external view returns (uint8);\\n}\\n\",\"keccak256\":\"0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca\",\"license\":\"MIT\"},\"contracts/makerdao/core/adapters/CoinJoin.sol\":{\"content\":\"// SPDX-License-Identifier: AGPL-3.0-or-later\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../../interfaces/ICollateralJoin.sol\\\";\\nimport \\\"../../interfaces/ISafeEngine.sol\\\";\\nimport \\\"../../interfaces/ICoin.sol\\\";\\nimport \\\"../../interfaces/ICoinJoin.sol\\\";\\n\\ncontract CoinJoin is ICoinJoin {\\n    // --- Auth ---\\n    mapping (address => uint) public authorizedAccounts;\\n    function addAuthorization(address usr) external isAuthorized {\\n        authorizedAccounts[usr] = 1;\\n        emit AddAuthorization(usr);\\n    }\\n    function removeAuthorization(address usr) external isAuthorized {\\n        authorizedAccounts[usr] = 0;\\n        emit RemoveAuthorization(usr);\\n    }\\n    modifier isAuthorized {\\n        require(authorizedAccounts[msg.sender] == 1, \\\"CoinJoin/not-authorized\\\");\\n        _;\\n    }\\n\\n    ISafeEngine public safeEngine;\\n    // Coin created by the system; this is the external, ERC-20 representation, not the internal 'coinBalance'\\n    ICoin public systemCoin;\\n    // Whether this contract is enabled or not\\n    uint public contractEnabled;\\n\\n    constructor(address safeEngine_, address systemCoin_) public {\\n        authorizedAccounts[msg.sender] = 1;\\n        contractEnabled = 1;\\n        safeEngine = ISafeEngine(safeEngine_);\\n        systemCoin = ICoin(systemCoin_);\\n    }\\n    function disableContract() external isAuthorized {\\n        contractEnabled = 0;\\n        emit DisableContract();\\n    }\\n    uint constant ONE = 10 ** 27;\\n    function mul(uint x, uint y) internal pure returns (uint z) {\\n        require(y == 0 || (z = x * y) / y == x);\\n    }\\n\\n    function join(address usr, uint wad) external {\\n        safeEngine.transferInternalCoins(address(this), usr, mul(ONE, wad));\\n        systemCoin.burn(msg.sender, wad);\\n        emit Join(usr, wad);\\n    }\\n\\n    function exit(address usr, uint wad) external {\\n        require(contractEnabled == 1, \\\"CoinJoin/not-contractEnabled\\\");\\n        safeEngine.transferInternalCoins(msg.sender, address(this), mul(ONE, wad));\\n        systemCoin.mint(usr, wad);\\n        emit Exit(usr, wad);\\n    }\\n}\\n\\n\",\"keccak256\":\"0xd9264874fdde78c274ab88e03daadead88c8582cd7e9c6fbe344b3e9fb8df2c2\",\"license\":\"AGPL-3.0-or-later\"},\"contracts/makerdao/interfaces/IAuth.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\ninterface IAuth {\\n    function addAuthorization(address usr) external;\\n    function removeAuthorization(address usr) external;\\n}\\n\",\"keccak256\":\"0x0ba65ef98ccabdaae896001950518dbbfbea94c2f3ac84b064abe0cbeddd9b89\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/IAuthWithContractEnabled.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\nimport {IAuth} from \\\"./IAuth.sol\\\";\\n\\ninterface IAuthWithContractEnabled is IAuth {\\n    event DisableContract();\\n\\n    function disableContract() external;\\n}\\n\",\"keccak256\":\"0x2c6b500483ce79cf7f277949eed8f8f1322227c031eb504ccf316b3ad49aa49c\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/ICoin.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"@openzeppelin/contracts/token/ERC20/IERC20.sol\\\";\\n\\ninterface ICoin is IERC20 {\\n    function mint(address account, uint256 amount) external;\\n    function burn(address account, uint256 amount) external returns (uint256);\\n}\\n\",\"keccak256\":\"0xd7f97601c8181b64bf2b17a39cf8cb37788e1c2380cae485fe8ec7f45a97e190\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/ICoinJoin.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\nimport {IAuthWithContractEnabled} from \\\"./IAuthWithContractEnabled.sol\\\";\\n\\n/**\\n * @title ITaxCollector\\n **/\\ninterface ICoinJoin is IAuthWithContractEnabled {\\n    /* ==================== EVENTS ==================== */\\n    event AddAuthorization(address indexed usr);\\n    event RemoveAuthorization(address indexed usr);\\n    event Join(address indexed usr, uint256 wad);\\n    event Exit(address indexed usr, uint256 wad);\\n\\n    /* ==================== METHODS ==================== */\\n\\n    /**\\n    * @notice Join pegged-coins in the system\\n    * @dev Exited coins have 18 decimals but inside the system they have 45 (rad) decimals.\\n           When we join, the amount (wad) is multiplied by 10**27 (ray)\\n    * @param usr Account that will receive the joined coins\\n    * @param wad Amount of external coins to join (18 decimal number)\\n    **/\\n    function join(address usr, uint wad) external;\\n\\n    /**\\n    * @notice Exit pegged-coins from the system and inside 'Coin.sol'\\n    * @dev Inside the system, coins have 45 (rad) decimals but outside they have 18 decimals (wad).\\n           When we exit, we specify a wad amount of coins and then the contract automatically multiplies\\n           wad by 10**27 to move the correct 45 decimal coin amount to this adapter\\n    * @param usr Account that will receive the exited coins\\n    * @param wad Amount of internal coins to join (18 decimal number that will be multiplied by ray)\\n    **/\\n    function exit(address usr, uint wad) external;\\n}\\n\",\"keccak256\":\"0x5b882a8641a87e3bc33bda987fcf3a4cd2670b8e1d4b655683de0d602728a246\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/ICollateralJoin.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\\\";\\nimport {IAuthWithContractEnabled} from \\\"./IAuthWithContractEnabled.sol\\\";\\n\\n/**\\n * @title ITaxCollector\\n **/\\ninterface ICollateralJoin is IAuthWithContractEnabled {\\n    /* ==================== METHODS ==================== */\\n\\n    function collateral() external view returns(IERC20Metadata);\\n\\n    /**\\n    * @notice Join collateral in the system\\n    * @param usr Account from which we transferFrom collateral and add it in the system\\n    * @param wad Amount of collateral to transfer in the system (represented as a number with 18 decimals)\\n    **/\\n    function join(address usr, uint wad) external;\\n\\n    /**\\n    * @notice Exit collateral from the system\\n    * @param usr Account to which we transfer the collateral\\n    * @param wad Amount of collateral to transfer to 'account' (represented as a number with 18 decimals)\\n    **/\\n    function exit(address usr, uint wad) external;\\n}\\n\",\"keccak256\":\"0xac3c5caf0b77793b80e69273531b93a40c60ac18532ac3e5a104c0cb13e03821\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/ISafeEngine.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title SafeEngine\\n * @notice The single source of truth for the Maker Protocol. It contains the accounting system of the core Vault,\\n * Internal Dai balances, and collateral state. It houses the public interface for Vault management,\\n * allowing safe(= CDP or Vault) owners to adjust their Vault state balances. It also contains the public interface\\n * for Vault fungibility, allowing safe (Vault) owners to transfer, split, and merge Vaults.\\n * Excluding these interfaces, SAFEEngine is accessed through trusted smart contract modules.\\n **/\\ninterface ISafeEngine {\\n    /* ==================== METHODS ==================== */\\n\\n    // --- Data ---\\n    struct CollateralType {\\n        uint256 debtAmount;       // Total debt issued for this specific collateral type                          [wad]\\n        uint256 accumulatedRate;  // Accumulator for interest accrued on this collateral type                     [ray]\\n        uint256 safetyPrice;      // Floor price at which a CDP is allowed to generate debt                       [ray]\\n        uint256 debtCeiling;      // Maximum amount of debt that can be generated with this collateral type       [rad]\\n        uint256 debtFloor;        // Minimum amount of debt that must be generated by a CDP using this collateral [rad]\\n    }\\n    struct SAFE {\\n        uint256 lockedCollateral; // Total amount of collateral locked in a SAFE/CDP  [wad]\\n        uint256 generatedDebt;    // Total amount of debt generated by a SAFE/CDP     [wad]\\n    }\\n\\n    // --- VARS ---\\n\\n    function safes(bytes32, address) external view returns (uint, uint);\\n\\n    function collateralTypes(bytes32) external view returns (\\n        uint256 debtAmount,   // [wad]\\n        uint256 accumulatedRate,   // [ray]\\n        uint256 safetyPrice,\\n        uint256 debtCeiling,\\n        uint256 debtFloor\\n    );\\n\\n    function tokenCollateral(bytes32, address) external view returns (uint256);\\n\\n    function coinBalance(address) external view returns (uint256);\\n\\n    function debtBalance(address) external view returns (uint256);\\n\\n    // --- Auth ---\\n    /**\\n     * @notice Allow an address to modify your CDP\\n     * @param usr Account to give CDP permissions to\\n     */\\n    function approveSAFEModification(address usr) external;\\n\\n    /**\\n     * @notice Deny an address the rights to modify your CDP\\n     * @param usr Account to give CDP permissions to\\n     */\\n    function denySAFEModification(address usr) external;\\n\\n    // --- Administration ---\\n\\n    function initializeCollateralType(bytes32 collateralType) external;\\n    function modifyParameters(bytes32 what, uint data) external;\\n    function modifyParameters(bytes32 collateralType, bytes32 what, uint data) external;\\n\\n    // --- Fungibility ---\\n    function modifyCollateralBalance(bytes32 collateralType, address usr, int256 wad) external;\\n    function transferCollateral(bytes32 collateralType, address src, address dst, uint256 wad) external;\\n    function transferInternalCoins(address src, address dst, uint256 rad) external;\\n\\n    // --- CDP Manipulation ---\\n    /**\\n     * @notice Add/remove collateral or put back/generate more debt in a CDP\\n     * @param collateralType Type of collateral to withdraw/deposit in and from the CDP\\n     * @param cdp Target CDP\\n     * @param collateralSource Account we take collateral from/put collateral into\\n     * @param debtDestination Account from which we credit/debit coins and debt\\n     * @param deltaCollateral Amount of collateral added/extract from the CDP\\n     * @param deltaDebt Amount of debt to generate/repay\\n     */\\n    function modifySAFECollateralization(bytes32 collateralType, address cdp, address collateralSource, address debtDestination, int deltaCollateral, int deltaDebt) external;\\n\\n    // --- CDP Fungibility ---\\n    /**\\n     * @notice Transfer collateral and/or debt between CDPs\\n     * @param collateralType Collateral type transferred between CDPs\\n     * @param src Source CDP\\n     * @param dst Destination CDP\\n     * @param deltaCollateral Amount of collateral to take/add into src and give/take from dst\\n     * @param deltaDebt Amount of debt to take/add into src and give/take from dst\\n     */\\n    function transferSAFECollateralAndDebt(bytes32 collateralType, address src, address dst, int deltaCollateral, int deltaDebt) external;\\n\\n    // --- CDP Confiscation ---\\n    /**\\n     * @notice Normally used by the LiquidationEngine in order to confiscate collateral and\\n       debt from a CDP and give them to someone else\\n     * @param collateralType Collateral type the CDP has locked inside\\n     * @param cdp Target CDP\\n     * @param collateralCounterparty Who we take/give collateral to\\n     * @param debtCounterparty Who we take/give debt to\\n     * @param deltaCollateral Amount of collateral taken/added into the CDP\\n     * @param deltaDebt Amount of debt taken/added into the CDP\\n     */\\n    function confiscateSAFECollateralAndDebt(bytes32 collateralType, address cdp, address collateralCounterparty, address debtCounterparty, int deltaCollateral, int deltaDebt) external;\\n\\n    // --- Settlement ---\\n    /**\\n     * @notice Nullify an amount of coins with an equal amount of debt\\n     * @param rad Amount of debt & coins to destroy (expressed as a number with 45 decimals)\\n     */\\n    function settleDebt(uint rad) external;\\n\\n    /**\\n     * @notice Usually called by CoinSavingsAccount in order to create unbacked debt\\n     * @param debtDestination Usually AccountingEngine that can settle decreaseSoldAmount with surplus\\n     * @param coinDestination Usually CoinSavingsAccount who passes the new coins to depositors\\n     * @param rad Amount of debt to create (expressed as a number with 45 decimals)\\n     */\\n    function createUnbackedDebt(address debtDestination, address coinDestination, uint rad) external;\\n\\n    // --- Rates ---\\n    /**\\n     * @notice Usually called by TaxCollector in order to accrue interest on a specific collateral type\\n     * @param collateralType Collateral type we accrue interest for\\n     * @param surplusDst Destination for amount of surplus created by applying the interest rate\\n       to debt created by CDPs with 'collateralType'\\n     * @param accumulatedRate Multiplier applied to the debtAmount in order to calculate the surplus\\n     */\\n    function updateAccumulatedRate(bytes32 collateralType, address surplusDst, int accumulatedRate) external;\\n}\\n\",\"keccak256\":\"0xf1e715f60362b95b7788deb8531bfefbcc45ab70497f84a13eac55544ad42bb1\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x60803461009d57601f61076638819003918201601f19168301916001600160401b038311848410176100a257808492604094855283398101031261009d57610052602061004b836100b8565b92016100b8565b3360005260006020526001604060002055600160035560018060a01b03908160018060a01b031993168360015416176001551690600254161760025560405161069990816100cd8239f35b600080fd5b634e487b7160e01b600052604160045260246000fd5b51906001600160a01b038216820361009d5756fe6080604081815260048036101561001557600080fd5b600092833560e01c90816324ba5884146104fa5750806335b281531461048f5780633b4da69f1461033a57806341b3a0d91461031b57806367aea313146102f2578063894ba8331461029f57806394f3f81d14610231578063a7e94455146102085763ef693bed1461008657600080fd5b3461019c578160031936011261019c5761009e61052d565b90602435926001600354036101c6576001546001600160a01b0392869184166100c6876105f4565b90803b156101c2578451633beaf2b760e21b815291849183918290849082906100f39030338b85016105b7565b03925af180156101b8579083916101a0575b50508360025416803b1561019c578683918783610136958851968795869485936340c10f1960e01b855284016105d9565b03925af1801561019257610176575b50505192835216907f22d324652c93739755cf4581508b60875ebdd78c20c0cff5cf8e23452b29963190602090a280f35b6101829093929361058e565b61018e57908438610145565b8480fd5b83513d84823e3d90fd5b8280fd5b6101a99061058e565b6101b4578138610105565b5080fd5b84513d85823e3d90fd5b8380fd5b906020606492519162461bcd60e51b8352820152601c60248201527b10dbda5b929bda5b8bdb9bdd0b58dbdb9d1c9858dd115b98589b195960221b6044820152fd5b5050346101b457816003193601126101b45760025490516001600160a01b039091168152602090f35b5050346101b45760203660031901126101b4578161024d61052d565b3382528160205261026360018484205414610548565b6001600160a01b03168082526020829052918120557f8834a87e641e9716be4f34527af5d23e11624f1ddeefede6ad75a9acfc31b9038280a280f35b5050346101b457816003193601126101b45760016102c7913384528360205283205414610548565b806003557f2d4b4ecff7bd7503135271925520a2f6c0d98c9473ffc1a1e72c92502f51b25e8180a180f35b5050346101b457816003193601126101b45760015490516001600160a01b039091168152602090f35b5050346101b457816003193601126101b4576020906003549051908152f35b503461019c578160031936011261019c5761035361052d565b6001546024359391926001600160a01b03929186908416610373876105f4565b813b1561019c57829161039c918651948580948193633beaf2b760e21b83528c308b85016105b7565b03925af180156104725761047c575b50826002541690602083518093632770a7eb60e21b8252818a816103d28c338984016105d9565b03925af1801561047257610412575b50505192835216907fb4e09949657f21548b58afe74e7b86cd2295da5ff1598ae1e5faecb1cf19ca9590602090a280f35b6020939293903d821161046a575b601f8201601f19168301906001600160401b038211848310176104555750906020929185528101031261018e579038806103e1565b604190634e487b7160e01b6000525260246000fd5b3d9150610420565b83513d89823e3d90fd5b6104889096919661058e565b94386103ab565b5050346101b45760203660031901126101b45760016104ac61052d565b338452836020526104c1828486205414610548565b818060a01b031691828452836020528320557f599a298163e1678bb1c676052a8930bf0b8a1261ed6e01b8a2391e55f70001028280a280f35b8490843461019c57602036600319011261019c576020926001600160a01b0361052161052d565b16815280845220548152f35b600435906001600160a01b038216820361054357565b600080fd5b1561054f57565b60405162461bcd60e51b815260206004820152601760248201527610dbda5b929bda5b8bdb9bdd0b585d5d1a1bdc9a5e9959604a1b6044820152606490fd5b6001600160401b0381116105a157604052565b634e487b7160e01b600052604160045260246000fd5b6001600160a01b03918216815291166020820152604081019190915260600190565b6001600160a01b039091168152602081019190915260400190565b906000916000908015908115610611575b501561060e5750565b80fd5b909350676765c793fa10079d601b1b90818102828104820361064f57809561063b57041438610605565b634e487b7160e01b84526012600452602484fd5b634e487b7160e01b84526011600452602484fdfea2646970667358221220caf9b0b9b39ccb69fb91d5899c40ea8ef7265d5606aa2ffa6586783c47a8155664736f6c63430008110033",
+  "deployedBytecode": "0x6080604081815260048036101561001557600080fd5b600092833560e01c90816324ba5884146104fa5750806335b281531461048f5780633b4da69f1461033a57806341b3a0d91461031b57806367aea313146102f2578063894ba8331461029f57806394f3f81d14610231578063a7e94455146102085763ef693bed1461008657600080fd5b3461019c578160031936011261019c5761009e61052d565b90602435926001600354036101c6576001546001600160a01b0392869184166100c6876105f4565b90803b156101c2578451633beaf2b760e21b815291849183918290849082906100f39030338b85016105b7565b03925af180156101b8579083916101a0575b50508360025416803b1561019c578683918783610136958851968795869485936340c10f1960e01b855284016105d9565b03925af1801561019257610176575b50505192835216907f22d324652c93739755cf4581508b60875ebdd78c20c0cff5cf8e23452b29963190602090a280f35b6101829093929361058e565b61018e57908438610145565b8480fd5b83513d84823e3d90fd5b8280fd5b6101a99061058e565b6101b4578138610105565b5080fd5b84513d85823e3d90fd5b8380fd5b906020606492519162461bcd60e51b8352820152601c60248201527b10dbda5b929bda5b8bdb9bdd0b58dbdb9d1c9858dd115b98589b195960221b6044820152fd5b5050346101b457816003193601126101b45760025490516001600160a01b039091168152602090f35b5050346101b45760203660031901126101b4578161024d61052d565b3382528160205261026360018484205414610548565b6001600160a01b03168082526020829052918120557f8834a87e641e9716be4f34527af5d23e11624f1ddeefede6ad75a9acfc31b9038280a280f35b5050346101b457816003193601126101b45760016102c7913384528360205283205414610548565b806003557f2d4b4ecff7bd7503135271925520a2f6c0d98c9473ffc1a1e72c92502f51b25e8180a180f35b5050346101b457816003193601126101b45760015490516001600160a01b039091168152602090f35b5050346101b457816003193601126101b4576020906003549051908152f35b503461019c578160031936011261019c5761035361052d565b6001546024359391926001600160a01b03929186908416610373876105f4565b813b1561019c57829161039c918651948580948193633beaf2b760e21b83528c308b85016105b7565b03925af180156104725761047c575b50826002541690602083518093632770a7eb60e21b8252818a816103d28c338984016105d9565b03925af1801561047257610412575b50505192835216907fb4e09949657f21548b58afe74e7b86cd2295da5ff1598ae1e5faecb1cf19ca9590602090a280f35b6020939293903d821161046a575b601f8201601f19168301906001600160401b038211848310176104555750906020929185528101031261018e579038806103e1565b604190634e487b7160e01b6000525260246000fd5b3d9150610420565b83513d89823e3d90fd5b6104889096919661058e565b94386103ab565b5050346101b45760203660031901126101b45760016104ac61052d565b338452836020526104c1828486205414610548565b818060a01b031691828452836020528320557f599a298163e1678bb1c676052a8930bf0b8a1261ed6e01b8a2391e55f70001028280a280f35b8490843461019c57602036600319011261019c576020926001600160a01b0361052161052d565b16815280845220548152f35b600435906001600160a01b038216820361054357565b600080fd5b1561054f57565b60405162461bcd60e51b815260206004820152601760248201527610dbda5b929bda5b8bdb9bdd0b585d5d1a1bdc9a5e9959604a1b6044820152606490fd5b6001600160401b0381116105a157604052565b634e487b7160e01b600052604160045260246000fd5b6001600160a01b03918216815291166020820152604081019190915260600190565b6001600160a01b039091168152602081019190915260400190565b906000916000908015908115610611575b501561060e5750565b80fd5b909350676765c793fa10079d601b1b90818102828104820361064f57809561063b57041438610605565b634e487b7160e01b84526012600452602484fd5b634e487b7160e01b84526011600452602484fdfea2646970667358221220caf9b0b9b39ccb69fb91d5899c40ea8ef7265d5606aa2ffa6586783c47a8155664736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "exit(address,uint256)": {
+        "details": "Inside the system, coins have 45 (rad) decimals but outside they have 18 decimals (wad). When we exit, we specify a wad amount of coins and then the contract automatically multiplies wad by 10**27 to move the correct 45 decimal coin amount to this adapter",
+        "params": {
+          "usr": "Account that will receive the exited coins",
+          "wad": "Amount of internal coins to join (18 decimal number that will be multiplied by ray)*"
+        }
+      },
+      "join(address,uint256)": {
+        "details": "Exited coins have 18 decimals but inside the system they have 45 (rad) decimals. When we join, the amount (wad) is multiplied by 10**27 (ray)",
+        "params": {
+          "usr": "Account that will receive the joined coins",
+          "wad": "Amount of external coins to join (18 decimal number)*"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "exit(address,uint256)": {
+        "notice": "Exit pegged-coins from the system and inside 'Coin.sol'"
+      },
+      "join(address,uint256)": {
+        "notice": "Join pegged-coins in the system"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3494,
+        "contract": "contracts/makerdao/core/adapters/CoinJoin.sol:CoinJoin",
+        "label": "authorizedAccounts",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 3547,
+        "contract": "contracts/makerdao/core/adapters/CoinJoin.sol:CoinJoin",
+        "label": "safeEngine",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_contract(ISafeEngine)5465"
+      },
+      {
+        "astId": 3550,
+        "contract": "contracts/makerdao/core/adapters/CoinJoin.sol:CoinJoin",
+        "label": "systemCoin",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_contract(ICoin)4931"
+      },
+      {
+        "astId": 3552,
+        "contract": "contracts/makerdao/core/adapters/CoinJoin.sol:CoinJoin",
+        "label": "contractEnabled",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_contract(ICoin)4931": {
+        "encoding": "inplace",
+        "label": "contract ICoin",
+        "numberOfBytes": "20"
+      },
+      "t_contract(ISafeEngine)5465": {
+        "encoding": "inplace",
+        "label": "contract ISafeEngine",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
