@@ -1,0 +1,371 @@
+{
+  "address": "0x30a7B4327Cd35E8147409edb5D458A7F2436853a",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "safeEngine_",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "collateralType_",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "collateral_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "AddAuthorization",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "DisableContract",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "Exit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "Join",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "RemoveAuthorization",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "addAuthorization",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "authorizedAccounts",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collateral",
+      "outputs": [
+        {
+          "internalType": "contract IERC20Metadata",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collateralType",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "contractEnabled",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "disableContract",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "exit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "join",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "removeAuthorization",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "safeEngine",
+      "outputs": [
+        {
+          "internalType": "contract ISafeEngine",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "5a3048d5b2f56301a323a2276b6562ea",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"safeEngine_\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"collateralType_\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"collateral_\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"AddAuthorization\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"DisableContract\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"Exit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"Join\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"RemoveAuthorization\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"addAuthorization\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"authorizedAccounts\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"collateral\",\"outputs\":[{\"internalType\":\"contract IERC20Metadata\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"collateralType\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"contractEnabled\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"disableContract\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"exit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"join\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"removeAuthorization\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"safeEngine\",\"outputs\":[{\"internalType\":\"contract ISafeEngine\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This adapter assumes that the collateral has 18 decimals\",\"kind\":\"dev\",\"methods\":{\"exit(address,uint256)\":{\"params\":{\"usr\":\"Account to which we transfer the collateral\",\"wad\":\"Amount of collateral to transfer to 'account' (represented as a number with 18 decimals)*\"}},\"join(address,uint256)\":{\"params\":{\"usr\":\"Account from which we transferFrom collateral and add it in the system\",\"wad\":\"Amount of collateral to transfer in the system (represented as a number with 18 decimals)*\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"exit(address,uint256)\":{\"notice\":\"Exit collateral from the system\"},\"join(address,uint256)\":{\"notice\":\"Join collateral in the system\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/makerdao/core/adapters/CollateralJoin.sol\":\"CollateralJoin\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[],\"viaIR\":true},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address from, address to, uint256 amount) external returns (bool);\\n}\\n\",\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/IERC20Metadata.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../IERC20.sol\\\";\\n\\n/**\\n * @dev Interface for the optional metadata functions from the ERC20 standard.\\n *\\n * _Available since v4.1._\\n */\\ninterface IERC20Metadata is IERC20 {\\n    /**\\n     * @dev Returns the name of the token.\\n     */\\n    function name() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the symbol of the token.\\n     */\\n    function symbol() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the decimals places of the token.\\n     */\\n    function decimals() external view returns (uint8);\\n}\\n\",\"keccak256\":\"0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca\",\"license\":\"MIT\"},\"contracts/makerdao/core/adapters/CollateralJoin.sol\":{\"content\":\"// SPDX-License-Identifier: AGPL-3.0-or-later\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../../interfaces/ICollateralJoin.sol\\\";\\nimport \\\"../../interfaces/ISafeEngine.sol\\\";\\n\\n/// @dev This adapter assumes that the collateral has 18 decimals\\ncontract CollateralJoin is ICollateralJoin {\\n    // --- Auth ---\\n    mapping (address => uint) public authorizedAccounts;\\n    function addAuthorization(address usr) external isAuthorized {\\n        authorizedAccounts[usr] = 1;\\n        emit AddAuthorization(usr);\\n    }\\n    function removeAuthorization(address usr) external isAuthorized {\\n        authorizedAccounts[usr] = 0;\\n        emit RemoveAuthorization(usr);\\n    }\\n    modifier isAuthorized {\\n        require(authorizedAccounts[msg.sender] == 1, \\\"CollateralJoin/not-authorized\\\");\\n        _;\\n    }\\n\\n    ISafeEngine public safeEngine;\\n    bytes32 public collateralType;\\n    IERC20Metadata public collateral;      // Actual collateral token contract\\n    uint    public decimals;        // How many decimals the collateral token has\\n    uint    public contractEnabled; // Whether this adapter contract is enabled or not\\n\\n    // Events\\n    event AddAuthorization(address indexed usr);\\n    event RemoveAuthorization(address indexed usr);\\n    event Join(address indexed usr, uint256 wad);\\n    event Exit(address indexed usr, uint256 wad);\\n\\n    constructor(address safeEngine_, bytes32 collateralType_, address collateral_) public {\\n        authorizedAccounts[msg.sender] = 1;\\n        contractEnabled = 1;\\n        safeEngine = ISafeEngine(safeEngine_);\\n        collateralType = collateralType_;\\n        collateral = IERC20Metadata(collateral_);\\n        decimals = collateral.decimals();\\n        emit AddAuthorization(msg.sender);\\n    }\\n    function disableContract() external isAuthorized {\\n        contractEnabled = 0;\\n        emit DisableContract();\\n    }\\n\\n    function join(address usr, uint wad) external {\\n        require(contractEnabled == 1, \\\"CollateralJoin/not-contractEnabled\\\");\\n        require(int(wad) >= 0, \\\"CollateralJoin/overflow\\\");\\n        safeEngine.modifyCollateralBalance(collateralType, usr, int(wad));\\n        require(collateral.transferFrom(msg.sender, address(this), wad), \\\"CollateralJoin/failed-transfer\\\");\\n        emit Join(usr, wad);\\n    }\\n\\n    function exit(address usr, uint wad) external {\\n        require(wad <= 2 ** 255, \\\"CollateralJoin/overflow\\\");\\n        safeEngine.modifyCollateralBalance(collateralType, msg.sender, -int(wad));\\n        require(collateral.transfer(usr, wad), \\\"CollateralJoin/failed-transfer\\\");\\n        emit Exit(usr, wad);\\n    }\\n}\\n\",\"keccak256\":\"0x2bbc654e901cc19a64388b8f3721c3660042184e366bf69e7d4ba2459c61439d\",\"license\":\"AGPL-3.0-or-later\"},\"contracts/makerdao/interfaces/IAuth.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\ninterface IAuth {\\n    function addAuthorization(address usr) external;\\n    function removeAuthorization(address usr) external;\\n}\\n\",\"keccak256\":\"0x0ba65ef98ccabdaae896001950518dbbfbea94c2f3ac84b064abe0cbeddd9b89\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/IAuthWithContractEnabled.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\nimport {IAuth} from \\\"./IAuth.sol\\\";\\n\\ninterface IAuthWithContractEnabled is IAuth {\\n    event DisableContract();\\n\\n    function disableContract() external;\\n}\\n\",\"keccak256\":\"0x2c6b500483ce79cf7f277949eed8f8f1322227c031eb504ccf316b3ad49aa49c\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/ICollateralJoin.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\\\";\\nimport {IAuthWithContractEnabled} from \\\"./IAuthWithContractEnabled.sol\\\";\\n\\n/**\\n * @title ITaxCollector\\n **/\\ninterface ICollateralJoin is IAuthWithContractEnabled {\\n    /* ==================== METHODS ==================== */\\n\\n    function collateral() external view returns(IERC20Metadata);\\n\\n    /**\\n    * @notice Join collateral in the system\\n    * @param usr Account from which we transferFrom collateral and add it in the system\\n    * @param wad Amount of collateral to transfer in the system (represented as a number with 18 decimals)\\n    **/\\n    function join(address usr, uint wad) external;\\n\\n    /**\\n    * @notice Exit collateral from the system\\n    * @param usr Account to which we transfer the collateral\\n    * @param wad Amount of collateral to transfer to 'account' (represented as a number with 18 decimals)\\n    **/\\n    function exit(address usr, uint wad) external;\\n}\\n\",\"keccak256\":\"0xac3c5caf0b77793b80e69273531b93a40c60ac18532ac3e5a104c0cb13e03821\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/ISafeEngine.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title SafeEngine\\n * @notice The single source of truth for the Maker Protocol. It contains the accounting system of the core Vault,\\n * Internal Dai balances, and collateral state. It houses the public interface for Vault management,\\n * allowing safe(= CDP or Vault) owners to adjust their Vault state balances. It also contains the public interface\\n * for Vault fungibility, allowing safe (Vault) owners to transfer, split, and merge Vaults.\\n * Excluding these interfaces, SAFEEngine is accessed through trusted smart contract modules.\\n **/\\ninterface ISafeEngine {\\n    /* ==================== METHODS ==================== */\\n\\n    // --- Data ---\\n    struct CollateralType {\\n        uint256 debtAmount;       // Total debt issued for this specific collateral type                          [wad]\\n        uint256 accumulatedRate;  // Accumulator for interest accrued on this collateral type                     [ray]\\n        uint256 safetyPrice;      // Floor price at which a CDP is allowed to generate debt                       [ray]\\n        uint256 debtCeiling;      // Maximum amount of debt that can be generated with this collateral type       [rad]\\n        uint256 debtFloor;        // Minimum amount of debt that must be generated by a CDP using this collateral [rad]\\n    }\\n    struct SAFE {\\n        uint256 lockedCollateral; // Total amount of collateral locked in a SAFE/CDP  [wad]\\n        uint256 generatedDebt;    // Total amount of debt generated by a SAFE/CDP     [wad]\\n    }\\n\\n    // --- VARS ---\\n\\n    function safes(bytes32, address) external view returns (uint, uint);\\n\\n    function collateralTypes(bytes32) external view returns (\\n        uint256 debtAmount,   // [wad]\\n        uint256 accumulatedRate,   // [ray]\\n        uint256 safetyPrice,\\n        uint256 debtCeiling,\\n        uint256 debtFloor\\n    );\\n\\n    function tokenCollateral(bytes32, address) external view returns (uint256);\\n\\n    function coinBalance(address) external view returns (uint256);\\n\\n    function debtBalance(address) external view returns (uint256);\\n\\n    // --- Auth ---\\n    /**\\n     * @notice Allow an address to modify your CDP\\n     * @param usr Account to give CDP permissions to\\n     */\\n    function approveSAFEModification(address usr) external;\\n\\n    /**\\n     * @notice Deny an address the rights to modify your CDP\\n     * @param usr Account to give CDP permissions to\\n     */\\n    function denySAFEModification(address usr) external;\\n\\n    // --- Administration ---\\n\\n    function initializeCollateralType(bytes32 collateralType) external;\\n    function modifyParameters(bytes32 what, uint data) external;\\n    function modifyParameters(bytes32 collateralType, bytes32 what, uint data) external;\\n\\n    // --- Fungibility ---\\n    function modifyCollateralBalance(bytes32 collateralType, address usr, int256 wad) external;\\n    function transferCollateral(bytes32 collateralType, address src, address dst, uint256 wad) external;\\n    function transferInternalCoins(address src, address dst, uint256 rad) external;\\n\\n    // --- CDP Manipulation ---\\n    /**\\n     * @notice Add/remove collateral or put back/generate more debt in a CDP\\n     * @param collateralType Type of collateral to withdraw/deposit in and from the CDP\\n     * @param cdp Target CDP\\n     * @param collateralSource Account we take collateral from/put collateral into\\n     * @param debtDestination Account from which we credit/debit coins and debt\\n     * @param deltaCollateral Amount of collateral added/extract from the CDP\\n     * @param deltaDebt Amount of debt to generate/repay\\n     */\\n    function modifySAFECollateralization(bytes32 collateralType, address cdp, address collateralSource, address debtDestination, int deltaCollateral, int deltaDebt) external;\\n\\n    // --- CDP Fungibility ---\\n    /**\\n     * @notice Transfer collateral and/or debt between CDPs\\n     * @param collateralType Collateral type transferred between CDPs\\n     * @param src Source CDP\\n     * @param dst Destination CDP\\n     * @param deltaCollateral Amount of collateral to take/add into src and give/take from dst\\n     * @param deltaDebt Amount of debt to take/add into src and give/take from dst\\n     */\\n    function transferSAFECollateralAndDebt(bytes32 collateralType, address src, address dst, int deltaCollateral, int deltaDebt) external;\\n\\n    // --- CDP Confiscation ---\\n    /**\\n     * @notice Normally used by the LiquidationEngine in order to confiscate collateral and\\n       debt from a CDP and give them to someone else\\n     * @param collateralType Collateral type the CDP has locked inside\\n     * @param cdp Target CDP\\n     * @param collateralCounterparty Who we take/give collateral to\\n     * @param debtCounterparty Who we take/give debt to\\n     * @param deltaCollateral Amount of collateral taken/added into the CDP\\n     * @param deltaDebt Amount of debt taken/added into the CDP\\n     */\\n    function confiscateSAFECollateralAndDebt(bytes32 collateralType, address cdp, address collateralCounterparty, address debtCounterparty, int deltaCollateral, int deltaDebt) external;\\n\\n    // --- Settlement ---\\n    /**\\n     * @notice Nullify an amount of coins with an equal amount of debt\\n     * @param rad Amount of debt & coins to destroy (expressed as a number with 45 decimals)\\n     */\\n    function settleDebt(uint rad) external;\\n\\n    /**\\n     * @notice Usually called by CoinSavingsAccount in order to create unbacked debt\\n     * @param debtDestination Usually AccountingEngine that can settle decreaseSoldAmount with surplus\\n     * @param coinDestination Usually CoinSavingsAccount who passes the new coins to depositors\\n     * @param rad Amount of debt to create (expressed as a number with 45 decimals)\\n     */\\n    function createUnbackedDebt(address debtDestination, address coinDestination, uint rad) external;\\n\\n    // --- Rates ---\\n    /**\\n     * @notice Usually called by TaxCollector in order to accrue interest on a specific collateral type\\n     * @param collateralType Collateral type we accrue interest for\\n     * @param surplusDst Destination for amount of surplus created by applying the interest rate\\n       to debt created by CDPs with 'collateralType'\\n     * @param accumulatedRate Multiplier applied to the debtAmount in order to calculate the surplus\\n     */\\n    function updateAccumulatedRate(bytes32 collateralType, address surplusDst, int accumulatedRate) external;\\n}\\n\",\"keccak256\":\"0xf1e715f60362b95b7788deb8531bfefbcc45ab70497f84a13eac55544ad42bb1\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x608060408181523461012d576060826108d380380380916100208285610132565b83398101031261012d5760046100358361016b565b602080916100488583880151970161016b565b95600096338852878452600187892055600160055560018060a01b03918260018060a01b03199416846001541617600155600255168091600354161760035584519384809263313ce56760e01b82525afa9081156101205784916100e3575b5060ff91501660045551907f599a298163e1678bb1c676052a8930bf0b8a1261ed6e01b8a2391e55f7000102339180a261075390816101808239f35b905081813d8311610119575b6100f98183610132565b81010312610115575160ff811681036101155760ff90386100a7565b8280fd5b503d6100ef565b50505051903d90823e3d90fd5b600080fd5b601f909101601f19168101906001600160401b0382119082101761015557604052565b634e487b7160e01b600052604160045260246000fd5b51906001600160a01b038216820361012d5756fe608060408181526004908136101561001657600080fd5b600092833560e01c90816324ba58841461056c57508063313ce5671461054e57806335b28153146104e35780633b4da69f1461035e57806341b3a0d91461033f57806367aea31314610316578063894ba833146102c357806394f3f81d14610255578063d8dfeb451461022c578063e824600f146102095763ef693bed1461009d57600080fd5b346101f257806003193601126101f2576100b561059f565b6024359190600160ff1b6100cb81851115610606565b6001546002546001600160a01b0392909183169086146101f657908188923b156101f25761011791839189838a8a5196879586948593632508c12f60e11b855285039133918501610698565b03925af180156101e8576101d0575b50508060446020926003541693888651958694859363a9059cbb60e01b855216809a8401528860248401525af19081156101c657916101917f22d324652c93739755cf4581508b60875ebdd78c20c0cff5cf8e23452b29963194926020948891610199575b506106d1565b51908152a280f35b6101b99150853d81116101bf575b6101b18183610675565b8101906106b9565b3861018b565b503d6101a7565b82513d87823e3d90fd5b6101d99061064c565b6101e4578538610126565b8580fd5b85513d84823e3d90fd5b8280fd5b634e487b7160e01b885260118752602488fd5b8382346102285781600319360112610228576020906002549051908152f35b5080fd5b83823461022857816003193601126102285760035490516001600160a01b039091168152602090f35b838234610228576020366003190112610228578161027161059f565b33825281602052610287600184842054146105ba565b6001600160a01b03168082526020829052918120557f8834a87e641e9716be4f34527af5d23e11624f1ddeefede6ad75a9acfc31b9038280a280f35b83823461022857816003193601126102285760016102eb9133845283602052832054146105ba565b806005557f2d4b4ecff7bd7503135271925520a2f6c0d98c9473ffc1a1e72c92502f51b25e8180a180f35b83823461022857816003193601126102285760015490516001600160a01b039091168152602090f35b8382346102285781600319360112610228576020906005549051908152f35b5090346101f257816003193601126101f25761037861059f565b602435926001600554036104965761039285851215610606565b6001546002546001600160a01b0394918516908790823b15610228576103d19286838a93885196879586948593632508c12f60e11b85528b8501610698565b03925af1801561048c5761047a575b50602086916064866003541691855194859384926323b872dd60e01b845233908401523060248401528a60448401525af1908115610470579161044f602094927fb4e09949657f21548b58afe74e7b86cd2295da5ff1598ae1e5faecb1cf19ca959694899161045957506106d1565b519485521692a280f35b6101b99150863d81116101bf576101b18183610675565b82513d88823e3d90fd5b9561048660209761064c565b956103e0565b83513d89823e3d90fd5b5162461bcd60e51b8152602081840152602260248201527f436f6c6c61746572616c4a6f696e2f6e6f742d636f6e7472616374456e61626c604482015261195960f21b6064820152608490fd5b83823461022857602036600319011261022857600161050061059f565b338452836020526105158284862054146105ba565b818060a01b031691828452836020528320557f599a298163e1678bb1c676052a8930bf0b8a1261ed6e01b8a2391e55f70001028280a280f35b5090346101f257826003193601126101f25760209250549051908152f35b925050346101f25760203660031901126101f2576020926001600160a01b0361059361059f565b16815280845220548152f35b600435906001600160a01b03821682036105b557565b600080fd5b156105c157565b60405162461bcd60e51b815260206004820152601d60248201527f436f6c6c61746572616c4a6f696e2f6e6f742d617574686f72697a65640000006044820152606490fd5b1561060d57565b60405162461bcd60e51b8152602060048201526017602482015276436f6c6c61746572616c4a6f696e2f6f766572666c6f7760481b6044820152606490fd5b6001600160401b03811161065f57604052565b634e487b7160e01b600052604160045260246000fd5b601f909101601f19168101906001600160401b0382119082101761065f57604052565b9081526001600160a01b039091166020820152604081019190915260600190565b908160209103126105b5575180151581036105b55790565b156106d857565b60405162461bcd60e51b815260206004820152601e60248201527f436f6c6c61746572616c4a6f696e2f6661696c65642d7472616e7366657200006044820152606490fdfea2646970667358221220775d6a9312d5313f27cef7f42406b148b8d90f5dd1b5c85375882eb24a12406764736f6c63430008110033",
+  "deployedBytecode": "0x608060408181526004908136101561001657600080fd5b600092833560e01c90816324ba58841461056c57508063313ce5671461054e57806335b28153146104e35780633b4da69f1461035e57806341b3a0d91461033f57806367aea31314610316578063894ba833146102c357806394f3f81d14610255578063d8dfeb451461022c578063e824600f146102095763ef693bed1461009d57600080fd5b346101f257806003193601126101f2576100b561059f565b6024359190600160ff1b6100cb81851115610606565b6001546002546001600160a01b0392909183169086146101f657908188923b156101f25761011791839189838a8a5196879586948593632508c12f60e11b855285039133918501610698565b03925af180156101e8576101d0575b50508060446020926003541693888651958694859363a9059cbb60e01b855216809a8401528860248401525af19081156101c657916101917f22d324652c93739755cf4581508b60875ebdd78c20c0cff5cf8e23452b29963194926020948891610199575b506106d1565b51908152a280f35b6101b99150853d81116101bf575b6101b18183610675565b8101906106b9565b3861018b565b503d6101a7565b82513d87823e3d90fd5b6101d99061064c565b6101e4578538610126565b8580fd5b85513d84823e3d90fd5b8280fd5b634e487b7160e01b885260118752602488fd5b8382346102285781600319360112610228576020906002549051908152f35b5080fd5b83823461022857816003193601126102285760035490516001600160a01b039091168152602090f35b838234610228576020366003190112610228578161027161059f565b33825281602052610287600184842054146105ba565b6001600160a01b03168082526020829052918120557f8834a87e641e9716be4f34527af5d23e11624f1ddeefede6ad75a9acfc31b9038280a280f35b83823461022857816003193601126102285760016102eb9133845283602052832054146105ba565b806005557f2d4b4ecff7bd7503135271925520a2f6c0d98c9473ffc1a1e72c92502f51b25e8180a180f35b83823461022857816003193601126102285760015490516001600160a01b039091168152602090f35b8382346102285781600319360112610228576020906005549051908152f35b5090346101f257816003193601126101f25761037861059f565b602435926001600554036104965761039285851215610606565b6001546002546001600160a01b0394918516908790823b15610228576103d19286838a93885196879586948593632508c12f60e11b85528b8501610698565b03925af1801561048c5761047a575b50602086916064866003541691855194859384926323b872dd60e01b845233908401523060248401528a60448401525af1908115610470579161044f602094927fb4e09949657f21548b58afe74e7b86cd2295da5ff1598ae1e5faecb1cf19ca959694899161045957506106d1565b519485521692a280f35b6101b99150863d81116101bf576101b18183610675565b82513d88823e3d90fd5b9561048660209761064c565b956103e0565b83513d89823e3d90fd5b5162461bcd60e51b8152602081840152602260248201527f436f6c6c61746572616c4a6f696e2f6e6f742d636f6e7472616374456e61626c604482015261195960f21b6064820152608490fd5b83823461022857602036600319011261022857600161050061059f565b338452836020526105158284862054146105ba565b818060a01b031691828452836020528320557f599a298163e1678bb1c676052a8930bf0b8a1261ed6e01b8a2391e55f70001028280a280f35b5090346101f257826003193601126101f25760209250549051908152f35b925050346101f25760203660031901126101f2576020926001600160a01b0361059361059f565b16815280845220548152f35b600435906001600160a01b03821682036105b557565b600080fd5b156105c157565b60405162461bcd60e51b815260206004820152601d60248201527f436f6c6c61746572616c4a6f696e2f6e6f742d617574686f72697a65640000006044820152606490fd5b1561060d57565b60405162461bcd60e51b8152602060048201526017602482015276436f6c6c61746572616c4a6f696e2f6f766572666c6f7760481b6044820152606490fd5b6001600160401b03811161065f57604052565b634e487b7160e01b600052604160045260246000fd5b601f909101601f19168101906001600160401b0382119082101761065f57604052565b9081526001600160a01b039091166020820152604081019190915260600190565b908160209103126105b5575180151581036105b55790565b156106d857565b60405162461bcd60e51b815260206004820152601e60248201527f436f6c6c61746572616c4a6f696e2f6661696c65642d7472616e7366657200006044820152606490fdfea2646970667358221220775d6a9312d5313f27cef7f42406b148b8d90f5dd1b5c85375882eb24a12406764736f6c63430008110033",
+  "devdoc": {
+    "details": "This adapter assumes that the collateral has 18 decimals",
+    "kind": "dev",
+    "methods": {
+      "exit(address,uint256)": {
+        "params": {
+          "usr": "Account to which we transfer the collateral",
+          "wad": "Amount of collateral to transfer to 'account' (represented as a number with 18 decimals)*"
+        }
+      },
+      "join(address,uint256)": {
+        "params": {
+          "usr": "Account from which we transferFrom collateral and add it in the system",
+          "wad": "Amount of collateral to transfer in the system (represented as a number with 18 decimals)*"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "exit(address,uint256)": {
+        "notice": "Exit collateral from the system"
+      },
+      "join(address,uint256)": {
+        "notice": "Join collateral in the system"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3717,
+        "contract": "contracts/makerdao/core/adapters/CollateralJoin.sol:CollateralJoin",
+        "label": "authorizedAccounts",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 3770,
+        "contract": "contracts/makerdao/core/adapters/CollateralJoin.sol:CollateralJoin",
+        "label": "safeEngine",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_contract(ISafeEngine)5465"
+      },
+      {
+        "astId": 3772,
+        "contract": "contracts/makerdao/core/adapters/CollateralJoin.sol:CollateralJoin",
+        "label": "collateralType",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 3775,
+        "contract": "contracts/makerdao/core/adapters/CollateralJoin.sol:CollateralJoin",
+        "label": "collateral",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_contract(IERC20Metadata)715"
+      },
+      {
+        "astId": 3777,
+        "contract": "contracts/makerdao/core/adapters/CollateralJoin.sol:CollateralJoin",
+        "label": "decimals",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 3779,
+        "contract": "contracts/makerdao/core/adapters/CollateralJoin.sol:CollateralJoin",
+        "label": "contractEnabled",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_contract(IERC20Metadata)715": {
+        "encoding": "inplace",
+        "label": "contract IERC20Metadata",
+        "numberOfBytes": "20"
+      },
+      "t_contract(ISafeEngine)5465": {
+        "encoding": "inplace",
+        "label": "contract ISafeEngine",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

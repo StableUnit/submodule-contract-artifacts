@@ -201,6 +201,13 @@
     },
 
     {
+      "address": "0xDF2e747Ae22Ea80B5f6C8f8BA8FDC2FAAC996762",
+      "chainId": 42161,
+      "name": "Euro Pro",
+      "symbol": "EURPro",
+      "decimals": 18
+    },
+    {
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "chainId": 42161,
       "name": "Dai Stablecoin",
@@ -222,9 +229,9 @@
       "decimals": 8
     },
     {
-      "address": "0x7d49e5adc0eaad9c027857767638613253ef125f",
+      "address": "0xc8fd1f1e059d97ec71ae566dd6ca788dc92f36af",
       "chainId": 42161,
-      "name": "Pendle GLP LP",
+      "name": "Pendle wstETH LP",
       "symbol": "PENDLE-LPT",
       "decimals": 18
     }
