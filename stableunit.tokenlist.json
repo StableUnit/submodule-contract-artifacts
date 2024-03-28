@@ -7,164 +7,6 @@
   "timestamp": "2020-06-27T00:00:00+00:00",
   "tokens": [
     {
-      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-      "chainId": 1,
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
-      "decimals": 18
-    },
-    {
-      "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
-      "chainId": 1,
-      "name": "Wrapped BTC",
-      "symbol": "WBTC",
-      "decimals": 8
-    },
-    {
-      "address": "0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE",
-      "chainId": 1,
-      "name": "SHIBA INU",
-      "symbol": "SHIB",
-      "decimals": 18
-    },
-    {
-      "address": "0x111111111117dC0aa78b770fA6A738034120C302",
-      "chainId": 1,
-      "name": "1INCH Token",
-      "symbol": "1INCH",
-      "decimals": 18
-    },
-
-
-    {
-      "address": "0x7189C2F69Ed1D8e9C61aF5955e9B312966B2F81B",
-      "chainId": 4,
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
-      "decimals": 18
-    },
-    {
-      "address": "0x8586594412DAC2621ABde8d422885EfFE63eCdff",
-      "chainId": 4,
-      "name": "Wrapped BTC",
-      "symbol": "WBTC",
-      "decimals": 8
-    },
-    {
-      "address": "0xD90182FF01630B5343B17FA32b02113CbEFB2ed8",
-      "chainId": 4,
-      "name": "SHIBA INU",
-      "symbol": "SHIB",
-      "decimals": 18
-    },
-    {
-      "address": "0x2b52Aff165104f14ad30e867E9D69F7d74194FC9",
-      "chainId": 4,
-      "name": "1INCH Token",
-      "symbol": "1INCH",
-      "decimals": 18
-    },
-    {
-      "address": "0x7Ddd92A76d93A94393e2C1BA02853Fc3188288BB",
-      "chainId": 4,
-      "name": "USD Pro",
-      "symbol": "USDPro",
-      "decimals": 18
-    },
-
-
-    {
-      "address": "0xe940cb81F8A613Fe826E5b79D1D9D71a4be9844c",
-      "chainId": 5,
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
-      "decimals": 18,
-      "group": "ETH"
-    },
-    {
-      "address": "0x2B6342308Ad173A398250faDcdeeA2463CbF1a5E",
-      "chainId": 5,
-      "name": "Wrapped BTC",
-      "symbol": "WBTC",
-      "decimals": 8
-    },
-    {
-      "address": "0x5f719D9748be31Ae44d8590D7f2035F8C8ea484f",
-      "chainId": 5,
-      "name": "StableUnit USD Pro",
-      "symbol": "USDPro",
-      "decimals": 18
-    },
-    {
-      "address": "0x18Ca46e2d65C4f9050F0aB17a9bc6b0fEaC5d337",
-      "chainId": 5,
-      "name": "StableUnit EURO Pro",
-      "symbol": "EURPro",
-      "decimals": 18
-    },
-    {
-      "address": "0x368b73AbF229135b35b1b07987a6a1A74C577A7a",
-      "chainId": 5,
-      "name": "test DAI",
-      "symbol": "DAI",
-      "decimals": 18
-    },
-    {
-      "address": "0x666666679eb68ffef7244859a2016B0D28664998",
-      "chainId": 5,
-      "name": "vested escrow StableUnit DAO",
-      "symbol": "veSuDAO",
-      "decimals": 18
-    },
-    {
-      "address": "0x7bF6b2E5C70bd2F3e8CbE51635bB5b40f5E86e02",
-      "chainId": 5,
-      "name": "StableUnit DAO",
-      "symbol": "SuDAO",
-      "decimals": 18
-    },
-    {
-      "address": "0x0b9A6075ac24D5352F4FC5105e2CF7D03692bca7",
-      "chainId": 5,
-      "name": "Staked Frax Ether",
-      "symbol": "sfrxETH",
-      "decimals": 18,
-      "group": "ETH"
-    },
-    {
-      "address": "0x64CFC4C1661b100f891EDcFFD8D2144524eCe37d",
-      "chainId": 5,
-      "name": "Lido Staked ETH",
-      "symbol": "stETH",
-      "decimals": 18,
-      "group": "ETH"
-    },
-    {
-      "address": "0x22D42Fd2449045a7F92ccA408Fc84a64E4ec6850",
-      "chainId": 5,
-      "name": "swETH",
-      "symbol": "swETH",
-      "decimals": 18,
-      "group": "ETH"
-    },
-    {
-      "address": "0x6fD57c9D53c84BE51CF11F9e724a73833f8e811d",
-      "chainId": 5,
-      "name": "Rocket Pool ETH",
-      "symbol": "rETH",
-      "decimals": 18,
-      "group": "ETH"
-    },
-    {
-      "address": "0x04D047aDBD23421a6b60D18eBD61a782380A26e7",
-      "chainId": 5,
-      "name": "Lido's wrapped stETH to ETH LP",
-      "symbol": "wstETH-ETH LP",
-      "decimals": 18,
-      "group": "ETH"
-    },
-
-    {
       "address": "0xE0A14861Ae164D23f3360A0253e0c75e0b840d8a",
       "chainId": 11155111,
       "name": "Wrapped ETH",
@@ -209,73 +51,46 @@
       "decimals": 18
     },
     {
-      "address": "0x04207C3D48Bf1659e77C64E5FDa6fE2eab19E50e",
+      "address": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
       "chainId": 137,
-      "name": "Euro Pro",
-      "symbol": "EURPro",
-      "decimals": 18
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
+      "decimals": 18,
+      "group": "ETH"
     },
     {
-      "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+      "address": "0x0266F4F08D82372CF0FcbCCc0Ff74309089c74d1",
       "chainId": 137,
-      "name": "Wrapped BTC",
-      "symbol": "WBTC",
-      "decimals": 8
+      "name": "Rocket Pool ETH",
+      "symbol": "rETH",
+      "decimals": 18,
+      "group": "ETH"
     },
     {
-      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "address": "0x3d468AB2329F296e1b9d8476Bb54Dd77D8c2320f",
       "chainId": 137,
-      "name": "Dai Stablecoin",
-      "symbol": "DAI",
+      "name": "20WETH-80BAL",
+      "symbol": "20WETH-80BAL",
       "decimals": 18
     },
     {
-      "address": "0xe7a24ef0c5e95ffb0f6684b813a78f2a3ad7d171",
-      "chainId": 137,
-      "name": "Curve AAVE LP",
-      "symbol": "am3CRV",
-      "decimals": 18
-    },
-
-    {
-      "address": "0xDF2e747Ae22Ea80B5f6C8f8BA8FDC2FAAC996762",
-      "chainId": 42161,
-      "name": "Euro Pro",
-      "symbol": "EURPro",
+      "address": "0x983B33819243a17194D8161eeA330d7c5bafA358",
+      "chainId": 11155111,
+      "name": "StablePro",
+      "symbol": "StablePro",
       "decimals": 18
     },
     {
-      "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-      "chainId": 42161,
-      "name": "Dai Stablecoin",
-      "symbol": "DAI",
-      "decimals": 18
-    },
-    {
-      "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-      "chainId": 42161,
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
-      "decimals": 18
-    },
-    {
-      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
-      "chainId": 42161,
-      "name": "Wrapped BTC",
-      "symbol": "WBTC",
-      "decimals": 8
-    },
-    {
-      "address": "0xc8fd1f1e059d97ec71ae566dd6ca788dc92f36af",
-      "chainId": 42161,
-      "name": "Pendle wstETH LP",
-      "symbol": "PENDLE-LPT",
+      "address": "0x983B33819243a17194D8161eeA330d7c5bafA358",
+      "chainId": 11155111,
+      "name": "USDPro",
+      "symbol": "USDPro",
       "decimals": 18
     }
   ],
   "version": {
     "major": 1,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   }
 }
