@@ -67,10 +67,10 @@
       "group": "ETH"
     },
     {
-      "address": "0x3d468AB2329F296e1b9d8476Bb54Dd77D8c2320f",
+      "address": "0xa61Ba46582F434616c14B56140B1bfeCEC764C37",
       "chainId": 137,
-      "name": "20WETH-80BAL",
-      "symbol": "20WETH-80BAL",
+      "name": "Aura 20USDC-80THX",
+      "symbol": "20USDC-80THX",
       "decimals": 18
     },
     {
