@@ -22,6 +22,53 @@
       "decimals": 8
     },
     {
+      "address": "0xA8A01cca93B95661F14D07EDBA4C828A6D8A97e9",
+      "chainId": 11155111,
+      "name": "eETH",
+      "symbol": "eETH",
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
+      "address": "0x028697AdAEFD1149213C026143E18F630bf59C9f",
+      "chainId": 11155111,
+      "name": "rsETH",
+      "symbol": "rsETH",
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
+      "address": "0x31e1C79886e745CAaB870Ea9455EFeD0A74dA097",
+      "chainId": 11155111,
+      "name": "GLP",
+      "symbol": "GLP",
+      "decimals": 18
+    },
+    {
+      "address": "0xd804F36c4FE651e0C68B0B79D7fAD87682433C54",
+      "chainId": 11155111,
+      "name": "rETH-WETH",
+      "symbol": "rETH-WETH",
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
+      "address": "0xAfF640d39fac0E58b58F7220d32c618a2f0e9DC6",
+      "chainId": 11155111,
+      "name": "rETH-weETH",
+      "symbol": "rETH-weETH",
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
+      "address": "0x30ACBEe042310bE38a9F39209128E2d360635A1E",
+      "chainId": 11155111,
+      "name": "WETH-osETH",
+      "symbol": "WETH-osETH",
+      "decimals": 18,
+      "group": "ETH"
+    },
+    {
       "address": "0xb4EF7797e69042F9188D4E8717bF5B131345D547",
       "chainId": 11155111,
       "name": "USDT",
