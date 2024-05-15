@@ -27,6 +27,7 @@
       "name": "eETH",
       "symbol": "eETH",
       "decimals": 18,
+      "protocolName": "Pendle",
       "group": "ETH"
     },
     {
@@ -35,6 +36,7 @@
       "name": "rsETH",
       "symbol": "rsETH",
       "decimals": 18,
+      "protocolName": "Pendle",
       "group": "ETH"
     },
     {
@@ -42,6 +44,7 @@
       "chainId": 11155111,
       "name": "GLP",
       "symbol": "GLP",
+      "protocolName": "Pendle",
       "decimals": 18
     },
     {
@@ -50,6 +53,7 @@
       "name": "rETH-WETH",
       "symbol": "rETH-WETH",
       "decimals": 18,
+      "protocolName": "Aura",
       "group": "ETH"
     },
     {
@@ -58,6 +62,7 @@
       "name": "rETH-weETH",
       "symbol": "rETH-weETH",
       "decimals": 18,
+      "protocolName": "Aura",
       "group": "ETH"
     },
     {
@@ -66,6 +71,7 @@
       "name": "WETH-osETH",
       "symbol": "WETH-osETH",
       "decimals": 18,
+      "protocolName": "Aura",
       "group": "ETH"
     },
     {
