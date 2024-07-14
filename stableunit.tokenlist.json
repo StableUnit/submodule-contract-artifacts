@@ -140,6 +140,20 @@
       "name": "USDPro",
       "symbol": "USDPro",
       "decimals": 18
+    },
+    {
+      "address": "0x77777777785CcD99FB5F383F858ABA327582EDcB",
+      "chainId": 137,
+      "name": "SuDAO",
+      "symbol": "SuDAO",
+      "decimals": 18
+    },
+    {
+      "address": "0x777777777B9F67D6E234196eB00A58918C1d7487",
+      "chainId": 137,
+      "name": "VeSuDAO",
+      "symbol": "VeSuDAO",
+      "decimals": 18
     }
   ],
   "version": {
