@@ -1,0 +1,180 @@
+{
+  "address": "0xAF3745a64F7a9E7604f8Fd4EB1882108d64B6Ec3",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_manager",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_ve",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "blockContract",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "isBlocked",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "manager",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ve",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x9d3fe53ee6fc958969e826a3ed073275d64d95bad69a333674b5fee5b8e6d906",
+  "receipt": {
+    "to": null,
+    "from": "0xB1A2C47AA400bDbfb46822A39843C0d91127864f",
+    "contractAddress": "0xAF3745a64F7a9E7604f8Fd4EB1882108d64B6Ec3",
+    "transactionIndex": 47,
+    "gasUsed": "204064",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xabcc5077a841df23dd49c3e35ccf72d76be0bde2c66bb653ebd124028f36db0d",
+    "transactionHash": "0x9d3fe53ee6fc958969e826a3ed073275d64d95bad69a333674b5fee5b8e6d906",
+    "logs": [],
+    "blockNumber": 6372628,
+    "cumulativeGasUsed": "10526949",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xB1A2C47AA400bDbfb46822A39843C0d91127864f",
+    "0x8106DE5bF39B00e1247dBF33D28419210004257B"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "77b5db70f650e1a1f6880ef50c4a05bc",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_manager\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_ve\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"blockContract\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"isBlocked\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"manager\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ve\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Blocking can be circumvented by a deterministically created (create2) contract that selfdestructs after execution of instructions In such a scenario the Blocklist may have to be replaced with new one that also supports blocking of addresses in general\",\"kind\":\"dev\",\"methods\":{\"blockContract(address)\":{\"details\":\"Is only callable by the Blocklist owner Allows blocklisting only of contracts\",\"params\":{\"addr\":\"The contract address to blocklist\"}},\"constructor\":{\"params\":{\"_manager\":\"Owner of the blocklist contract\",\"_ve\":\"Address of the `VotingEscrow` contract\"}},\"isBlocked(address)\":{\"details\":\"This method will be called by the VotingEscrow contract\",\"params\":{\"addr\":\"The contract address to check\"},\"returns\":{\"_0\":\"Whether `addr` is blocked or not\"}}},\"title\":\"A blocklist for contracts\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"blockContract(address)\":{\"notice\":\"Add address to blocklist\"},\"constructor\":{\"notice\":\"Initializes state\"},\"isBlocked(address)\":{\"notice\":\"Check an address\"}},\"notice\":\"Allows blocking of contracts. Blocking a contract also forces the undelegation of that lock in the VotingEscrow contract\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/staking/contracts/Blocklist.sol\":\"Blocklist\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[],\"viaIR\":true},\"sources\":{\"contracts/staking/contracts/Blocklist.sol\":{\"content\":\"// SPDX-License-Identifier: Apache-2.0\\npragma solidity ^0.8.3;\\n\\nimport { IVotingEscrow } from \\\"../interfaces/IVotingEscrow.sol\\\";\\n\\n/// @title A blocklist for contracts\\n/// @notice Allows blocking of contracts. Blocking a contract also\\n/// forces the undelegation of that lock in the VotingEscrow contract\\n/// @dev Blocking can be circumvented by a deterministically created\\n/// (create2) contract that selfdestructs after execution of instructions\\n/// In such a scenario the Blocklist may have to be replaced with new\\n/// one that also supports blocking of addresses in general\\ncontract Blocklist {\\n    mapping(address => bool) private _blocklist;\\n    address public immutable manager;\\n    address public immutable ve;\\n\\n    /// @notice Initializes state\\n    /// @param _manager Owner of the blocklist contract\\n    /// @param _ve Address of the `VotingEscrow` contract\\n    constructor(address _manager, address _ve) {\\n        manager = _manager;\\n        ve = _ve;\\n    }\\n\\n    /// @notice Add address to blocklist\\n    /// @param addr The contract address to blocklist\\n    /// @dev Is only callable by the Blocklist owner\\n    /// Allows blocklisting only of contracts\\n    function blockContract(address addr) external {\\n        require(msg.sender == manager, \\\"Only manager\\\");\\n        require(addr.code.length > 0, \\\"Only contracts\\\");\\n        _blocklist[addr] = true;\\n        IVotingEscrow(ve).forceUndelegate(addr);\\n    }\\n\\n    /// @notice Check an address\\n    /// @param addr The contract address to check\\n    /// @return Whether `addr` is blocked or not\\n    /// @dev This method will be called by the VotingEscrow contract\\n    function isBlocked(address addr) external view returns (bool) {\\n        return _blocklist[addr];\\n    }\\n}\",\"keccak256\":\"0x1483a92ae0a968b8fcdb9bc6b2612afa72f555677fc369d74e53ae3a06a7e698\",\"license\":\"Apache-2.0\"},\"contracts/staking/interfaces/IVotingEscrow.sol\":{\"content\":\"// SPDX-License-Identifier: AGPL-3.0-or-later\\npragma solidity ^0.8.3;\\n\\ninterface IVotingEscrow {\\n    function createLock(uint256 _value, uint256 _unlockTime) external;\\n\\n    function increaseAmount(uint256 _value) external;\\n\\n    function increaseUnlockTime(uint256 _unlockTime) external;\\n\\n    function withdraw() external;\\n\\n    function delegate(address _addr) external;\\n\\n    function quitLock() external;\\n\\n    function balanceOf(address _owner) external view returns (uint256);\\n\\n    function balanceOfAt(address _owner, uint256 _blockNumber)\\n    external\\n    view\\n    returns (uint256);\\n\\n    function totalSupply() external view returns (uint256);\\n\\n    function totalSupplyAt(uint256 _blockNumber)\\n    external\\n    view\\n    returns (uint256);\\n\\n    function forceUndelegate(address _addr) external;\\n}\\n\",\"keccak256\":\"0x2041a3a93f3f5b3d3498ed12c2d98f440b55566cff72cba11233b95f320e83ab\",\"license\":\"AGPL-3.0-or-later\"}},\"version\":1}",
+  "bytecode": "0x60c03461008757601f61036738819003918201601f19168301916001600160401b0383118484101761008c57808492604094855283398101031261008757610052602061004b836100a2565b92016100a2565b9060805260a0526040516102b090816100b7823960805181818160bc0152610208015260a051818181610101015261024b0152f35b600080fd5b634e487b7160e01b600052604160045260246000fd5b51906001600160a01b03821682036100875756fe6080604081815260048036101561001557600080fd5b600092833560e01c9081631f8507161461023757508063481c6a75146101f3578063aba129b61461008f5763fbac39511461004f57600080fd5b3461008b57602036600319011261008b57356001600160a01b0381169081900361008b57818360ff926020955280855220541690519015158152f35b8280fd5b509190346101ef5760203660031901126101ef576001600160a01b039280358481169081810361018557857f00000000000000000000000000000000000000000000000000000000000000001633036101bd573b1561018957839481855284602052838520600160ff198254161790557f000000000000000000000000000000000000000000000000000000000000000016803b15610185576024859285519687938492631c8e64fb60e11b8452878401525af1801561017b57610151578380f35b6001600160401b0383116101685750523880808380f35b634e487b7160e01b845260419052602483fd5b82513d86823e3d90fd5b8480fd5b506020606492519162461bcd60e51b8352820152600e60248201526d4f6e6c7920636f6e74726163747360901b6044820152fd5b835162461bcd60e51b8152602081850152600c60248201526b27b7363c9036b0b730b3b2b960a11b6044820152606490fd5b5080fd5b5050346101ef57816003193601126101ef57517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b8490346101ef57816003193601126101ef577f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f3fea2646970667358221220ce2d4c6b323c52a19ebe05a67cee8f04213f0efe14c30de582a1b2f8bfc2273664736f6c63430008110033",
+  "deployedBytecode": "0x6080604081815260048036101561001557600080fd5b600092833560e01c9081631f8507161461023757508063481c6a75146101f3578063aba129b61461008f5763fbac39511461004f57600080fd5b3461008b57602036600319011261008b57356001600160a01b0381169081900361008b57818360ff926020955280855220541690519015158152f35b8280fd5b509190346101ef5760203660031901126101ef576001600160a01b039280358481169081810361018557857f00000000000000000000000000000000000000000000000000000000000000001633036101bd573b1561018957839481855284602052838520600160ff198254161790557f000000000000000000000000000000000000000000000000000000000000000016803b15610185576024859285519687938492631c8e64fb60e11b8452878401525af1801561017b57610151578380f35b6001600160401b0383116101685750523880808380f35b634e487b7160e01b845260419052602483fd5b82513d86823e3d90fd5b8480fd5b506020606492519162461bcd60e51b8352820152600e60248201526d4f6e6c7920636f6e74726163747360901b6044820152fd5b835162461bcd60e51b8152602081850152600c60248201526b27b7363c9036b0b730b3b2b960a11b6044820152606490fd5b5080fd5b5050346101ef57816003193601126101ef57517f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f35b8490346101ef57816003193601126101ef577f00000000000000000000000000000000000000000000000000000000000000006001600160a01b03168152602090f3fea2646970667358221220ce2d4c6b323c52a19ebe05a67cee8f04213f0efe14c30de582a1b2f8bfc2273664736f6c63430008110033",
+  "devdoc": {
+    "details": "Blocking can be circumvented by a deterministically created (create2) contract that selfdestructs after execution of instructions In such a scenario the Blocklist may have to be replaced with new one that also supports blocking of addresses in general",
+    "kind": "dev",
+    "methods": {
+      "blockContract(address)": {
+        "details": "Is only callable by the Blocklist owner Allows blocklisting only of contracts",
+        "params": {
+          "addr": "The contract address to blocklist"
+        }
+      },
+      "constructor": {
+        "params": {
+          "_manager": "Owner of the blocklist contract",
+          "_ve": "Address of the `VotingEscrow` contract"
+        }
+      },
+      "isBlocked(address)": {
+        "details": "This method will be called by the VotingEscrow contract",
+        "params": {
+          "addr": "The contract address to check"
+        },
+        "returns": {
+          "_0": "Whether `addr` is blocked or not"
+        }
+      }
+    },
+    "title": "A blocklist for contracts",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "blockContract(address)": {
+        "notice": "Add address to blocklist"
+      },
+      "constructor": {
+        "notice": "Initializes state"
+      },
+      "isBlocked(address)": {
+        "notice": "Check an address"
+      }
+    },
+    "notice": "Allows blocking of contracts. Blocking a contract also forces the undelegation of that lock in the VotingEscrow contract",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 918,
+        "contract": "contracts/staking/contracts/Blocklist.sol:Blocklist",
+        "label": "_blocklist",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_bool)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      }
+    }
+  }
+}
