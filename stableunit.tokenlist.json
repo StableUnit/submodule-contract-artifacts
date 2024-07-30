@@ -82,14 +82,14 @@
       "decimals": 6
     },
     {
-      "address": "0x9f7Ee386912cfce542B77a9218De63e82d22C927",
+      "address": "0x06222e6a2743eeC60Cf7f761ffEf7153058fd264",
       "chainId": 11155111,
       "name": "StablePro",
       "symbol": "StablePro",
       "decimals": 18
     },
     {
-      "address": "0x9f7Ee386912cfce542B77a9218De63e82d22C927",
+      "address": "0x06222e6a2743eeC60Cf7f761ffEf7153058fd264",
       "chainId": 11155111,
       "name": "USDPro",
       "symbol": "USDPro",
