@@ -1,0 +1,126 @@
+{
+  "address": "0xf90d84EF4E17fB044C2a5752340a3d28c3D4394F",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_exchange",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "orderId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "token2sell",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "token2sellAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "fillOrderSimple",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "asset",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "stableunitFillOrderCallback",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x93a732a2734b34898696a571f0778609e8c08b0d29c6a83923cf3f8610d6dedf",
+  "receipt": {
+    "to": null,
+    "from": "0xB1A2C47AA400bDbfb46822A39843C0d91127864f",
+    "contractAddress": "0xf90d84EF4E17fB044C2a5752340a3d28c3D4394F",
+    "transactionIndex": 64,
+    "gasUsed": "326276",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x57db2ef5313fac1ef56232e505aa8463075695c0cdd935d182c8f5a9341a3728",
+    "transactionHash": "0x93a732a2734b34898696a571f0778609e8c08b0d29c6a83923cf3f8610d6dedf",
+    "logs": [],
+    "blockNumber": 6403128,
+    "cumulativeGasUsed": "8196527",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x062f7f23cd102F233Bc1139ee6780c6247cc6127"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "cfa240ac8d1eab6e98320e67814f92b0",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_exchange\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"orderId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"token2sell\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"token2sellAmount\",\"type\":\"uint256\"}],\"name\":\"fillOrderSimple\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"stableunitFillOrderCallback\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/SimpleFillOrder.sol\":\"SimpleFillOrder\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[],\"viaIR\":true},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address from, address to, uint256 amount) external returns (bool);\\n}\\n\",\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\"},\"@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.6.0;\\n\\nimport '@openzeppelin/contracts/token/ERC20/IERC20.sol';\\n\\nlibrary TransferHelper {\\n    /// @notice Transfers tokens from the targeted address to the given destination\\n    /// @notice Errors with 'STF' if transfer fails\\n    /// @param token The contract address of the token to be transferred\\n    /// @param from The originating address from which the tokens will be transferred\\n    /// @param to The destination address of the transfer\\n    /// @param value The amount to be transferred\\n    function safeTransferFrom(\\n        address token,\\n        address from,\\n        address to,\\n        uint256 value\\n    ) internal {\\n        (bool success, bytes memory data) =\\n            token.call(abi.encodeWithSelector(IERC20.transferFrom.selector, from, to, value));\\n        require(success && (data.length == 0 || abi.decode(data, (bool))), 'STF');\\n    }\\n\\n    /// @notice Transfers tokens from msg.sender to a recipient\\n    /// @dev Errors with ST if transfer fails\\n    /// @param token The contract address of the token which will be transferred\\n    /// @param to The recipient of the transfer\\n    /// @param value The value of the transfer\\n    function safeTransfer(\\n        address token,\\n        address to,\\n        uint256 value\\n    ) internal {\\n        (bool success, bytes memory data) = token.call(abi.encodeWithSelector(IERC20.transfer.selector, to, value));\\n        require(success && (data.length == 0 || abi.decode(data, (bool))), 'ST');\\n    }\\n\\n    /// @notice Approves the stipulated contract to spend the given allowance in the given token\\n    /// @dev Errors with 'SA' if transfer fails\\n    /// @param token The contract address of the token to be approved\\n    /// @param to The target of the approval\\n    /// @param value The amount of the given token the target will be allowed to spend\\n    function safeApprove(\\n        address token,\\n        address to,\\n        uint256 value\\n    ) internal {\\n        (bool success, bytes memory data) = token.call(abi.encodeWithSelector(IERC20.approve.selector, to, value));\\n        require(success && (data.length == 0 || abi.decode(data, (bool))), 'SA');\\n    }\\n\\n    /// @notice Transfers ETH to the recipient address\\n    /// @dev Fails with `STE`\\n    /// @param to The destination of the transfer\\n    /// @param value The value to be transferred\\n    function safeTransferETH(address to, uint256 value) internal {\\n        (bool success, ) = to.call{value: value}(new bytes(0));\\n        require(success, 'STE');\\n    }\\n}\\n\",\"keccak256\":\"0x9af98b0908c96320ca6d08b22f0efca864742f6adbe5794cafe2d1d2e808b0cd\",\"license\":\"GPL-2.0-or-later\"},\"contracts/exchange/interfaces/IExchange.sol\":{\"content\":\"// SPDX-License-Identifier: BSL 1.1\\npragma solidity ^0.8.0;\\n\\nenum DiscountType {\\n    aggressive,\\n    middle,\\n    conservative\\n}\\n\\nstruct Order {\\n    address token2sell;\\n    uint256 amountLeft;\\n    address token2buy;\\n    uint256 token2buyAmount;\\n    address beneficiary;\\n    uint256 creationTimestamp;\\n    DiscountType discountType;\\n    address caller;\\n}\\n\\nstruct OrderWithId {\\n    Order order;\\n    uint256 orderId;\\n}\\n\\ninterface IExchange {\\n    /* ===================== ERRORS ===================== */\\n    error OrderExist(uint256 orderId);\\n    error OrderNotExist(uint256 orderId);\\n    error IncorrectToken(address orderToken2buy, address inToken);\\n    error SmallAmountLeft();\\n    error BadOutAmount();\\n    error UserIsNotBeneficiary();\\n    error IsNotTopStaker(address staker);\\n    error IsNotStaker(address staker);\\n    error OrderNotForThisStaker(uint256 orderId, address staker);\\n    error NotEnoughReturnValue();\\n    error CallbackError();\\n\\n    /* ======================== EVENTS ========================= */\\n    event OrderAdded(uint256 orderId);\\n    event OrderCanceled(uint256 orderId);\\n    event OrderFilled(uint256 orderId);\\n    event OrderFilledPartially(uint256 orderId);\\n    event LpOrdersAdded(address LPToken, uint256[] orderIds);\\n\\n    /* ==================== MUTABLE METHODS ==================== */\\n\\n    /**\\n      * @notice Add order to swap {token2sell} to {token2buy}.\\n      * @dev This swap is async, because depends on how arbitrage bots will fill this order. Emits OrderAdded() event.\\n      * Before addOrder user needs to approve token2sell for exchange contract\\n      * @param token2sell - Address of token to sell\\n      * @param amount2sell - Amount of {token2sell} to sell\\n      * @param token2buy - Address of token to buy\\n      * @param beneficiary - Address that will receive {token2buy} after filling order.\\n      * @param discountType - Speed of decreasing swap price. { 0 - aggressive, 1 - middle, 2 - conservative }\\n      * @param collateralJoin - address of collateral adapter\\n     **/\\n    function addOrder (\\n        address token2sell,\\n        uint256 amount2sell,\\n        address token2buy,\\n        address beneficiary,\\n        DiscountType discountType,\\n        address collateralJoin\\n    ) external returns (uint256);\\n\\n    /**\\n      * @notice Only user who place order or who is beneficiary can cancelOrder();\\n      * @param orderId - Id of order to cancel.\\n     **/\\n    function cancelOrder (uint256 orderId) external;\\n\\n    /**\\n      * @notice Fill order with flash-loan like logic\\n      * @dev Caller contract receive orders {token2sell} and after that his stableunitFillOrderCallback() is called.\\n      * At the end of thi callback contract should send some amount of another token back to Exchange contract.\\n      * @param orderId - Id of order to fill.\\n      * @param inAmount - Amount of {token2sell} to receive\\n      * @param data - encoded data to pass to callback function\\n     **/\\n    function fillOrderAsFlashLoan (\\n        uint256 orderId,\\n        uint256 inAmount,\\n        bytes memory data\\n    ) external returns (uint256 outAmount);\\n\\n    /**\\n      * @notice Function to update price curve - how fast {token2sell} price will decrease/increase\\n      * @param discountType - discount type to change\\n      * @param newPriceCurve - parameters of formula\\n     **/\\n    function setPriceCurve(DiscountType discountType, uint256[2] calldata newPriceCurve) external;\\n\\n    /* ==================== VIEW METHODS ==================== */\\n    /**\\n      * @return The amount of outcome that caller will receive if he will fill {orderId} with {inAmount} of {token2sell}\\n     **/\\n    function getExpectedOrderOutcome (uint256 orderId, uint256 inAmount) external view returns (uint256);\\n\\n    /**\\n      * @return Order with id = {orderId}\\n     **/\\n    function getOrder (uint256 orderId) external view returns (Order memory);\\n\\n    /**\\n      * @return The amount of not full-filled orders\\n     **/\\n    function getOrdersCount () external view returns (uint256);\\n\\n    /**\\n      * @return The array of all not-filled orders. May be deleted after adding GraphQL for orderIds\\n     **/\\n    function getAllOrders (uint256 offset, uint256 limit) external view returns (OrderWithId[] memory);\\n}\\n\",\"keccak256\":\"0x000b0a11ef4c13e58838aae6613d678817a9e32c37f597f4a0aa9e714a47c9e5\",\"license\":\"BSL 1.1\"},\"contracts/exchange/interfaces/IExchangeCallback.sol\":{\"content\":\"// SPDX-License-Identifier: BSL 1.1\\npragma solidity ^0.8.0;\\n\\ninterface IExchangeCallback {\\n    /**\\n     * @notice Callback that will be called by Exchange module in fillOrderAsFlashLoan()\\n     * after sending collateral to msg.sender.\\n     * In the implementation you must pay stablecoin for Exchange contract.\\n     * @dev Any contract that calls Exchange#fillOrderAsFlashLoan must implement this interface\\n     * @param asset - The address of the token that should be returned\\n     * @param amount - The amount of the {token} to return\\n     * @param initiator The address of the flashloan initiator\\n     * @return True if the execution of the operation succeeds, false otherwise\\n     */\\n    function stableunitFillOrderCallback (\\n        address asset,\\n        uint256 amount,\\n        address initiator,\\n        bytes calldata params\\n    ) external returns (bool);\\n}\\n\",\"keccak256\":\"0x83d01cfa5b53319a2111163fd3d2f51dbe426069eb552818edbbbc4ef097582e\",\"license\":\"BSL 1.1\"},\"contracts/mocks/SimpleFillOrder.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity ^0.8.0;\\n\\nimport '@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol';\\nimport \\\"../exchange/interfaces/IExchange.sol\\\";\\nimport \\\"../exchange/interfaces/IExchangeCallback.sol\\\";\\n\\nstruct FlashCallbackData {\\n    address recipient;\\n}\\n\\ncontract SimpleFillOrder is IExchangeCallback {\\n    IExchange internal EXCHANGE;\\n\\n    constructor(address _exchange) {\\n        EXCHANGE = IExchange(_exchange);\\n    }\\n\\n    function fillOrderSimple(uint256 orderId, address token2sell, uint256 token2sellAmount) public {\\n        bytes memory data = abi.encode(FlashCallbackData({ recipient: msg.sender }));\\n\\n        EXCHANGE.fillOrderAsFlashLoan(orderId, token2sellAmount, data);\\n\\n        TransferHelper.safeTransfer(token2sell, msg.sender, token2sellAmount);\\n    }\\n\\n    function stableunitFillOrderCallback(address asset, uint256 amount, address, bytes calldata data) external returns (bool) {\\n        FlashCallbackData memory decoded = abi.decode(data, (FlashCallbackData));\\n\\n        TransferHelper.safeTransferFrom(asset, decoded.recipient, address(EXCHANGE), amount);\\n        return true;\\n    }\\n}\",\"keccak256\":\"0x1b4ce7cad1400df1ee0a29980ad911270417a5ad56c65a380ccdb28466c464d0\",\"license\":\"GPL-2.0-or-later\"}},\"version\":1}",
+  "bytecode": "0x60803461007457601f61050d38819003918201601f19168301916001600160401b038311848410176100795780849260209460405283398101031261007457516001600160a01b0381169081900361007457600080546001600160a01b03191691909117905560405161047d90816100908239f35b600080fd5b634e487b7160e01b600052604160045260246000fdfe608060408181526004908136101561001657600080fd5b600092833560e01c9081636a2f53c21461022d575063e72fa1731461003a57600080fd5b34610229576060366003190112610229576001600160a01b0390602435828116810361022557604435825161006e81610397565b339052825193602094338682015285815284810160018060401b039282821084831117610212578188918189528b5416637176836f60e11b82528a356044860152866064860152606060848601528b8580518060a4830152825b8181106101f5575080820160c401839052601f01601f1916810103608401918391905af180156101eb57908792916101bb575b5050508351908582019263a9059cbb60e01b84523360248401526044830152604482526080820190828210908211176101a857845251869283929083905af16101426103eb565b81610178575b5015610152578380f35b5162461bcd60e51b815291820152600260248201526114d560f21b604482015260649150fd5b80518015925084908315610190575b50505038610148565b6101a0935082018101910161042a565b388381610187565b634e487b7160e01b885260418752602488fd5b82903d84116101e3575b816101cf916103c8565b810103126101df578438806100fb565b8680fd5b3d91506101c5565b86513d8b823e3d90fd5b9182018087015160c4909101528c958795508f93508892016100c8565b634e487b7160e01b8a526041895260248afd5b8480fd5b8280fd5b82848634610394576080366003190112610394576001600160a01b039082358281168103610390576044358381160361039057606435956001600160401b0380881161038c573660238901121561038c578786013581811161022557880194602495368782011161038857899060209a8b9103126103885786906102b085610397565b0135818116938482036101df575284541690875191898301936323b872dd60e01b8552878401526044830152853560648301526064825260a08201908282109082111761037657849392918491895251925af161030b6103eb565b81610346575b50156103205750505160018152f35b60649360039293519362461bcd60e51b85528401528201526229aa2360e91b6044820152fd5b8051801592508690831561035e575b50505085610311565b61036e935082018101910161042a565b858581610355565b634e487b7160e01b8552604187528585fd5b8580fd5b8380fd5b5080fd5b80fd5b602081019081106001600160401b038211176103b257604052565b634e487b7160e01b600052604160045260246000fd5b601f909101601f19168101906001600160401b038211908210176103b257604052565b3d15610425573d906001600160401b0382116103b25760405191610419601f8201601f1916602001846103c8565b82523d6000602084013e565b606090565b90816020910312610442575180151581036104425790565b600080fdfea2646970667358221220fdcc20cf1501f87857a0be73870211d3a8de87c9a52e122a3de658d37bdb38e264736f6c63430008110033",
+  "deployedBytecode": "0x608060408181526004908136101561001657600080fd5b600092833560e01c9081636a2f53c21461022d575063e72fa1731461003a57600080fd5b34610229576060366003190112610229576001600160a01b0390602435828116810361022557604435825161006e81610397565b339052825193602094338682015285815284810160018060401b039282821084831117610212578188918189528b5416637176836f60e11b82528a356044860152866064860152606060848601528b8580518060a4830152825b8181106101f5575080820160c401839052601f01601f1916810103608401918391905af180156101eb57908792916101bb575b5050508351908582019263a9059cbb60e01b84523360248401526044830152604482526080820190828210908211176101a857845251869283929083905af16101426103eb565b81610178575b5015610152578380f35b5162461bcd60e51b815291820152600260248201526114d560f21b604482015260649150fd5b80518015925084908315610190575b50505038610148565b6101a0935082018101910161042a565b388381610187565b634e487b7160e01b885260418752602488fd5b82903d84116101e3575b816101cf916103c8565b810103126101df578438806100fb565b8680fd5b3d91506101c5565b86513d8b823e3d90fd5b9182018087015160c4909101528c958795508f93508892016100c8565b634e487b7160e01b8a526041895260248afd5b8480fd5b8280fd5b82848634610394576080366003190112610394576001600160a01b039082358281168103610390576044358381160361039057606435956001600160401b0380881161038c573660238901121561038c578786013581811161022557880194602495368782011161038857899060209a8b9103126103885786906102b085610397565b0135818116938482036101df575284541690875191898301936323b872dd60e01b8552878401526044830152853560648301526064825260a08201908282109082111761037657849392918491895251925af161030b6103eb565b81610346575b50156103205750505160018152f35b60649360039293519362461bcd60e51b85528401528201526229aa2360e91b6044820152fd5b8051801592508690831561035e575b50505085610311565b61036e935082018101910161042a565b858581610355565b634e487b7160e01b8552604187528585fd5b8580fd5b8380fd5b5080fd5b80fd5b602081019081106001600160401b038211176103b257604052565b634e487b7160e01b600052604160045260246000fd5b601f909101601f19168101906001600160401b038211908210176103b257604052565b3d15610425573d906001600160401b0382116103b25760405191610419601f8201601f1916602001846103c8565b82523d6000602084013e565b606090565b90816020910312610442575180151581036104425790565b600080fdfea2646970667358221220fdcc20cf1501f87857a0be73870211d3a8de87c9a52e122a3de658d37bdb38e264736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 36740,
+        "contract": "contracts/mocks/SimpleFillOrder.sol:SimpleFillOrder",
+        "label": "EXCHANGE",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(IExchange)20555"
+      }
+    ],
+    "types": {
+      "t_contract(IExchange)20555": {
+        "encoding": "inplace",
+        "label": "contract IExchange",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}
