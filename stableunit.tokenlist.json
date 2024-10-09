@@ -142,28 +142,28 @@
       "decimals": 18
     },
     {
-      "address": "0x8C21d47C91EBd96698d924085a6b341542d01a50",
+      "address": "0x20452B90CD1057614479CeDc22509E304D47909E",
       "chainId": 137,
       "name": "StablePro",
       "symbol": "StablePro",
       "decimals": 18
     },
     {
-      "address": "0x8C21d47C91EBd96698d924085a6b341542d01a50",
+      "address": "0x20452B90CD1057614479CeDc22509E304D47909E",
       "chainId": 137,
       "name": "USDPro",
       "symbol": "USDPro",
       "decimals": 18
     },
     {
-      "address": "0x77777777785CcD99FB5F383F858ABA327582EDcB",
+      "address": "0x81da82F55dd8c67DaD2E18BB1842d339561EF9A1",
       "chainId": 137,
       "name": "SuDAO",
       "symbol": "SuDAO",
       "decimals": 18
     },
     {
-      "address": "0x777777777B9F67D6E234196eB00A58918C1d7487",
+      "address": "0x5f98bEA860620E5D6780142144E6827fBC18b791",
       "chainId": 137,
       "name": "VeSuDAO",
       "symbol": "VeSuDAO",
