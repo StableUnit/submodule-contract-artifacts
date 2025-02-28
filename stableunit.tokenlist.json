@@ -139,6 +139,43 @@
       "chainId": 137,
       "name": "Aura 20USDC-80THX",
       "symbol": "20USDC-80THX",
+      "protocolName": "Aura",
+      "group": "Aura",
+      "decimals": 18
+    },
+    {
+      "address": "0xb204BF10bc3a5435017D3db247f56dA601dFe08A",
+      "chainId": 137,
+      "name": "Balancer 20USDC-80THX",
+      "symbol": "BAL 20USDC-80THX",
+      "protocolName": "Balancer",
+      "group": "Balancer",
+      "decimals": 18
+    },
+    {
+      "address": "0x1dcea0bfbbe6848f117640d534c9b60f41b9f2a8",
+      "chainId": 137,
+      "name": "Balancer wBTC/wETH/USDC",
+      "symbol": "wBTC/wETH/USDC",
+      "protocolName": "Balancer",
+      "group": "Balancer",
+      "decimals": 18
+    },
+    {
+      "address": "0xdAD97F7713Ae9437fa9249920eC8507e5FbB23d3",
+      "chainId": 137,
+      "name": "Curve USD-BTC-ETH",
+      "symbol": "USD-BTC-ETH",
+      "protocolName": "Curve",
+      "group": "Curve",
+      "decimals": 18
+    },    {
+      "address": "0xe7a24ef0c5e95ffb0f6684b813a78f2a3ad7d171",
+      "chainId": 137,
+      "name": "Curve.fi amDAI/amUSDC/amUSDT",
+      "symbol": "amDAI/amUSDC/amUSDT",
+      "protocolName": "Curve",
+      "group": "Curve",
       "decimals": 18
     },
     {
