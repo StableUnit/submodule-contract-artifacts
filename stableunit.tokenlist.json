@@ -139,6 +139,7 @@
       "chainId": 137,
       "name": "Aura 20USDC-80THX",
       "symbol": "20USDC-80THX",
+      "realSymbol": "aura20USDC-80THX-vault",
       "protocolName": "Aura",
       "group": "Aura",
       "decimals": 18
@@ -148,6 +149,7 @@
       "chainId": 137,
       "name": "Balancer 20USDC-80THX",
       "symbol": "BAL 20USDC-80THX",
+      "realSymbol": "20USDC-80THX",
       "protocolName": "Balancer",
       "group": "Balancer",
       "decimals": 18
