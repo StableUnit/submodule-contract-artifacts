@@ -30,6 +30,32 @@
           "decimals": 18
         },
         {
+          "address": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
+          "name": "Wrapped liquid staked Ether 2.0",
+          "symbol": "wstETH",
+          "decimals": 18,
+          "group": "ETH",
+          "isDisabled": true
+        },
+        {
+          "address": "0x0266F4F08D82372CF0FcbCCc0Ff74309089c74d1",
+          "name": "Rocket Pool ETH",
+          "symbol": "rETH",
+          "decimals": 18,
+          "group": "ETH",
+          "isDisabled": true
+        },
+        {
+          "address": "0xe2f706ef1f7240b803aae877c9c762644bb808d8",
+          "name": "Balancer 80TETU-20USDC",
+          "symbol": "BAL 80TETU-20USDC",
+          "realSymbol": "80TETU-20USDC",
+          "protocolName": "Balancer",
+          "group": "Balancer",
+          "decimals": 18,
+          "isDisabled": true
+        },
+        {
           "address": "0x5c71112E861DD2a1773F1A57C1856314539986fd",
           "name": "StablePro",
           "symbol": "StablePro",
