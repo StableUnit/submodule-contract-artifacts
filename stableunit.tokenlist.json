@@ -56,6 +56,32 @@
           "isDisabled": true
         },
         {
+          "address": "0x1dcea0bfbbe6848f117640d534c9b60f41b9f2a8",
+          "name": "Balancer wBTC/wETH/USDC",
+          "symbol": "wBTC/wETH/USDC",
+          "protocolName": "Balancer",
+          "group": "Balancer",
+          "decimals": 18,
+          "isDisabled": true
+        },
+        {
+          "address": "0xdAD97F7713Ae9437fa9249920eC8507e5FbB23d3",
+          "name": "Curve USD-BTC-ETH",
+          "symbol": "USD-BTC-ETH",
+          "protocolName": "Curve",
+          "group": "Curve",
+          "decimals": 18,
+          "isDisabled": true
+        },    {
+          "address": "0xe7a24ef0c5e95ffb0f6684b813a78f2a3ad7d171",
+          "name": "Curve.fi amDAI/amUSDC/amUSDT",
+          "symbol": "amDAI/amUSDC/amUSDT",
+          "protocolName": "Curve",
+          "group": "Curve",
+          "decimals": 18,
+          "isDisabled": true
+        },
+        {
           "address": "0x5c71112E861DD2a1773F1A57C1856314539986fd",
           "name": "StablePro",
           "symbol": "StablePro",
