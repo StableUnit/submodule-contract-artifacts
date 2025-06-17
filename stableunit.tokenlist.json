@@ -106,6 +106,74 @@
           "decimals": 18
         }
       ]
+    },
+    {
+      "chainId": 56,
+      "tokens": [
+        {
+          "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+          "name": "ETH",
+          "symbol": "ETH",
+          "decimals": 18,
+          "group": "ETH"
+        },
+        {
+          "address": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
+          "name": "USDe",
+          "symbol": "USDe",
+          "decimals": 18
+        },
+        {
+          "address": "0xfA4B91d63e7cAb716dD049A23C56F70237C6DDBB",
+          "name": "PENDLE-LPT USDe",
+          "symbol": "PENDLE-LPT",
+          "protocolName": "Pendle",
+          "group": "Pendle",
+          "decimals": 18
+        },
+        {
+          "address": "0x80Eb9A1b48df52534430a7Dc11e63c73669d5A06",
+          "name": "Curve USDX/USDT",
+          "symbol": "USDX/USDT",
+          "protocolName": "Curve",
+          "group": "Curve",
+          "decimals": 18,
+          "isDisabled": true
+        },
+        {
+          "address": "0xA5E0E46462970C9Ee8C2ECadcde254c483748Ec4",
+          "name": "Curve b3pool",
+          "symbol": "b3pool",
+          "protocolName": "Curve",
+          "group": "Curve",
+          "decimals": 18,
+          "isDisabled": true
+        },
+        {
+          "address": "0x5c71112E861DD2a1773F1A57C1856314539986fd",
+          "name": "StablePro",
+          "symbol": "StablePro",
+          "decimals": 18
+        },
+        {
+          "address": "0x5c71112E861DD2a1773F1A57C1856314539986fd",
+          "name": "USDPro",
+          "symbol": "USDPro",
+          "decimals": 18
+        },
+        {
+          "address": "",
+          "name": "SuDAO",
+          "symbol": "SuDAO",
+          "decimals": 18
+        },
+        {
+          "address": "",
+          "name": "VeSuDAO",
+          "symbol": "VeSuDAO",
+          "decimals": 18
+        }
+      ]
     }
   ],
   "version": {
