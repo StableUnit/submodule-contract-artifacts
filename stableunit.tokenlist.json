@@ -150,13 +150,13 @@
           "isDisabled": true
         },
         {
-          "address": "0x5c71112E861DD2a1773F1A57C1856314539986fd",
+          "address": "0x1591D78bDf17E623AE0a5bF1D536Ea29E04446D6",
           "name": "StablePro",
           "symbol": "StablePro",
           "decimals": 18
         },
         {
-          "address": "0x5c71112E861DD2a1773F1A57C1856314539986fd",
+          "address": "0x1591D78bDf17E623AE0a5bF1D536Ea29E04446D6",
           "name": "USDPro",
           "symbol": "USDPro",
           "decimals": 18
