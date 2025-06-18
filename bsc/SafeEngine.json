@@ -1,0 +1,1481 @@
+{
+  "address": "0xE82724158851cEcB3b894ac01a6c5752309711a6",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "BadAccessControlSingleton",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyAdminError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyAlerterError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyCDPAccessError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyDAOError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyDisablerAccessError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyLiquidationAccessError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyMintAccessError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyProxyActionsError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyRewardAccessError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyRoleError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyVaultAccessError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyVotingEscrowError",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "DisableContract",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "version",
+          "type": "uint8"
+        }
+      ],
+      "name": "Initialized",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "ACCESS_CONTROL_SINGLETON",
+      "outputs": [
+        {
+          "internalType": "contract ISuAccessControl",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADMIN_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ALERTER_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "CDP_ACCESS_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DAO_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DISABLER_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LIQUIDATION_ACCESS_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MINT_ACCESS_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ORACLE",
+      "outputs": [
+        {
+          "internalType": "contract ISuOracleAggregator",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PROXY_ACTIONS_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "REWARD_ACCESS_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "VOTING_ESCROW_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "approveSAFEModification",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "cdpRights",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "coinBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "collateralTypes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "debtAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "accumulatedRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "debtCeiling",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "debtFloor",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "safetyPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "liquidationRatio",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "collateralAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "safetyPriceBlockNumber",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "cdp",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "collateralCounterparty",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "debtCounterparty",
+          "type": "address"
+        },
+        {
+          "internalType": "int256",
+          "name": "deltaCollateral",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "deltaDebt",
+          "type": "int256"
+        }
+      ],
+      "name": "confiscateSAFECollateralAndDebt",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "contractEnabled",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "debtDestination",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "coinDestination",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rad",
+          "type": "uint256"
+        }
+      ],
+      "name": "createUnbackedDebt",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "debtBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "defaultLiquidationRatio",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        }
+      ],
+      "name": "denySAFEModification",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "disableContract",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "globalDebt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "globalDebtCeiling",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "globalUnbackedDebt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "accessControl",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "oracle",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "collateralAddress",
+          "type": "address"
+        }
+      ],
+      "name": "initializeCollateralType",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "usr",
+          "type": "address"
+        },
+        {
+          "internalType": "int256",
+          "name": "wad",
+          "type": "int256"
+        }
+      ],
+      "name": "modifyCollateralBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "data",
+          "type": "uint256"
+        }
+      ],
+      "name": "modifyParameters",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "what",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "data",
+          "type": "uint256"
+        }
+      ],
+      "name": "modifyParameters",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "cdp",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "collateralSource",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "debtDestination",
+          "type": "address"
+        },
+        {
+          "internalType": "int256",
+          "name": "deltaCollateral",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "deltaDebt",
+          "type": "int256"
+        }
+      ],
+      "name": "modifySAFECollateralization",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "redemptionPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "safes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "lockedCollateral",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "generatedDebt",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "safetyPriceValidBlockAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "rad",
+          "type": "uint256"
+        }
+      ],
+      "name": "settleDebt",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "tokenCollateral",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "src",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "dst",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "wad",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferCollateral",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "src",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "dst",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rad",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferInternalCoins",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "src",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "dst",
+          "type": "address"
+        },
+        {
+          "internalType": "int256",
+          "name": "deltaCollateral",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "deltaDebt",
+          "type": "int256"
+        }
+      ],
+      "name": "transferSAFECollateralAndDebt",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "surplusDst",
+          "type": "address"
+        },
+        {
+          "internalType": "int256",
+          "name": "accumulatedRate",
+          "type": "int256"
+        }
+      ],
+      "name": "updateAccumulatedRate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "collateralType",
+          "type": "bytes32"
+        }
+      ],
+      "name": "updateSafetyPrice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "8c060bc8c39a7272c2849a174b3b4791",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"BadAccessControlSingleton\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyAdminError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyAlerterError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyCDPAccessError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyDAOError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyDisablerAccessError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyLiquidationAccessError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyMintAccessError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyProxyActionsError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyRewardAccessError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyRoleError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyVaultAccessError\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyVotingEscrowError\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"DisableContract\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"version\",\"type\":\"uint8\"}],\"name\":\"Initialized\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"ACCESS_CONTROL_SINGLETON\",\"outputs\":[{\"internalType\":\"contract ISuAccessControl\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ADMIN_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ALERTER_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"CDP_ACCESS_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DAO_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DISABLER_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"LIQUIDATION_ACCESS_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MINT_ACCESS_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ORACLE\",\"outputs\":[{\"internalType\":\"contract ISuOracleAggregator\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PROXY_ACTIONS_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"REWARD_ACCESS_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"VOTING_ESCROW_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"approveSAFEModification\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"cdpRights\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"coinBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"collateralTypes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"debtAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"accumulatedRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"debtCeiling\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"debtFloor\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"safetyPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"liquidationRatio\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"collateralAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"safetyPriceBlockNumber\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"cdp\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"collateralCounterparty\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"debtCounterparty\",\"type\":\"address\"},{\"internalType\":\"int256\",\"name\":\"deltaCollateral\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"deltaDebt\",\"type\":\"int256\"}],\"name\":\"confiscateSAFECollateralAndDebt\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"contractEnabled\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"debtDestination\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"coinDestination\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"rad\",\"type\":\"uint256\"}],\"name\":\"createUnbackedDebt\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"debtBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"defaultLiquidationRatio\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"}],\"name\":\"denySAFEModification\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"disableContract\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"globalDebt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"globalDebtCeiling\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"globalUnbackedDebt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"accessControl\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"oracle\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"collateralAddress\",\"type\":\"address\"}],\"name\":\"initializeCollateralType\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"usr\",\"type\":\"address\"},{\"internalType\":\"int256\",\"name\":\"wad\",\"type\":\"int256\"}],\"name\":\"modifyCollateralBalance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"data\",\"type\":\"uint256\"}],\"name\":\"modifyParameters\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"what\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"data\",\"type\":\"uint256\"}],\"name\":\"modifyParameters\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"cdp\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"collateralSource\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"debtDestination\",\"type\":\"address\"},{\"internalType\":\"int256\",\"name\":\"deltaCollateral\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"deltaDebt\",\"type\":\"int256\"}],\"name\":\"modifySAFECollateralization\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"redemptionPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"safes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"lockedCollateral\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"generatedDebt\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"safetyPriceValidBlockAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"rad\",\"type\":\"uint256\"}],\"name\":\"settleDebt\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"tokenCollateral\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"src\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"dst\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"wad\",\"type\":\"uint256\"}],\"name\":\"transferCollateral\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"src\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"dst\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"rad\",\"type\":\"uint256\"}],\"name\":\"transferInternalCoins\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"src\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"dst\",\"type\":\"address\"},{\"internalType\":\"int256\",\"name\":\"deltaCollateral\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"deltaDebt\",\"type\":\"int256\"}],\"name\":\"transferSAFECollateralAndDebt\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"surplusDst\",\"type\":\"address\"},{\"internalType\":\"int256\",\"name\":\"accumulatedRate\",\"type\":\"int256\"}],\"name\":\"updateAccumulatedRate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"collateralType\",\"type\":\"bytes32\"}],\"name\":\"updateSafetyPrice\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"custom:changes\":\"Replaced MakerDAO\\u2019s `authorizedAccounts` with `SuAuthenticatedNonUpgradeable` for access control.                 Removed `LibNote` for event logging, requiring custom events (TODO).                 Added `ISuOracleAggregator` integration for dynamic safety price updates.                 Introduced `redemptionPrice`, `safetyPriceValidBlockAmount`, and `defaultLiquidationRatio`.                 Moved structs to `ISafeEngine` interface.\",\"custom:events\":\"No events are defined; custom events need to be added (as noted in FIXME).                Example placeholder events are included in comments but not emitted due to lack of definition.\",\"custom:security\":\"Only enabled contracts (`contractEnabled == 1`) allow state-changing operations.                 Administrative functions are restricted by SuAuthenticatedNonUpgradeable roles (DAO, Admin, DisablerAccess).                 Only authorized users/contracts (via `cdpRights`) can modify specific Safes or balances.                 Safety price updates rely on ISuOracleAggregator, which must provide reliable price feeds.\",\"custom:usage\":\"- **Initialization**: Deploy with access control and oracle addresses.   ```solidity   SafeEngine safeEngine = new SafeEngine(accessControlAddress, oracleAddress);   ``` - **Collateral Type Setup**: Initialize a collateral type with its token address.   ```solidity   safeEngine.initializeCollateralType(\\\"ETH-A\\\", ethTokenAddress);   ``` - **Parameter Modification**: DAO updates debt ceilings, redemption price, or liquidation ratios.   ```solidity   safeEngine.modifyParameters(\\\"globalDebtCeiling\\\", newCeiling); // Update global debt ceiling   safeEngine.modifyParameters(\\\"ETH-A\\\", \\\"debtCeiling\\\", newCeiling); // Update collateral debt ceiling   ``` - **Safe Operations**: Users or adapters modify Safe collateral/debt via DssProxyActions or direct calls.   ```solidity   safeEngine.modifySAFECollateralization(\\\"ETH-A\\\", safe, collateralSrc, debtDst, deltaCollateral, deltaDebt);   ``` - **Price Updates**: Trigger safety price updates for a collateral type.   ```solidity   safeEngine.updateSafetyPrice(\\\"ETH-A\\\"); // Refresh safety price from oracle   ``` - **Disabling**: DisablerAccess accounts can disable the contract.   ```solidity   safeEngine.disableContract(); // Halt operations   ```\",\"details\":\"Manages collateral, debt, and StablePro coin balances for Safes, tracks global and per-collateral-type debt limits,      and enforces collateralization ratios using safety prices from an oracle. Supports operations like collateral      deposit/withdrawal, debt generation/repayment, liquidation, and settlement. Uses SuAuthenticatedNonUpgradeable for      access control and integrates with ISuOracleAggregator for price feeds. Can be disabled by authorized accounts to      halt operations. This contract is a fork of MakerDAO\\u2019s Vat.sol, adapted for StableUnit with features like dynamic      safety price updates and redemption price.\",\"kind\":\"dev\",\"methods\":{\"approveSAFEModification(address)\":{\"details\":\"Sets `cdpRights[msg.sender][usr] = 1`.\",\"params\":{\"usr\":\"Address to grant modification rights.\"}},\"confiscateSAFECollateralAndDebt(bytes32,address,address,address,int256,int256)\":{\"custom:access\":\"OnlyCDPAccess\",\"details\":\"Transfers collateral and debt to counterparties, typically for auctions. Requires CDP access permissions.\",\"params\":{\"cdp\":\"Address of the Safe to confiscate.\",\"collateralCounterparty\":\"Address to debit collateral from.\",\"collateralType\":\"Unique identifier for the collateral type.\",\"debtCounterparty\":\"Address to debit debt from.\",\"deltaCollateral\":\"Amount to confiscate collateral [wad].\",\"deltaDebt\":\"Amount to confiscate debt [wad].\"}},\"constructor\":{\"custom:oz-upgrades-unsafe-allow\":\"constructor\"},\"createUnbackedDebt(address,address,uint256)\":{\"custom:access\":\"OnlyCDPAccess\",\"details\":\"Increases debt and coin balances for destination addresses. Requires CDP access permissions.\",\"params\":{\"coinDestination\":\"Address to assign the StablePro coins.\",\"debtDestination\":\"Address to assign the unbacked debt.\",\"rad\":\"Amount of unbacked debt to create [rad].\"}},\"denySAFEModification(address)\":{\"details\":\"Sets `cdpRights[msg.sender][usr] = 0`.\",\"params\":{\"usr\":\"Address to revoke modification rights.\"}},\"disableContract()\":{\"custom:access\":\"OnlyDisablerAccess\",\"details\":\"Sets `contractEnabled` to 0 and emits a placeholder event. Only callable by DisablerAccess accounts.\"},\"initialize(address,address)\":{\"details\":\"Sets initial state: contract enabled, redemption price to 1e27, safety price validity to 1 block,      and default liquidation ratio to 150%. Inherits access control from SuAuthenticatedNonUpgradeable.\",\"params\":{\"accessControl\":\"Address of the access control singleton contract.\",\"oracle\":\"Address of the ISuOracleAggregator contract.\"}},\"initializeCollateralType(bytes32,address)\":{\"custom:access\":\"OnlyAdmin\",\"details\":\"Sets accumulated rate to 1e27 and assigns the collateral token address and default liquidation ratio.      Reverts if already initialized. Only callable by Admin.\",\"params\":{\"collateralAddress\":\"Address of the collateral token contract.\",\"collateralType\":\"Unique identifier for the collateral type (e.g., \\\"ETH-A\\\").\"}},\"modifyCollateralBalance(bytes32,address,int256)\":{\"custom:access\":\"OnlyCDPAccess\",\"details\":\"Adds or subtracts collateral tokens, typically called by CollateralJoin adapters.      Requires caller to have CDP access permissions.\",\"params\":{\"collateralType\":\"Unique identifier for the collateral type.\",\"usr\":\"Address to modify the collateral balance for.\",\"wad\":\"Amount to add (positive) or subtract (negative) [wad].\"}},\"modifyParameters(bytes32,bytes32,uint256)\":{\"custom:access\":\"OnlyDAO\",\"details\":\"Updates parameters like debt ceiling, debt floor, or liquidation ratio.      Requires contract to be enabled. Only callable by DAO.\",\"params\":{\"collateralType\":\"Unique identifier for the collateral type.\",\"data\":\"New value for the parameter.\",\"what\":\"Parameter to modify (e.g., \\\"debtCeiling\\\", \\\"liquidationRatio\\\").\"}},\"modifyParameters(bytes32,uint256)\":{\"custom:access\":\"OnlyDAO\",\"details\":\"Updates parameters like global debt ceiling, redemption price, default liquidation ratio, or safety price validity.      Requires contract to be enabled. Only callable by DAO.\",\"params\":{\"data\":\"New value for the parameter.\",\"what\":\"Parameter to modify (e.g., \\\"globalDebtCeiling\\\", \\\"redemptionPrice\\\").\"}},\"modifySAFECollateralization(bytes32,address,address,address,int256,int256)\":{\"details\":\"Updates Safe state, checks debt ceilings, collateralization ratio, and permissions.      Requires contract to be enabled and collateral type to be initialized.\",\"params\":{\"cdp\":\"Address of the Safe to modify.\",\"collateralSource\":\"Address to debit/credit collateral.\",\"collateralType\":\"Unique identifier for the collateral type.\",\"debtDestination\":\"Address to debit/credit debt.\",\"deltaCollateral\":\"Amount to add (positive) or remove (negative) collateral [wad].\",\"deltaDebt\":\"Amount to add (positive) or remove (negative) debt [wad].\"}},\"settleDebt(uint256)\":{\"details\":\"Reduces debt and coin balances for the caller, typically used by AccountingEngine.\",\"params\":{\"rad\":\"Amount of debt to settle [rad].\"}},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"},\"transferCollateral(bytes32,address,address,uint256)\":{\"details\":\"Requires the caller to have permission to modify the source address\\u2019s Safe.\",\"params\":{\"collateralType\":\"Unique identifier for the collateral type.\",\"dst\":\"Destination address to credit collateral to.\",\"src\":\"Source address to debit collateral from.\",\"wad\":\"Amount of collateral to transfer [wad].\"}},\"transferInternalCoins(address,address,uint256)\":{\"details\":\"Requires the caller to have permission to modify the source address\\u2019s Safe.\",\"params\":{\"dst\":\"Destination address to credit coins to.\",\"rad\":\"Amount of StablePro coins to transfer [rad].\",\"src\":\"Source address to debit coins from.\"}},\"transferSAFECollateralAndDebt(bytes32,address,address,int256,int256)\":{\"details\":\"Updates source and destination Safe states, ensuring collateralization and debt floor requirements.      Requires caller to have permission for both Safes.\",\"params\":{\"collateralType\":\"Unique identifier for the collateral type.\",\"deltaCollateral\":\"Amount to transfer collateral [wad].\",\"deltaDebt\":\"Amount to transfer debt [wad].\",\"dst\":\"Address of the destination Safe.\",\"src\":\"Address of the source Safe.\"}},\"updateAccumulatedRate(bytes32,address,int256)\":{\"custom:access\":\"OnlyCDPAccess\",\"details\":\"Adjusts the collateral type\\u2019s rate and credits surplus to the destination address.      Requires contract to be enabled and CDP access permissions.\",\"params\":{\"accumulatedRate\":\"Change in accumulated rate [ray].\",\"collateralType\":\"Unique identifier for the collateral type.\",\"surplusDst\":\"Address to credit surplus StablePro coins.\"}},\"updateSafetyPrice(bytes32)\":{\"details\":\"Fetches the collateral\\u2019s fiat price from ISuOracleAggregator, adjusts for token decimals,      and calculates the safety price as (realPrice / redemptionPrice / liquidationRatio).      Only updates if the current safety price is unset or expired based on `safetyPriceValidBlockAmount`.\",\"params\":{\"collateralType\":\"Unique identifier for the collateral type.\"}}},\"title\":\"SafeEngine\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"ORACLE()\":{\"notice\":\"Oracle aggregator providing collateral price feeds.\"},\"approveSAFEModification(address)\":{\"notice\":\"Grants a user permission to modify the caller\\u2019s Safe.\"},\"cdpRights(address,address)\":{\"notice\":\"Maps Safe owners to operators with permission to modify their Safes.\"},\"coinBalance(address)\":{\"notice\":\"Tracks internal StablePro coin balances per user [rad].\"},\"collateralTypes(bytes32)\":{\"notice\":\"Maps collateral types to their configuration (e.g., debt ceiling, safety price).\"},\"confiscateSAFECollateralAndDebt(bytes32,address,address,address,int256,int256)\":{\"notice\":\"Confiscates collateral and debt from a Safe during liquidation.\"},\"contractEnabled()\":{\"notice\":\"Tracks whether the contract is enabled (1) or disabled (0).\"},\"createUnbackedDebt(address,address,uint256)\":{\"notice\":\"Creates unbacked debt, typically for bad debt handling.\"},\"debtBalance(address)\":{\"notice\":\"Tracks debt balances per user, offsetting coin balances [rad].\"},\"defaultLiquidationRatio()\":{\"notice\":\"Default liquidation ratio set for new collateral types (e.g., 150%) [ray].\"},\"denySAFEModification(address)\":{\"notice\":\"Revokes a user\\u2019s permission to modify the caller\\u2019s Safe.\"},\"disableContract()\":{\"notice\":\"Disables the contract, preventing further state-changing operations.\"},\"globalDebt()\":{\"notice\":\"Total debt issued across all Safes [rad].\"},\"globalDebtCeiling()\":{\"notice\":\"Maximum debt allowed across all Safes [rad].\"},\"globalUnbackedDebt()\":{\"notice\":\"Total unbacked debt not covered by collateral [rad].\"},\"initialize(address,address)\":{\"notice\":\"Initializes the SafeEngine with access control and oracle addresses.\"},\"initializeCollateralType(bytes32,address)\":{\"notice\":\"Initializes a new collateral type with its token address.\"},\"modifyCollateralBalance(bytes32,address,int256)\":{\"notice\":\"Modifies a user\\u2019s collateral balance for a collateral type.\"},\"modifyParameters(bytes32,bytes32,uint256)\":{\"notice\":\"Modifies parameters for a specific collateral type.\"},\"modifyParameters(bytes32,uint256)\":{\"notice\":\"Modifies global protocol parameters.\"},\"modifySAFECollateralization(bytes32,address,address,address,int256,int256)\":{\"notice\":\"Modifies a Safe\\u2019s collateral and debt, ensuring collateralization requirements.\"},\"redemptionPrice()\":{\"notice\":\"Reference price per StablePro, defaulting to 1e27 (1:1 USD) [ray].\"},\"safes(bytes32,address)\":{\"notice\":\"Maps collateral types and Safe addresses to their state (collateral and debt).\"},\"safetyPriceValidBlockAmount()\":{\"notice\":\"Number of blocks a safety price remains valid.\"},\"settleDebt(uint256)\":{\"notice\":\"Settles debt using available StablePro coin balance.\"},\"tokenCollateral(bytes32,address)\":{\"notice\":\"Tracks collateral balances per collateral type and user [wad].\"},\"transferCollateral(bytes32,address,address,uint256)\":{\"notice\":\"Transfers collateral between two addresses for a collateral type.\"},\"transferInternalCoins(address,address,uint256)\":{\"notice\":\"Transfers internal StablePro coins between two addresses.\"},\"transferSAFECollateralAndDebt(bytes32,address,address,int256,int256)\":{\"notice\":\"Transfers collateral and debt between two Safes.\"},\"updateAccumulatedRate(bytes32,address,int256)\":{\"notice\":\"Updates the accumulated stability fee rate for a collateral type.\"},\"updateSafetyPrice(bytes32)\":{\"notice\":\"Updates the safety price for a collateral type using oracle data.\"}},\"notice\":\"Core accounting and state management contract for collateralized debt positions (Safes) in the StableUnit protocol.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/makerdao/core/SafeEngine.sol\":\"SafeEngine\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[],\"viaIR\":true},\"sources\":{\"@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (access/IAccessControl.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev External interface of AccessControl declared to support ERC165 detection.\\n */\\ninterface IAccessControlUpgradeable {\\n    /**\\n     * @dev Emitted when `newAdminRole` is set as ``role``'s admin role, replacing `previousAdminRole`\\n     *\\n     * `DEFAULT_ADMIN_ROLE` is the starting admin for all roles, despite\\n     * {RoleAdminChanged} not being emitted signaling this.\\n     *\\n     * _Available since v3.1._\\n     */\\n    event RoleAdminChanged(bytes32 indexed role, bytes32 indexed previousAdminRole, bytes32 indexed newAdminRole);\\n\\n    /**\\n     * @dev Emitted when `account` is granted `role`.\\n     *\\n     * `sender` is the account that originated the contract call, an admin role\\n     * bearer except when using {AccessControl-_setupRole}.\\n     */\\n    event RoleGranted(bytes32 indexed role, address indexed account, address indexed sender);\\n\\n    /**\\n     * @dev Emitted when `account` is revoked `role`.\\n     *\\n     * `sender` is the account that originated the contract call:\\n     *   - if using `revokeRole`, it is the admin role bearer\\n     *   - if using `renounceRole`, it is the role bearer (i.e. `account`)\\n     */\\n    event RoleRevoked(bytes32 indexed role, address indexed account, address indexed sender);\\n\\n    /**\\n     * @dev Returns `true` if `account` has been granted `role`.\\n     */\\n    function hasRole(bytes32 role, address account) external view returns (bool);\\n\\n    /**\\n     * @dev Returns the admin role that controls `role`. See {grantRole} and\\n     * {revokeRole}.\\n     *\\n     * To change a role's admin, use {AccessControl-_setRoleAdmin}.\\n     */\\n    function getRoleAdmin(bytes32 role) external view returns (bytes32);\\n\\n    /**\\n     * @dev Grants `role` to `account`.\\n     *\\n     * If `account` had not been already granted `role`, emits a {RoleGranted}\\n     * event.\\n     *\\n     * Requirements:\\n     *\\n     * - the caller must have ``role``'s admin role.\\n     */\\n    function grantRole(bytes32 role, address account) external;\\n\\n    /**\\n     * @dev Revokes `role` from `account`.\\n     *\\n     * If `account` had been granted `role`, emits a {RoleRevoked} event.\\n     *\\n     * Requirements:\\n     *\\n     * - the caller must have ``role``'s admin role.\\n     */\\n    function revokeRole(bytes32 role, address account) external;\\n\\n    /**\\n     * @dev Revokes `role` from the calling account.\\n     *\\n     * Roles are often managed via {grantRole} and {revokeRole}: this function's\\n     * purpose is to provide a mechanism for accounts to lose their privileges\\n     * if they are compromised (such as when a trusted device is misplaced).\\n     *\\n     * If the calling account had been granted `role`, emits a {RoleRevoked}\\n     * event.\\n     *\\n     * Requirements:\\n     *\\n     * - the caller must be `account`.\\n     */\\n    function renounceRole(bytes32 role, address account) external;\\n}\\n\",\"keccak256\":\"0xb8f5302f12138c5561362e88a78d061573e6298b7a1a5afe84a1e2c8d4d5aeaa\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (proxy/utils/Initializable.sol)\\n\\npragma solidity ^0.8.2;\\n\\nimport \\\"../../utils/AddressUpgradeable.sol\\\";\\n\\n/**\\n * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed\\n * behind a proxy. Since proxied contracts do not make use of a constructor, it's common to move constructor logic to an\\n * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer\\n * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.\\n *\\n * The initialization functions use a version number. Once a version number is used, it is consumed and cannot be\\n * reused. This mechanism prevents re-execution of each \\\"step\\\" but allows the creation of new initialization steps in\\n * case an upgrade adds a module that needs to be initialized.\\n *\\n * For example:\\n *\\n * [.hljs-theme-light.nopadding]\\n * ```solidity\\n * contract MyToken is ERC20Upgradeable {\\n *     function initialize() initializer public {\\n *         __ERC20_init(\\\"MyToken\\\", \\\"MTK\\\");\\n *     }\\n * }\\n *\\n * contract MyTokenV2 is MyToken, ERC20PermitUpgradeable {\\n *     function initializeV2() reinitializer(2) public {\\n *         __ERC20Permit_init(\\\"MyToken\\\");\\n *     }\\n * }\\n * ```\\n *\\n * TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as\\n * possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}.\\n *\\n * CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure\\n * that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.\\n *\\n * [CAUTION]\\n * ====\\n * Avoid leaving a contract uninitialized.\\n *\\n * An uninitialized contract can be taken over by an attacker. This applies to both a proxy and its implementation\\n * contract, which may impact the proxy. To prevent the implementation contract from being used, you should invoke\\n * the {_disableInitializers} function in the constructor to automatically lock it when it is deployed:\\n *\\n * [.hljs-theme-light.nopadding]\\n * ```\\n * /// @custom:oz-upgrades-unsafe-allow constructor\\n * constructor() {\\n *     _disableInitializers();\\n * }\\n * ```\\n * ====\\n */\\nabstract contract Initializable {\\n    /**\\n     * @dev Indicates that the contract has been initialized.\\n     * @custom:oz-retyped-from bool\\n     */\\n    uint8 private _initialized;\\n\\n    /**\\n     * @dev Indicates that the contract is in the process of being initialized.\\n     */\\n    bool private _initializing;\\n\\n    /**\\n     * @dev Triggered when the contract has been initialized or reinitialized.\\n     */\\n    event Initialized(uint8 version);\\n\\n    /**\\n     * @dev A modifier that defines a protected initializer function that can be invoked at most once. In its scope,\\n     * `onlyInitializing` functions can be used to initialize parent contracts.\\n     *\\n     * Similar to `reinitializer(1)`, except that functions marked with `initializer` can be nested in the context of a\\n     * constructor.\\n     *\\n     * Emits an {Initialized} event.\\n     */\\n    modifier initializer() {\\n        bool isTopLevelCall = !_initializing;\\n        require(\\n            (isTopLevelCall && _initialized < 1) || (!AddressUpgradeable.isContract(address(this)) && _initialized == 1),\\n            \\\"Initializable: contract is already initialized\\\"\\n        );\\n        _initialized = 1;\\n        if (isTopLevelCall) {\\n            _initializing = true;\\n        }\\n        _;\\n        if (isTopLevelCall) {\\n            _initializing = false;\\n            emit Initialized(1);\\n        }\\n    }\\n\\n    /**\\n     * @dev A modifier that defines a protected reinitializer function that can be invoked at most once, and only if the\\n     * contract hasn't been initialized to a greater version before. In its scope, `onlyInitializing` functions can be\\n     * used to initialize parent contracts.\\n     *\\n     * A reinitializer may be used after the original initialization step. This is essential to configure modules that\\n     * are added through upgrades and that require initialization.\\n     *\\n     * When `version` is 1, this modifier is similar to `initializer`, except that functions marked with `reinitializer`\\n     * cannot be nested. If one is invoked in the context of another, execution will revert.\\n     *\\n     * Note that versions can jump in increments greater than 1; this implies that if multiple reinitializers coexist in\\n     * a contract, executing them in the right order is up to the developer or operator.\\n     *\\n     * WARNING: setting the version to 255 will prevent any future reinitialization.\\n     *\\n     * Emits an {Initialized} event.\\n     */\\n    modifier reinitializer(uint8 version) {\\n        require(!_initializing && _initialized < version, \\\"Initializable: contract is already initialized\\\");\\n        _initialized = version;\\n        _initializing = true;\\n        _;\\n        _initializing = false;\\n        emit Initialized(version);\\n    }\\n\\n    /**\\n     * @dev Modifier to protect an initialization function so that it can only be invoked by functions with the\\n     * {initializer} and {reinitializer} modifiers, directly or indirectly.\\n     */\\n    modifier onlyInitializing() {\\n        require(_initializing, \\\"Initializable: contract is not initializing\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Locks the contract, preventing any future reinitialization. This cannot be part of an initializer call.\\n     * Calling this in the constructor of a contract will prevent that contract from being initialized or reinitialized\\n     * to any version. It is recommended to use this to lock implementation contracts that are designed to be called\\n     * through proxies.\\n     *\\n     * Emits an {Initialized} event the first time it is successfully executed.\\n     */\\n    function _disableInitializers() internal virtual {\\n        require(!_initializing, \\\"Initializable: contract is initializing\\\");\\n        if (_initialized != type(uint8).max) {\\n            _initialized = type(uint8).max;\\n            emit Initialized(type(uint8).max);\\n        }\\n    }\\n\\n    /**\\n     * @dev Returns the highest version that has been initialized. See {reinitializer}.\\n     */\\n    function _getInitializedVersion() internal view returns (uint8) {\\n        return _initialized;\\n    }\\n\\n    /**\\n     * @dev Returns `true` if the contract is currently initializing. See {onlyInitializing}.\\n     */\\n    function _isInitializing() internal view returns (bool) {\\n        return _initializing;\\n    }\\n}\\n\",\"keccak256\":\"0x89be10e757d242e9b18d5a32c9fbe2019f6d63052bbe46397a430a1d60d7f794\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (utils/Address.sol)\\n\\npragma solidity ^0.8.1;\\n\\n/**\\n * @dev Collection of functions related to the address type\\n */\\nlibrary AddressUpgradeable {\\n    /**\\n     * @dev Returns true if `account` is a contract.\\n     *\\n     * [IMPORTANT]\\n     * ====\\n     * It is unsafe to assume that an address for which this function returns\\n     * false is an externally-owned account (EOA) and not a contract.\\n     *\\n     * Among others, `isContract` will return false for the following\\n     * types of addresses:\\n     *\\n     *  - an externally-owned account\\n     *  - a contract in construction\\n     *  - an address where a contract will be created\\n     *  - an address where a contract lived, but was destroyed\\n     *\\n     * Furthermore, `isContract` will also return true if the target contract within\\n     * the same transaction is already scheduled for destruction by `SELFDESTRUCT`,\\n     * which only has an effect at the end of a transaction.\\n     * ====\\n     *\\n     * [IMPORTANT]\\n     * ====\\n     * You shouldn't rely on `isContract` to protect against flash loan attacks!\\n     *\\n     * Preventing calls from contracts is highly discouraged. It breaks composability, breaks support for smart wallets\\n     * like Gnosis Safe, and does not provide security since it can be circumvented by calling from a contract\\n     * constructor.\\n     * ====\\n     */\\n    function isContract(address account) internal view returns (bool) {\\n        // This method relies on extcodesize/address.code.length, which returns 0\\n        // for contracts in construction, since the code is only stored at the end\\n        // of the constructor execution.\\n\\n        return account.code.length > 0;\\n    }\\n\\n    /**\\n     * @dev Replacement for Solidity's `transfer`: sends `amount` wei to\\n     * `recipient`, forwarding all available gas and reverting on errors.\\n     *\\n     * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost\\n     * of certain opcodes, possibly making contracts go over the 2300 gas limit\\n     * imposed by `transfer`, making them unable to receive funds via\\n     * `transfer`. {sendValue} removes this limitation.\\n     *\\n     * https://consensys.net/diligence/blog/2019/09/stop-using-soliditys-transfer-now/[Learn more].\\n     *\\n     * IMPORTANT: because control is transferred to `recipient`, care must be\\n     * taken to not create reentrancy vulnerabilities. Consider using\\n     * {ReentrancyGuard} or the\\n     * https://solidity.readthedocs.io/en/v0.8.0/security-considerations.html#use-the-checks-effects-interactions-pattern[checks-effects-interactions pattern].\\n     */\\n    function sendValue(address payable recipient, uint256 amount) internal {\\n        require(address(this).balance >= amount, \\\"Address: insufficient balance\\\");\\n\\n        (bool success, ) = recipient.call{value: amount}(\\\"\\\");\\n        require(success, \\\"Address: unable to send value, recipient may have reverted\\\");\\n    }\\n\\n    /**\\n     * @dev Performs a Solidity function call using a low level `call`. A\\n     * plain `call` is an unsafe replacement for a function call: use this\\n     * function instead.\\n     *\\n     * If `target` reverts with a revert reason, it is bubbled up by this\\n     * function (like regular Solidity function calls).\\n     *\\n     * Returns the raw returned data. To convert to the expected return value,\\n     * use https://solidity.readthedocs.io/en/latest/units-and-global-variables.html?highlight=abi.decode#abi-encoding-and-decoding-functions[`abi.decode`].\\n     *\\n     * Requirements:\\n     *\\n     * - `target` must be a contract.\\n     * - calling `target` with `data` must not revert.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(address target, bytes memory data) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, 0, \\\"Address: low-level call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`], but with\\n     * `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, 0, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but also transferring `value` wei to `target`.\\n     *\\n     * Requirements:\\n     *\\n     * - the calling contract must have an ETH balance of at least `value`.\\n     * - the called Solidity function must be `payable`.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(address target, bytes memory data, uint256 value) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, value, \\\"Address: low-level call with value failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCallWithValue-address-bytes-uint256-}[`functionCallWithValue`], but\\n     * with `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        require(address(this).balance >= value, \\\"Address: insufficient balance for call\\\");\\n        (bool success, bytes memory returndata) = target.call{value: value}(data);\\n        return verifyCallResultFromTarget(target, success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(address target, bytes memory data) internal view returns (bytes memory) {\\n        return functionStaticCall(target, data, \\\"Address: low-level static call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal view returns (bytes memory) {\\n        (bool success, bytes memory returndata) = target.staticcall(data);\\n        return verifyCallResultFromTarget(target, success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but performing a delegate call.\\n     *\\n     * _Available since v3.4._\\n     */\\n    function functionDelegateCall(address target, bytes memory data) internal returns (bytes memory) {\\n        return functionDelegateCall(target, data, \\\"Address: low-level delegate call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],\\n     * but performing a delegate call.\\n     *\\n     * _Available since v3.4._\\n     */\\n    function functionDelegateCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        (bool success, bytes memory returndata) = target.delegatecall(data);\\n        return verifyCallResultFromTarget(target, success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Tool to verify that a low level call to smart-contract was successful, and revert (either by bubbling\\n     * the revert reason or using the provided one) in case of unsuccessful call or if target was not a contract.\\n     *\\n     * _Available since v4.8._\\n     */\\n    function verifyCallResultFromTarget(\\n        address target,\\n        bool success,\\n        bytes memory returndata,\\n        string memory errorMessage\\n    ) internal view returns (bytes memory) {\\n        if (success) {\\n            if (returndata.length == 0) {\\n                // only check isContract if the call was successful and the return data is empty\\n                // otherwise we already know that it was a contract\\n                require(isContract(target), \\\"Address: call to non-contract\\\");\\n            }\\n            return returndata;\\n        } else {\\n            _revert(returndata, errorMessage);\\n        }\\n    }\\n\\n    /**\\n     * @dev Tool to verify that a low level call was successful, and revert if it wasn't, either by bubbling the\\n     * revert reason or using the provided one.\\n     *\\n     * _Available since v4.3._\\n     */\\n    function verifyCallResult(\\n        bool success,\\n        bytes memory returndata,\\n        string memory errorMessage\\n    ) internal pure returns (bytes memory) {\\n        if (success) {\\n            return returndata;\\n        } else {\\n            _revert(returndata, errorMessage);\\n        }\\n    }\\n\\n    function _revert(bytes memory returndata, string memory errorMessage) private pure {\\n        // Look for revert reason and bubble it up if present\\n        if (returndata.length > 0) {\\n            // The easiest way to bubble the revert reason is using memory via assembly\\n            /// @solidity memory-safe-assembly\\n            assembly {\\n                let returndata_size := mload(returndata)\\n                revert(add(32, returndata), returndata_size)\\n            }\\n        } else {\\n            revert(errorMessage);\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x9c80f545915582e63fe206c6ce27cbe85a86fc10b9cd2a0e8c9488fb7c2ee422\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/introspection/IERC165.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC165 standard, as defined in the\\n * https://eips.ethereum.org/EIPS/eip-165[EIP].\\n *\\n * Implementers can declare support of contract interfaces, which can then be\\n * queried by others ({ERC165Checker}).\\n *\\n * For an implementation, see {ERC165}.\\n */\\ninterface IERC165Upgradeable {\\n    /**\\n     * @dev Returns true if this contract implements the interface defined by\\n     * `interfaceId`. See the corresponding\\n     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]\\n     * to learn more about how these ids are created.\\n     *\\n     * This function call must use less than 30 000 gas.\\n     */\\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\\n}\\n\",\"keccak256\":\"0xc6cef87559d0aeffdf0a99803de655938a7779ec0a3cd5d4383483ad85565a09\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address from, address to, uint256 amount) external returns (bool);\\n}\\n\",\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\"},\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/IERC20Metadata.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../IERC20.sol\\\";\\n\\n/**\\n * @dev Interface for the optional metadata functions from the ERC20 standard.\\n *\\n * _Available since v4.1._\\n */\\ninterface IERC20Metadata is IERC20 {\\n    /**\\n     * @dev Returns the name of the token.\\n     */\\n    function name() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the symbol of the token.\\n     */\\n    function symbol() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the decimals places of the token.\\n     */\\n    function decimals() external view returns (uint8);\\n}\\n\",\"keccak256\":\"0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca\",\"license\":\"MIT\"},\"contracts/exchange/contracts/periphery/contracts/access-control/SuAccessRoles.sol\":{\"content\":\"// SPDX-License-Identifier: BSL 1.1\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @title SuAccessRoles Library\\n * @dev SuAuthenticated and SuAccessControlSingleton need to have this constants\\n * Hierarchy:\\n *      1. DAO - can give admins and system roles\\n *      2.1. Admin - can set Alerters\\n *      2.2. System - includes Minter, Liquidation, Reward and Disabler roles, don't have access to give some roles.\\n *      3. Alerter - can send alerts and trigger rate limits, don't have access to give some roles.\\n */\\nabstract contract SuAccessRoles {\\n    bytes32 public constant ADMIN_ROLE = 0x00;\\n\\n    bytes32 public constant DAO_ROLE = keccak256(\\\"DAO_ROLE\\\");\\n\\n    bytes32 public constant ALERTER_ROLE = keccak256(\\\"ALERTER_ROLE\\\");\\n\\n    // system roles\\n    bytes32 public constant MINT_ACCESS_ROLE = keccak256(\\\"MINT_ACCESS_ROLE\\\");\\n    bytes32 public constant LIQUIDATION_ACCESS_ROLE = keccak256(\\\"LIQUIDATION_ACCESS_ROLE\\\");\\n    bytes32 public constant REWARD_ACCESS_ROLE = keccak256(\\\"REWARD_ACCESS_ROLE\\\");\\n    // bytes32 public constant SYSTEM_ROLE = keccak256(\\\"SYSTEM_ROLE\\\");\\n    bytes32 public constant DISABLER_ROLE = keccak256(\\\"DISABLER_ROLE\\\");\\n    bytes32 public constant CDP_ACCESS_ROLE = keccak256(\\\"CDP_ACCESS_ROLE\\\");\\n    bytes32 public constant VOTING_ESCROW_ROLE = keccak256(\\\"VOTING_ESCROW_ROLE\\\");\\n    bytes32 public constant PROXY_ACTIONS_ROLE = keccak256(\\\"PROXY_ACTIONS_ROLE\\\");\\n}\\n\",\"keccak256\":\"0x76c6b55446c0e7b40405cd0b642650c64a842e5dd71d5c5307f0b2def8898a1b\",\"license\":\"BSL 1.1\"},\"contracts/exchange/contracts/periphery/contracts/access-control/SuAuthenticated.sol\":{\"content\":\"// SPDX-License-Identifier: BSL 1.1\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../interfaces/access-control/ISuAccessControl.sol\\\";\\nimport \\\"./SuAccessRoles.sol\\\";\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol\\\";\\n\\n/**\\n * @title SuAuthenticated\\n * @dev other contracts should inherit to be authenticated.\\n * The address of SuAccessControlSingleton should be one for all contract that inherits SuAuthenticated\\n */\\nabstract contract SuAuthenticated is Initializable, SuAccessRoles, IERC165Upgradeable {\\n    ISuAccessControl public ACCESS_CONTROL_SINGLETON;\\n\\n    error OnlyDAOError();\\n    error OnlyAdminError();\\n    error OnlyAlerterError();\\n    error OnlyVaultAccessError();\\n    error OnlyLiquidationAccessError();\\n    error OnlyMintAccessError();\\n    error OnlyRewardAccessError();\\n    error OnlyDisablerAccessError();\\n    error OnlyVotingEscrowError();\\n    error OnlyProxyActionsError();\\n    error OnlyRoleError();\\n    error OnlyCDPAccessError();\\n    error BadAccessControlSingleton();\\n\\n    /**\\n     * @dev should be passed in constructor\\n     */\\n    function __suAuthenticatedInit(address _accessControlSingleton) internal onlyInitializing {\\n        ACCESS_CONTROL_SINGLETON = ISuAccessControl(_accessControlSingleton);\\n        if (\\n            _accessControlSingleton == address(0) ||\\n            !ISuAccessControl(_accessControlSingleton).supportsInterface(type(IAccessControlUpgradeable).interfaceId)\\n        ) revert BadAccessControlSingleton();\\n    }\\n\\n    /** CORE ROLES */\\n\\n    modifier onlyDAO() {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(DAO_ROLE, msg.sender)) revert OnlyDAOError();\\n        _;\\n    }\\n\\n    modifier onlyAdmin() {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(ADMIN_ROLE, msg.sender)) revert OnlyAdminError();\\n        _;\\n    }\\n\\n    modifier onlyAlerter() {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(ALERTER_ROLE, msg.sender)) revert OnlyAlerterError();\\n        _;\\n    }\\n\\n    /** SYSTEM ROLES */\\n\\n    modifier onlyLiquidationAccess() {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(LIQUIDATION_ACCESS_ROLE, msg.sender)) revert OnlyLiquidationAccessError();\\n        _;\\n    }\\n\\n    modifier onlyMintAccess() {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(MINT_ACCESS_ROLE, msg.sender)) revert OnlyMintAccessError();\\n        _;\\n    }\\n\\n    modifier onlyRewardAccess() {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(REWARD_ACCESS_ROLE, msg.sender)) revert OnlyRewardAccessError();\\n        _;\\n    }\\n\\n    modifier onlyRewardOrAdminAccess() {\\n        if (\\n            !ACCESS_CONTROL_SINGLETON.hasRole(REWARD_ACCESS_ROLE, msg.sender) &&\\n            !ACCESS_CONTROL_SINGLETON.hasRole(ADMIN_ROLE, msg.sender)\\n        ) revert OnlyRewardAccessError();\\n        _;\\n    }\\n\\n    // @notice This modifier check if user/contract have access to \\\"disable\\\" contracts.\\n    // All main contracts in our lending protocol have disableContract() method that stops contracts main functions.\\n    modifier onlyDisablerAccess() {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(DISABLER_ROLE, msg.sender)) revert OnlyDisablerAccessError();\\n        _;\\n    }\\n\\n    modifier onlyCDPAccess() {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(CDP_ACCESS_ROLE, msg.sender)) revert OnlyCDPAccessError();\\n        _;\\n    }\\n\\n    modifier onlyVotingEscrow() {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(VOTING_ESCROW_ROLE, msg.sender)) revert OnlyVotingEscrowError();\\n        _;\\n    }\\n\\n    modifier onlyProxyActions() {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(PROXY_ACTIONS_ROLE, msg.sender)) revert OnlyProxyActionsError();\\n        _;\\n    }\\n\\n    // syntax sugar under ACCESS_CONTROL_SINGLETON\\n    modifier onlyRole(bytes32 role) {\\n        if (!ACCESS_CONTROL_SINGLETON.hasRole(role, msg.sender)) revert OnlyRoleError();\\n        _;\\n    }\\n\\n    function supportsInterface(bytes4 interfaceId) public view virtual returns (bool) {\\n        return ACCESS_CONTROL_SINGLETON.supportsInterface(interfaceId);\\n    }\\n\\n    uint256[50] private __gap;\\n}\\n\",\"keccak256\":\"0xcfde5118b09a0dd37d9b4d3c34459b2e2650f59f247ddb9b116733b03ad80d21\",\"license\":\"BSL 1.1\"},\"contracts/exchange/contracts/periphery/contracts/interfaces/access-control/ISuAccessControl.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol\\\";\\nimport \\\"@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol\\\";\\nimport \\\"../../access-control/SuAccessRoles.sol\\\";\\n\\n/**\\n * @notice Access control for contracts\\n * @dev External interface of AccessControl declared to support ERC165 detection.\\n **/\\ninterface ISuAccessControl is IAccessControlUpgradeable, IERC165Upgradeable {\\n    function setRoleAdmin(bytes32 role, bytes32 adminRole) external;\\n}\\n\",\"keccak256\":\"0x25724ac502fd6418ccd38273b276de4b2fdecd023d723c5d80c9f0a27c407bcd\",\"license\":\"MIT\"},\"contracts/exchange/contracts/periphery/contracts/interfaces/oracle/ISuOracle.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\n// solhint-disable compiler-version\\npragma solidity >=0.7.6;\\n\\ninterface ISuOracle {\\n    /**\\n     * @notice WARNING! Read this description very carefully!\\n     *     function getFiatPrice1e18(address asset) returns (uint256) that:\\n     *         basicAmountOfAsset * getFiatPrice1e18(asset) / 1e18 === $$ * 1e18\\n     *     in other words, it doesn't matter what's the erc20.decimals is,\\n     *     you just multiply token balance in basic units on value from oracle and get dollar amount multiplied on 1e18.\\n     *\\n     * different assets have different deviation threshold (errors)\\n     *     for wBTC it's <= 0.5%, read more https://data.chain.link/ethereum/mainnet/crypto-usd/btc-usd\\n     *     for other asset is can be larger based on particular oracle implementation.\\n     *\\n     * examples:\\n     *     market price of btc = $30k,\\n     *     for 0.1 wBTC the unit256 amount is 0.1 * 1e18\\n     *     0.1 * 1e18 * (price1e18 / 1e18) == $3000 == uint256(3000*1e18)\\n     *     => price1e18 = 30000 * 1e18;\\n     *\\n     *     market price of usdt = $0.97,\\n     *     for 1 usdt uint256 = 1 * 1e6\\n     *     so 1*1e6 * price1e18 / 1e18 == $0.97 == uint256(0.97*1e18)\\n     *     => 1*1e6 * (price1e18 / 1e18) / (0.97*1e18)   = 1\\n     *     =>  price1e18 = 0.97 * (1e18/1e6) * 1e18\\n     *\\n     *    assume market price of wBTC = $31,503.77, oracle error = $158\\n     *\\n     *     case #1: small amount of wBTC\\n     *         we have 0.0,000,001 wBTC that is worth v = $0.00315 \\u00b1 $0.00001 = 0.00315*1e18 = 315*1e13 \\u00b1 1*1e13\\n     *         actual balance on the asset b = wBTC.balanceOf() =  0.0000001*1e18 = 1e11\\n     *         oracle should return or = oracle.getFiatPrice1e18(wBTC) <=>\\n     *         <=> b*or = v => v/b = 315*1e13 / 1e11 = 315*1e2 \\u00b1 1e2\\n     *         error = or.error * b = 1e2 * 1e11 = 1e13 => 1e13/1e18 usd = 1e-5 = 0.00001 usd\\n     *\\n     *     case #2: large amount of wBTC\\n     *         v = 2,000,000 wBTC = $31,503.77 * 2m \\u00b1 158*2m = $63,007,540,000 \\u00b1 $316,000,000 = 63,007*1e24 \\u00b1 316*1e24\\n     *         for calc convenience we increase error on 0.05 and have v = 63,000*24 \\u00b1 300*1e24 = (630 \\u00b1 3)*1e26\\n     *         b = 2*1e6 * 1e18 = 2*1e24\\n     *         or = v/b = (630 \\u00b1 3)*1e26 / 2*1e24 = 315*1e2 \\u00b1 1.5*1e2\\n     *         error = or.error * b = 1.5*100 * 2*1e24 = 3*1e26 = 3*1e8*1e18 = $300,000,000 ~ $316,000,000\\n     *\\n     *     assume the market price of USDT = $0.97 \\u00b1 $0.00485,\\n     *\\n     *     case #3: little amount of USDT\\n     *         v = USDT amount 0.005 = 0.005*(0.97 \\u00b1 0.00485) = 0.00485*1e18 \\u00b1 0.00002425*1e18 = 485*1e13 \\u00b1 3*1e13\\n     *         we rounded error up on (3000-2425)/2425 ~= +24% for calculation convenience.\\n     *         b = USDT.balanceOf() = 0.005*1e6 = 5*1e3\\n     *         b*or = v => or = v/b = (485*1e13 \\u00b1 3*1e13) / 5*1e3 = 970*1e9 \\u00b1 6*1e9\\n     *         error = 6*1e9 * 5*1e3 / 1e18 = 30*1e12/1e18 = 3*1e-5 = $0,00005\\n     *\\n     *     case #4: lot of USDT\\n     *         v = we have 100,000,000,000 USDT = $97B = 97*1e9*1e18 \\u00b1 0.5*1e9*1e18\\n     *         b = USDT.balanceOf() = 1e11*1e6 = 1e17\\n     *         or = v/b = (97*1e9*1e18 \\u00b1 0.5*1e9*1e18) / 1e17 = 970*1e9 \\u00b1 5*1e9\\n     *         error = 5*1e9 * 1e17 = 5*1e26 = 0.5 * 1e8*1e18\\n     *\\n     * @param asset - address of erc20 token contract\\n     * @return usdPrice1e18 such that asset.balanceOf() * getFiatPrice1e18(asset) / 1e18 == $$ * 1e18\\n     **/\\n    function getFiatPrice1e18(address asset) external view returns (uint256);\\n}\\n\",\"keccak256\":\"0xa56b9cc86ef5935efecc276e6a3188d518f1a99cad960083a8de35849c997687\",\"license\":\"UNLICENSED\"},\"contracts/exchange/contracts/periphery/contracts/interfaces/oracle/ISuOracleAggregator.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"./ISuOracle.sol\\\";\\n\\ninterface ISuOracleAggregator is ISuOracle {\\n    /* ===================== STRUCT ===================== */\\n    struct AssetLimitation {\\n        uint256 lowerBound;\\n        uint256 upperBound;\\n    }\\n\\n    /* ===================== EVENTS ===================== */\\n    event OracleLowerBoundWarning(address indexed asset, uint256 price, uint256 lowerBound);\\n    event OracleUpperBoundWarning(address indexed asset, uint256 price, uint256 upperBound);\\n\\n    event OracleLowerBoundUpdated(address asset, uint256 newBound);\\n    event OracleUpperBoundUpdated(address asset, uint256 newBound);\\n\\n    /* ===================== ERRORS ===================== */\\n    error NoOracleFound(address asset);\\n    error NoOracleImplementation();\\n    error BadOracleId();\\n    error PriceBelowLowerBound(address asset, uint256 price, uint256 bound);\\n    error PriceAboveUpperBound(address asset, uint256 price, uint256 bound);\\n\\n    /* ====================== VARS ====================== */\\n    function assetToOracle (address asset) external view returns ( uint256 );\\n    function oracleImplementations (uint256 oracleId) external view returns ( ISuOracle );\\n\\n    /* ==================== METHODS ==================== */\\n\\n    /**\\n    * @notice Like getFiatPrice1e18 from ISuOracle, but also checks bounds and emit event if there is an error.\\n    * We should call it in non-view method where we need safePrice from Oracle.\\n    * @param asset - address of asset\\n    **/\\n    function getSafeFiatPrice1e18(address asset) external returns (uint256);\\n\\n    /**\\n    * @notice Change lower bound of asset\\n    * @param asset - address of asset\\n    * @param newLowerBound - new value of lower bound\\n    **/\\n    function setLowerBound(address asset, uint256 newLowerBound) external;\\n\\n    /**\\n    * @notice Change upper bound of asset\\n    * @param asset - address of asset\\n    * @param newUpperBound - new value of upper bound\\n    **/\\n    function setUpperBound(address asset, uint256 newUpperBound) external;\\n\\n    /**\\n       * @notice assign address of oracle implementation to the oracleId\\n    * @param oracleId - number 0,1, etc to assign the oracle\\n    * @param oracleImplementation - an address with ISuOracle implementation contract\\n    **/\\n    function setOracleImplementation(uint256 oracleId, ISuOracle oracleImplementation) external;\\n\\n    /**\\n    * @notice specify what oracleId should be used for each assets. Checks that oracleId has an implementation\\n    **/\\n    function setOracleIdForAssets(address[] memory assets, uint256 oracleId) external;\\n\\n    /* ==================== VIEW METHODS ==================== */\\n    /**\\n    * @return true if oracle is set to this asset, false otherwise\\n    **/\\n    function hasPriceForAsset(address asset) external view returns(bool);\\n}\\n\",\"keccak256\":\"0xb73f938c5cb6d1295d61e94f86704c7777998ef50e0030480047fa96ce7a5535\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/core/SafeEngine.sol\":{\"content\":\"// SPDX-License-Identifier: AGPL-3.0-or-later\\n\\n/// SAFEEngine.sol -- StablePro CDP database\\n\\n// Copyright (C) 2018 Rain <rainbreak@riseup.net>\\n//\\n// This program is free software: you can redistribute it and/or modify\\n// it under the terms of the GNU Affero General Public License as published by\\n// the Free Software Foundation, either version 3 of the License, or\\n// (at your option) any later version.\\n//\\n// This program is distributed in the hope that it will be useful,\\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\n// GNU Affero General Public License for more details.\\n//\\n// You should have received a copy of the GNU Affero General Public License\\n// along with this program.  If not, see <https://www.gnu.org/licenses/>.\\n\\npragma solidity ^0.8.0;\\n\\nimport {Math} from \\\"../utils/Math.sol\\\";\\nimport {ISafeEngine} from \\\"../interfaces/ISafeEngine.sol\\\";\\nimport \\\"../../exchange/contracts/periphery/contracts/access-control/SuAuthenticated.sol\\\";\\nimport \\\"../../exchange/contracts/periphery/contracts/interfaces/oracle/ISuOracleAggregator.sol\\\";\\nimport \\\"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol\\\";\\n\\n// FIXME: This contract was altered compared to the production version.\\n// It doesn't use LibNote anymore.\\n// New deployments of this contract will need to include custom events (TO DO).\\n\\n// CHANGED: added interface, moved structs there.\\n// Maybe we'll need to add events in each method (need to discuss, in another branch dss has LogNote for that)\\n// Added SuAuthenticated instead of authorizedAccounts\\n// Added updating safetyPrice\\n\\n/**\\n * @title SafeEngine\\n * @notice Core accounting and state management contract for collateralized debt positions (Safes) in the StableUnit protocol.\\n * @dev Manages collateral, debt, and StablePro coin balances for Safes, tracks global and per-collateral-type debt limits,\\n *      and enforces collateralization ratios using safety prices from an oracle. Supports operations like collateral\\n *      deposit/withdrawal, debt generation/repayment, liquidation, and settlement. Uses SuAuthenticatedNonUpgradeable for\\n *      access control and integrates with ISuOracleAggregator for price feeds. Can be disabled by authorized accounts to\\n *      halt operations. This contract is a fork of MakerDAO\\u2019s Vat.sol, adapted for StableUnit with features like dynamic\\n *      safety price updates and redemption price.\\n * @custom:usage\\n * - **Initialization**: Deploy with access control and oracle addresses.\\n *   ```solidity\\n *   SafeEngine safeEngine = new SafeEngine(accessControlAddress, oracleAddress);\\n *   ```\\n * - **Collateral Type Setup**: Initialize a collateral type with its token address.\\n *   ```solidity\\n *   safeEngine.initializeCollateralType(\\\"ETH-A\\\", ethTokenAddress);\\n *   ```\\n * - **Parameter Modification**: DAO updates debt ceilings, redemption price, or liquidation ratios.\\n *   ```solidity\\n *   safeEngine.modifyParameters(\\\"globalDebtCeiling\\\", newCeiling); // Update global debt ceiling\\n *   safeEngine.modifyParameters(\\\"ETH-A\\\", \\\"debtCeiling\\\", newCeiling); // Update collateral debt ceiling\\n *   ```\\n * - **Safe Operations**: Users or adapters modify Safe collateral/debt via DssProxyActions or direct calls.\\n *   ```solidity\\n *   safeEngine.modifySAFECollateralization(\\\"ETH-A\\\", safe, collateralSrc, debtDst, deltaCollateral, deltaDebt);\\n *   ```\\n * - **Price Updates**: Trigger safety price updates for a collateral type.\\n *   ```solidity\\n *   safeEngine.updateSafetyPrice(\\\"ETH-A\\\"); // Refresh safety price from oracle\\n *   ```\\n * - **Disabling**: DisablerAccess accounts can disable the contract.\\n *   ```solidity\\n *   safeEngine.disableContract(); // Halt operations\\n *   ```\\n * @custom:security Only enabled contracts (`contractEnabled == 1`) allow state-changing operations.\\n *                 Administrative functions are restricted by SuAuthenticatedNonUpgradeable roles (DAO, Admin, DisablerAccess).\\n *                 Only authorized users/contracts (via `cdpRights`) can modify specific Safes or balances.\\n *                 Safety price updates rely on ISuOracleAggregator, which must provide reliable price feeds.\\n * @custom:changes Replaced MakerDAO\\u2019s `authorizedAccounts` with `SuAuthenticatedNonUpgradeable` for access control.\\n *                 Removed `LibNote` for event logging, requiring custom events (TODO).\\n *                 Added `ISuOracleAggregator` integration for dynamic safety price updates.\\n *                 Introduced `redemptionPrice`, `safetyPriceValidBlockAmount`, and `defaultLiquidationRatio`.\\n *                 Moved structs to `ISafeEngine` interface.\\n * @custom:events No events are defined; custom events need to be added (as noted in FIXME).\\n *                Example placeholder events are included in comments but not emitted due to lack of definition.\\n */\\ncontract SafeEngine is SuAuthenticated, Math, ISafeEngine {\\n    // --- Disable ---\\n    /// @notice Tracks whether the contract is enabled (1) or disabled (0).\\n    uint public contractEnabled;\\n\\n    /**\\n     * @notice Disables the contract, preventing further state-changing operations.\\n     * @dev Sets `contractEnabled` to 0 and emits a placeholder event. Only callable by DisablerAccess accounts.\\n     * @custom:access OnlyDisablerAccess\\n     */\\n    function disableContract() external onlyDisablerAccess {\\n        contractEnabled = 0;\\n        // TODO: Define and emit custom event\\n        emit DisableContract();\\n    }\\n\\n    // --- Auth ---\\n    // Who can transfer collateral & debt in/out of a CDP\\n    /// @notice Maps Safe owners to operators with permission to modify their Safes.\\n    mapping(address => mapping (address => uint)) public cdpRights;\\n\\n    /**\\n     * @notice Grants a user permission to modify the caller\\u2019s Safe.\\n     * @dev Sets `cdpRights[msg.sender][usr] = 1`.\\n     * @param usr Address to grant modification rights.\\n     */\\n    function approveSAFEModification(address usr) external {\\n        cdpRights[msg.sender][usr] = 1;\\n    }\\n\\n    /**\\n     * @notice Revokes a user\\u2019s permission to modify the caller\\u2019s Safe.\\n     * @dev Sets `cdpRights[msg.sender][usr] = 0`.\\n     * @param usr Address to revoke modification rights.\\n     */\\n    function denySAFEModification(address usr) external {\\n        cdpRights[msg.sender][usr] = 0;\\n    }\\n\\n    /**\\n     * @notice Checks if an account can modify a Safe.\\n     * @dev Returns true if the account is the Safe owner or has explicit permission.\\n     * @param cdp Address of the Safe.\\n     * @param account Address to check.\\n     * @return True if the account can modify the Safe.\\n     */\\n    function canModifySAFE(address cdp, address account) internal view returns (bool) {\\n        return either(cdp == account, cdpRights[cdp][account] == 1);\\n    }\\n\\n    /// Total User Debt (drawn StablePro + stability fee accrued) = SAFE.generatedDebt * CollateralType.accumulatedRate\\n\\n    // Data about each collateral type\\n    /// @notice Maps collateral types to their configuration (e.g., debt ceiling, safety price).\\n    mapping (bytes32 => CollateralType) public collateralTypes;\\n    // Data about each SAFE\\n    /// @notice Maps collateral types and Safe addresses to their state (collateral and debt).\\n    mapping (bytes32 => mapping (address => SAFE)) public safes;\\n    // Balance of each collateral type\\n    /// @notice Tracks collateral balances per collateral type and user [wad].\\n    mapping (bytes32 => mapping (address => uint)) public tokenCollateral; // [wad]\\n    // Internal balance of pegged-coins\\n    /// @notice Tracks internal StablePro coin balances per user [rad].\\n    mapping (address => uint256) public coinBalance; // [rad]\\n    // Amount of debt held by an account. Coin & debt are like matter and antimatter. They nullify each other\\n    /// @notice Tracks debt balances per user, offsetting coin balances [rad].\\n    mapping (address => uint256) public debtBalance; // [rad]\\n\\n    /// @notice Oracle aggregator providing collateral price feeds.\\n    ISuOracleAggregator public ORACLE; // Total amount of debt (coins) currently issued [rad]\\n    /// @notice Total debt issued across all Safes [rad].\\n    uint256 public globalDebt; // Total amount of debt (coins) currently issued [rad]\\n    /// @notice Total unbacked debt not covered by collateral [rad].\\n    uint256 public globalUnbackedDebt; // 'Bad' debt that's not covered by collateral [rad]\\n    /// @notice Maximum debt allowed across all Safes [rad].\\n    uint256 public globalDebtCeiling; // Maximum amount of debt that can be issued [rad]\\n    /// @notice Reference price per StablePro, defaulting to 1e27 (1:1 USD) [ray].\\n    uint256 public redemptionPrice; // Reference value per StablePro, as default = 1e27, that mean 1:1 to USD [ray]\\n    /// @notice Number of blocks a safety price remains valid.\\n    uint256 public safetyPriceValidBlockAmount; // Amount of blocks during which safetyPrice is valid\\n    /// @notice Default liquidation ratio set for new collateral types (e.g., 150%) [ray].\\n    uint256 public defaultLiquidationRatio; // Liquidation ratio that is set in initializeCollateralType\\n\\n    // --- Init ---\\n    /**\\n     * @notice Initializes the SafeEngine with access control and oracle addresses.\\n     * @dev Sets initial state: contract enabled, redemption price to 1e27, safety price validity to 1 block,\\n     *      and default liquidation ratio to 150%. Inherits access control from SuAuthenticatedNonUpgradeable.\\n     * @param accessControl Address of the access control singleton contract.\\n     * @param oracle Address of the ISuOracleAggregator contract.\\n     */\\n    function initialize(address accessControl, address oracle)  public initializer{\\n\\n        __suAuthenticatedInit(accessControl);\\n\\n        contractEnabled = 1;\\n        redemptionPrice = ONE; // 1e27\\n        safetyPriceValidBlockAmount = 1; // 2 = this block and 1 block after, 1 = only this block\\n        defaultLiquidationRatio = ONE * 15 / 10; // 150%\\n        ORACLE = ISuOracleAggregator(oracle);\\n    }\\n\\n    /// @custom:oz-upgrades-unsafe-allow constructor\\n    constructor() {\\n        _disableInitializers();\\n    }\\n\\n    // --- Administration ---\\n    /**\\n     * @notice Initializes a new collateral type with its token address.\\n     * @dev Sets accumulated rate to 1e27 and assigns the collateral token address and default liquidation ratio.\\n     *      Reverts if already initialized. Only callable by Admin.\\n     * @param collateralType Unique identifier for the collateral type (e.g., \\\"ETH-A\\\").\\n     * @param collateralAddress Address of the collateral token contract.\\n     * @custom:access OnlyAdmin\\n     */\\n    function initializeCollateralType(bytes32 collateralType, address collateralAddress) external onlyAdmin {\\n        require(collateralTypes[collateralType].accumulatedRate == 0, \\\"SafeEngine/collateral-type-already-init\\\");\\n        collateralTypes[collateralType].accumulatedRate = ONE; // 1e27\\n        collateralTypes[collateralType].collateralAddress = collateralAddress;\\n        collateralTypes[collateralType].liquidationRatio = defaultLiquidationRatio; // 150%\\n    }\\n\\n    /**\\n     * @notice Modifies global protocol parameters.\\n     * @dev Updates parameters like global debt ceiling, redemption price, default liquidation ratio, or safety price validity.\\n     *      Requires contract to be enabled. Only callable by DAO.\\n     * @param what Parameter to modify (e.g., \\\"globalDebtCeiling\\\", \\\"redemptionPrice\\\").\\n     * @param data New value for the parameter.\\n     * @custom:access OnlyDAO\\n     */\\n    function modifyParameters(bytes32 what, uint data) external onlyDAO {\\n        require(contractEnabled == 1, \\\"SafeEngine/not-contractEnabled\\\");\\n        if (what == \\\"globalDebtCeiling\\\") globalDebtCeiling = data;\\n        else if (what == \\\"redemptionPrice\\\") redemptionPrice = data;\\n        else if (what == \\\"defaultLiquidationRatio\\\") defaultLiquidationRatio = data;\\n        else if (what == \\\"safetyPriceValidBlockAmount\\\") safetyPriceValidBlockAmount = data;\\n        else revert(\\\"SafeEngine/modifyParameters-unrecognized-param\\\");\\n    }\\n\\n    /**\\n     * @notice Modifies parameters for a specific collateral type.\\n     * @dev Updates parameters like debt ceiling, debt floor, or liquidation ratio.\\n     *      Requires contract to be enabled. Only callable by DAO.\\n     * @param collateralType Unique identifier for the collateral type.\\n     * @param what Parameter to modify (e.g., \\\"debtCeiling\\\", \\\"liquidationRatio\\\").\\n     * @param data New value for the parameter.\\n     * @custom:access OnlyDAO\\n     */\\n    function modifyParameters(bytes32 collateralType, bytes32 what, uint data) external onlyDAO {\\n        require(contractEnabled == 1, \\\"SafeEngine/not-contractEnabled\\\");\\n        // if (what == \\\"safetyPrice\\\") collateralTypes[collateralType].safetyPrice = data; // Commented out\\n        if (what == \\\"debtCeiling\\\") collateralTypes[collateralType].debtCeiling = data;\\n        else if (what == \\\"debtFloor\\\") collateralTypes[collateralType].debtFloor = data;\\n        else if (what == \\\"liquidationRatio\\\") collateralTypes[collateralType].liquidationRatio = data;\\n        else revert(\\\"SafeEngine/modifyParameters-unrecognized-param\\\");\\n    }\\n\\n    /**\\n     * @notice Updates the safety price for a collateral type using oracle data.\\n     * @dev Fetches the collateral\\u2019s fiat price from ISuOracleAggregator, adjusts for token decimals,\\n     *      and calculates the safety price as (realPrice / redemptionPrice / liquidationRatio).\\n     *      Only updates if the current safety price is unset or expired based on `safetyPriceValidBlockAmount`.\\n     * @param collateralType Unique identifier for the collateral type.\\n     */\\n    function updateSafetyPrice(bytes32 collateralType) public {\\n        // Skip update if safety price is valid\\n        if (collateralTypes[collateralType].safetyPriceBlockNumber == 0) {\\n            collateralTypes[collateralType].safetyPriceBlockNumber = block.number;\\n        } else if (\\n            collateralTypes[collateralType].safetyPriceBlockNumber + safetyPriceValidBlockAmount >= block.number\\n        ) return;\\n\\n        address collateralAddress = collateralTypes[collateralType].collateralAddress;\\n        uint256 decimals = IERC20Metadata(collateralAddress).decimals();\\n        // Adjust price for token decimals: realPriceE18 = oraclePrice / 10^(18-decimals)\\n        uint256 realPriceE18 = decimals == 18\\n            ? ORACLE.getSafeFiatPrice1e18(collateralAddress)\\n            : ORACLE.getSafeFiatPrice1e18(collateralAddress) / (10 ** (18 - decimals));\\n        // Safety price = (realPrice * 1e9 / redemptionPrice) / liquidationRatio [ray]\\n        collateralTypes[collateralType].safetyPrice = _rdiv(\\n            _rdiv(realPriceE18 * 1e9, redemptionPrice),\\n            collateralTypes[collateralType].liquidationRatio\\n        );\\n        collateralTypes[collateralType].safetyPriceBlockNumber = block.number;\\n    }\\n\\n    // --- Fungibility ---\\n    /**\\n     * @notice Modifies a user\\u2019s collateral balance for a collateral type.\\n     * @dev Adds or subtracts collateral tokens, typically called by CollateralJoin adapters.\\n     *      Requires caller to have CDP access permissions.\\n     * @param collateralType Unique identifier for the collateral type.\\n     * @param usr Address to modify the collateral balance for.\\n     * @param wad Amount to add (positive) or subtract (negative) [wad].\\n     * @custom:access OnlyCDPAccess\\n     */\\n    function modifyCollateralBalance(bytes32 collateralType, address usr, int256 wad) external onlyCDPAccess {\\n        tokenCollateral[collateralType][usr] = _add(tokenCollateral[collateralType][usr], wad);\\n    }\\n\\n    /**\\n     * @notice Transfers collateral between two addresses for a collateral type.\\n     * @dev Requires the caller to have permission to modify the source address\\u2019s Safe.\\n     * @param collateralType Unique identifier for the collateral type.\\n     * @param src Source address to debit collateral from.\\n     * @param dst Destination address to credit collateral to.\\n     * @param wad Amount of collateral to transfer [wad].\\n     */\\n    function transferCollateral(bytes32 collateralType, address src, address dst, uint256 wad) external {\\n        require(canModifySAFE(src, msg.sender), \\\"SafeEngine/not-allowed\\\");\\n        tokenCollateral[collateralType][src] = _sub(tokenCollateral[collateralType][src], wad);\\n        tokenCollateral[collateralType][dst] = _add(tokenCollateral[collateralType][dst], wad);\\n    }\\n\\n    /**\\n     * @notice Transfers internal StablePro coins between two addresses.\\n     * @dev Requires the caller to have permission to modify the source address\\u2019s Safe.\\n     * @param src Source address to debit coins from.\\n     * @param dst Destination address to credit coins to.\\n     * @param rad Amount of StablePro coins to transfer [rad].\\n     */\\n    function transferInternalCoins(address src, address dst, uint256 rad) external {\\n        require(canModifySAFE(src, msg.sender), \\\"SafeEngine/not-allowed\\\");\\n        coinBalance[src] = _sub(coinBalance[src], rad);\\n        coinBalance[dst] = _add(coinBalance[dst], rad);\\n    }\\n\\n    // --- CDP Manipulation ---\\n    /**\\n     * @notice Modifies a Safe\\u2019s collateral and debt, ensuring collateralization requirements.\\n     * @dev Updates Safe state, checks debt ceilings, collateralization ratio, and permissions.\\n     *      Requires contract to be enabled and collateral type to be initialized.\\n     * @param collateralType Unique identifier for the collateral type.\\n     * @param cdp Address of the Safe to modify.\\n     * @param collateralSource Address to debit/credit collateral.\\n     * @param debtDestination Address to debit/credit debt.\\n     * @param deltaCollateral Amount to add (positive) or remove (negative) collateral [wad].\\n     * @param deltaDebt Amount to add (positive) or remove (negative) debt [wad].\\n     */\\n    function modifySAFECollateralization(\\n        bytes32 collateralType,\\n        address cdp,\\n        address collateralSource,\\n        address debtDestination,\\n        int deltaCollateral,\\n        int deltaDebt\\n    ) external {\\n        // Check contract is enabled\\n        require(contractEnabled == 1, \\\"SafeEngine/not-contractEnabled\\\");\\n\\n        SAFE memory safe_ = safes[collateralType][cdp];\\n\\n        // Refresh safety price\\n        updateSafetyPrice(collateralType);\\n        CollateralType memory collateralType_ = collateralTypes[collateralType];\\n        // Check collateral type is initialized\\n        require(collateralType_.accumulatedRate != 0, \\\"SafeEngine/collateral-type-not-init\\\");\\n\\n        // Update Safe state\\n        safe_.lockedCollateral = _add(safe_.lockedCollateral, deltaCollateral);\\n        safe_.generatedDebt = _add(safe_.generatedDebt, deltaDebt);\\n        collateralType_.debtAmount = _add(collateralType_.debtAmount, deltaDebt);\\n\\n        // Calculate debt impact\\n        int dAmountToRaise = _mul(collateralType_.accumulatedRate, deltaDebt);\\n        uint amountToRaise = _mul(collateralType_.accumulatedRate, safe_.generatedDebt);\\n        globalDebt = _add(globalDebt, dAmountToRaise);\\n\\n        // Validate debt ceilings\\n        require(\\n            either(\\n                deltaDebt <= 0,\\n                both(\\n                    _mul(collateralType_.debtAmount, collateralType_.accumulatedRate) <= collateralType_.debtCeiling,\\n                    globalDebt <= globalDebtCeiling\\n                )\\n            ),\\n            \\\"SafeEngine/ceiling-exceeded\\\"\\n        );\\n        // Validate collateralization ratio\\n        require(\\n            either(\\n                both(deltaDebt <= 0, deltaCollateral >= 0),\\n                amountToRaise <= _mul(safe_.lockedCollateral, collateralType_.safetyPrice)\\n            ),\\n            \\\"SafeEngine/not-safe\\\"\\n        );\\n\\n        // Validate permissions\\n        require(\\n            either(both(deltaDebt <= 0, deltaCollateral >= 0), canModifySAFE(cdp, msg.sender)),\\n            \\\"SafeEngine/not-allowed-u\\\"\\n        );\\n        require(either(deltaCollateral <= 0, canModifySAFE(collateralSource, msg.sender)), \\\"SafeEngine/not-allowed-v\\\");\\n        require(either(deltaDebt >= 0, canModifySAFE(debtDestination, msg.sender)), \\\"SafeEngine/not-allowed-w\\\");\\n\\n        // Validate debt floor\\n        require(either(safe_.generatedDebt == 0, amountToRaise >= collateralType_.debtFloor), \\\"SafeEngine/debtFloor\\\");\\n\\n        // Update balances\\n        tokenCollateral[collateralType][collateralSource] =\\n                        _sub(tokenCollateral[collateralType][collateralSource], deltaCollateral);\\n        coinBalance[debtDestination] = _add(coinBalance[debtDestination], dAmountToRaise);\\n\\n        // Save state\\n        safes[collateralType][cdp] = safe_;\\n        collateralTypes[collateralType] = collateralType_;\\n    }\\n\\n    // --- CDP Fungibility ---\\n    /**\\n     * @notice Transfers collateral and debt between two Safes.\\n     * @dev Updates source and destination Safe states, ensuring collateralization and debt floor requirements.\\n     *      Requires caller to have permission for both Safes.\\n     * @param collateralType Unique identifier for the collateral type.\\n     * @param src Address of the source Safe.\\n     * @param dst Address of the destination Safe.\\n     * @param deltaCollateral Amount to transfer collateral [wad].\\n     * @param deltaDebt Amount to transfer debt [wad].\\n     */\\n    function transferSAFECollateralAndDebt(\\n        bytes32 collateralType,\\n        address src,\\n        address dst,\\n        int deltaCollateral,\\n        int deltaDebt\\n    ) external {\\n        // Refresh safety price\\n        updateSafetyPrice(collateralType);\\n        SAFE storage srcCDP = safes[collateralType][src];\\n        SAFE storage dstCDP = safes[collateralType][dst];\\n        CollateralType storage col = collateralTypes[collateralType];\\n\\n        // Transfer collateral and debt\\n        srcCDP.lockedCollateral = _sub(srcCDP.lockedCollateral, deltaCollateral);\\n        srcCDP.generatedDebt = _sub(srcCDP.generatedDebt, deltaDebt);\\n        dstCDP.lockedCollateral = _add(dstCDP.lockedCollateral, deltaCollateral);\\n        dstCDP.generatedDebt = _add(dstCDP.generatedDebt, deltaDebt);\\n\\n        // Calculate debt values\\n        uint srcAmountToRaise = _mul(srcCDP.generatedDebt, col.accumulatedRate);\\n        uint dstAmountToRaise = _mul(dstCDP.generatedDebt, col.accumulatedRate);\\n\\n        // Validate permissions\\n        require(both(canModifySAFE(src, msg.sender), canModifySAFE(dst, msg.sender)), \\\"SafeEngine/not-allowed\\\");\\n\\n        // Validate collateralization\\n        require(srcAmountToRaise <= _mul(srcCDP.lockedCollateral, col.safetyPrice), \\\"SafeEngine/not-safe-src\\\");\\n        require(dstAmountToRaise <= _mul(dstCDP.lockedCollateral, col.safetyPrice), \\\"SafeEngine/not-safe-dst\\\");\\n\\n        // Validate debt floor\\n        require(either(srcAmountToRaise >= col.debtFloor, srcCDP.generatedDebt == 0), \\\"SafeEngine/debtFloor-src\\\");\\n        require(either(dstAmountToRaise >= col.debtFloor, dstCDP.generatedDebt == 0), \\\"SafeEngine/debtFloor-dst\\\");\\n    }\\n\\n    // --- CDP Confiscation ---\\n    /**\\n     * @notice Confiscates collateral and debt from a Safe during liquidation.\\n     * @dev Transfers collateral and debt to counterparties, typically for auctions. Requires CDP access permissions.\\n     * @param collateralType Unique identifier for the collateral type.\\n     * @param cdp Address of the Safe to confiscate.\\n     * @param collateralCounterparty Address to debit collateral from.\\n     * @param debtCounterparty Address to debit debt from.\\n     * @param deltaCollateral Amount to confiscate collateral [wad].\\n     * @param deltaDebt Amount to confiscate debt [wad].\\n     * @custom:access OnlyCDPAccess\\n     */\\n    function confiscateSAFECollateralAndDebt(\\n        bytes32 collateralType,\\n        address cdp,\\n        address collateralCounterparty,\\n        address debtCounterparty,\\n        int deltaCollateral,\\n        int deltaDebt\\n    ) external onlyCDPAccess {\\n        SAFE storage safe_ = safes[collateralType][cdp];\\n        CollateralType storage collateralType_ = collateralTypes[collateralType];\\n\\n        // Update Safe state\\n        safe_.lockedCollateral = _add(safe_.lockedCollateral, deltaCollateral);\\n        safe_.generatedDebt = _add(safe_.generatedDebt, deltaDebt);\\n        collateralType_.debtAmount = _add(collateralType_.debtAmount, deltaDebt);\\n\\n        // Calculate debt impact\\n        int deltaTotalIssuedDebt = _mul(collateralType_.accumulatedRate, deltaDebt);\\n\\n        // Update balances\\n        tokenCollateral[collateralType][collateralCounterparty] =\\n                        _sub(tokenCollateral[collateralType][collateralCounterparty], deltaCollateral);\\n        debtBalance[debtCounterparty] = _sub(debtBalance[debtCounterparty], deltaTotalIssuedDebt);\\n        globalUnbackedDebt = _sub(globalUnbackedDebt, deltaTotalIssuedDebt);\\n    }\\n\\n    // --- Settlement ---\\n    /**\\n     * @notice Settles debt using available StablePro coin balance.\\n     * @dev Reduces debt and coin balances for the caller, typically used by AccountingEngine.\\n     * @param rad Amount of debt to settle [rad].\\n     */\\n    function settleDebt(uint rad) external {\\n        address account = msg.sender;\\n        debtBalance[account] = _sub(debtBalance[account], rad);\\n        coinBalance[account] = _sub(coinBalance[account], rad);\\n        globalUnbackedDebt = _sub(globalUnbackedDebt, rad);\\n        globalDebt = _sub(globalDebt, rad);\\n    }\\n\\n    /**\\n     * @notice Creates unbacked debt, typically for bad debt handling.\\n     * @dev Increases debt and coin balances for destination addresses. Requires CDP access permissions.\\n     * @param debtDestination Address to assign the unbacked debt.\\n     * @param coinDestination Address to assign the StablePro coins.\\n     * @param rad Amount of unbacked debt to create [rad].\\n     * @custom:access OnlyCDPAccess\\n     */\\n    function createUnbackedDebt(address debtDestination, address coinDestination, uint rad) external onlyCDPAccess {\\n        debtBalance[debtDestination] = _add(debtBalance[debtDestination], rad);\\n        coinBalance[coinDestination] = _add(coinBalance[coinDestination], rad);\\n        globalUnbackedDebt = _add(globalUnbackedDebt, rad);\\n        globalDebt = _add(globalDebt, rad);\\n    }\\n\\n    // --- Rates ---\\n    /**\\n     * @notice Updates the accumulated stability fee rate for a collateral type.\\n     * @dev Adjusts the collateral type\\u2019s rate and credits surplus to the destination address.\\n     *      Requires contract to be enabled and CDP access permissions.\\n     * @param collateralType Unique identifier for the collateral type.\\n     * @param surplusDst Address to credit surplus StablePro coins.\\n     * @param accumulatedRate Change in accumulated rate [ray].\\n     * @custom:access OnlyCDPAccess\\n     */\\n    function updateAccumulatedRate(\\n        bytes32 collateralType,\\n        address surplusDst,\\n        int accumulatedRate\\n    ) external onlyCDPAccess {\\n        require(contractEnabled == 1, \\\"SafeEngine/not-contractEnabled\\\");\\n        CollateralType storage collateralType_ = collateralTypes[collateralType];\\n        collateralType_.accumulatedRate = _add(collateralType_.accumulatedRate, accumulatedRate);\\n        int deltaSurplus = _mul(collateralType_.debtAmount, accumulatedRate);\\n        coinBalance[surplusDst] = _add(coinBalance[surplusDst], deltaSurplus);\\n        globalDebt = _add(globalDebt, deltaSurplus);\\n    }\\n}\\n\",\"keccak256\":\"0xa58e3009c5b4ab4c370d76373c7fcbf9a94422eec0872cd1b6f339ad0c8d1af0\",\"license\":\"AGPL-3.0-or-later\"},\"contracts/makerdao/interfaces/IDisable.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n\\npragma solidity ^0.8.0;\\n\\ninterface IDisable {\\n    event DisableContract();\\n\\n    function disableContract() external;\\n}\\n\",\"keccak256\":\"0xcf4b5ac43556af77a174aa3a3a9b51c4fc89b933ef875797650542bf686b8405\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/interfaces/ISafeEngine.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n// TODO: check how to operate with license and use one for all contracts\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"./IDisable.sol\\\";\\n\\n/**\\n * @title SafeEngine\\n * @notice The single source of truth for the Maker Protocol. It contains the accounting system of the core Vault,\\n * Internal StablePro balances, and collateral state. It houses the public interface for Vault management,\\n * allowing safe(= CDP or Vault) owners to adjust their Vault state balances. It also contains the public interface\\n * for Vault fungibility, allowing safe (Vault) owners to transfer, split, and merge Vaults.\\n * Excluding these interfaces, SAFEEngine is accessed through trusted smart contract modules.\\n **/\\ninterface ISafeEngine is IDisable {\\n    /* ==================== METHODS ==================== */\\n\\n    // --- Data ---\\n    struct CollateralType {\\n        uint256 debtAmount;        // Total debt issued for this specific collateral type                          [wad]\\n        uint256 accumulatedRate;   // Accumulator for interest accrued on this collateral type                     [ray]\\n        uint256 debtCeiling;       // Maximum amount of debt that can be generated with this collateral type       [rad]\\n        uint256 debtFloor;         // Minimum amount of debt that must be generated by a CDP using this collateral [rad]\\n        uint256 safetyPrice;       // Floor price at which a CDP is allowed to generate debt                       [ray]\\n        uint256 liquidationRatio;  // Liquidation ratio to calculate safety price                                  [ray]\\n        address collateralAddress; // Address of collateral\\n        uint256 safetyPriceBlockNumber; // Block when safetyPrice was updated\\n    }\\n    struct SAFE {\\n        uint256 lockedCollateral; // Total amount of collateral locked in a SAFE/CDP  [wad]\\n        uint256 generatedDebt;    // Total amount of debt generated by a SAFE/CDP     [wad]\\n    }\\n\\n    // --- VARS ---\\n\\n    function safes(bytes32, address) external view returns (uint, uint);\\n\\n    function collateralTypes(bytes32) external view returns (\\n        uint256 debtAmount,       // [wad]\\n        uint256 accumulatedRate,  // [ray]\\n        uint256 debtCeiling,      // [rad]\\n        uint256 debtFloor,        // [rad]\\n        uint256 safetyPrice,      // [ray]\\n        uint256 liquidationRatio, // [ray]\\n        address collateralAddress,\\n        uint256 safetyPriceBlockNumber\\n);\\n\\n    function tokenCollateral(bytes32, address) external view returns (uint256);\\n\\n    function coinBalance(address) external view returns (uint256);\\n\\n    function debtBalance(address) external view returns (uint256);\\n\\n    function cdpRights(address, address) external view returns (uint256);\\n\\n    function globalDebtCeiling() external view returns (uint256);\\n\\n    function globalDebt() external view returns (uint256);\\n\\n    // --- Auth ---\\n    /**\\n     * @notice Allow an address to modify your CDP.\\n     * For example coinAdapter should be able to modify your CDP to withdraw all correctly.\\n     * @param usr Account to give CDP permissions to\\n     */\\n    function approveSAFEModification(address usr) external;\\n\\n    /**\\n     * @notice Deny an address the rights to modify your CDP\\n     * @param usr Account to give CDP permissions to\\n     */\\n    function denySAFEModification(address usr) external;\\n\\n    // --- Administration ---\\n\\n    function initializeCollateralType(bytes32 collateralType, address collateralAddress) external;\\n\\n    /**\\n     * @notice Method to modify some global variables\\n     * @param what - name of variable we want to change\\n     * @param data - new value of this variable\\n     */\\n    function modifyParameters(bytes32 what, uint data) external;\\n    /**\\n     * @notice Method to modify values in struct of collateralTypes\\n     * @param collateralType - collateral type we want to modify (collateralTypes[collateralType])\\n     * @param what - name of variable in struct we want to change\\n     * @param data - new value of this variable\\n     */\\n    function modifyParameters(bytes32 collateralType, bytes32 what, uint data) external;\\n\\n    // --- Fungibility ---\\n    function modifyCollateralBalance(bytes32 collateralType, address usr, int256 wad) external;\\n    function transferCollateral(bytes32 collateralType, address src, address dst, uint256 wad) external;\\n    function transferInternalCoins(address src, address dst, uint256 rad) external;\\n\\n    // --- SafetyPrice Manipulation ---\\n    /**\\n     * @notice Method to update safetyPrice, it's called each time, when function need actual safetyPrice\\n     * @param collateralType - safetyPrice's collateral type we want to update\\n     */\\n    function updateSafetyPrice(bytes32 collateralType) external;\\n\\n    // --- CDP Manipulation ---\\n    /**\\n     * @notice Add/remove collateral or put back/generate more debt in a CDP\\n     * @param collateralType Type of collateral to withdraw/deposit in and from the CDP\\n     * @param cdp Target CDP\\n     * @param collateralSource Account we take collateral from/put collateral into\\n     * @param debtDestination Account from which we credit/debit coins and debt\\n     * @param deltaCollateral Amount of collateral added/extract from the CDP\\n     * @param deltaDebt Amount of debt to generate/repay\\n     */\\n    function modifySAFECollateralization(\\n        bytes32 collateralType,\\n        address cdp,\\n        address collateralSource,\\n        address debtDestination,\\n        int deltaCollateral,\\n        int deltaDebt\\n    ) external;\\n\\n    // --- CDP Fungibility ---\\n    /**\\n     * @notice Transfer collateral and/or debt between CDPs\\n     * @param collateralType Collateral type transferred between CDPs\\n     * @param src Source CDP\\n     * @param dst Destination CDP\\n     * @param deltaCollateral Amount of collateral to take/add into src and give/take from dst\\n     * @param deltaDebt Amount of debt to take/add into src and give/take from dst\\n     */\\n    function transferSAFECollateralAndDebt(\\n        bytes32 collateralType,\\n        address src,\\n        address dst,\\n        int deltaCollateral,\\n        int deltaDebt\\n    ) external;\\n\\n    // --- CDP Confiscation ---\\n    /**\\n     * @notice Normally used by the LiquidationEngine in order to confiscate collateral and\\n       debt from a CDP and give them to someone else\\n     * @param collateralType Collateral type the CDP has locked inside\\n     * @param cdp Target CDP\\n     * @param collateralCounterparty Who we take/give collateral to\\n     * @param debtCounterparty Who we take/give debt to\\n     * @param deltaCollateral Amount of collateral taken/added into the CDP\\n     * @param deltaDebt Amount of debt taken/added into the CDP\\n     */\\n    function confiscateSAFECollateralAndDebt(\\n        bytes32 collateralType,\\n        address cdp,\\n        address collateralCounterparty,\\n        address debtCounterparty,\\n        int deltaCollateral,\\n        int deltaDebt\\n    ) external;\\n\\n    // --- Settlement ---\\n    /**\\n     * @notice Nullify an amount of coins with an equal amount of debt\\n     * @param rad Amount of debt & coins to destroy (expressed as a number with 45 decimals)\\n     */\\n    function settleDebt(uint rad) external;\\n\\n    /**\\n     * @notice Usually called by CoinSavingsAccount in order to create unbacked debt\\n     * @param debtDestination Usually AccountingEngine that can settle decreaseSoldAmount with surplus\\n     * @param coinDestination Usually CoinSavingsAccount who passes the new coins to depositors\\n     * @param rad Amount of debt to create (expressed as a number with 45 decimals)\\n     */\\n    function createUnbackedDebt(address debtDestination, address coinDestination, uint rad) external;\\n\\n    // --- Rates ---\\n    /**\\n     * @notice Usually called by TaxCollector in order to accrue interest on a specific collateral type\\n     * @param collateralType Collateral type we accrue interest for\\n     * @param surplusDst Destination for amount of surplus created by applying the interest rate\\n       to debt created by CDPs with 'collateralType'\\n     * @param accumulatedRate Multiplier applied to the debtAmount in order to calculate the surplus\\n     */\\n    function updateAccumulatedRate(bytes32 collateralType, address surplusDst, int accumulatedRate) external;\\n}\\n\",\"keccak256\":\"0x005803105e8f4777342c15159835863376d16f95f909489af8c58894931530bf\",\"license\":\"UNLICENSED\"},\"contracts/makerdao/utils/Math.sol\":{\"content\":\"// SPDX-License-Identifier: AGPL-3.0-or-later\\n\\npragma solidity ^0.8.0;\\n\\nabstract contract Math {\\n    uint256 constant ONE = 10 ** 27;\\n    uint256 constant WAD = 10 ** 18;\\n\\n    /**\\n    * @notice Calculates the sum of an unsigned integer and a signed integer\\n    * @param  x Unsigned integer\\n    * @param  y Signed integer\\n    * @return z Unsigned sum of `x` and `y`\\n    */\\n    function _add(uint x, int y) internal pure returns (uint z) {\\n        if (y >= 0) {\\n            z = x + uint256(y);\\n        } else {\\n            z = x - uint256(-y);\\n        }\\n        require(y >= 0 || z <= x);\\n        require(y <= 0 || z >= x);\\n    }\\n\\n    /**\\n    * @notice Calculates the substraction of an unsigned integer and a signed integer\\n    * @param  x Unsigned integer\\n    * @param  y Signed integer\\n    * @return z Unsigned substraction of `x` and `y`\\n    */\\n    function _sub(uint x, int y) internal pure returns (uint z) {\\n        if (y >= 0) {\\n            z = x - uint256(y);\\n        } else {\\n            z = x + uint256(-y);\\n        }\\n        require(y <= 0 || z <= x);\\n        require(y >= 0 || z >= x);\\n    }\\n    function _mul(uint x, int y) internal pure returns (int z) {\\n        z = int(x) * y;\\n        require(int(x) >= 0);\\n        require(y == 0 || z / y == int(x));\\n    }\\n\\n    function _rdiv(uint x, uint y) internal pure returns (uint z) {\\n        z = _mul(x, ONE) / y;\\n    }\\n\\n    function _add(uint x, uint y) internal pure returns (uint z) {\\n        require((z = x + y) >= x);\\n    }\\n    function _sub(uint x, uint y) internal pure returns (uint z) {\\n        require((z = x - y) <= x);\\n    }\\n    function _mul(uint x, uint y) internal pure returns (uint z) {\\n        require(y == 0 || (z = x * y) / y == x);\\n    }\\n\\n    function min(uint256 x, uint256 y) internal pure returns (uint256 z) {\\n        z = x <= y ? x : y;\\n    }\\n\\n    function either(bool x, bool y) internal pure returns (bool z) {\\n        assembly{ z := or(x, y)}\\n    }\\n    function both(bool x, bool y) internal pure returns (bool z) {\\n        assembly{ z := and(x, y)}\\n    }\\n}\\n\",\"keccak256\":\"0xd2215ec58e4792d9e68d66f17c0181e4931fd83dc4f4a433d727978997e4ba24\",\"license\":\"AGPL-3.0-or-later\"}},\"version\":1}",
+  "bytecode": "0x608080604052346100c1576000549060ff8260081c1661006f575060ff80821603610034575b6040516123f890816100c78239f35b60ff90811916176000557f7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb3847402498602060405160ff8152a138610025565b62461bcd60e51b815260206004820152602760248201527f496e697469616c697a61626c653a20636f6e747261637420697320696e697469604482015266616c697a696e6760c81b6064820152608490fd5b600080fdfe608080604052600436101561001357600080fd5b60003560e01c90816301ffc9a714611c495750806303ee9f2214611c1c5780630e9e11d314611b2857806311005b0714611aee5780631b142820146119d75780631d2a783d146119b957806320d8a59f1461187157806327a0bb33146117d35780632efcc866146117b557806338013f021461178c5780633d4225041461173b57806341b3a0d91461171d578063438280dd146116e2578063476bb6ef146114b5578063485cc9551461123c5780634a11825e146111715780634e14a967146110045780634e5111a614610f3357806362a1e17b14610f1557806371d0fb4114610eda57806375b238fc14610ebe57806376e0b4ca14610e765780638543d5e014610e58578063894ba83314610d935780638e5313e014610d5857806399bec3151461086a578063a39b55801461084c578063b38234f314610811578063bd5f5be6146107e8578063c5b748c0146107ca578063d07900bb14610749578063d0e8fa821461070e578063d2351cee146106e5578063d49d7867146106a3578063d4b9311d14610589578063d94d420814610546578063da49bada146104f5578063dc97e84e146104ba578063e401f2e71461049e578063e9c2651814610475578063efabcadc146103ea578063fabde80c146103b05763fe4f5890146101f857600080fd5b346103ab5760403660031901126103ab57600435602435906044602060018060a01b0360005460101c1660405192838092632474521560e21b825260008051602061236383398151915260048301523360248301525afa90811561039f57600091610371575b501561035f57610272600160335414611e19565b70676c6f62616c446562744365696c696e6760781b81036102945750603d555b005b6e726564656d7074696f6e507269636560881b81036102b35750603e55005b7664656661756c744c69717569646174696f6e526174696f60481b81036102da5750604055005b7a1cd859995d1e541c9a58d955985b1a59109b1bd8dad05b5bdd5b9d602a1b0361030357603f55005b60405162461bcd60e51b815260206004820152602e60248201527f53616665456e67696e652f6d6f64696679506172616d65746572732d756e726560448201526d636f676e697a65642d706172616d60901b6064820152608490fd5b60405163599a6c3360e11b8152600490fd5b610392915060203d8111610398575b61038a8183611dbe565b810190611de1565b3861025e565b503d610380565b6040513d6000823e3d90fd5b600080fd5b346103ab5760203660031901126103ab576001600160a01b036103d1611cd4565b1660005260386020526020604060002054604051908152f35b346103ab576103f836611d40565b919061040c610407338461213f565b6120fa565b6001600160a01b03918216600081815260386020526040902054906104318583611e88565b9182116103ab576000526038602052604060002055168060005261045b6040600020549283611e65565b9182106103ab576000526038602052604060002055600080f35b346103ab5760003660031901126103ab5760206040516000805160206123638339815191528152f35b346103ab5760203660031901126103ab57610292600435611e95565b346103ab5760003660031901126103ab5760206040517f9a9aef7c1247d5fc769b0185c052913e39673da29a880317dfd20ebf86f26a498152f35b346103ab5760403660031901126103ab5761050e611cd4565b610516611cea565b9060018060a01b038091166000526034602052604060002091166000526020526020604060002054604051908152f35b346103ab5760203660031901126103ab5761055f611cd4565b33600052603460205260406000209060018060a01b03166000526020526001604060002055600080f35b346103ab5760603660031901126103ab57600435602435906044359160018060a01b0360005460101c16906040518092632474521560e21b8252600080516020612363833981519152600483015233602483015281604460209586935afa90811561039f57600091610686575b501561035f5761060a600160335414611e19565b6a646562744365696c696e6760a81b8103610632575060359160005252600260406000200155005b683232b13a233637b7b960b91b810361065b575060359160005252600360406000200155600080f35b6f6c69717569646174696f6e526174696f60801b036103035760359160005252600560406000200155005b61069d9150833d85116103985761038a8183611dbe565b856105f6565b346103ab5760203660031901126103ab576106bc611cd4565b33600052603460205260406000209060018060a01b031660005260205260006040812055600080f35b346103ab5760003660031901126103ab5760206040516000805160206123a38339815191528152f35b346103ab5760003660031901126103ab5760206040517f76d0567582f23e1e9d7a13eeba60f9aea9d69b8da87ca27a8bf3698b35c653db8152f35b346103ab5760203660031901126103ab576004356000526035602052610100604060002080549060018101549060028101546003820154600483015490600584015492600760018060a01b0360068701541695015495604051978852602088015260408701526060860152608085015260a084015260c083015260e0820152f35b346103ab5760003660031901126103ab576020603e54604051908152f35b346103ab5760003660031901126103ab5760206040516000805160206123838339815191528152f35b346103ab5760003660031901126103ab5760206040517fd83f5343da19b478b15a140c301a868be9e02603958f38fbd822b9d5c0a289168152f35b346103ab5760003660031901126103ab576020603f54604051908152f35b346103ab5761087836611d75565b9061088b60016033979694975414611e19565b846000526036602052604060002060018060a01b038416600052602052604060002095604051946040860160018060401b03988782108a831117610d425760019160405280548852015460208701526108e387611e95565b8660005260356020526040600020604051986101008a01908a821090821117610d42576040528054895260076001820154918260208c0152600281015460408c0152600381015460608c0152600481015460808c0152600581015460a08c015260018060a01b0360068201541660c08c0152015460e08a015215610cf15761096c838751612182565b865261097c846020880151612182565b602087015261098c848951612182565b885261099c8460208a0151612254565b936109b060208a0151602089015190612325565b906109bd86603b54612182565b80603b556109d18b5160208d015190612325565b60408c0151101590603d5410151660008213151715610cae576000851215600082131516610a05895160808d015190612325565b831115811715610c7357610a19338961213f565b1715610c3357610a29338461213f565b60008613151715610bf3576000610a40338661213f565b9112151715610bb3576020870151159060608a015111151715610b7757610a8e610ac79388600052603760205260406000209260018060a01b031692836000526020526040600020546121f3565b9087600052603760205260406000209060005260205260406000205560018060a01b031691826000526038602052604060002054612182565b90600052603860205260406000205582600052603660205260406000209060018060a01b0316600052602052600160206040600020928051845501519101556000526035602052600760e0604060002092805184556020810151600185015560408101516002850155606081015160038501556080810151600485015560a081015160058501556006840160018060a01b0360c08301511660018060a01b03198254161790550151910155600080f35b60405162461bcd60e51b815260206004820152601460248201527329b0b332a2b733b4b73297b232b13a233637b7b960611b6044820152606490fd5b60405162461bcd60e51b815260206004820152601860248201527753616665456e67696e652f6e6f742d616c6c6f7765642d7760401b6044820152606490fd5b60405162461bcd60e51b815260206004820152601860248201527729b0b332a2b733b4b73297b737ba16b0b63637bbb2b216bb60411b6044820152606490fd5b60405162461bcd60e51b815260206004820152601860248201527753616665456e67696e652f6e6f742d616c6c6f7765642d7560401b6044820152606490fd5b60405162461bcd60e51b815260206004820152601360248201527253616665456e67696e652f6e6f742d7361666560681b6044820152606490fd5b60405162461bcd60e51b815260206004820152601b60248201527a14d85999515b99da5b994bd8d95a5b1a5b99cb595e18d959591959602a1b6044820152606490fd5b60405162461bcd60e51b815260206004820152602360248201527f53616665456e67696e652f636f6c6c61746572616c2d747970652d6e6f742d696044820152621b9a5d60ea1b6064820152608490fd5b634e487b7160e01b600052604160045260246000fd5b346103ab5760003660031901126103ab5760206040517fe453bacb314e78dcd5192e6b1a2b1f0e7c76e92f6b7e429a6a90f04e39db3b768152f35b346103ab5760003660031901126103ab57600054604051632474521560e21b81526000805160206123a38339815191526004820152336024820152906020908290604490829060101c6001600160a01b03165afa90811561039f57600091610e3a575b5015610e285760006033557f2d4b4ecff7bd7503135271925520a2f6c0d98c9473ffc1a1e72c92502f51b25e600080a1005b60405163bb0684b760e01b8152600490fd5b610e52915060203d81116103985761038a8183611dbe565b81610df6565b346103ab5760003660031901126103ab576020603b54604051908152f35b346103ab5760403660031901126103ab57610e8f611cea565b600435600052603760205260406000209060018060a01b03166000526020526020604060002054604051908152f35b346103ab5760003660031901126103ab57602060405160008152f35b346103ab5760003660031901126103ab5760206040517f880a91047114272656e533301261260c75e4d11543ac7303d6fe4204579ec7278152f35b346103ab5760003660031901126103ab576020604054604051908152f35b346103ab5760803660031901126103ab57600435610f4f611cea565b610f57611d00565b9060643592610f69610407338461213f565b60008181526037602090815260408083206001600160a01b03958616808552908352922054909391610f9b8783611e88565b9182116103ab578360005260378552604060002090600052845260406000205581600052603783526040600020931692836000528252610fe16040600020549485611e65565b9384106103ab576000526037815260406000209160005252604060002055600080f35b346103ab5761101236611d75565b9490939160018060a01b03918260005460101c16946040518096632474521560e21b825260008051602061238383398151915260048301523360248301528160446020998a935afa90811561039f57600091611154575b5015611142576110f96110d661113d996039978560005260368a528760406000209116600052895260018a8160406000208860005260358d526110b26040600020938254612182565b8155016110c0848254612182565b90556110cd838254612182565b81550154612254565b9783600052603788528560406000209316928360005288526040600020546121f3565b9160005260378652604060002090600052855260406000205516918260005281815261112a846040600020546121f3565b9260005252604060002055603c546121f3565b603c55005b604051635e9e090760e01b8152600490fd5b61116b9150873d89116103985761038a8183611dbe565b89611069565b346103ab5761117f36611d16565b600054604051632474521560e21b815260008051602061238383398151915260048201523360248201526020926001600160a01b039290919084908290604490829060101c87165afa90811561039f5760009161121f575b5015611142576112029185600052603784526040600020941693846000528352604060002054612182565b926000526037815260406000209160005252604060002055600080f35b6112369150843d86116103985761038a8183611dbe565b866111d7565b346103ab5760403660031901126103ab57611255611cd4565b61125d611cea565b60005460ff8160081c1615908180926114a8575b8015611491575b156114355760ff19811660011760005581611423575b506000549160ff8360081c16156113ca5762010000600160b01b03601085901b1662010000600160b01b031984168117600055936001600160a01b0391908216801590811561136d575b5061135b576001603355676765c793fa10079d601b1b603e556001603f556b04d8c55aefb8c05b5c0000006040551660018060a01b0319603a541617603a5561131d57005b610100600160b01b03191617600055604051600181527f7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb384740249890602090a1005b6040516384d942fd60e01b8152600490fd5b6040516301ffc9a760e01b8152637965db0b60e01b60048201529150602090829060249082905afa90811561039f576000916113ac575b5015866112d8565b6113c4915060203d81116103985761038a8183611dbe565b866113a4565b60405162461bcd60e51b815260206004820152602b60248201527f496e697469616c697a61626c653a20636f6e7472616374206973206e6f74206960448201526a6e697469616c697a696e6760a81b6064820152608490fd5b61ffff1916610101176000558361128e565b60405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b6064820152608490fd5b50303b1580156112785750600160ff821614611278565b50600160ff821610611271565b346103ab5760a03660031901126103ab576004356114d1611cea565b6114d9611d00565b9160643592608435906114eb83611e95565b60008381526036602090815260408083206001600160a01b0388811685529083528184209085168452818420968452603583529220825491979295909290916115359082906121f3565b865561156460016115578189019361154e8986546121f3565b85558554612182565b9384815501958654612182565b80955554946115a260018401549461159c61159461158c611585898c612325565b988a612325565b9a339061213f565b91339061213f565b166120fa565b54906115b360048401548093612325565b84116116a357906115c391612325565b851161166457600301548093159110151715611624571591101517156115e557005b6064906040519062461bcd60e51b82526004820152601860248201527714d85999515b99da5b994bd919589d119b1bdbdc8b591cdd60421b6044820152fd5b60405162461bcd60e51b815260048101859052601860248201527753616665456e67696e652f64656274466c6f6f722d73726360401b6044820152606490fd5b60405162461bcd60e51b815260048101879052601760248201527614d85999515b99da5b994bdb9bdd0b5cd859994b591cdd604a1b6044820152606490fd5b60405162461bcd60e51b815260048101899052601760248201527653616665456e67696e652f6e6f742d736166652d73726360481b6044820152606490fd5b346103ab5760003660031901126103ab5760206040517f39f61ca2a1a28fee144218173ec637b649a353e4026b2738c673800e5bf1437b8152f35b346103ab5760003660031901126103ab576020603354604051908152f35b346103ab5760403660031901126103ab57611754611cea565b600435600052603660205260406000209060018060a01b03166000526020526040806000206001815491015482519182526020820152f35b346103ab5760003660031901126103ab57603a546040516001600160a01b039091168152602090f35b346103ab5760003660031901126103ab576020603d54604051908152f35b346103ab5760203660031901126103ab576004353360005260396020526040600020546118008282611e88565b9081116103ab57336000526039602052604060002055603860205260406000205461182b8282611e88565b9081116103ab57336000526038602052604060002055603c5461184e8282611e88565b9081116103ab57603c55611865603b549182611e88565b9081116103ab57603b55005b346103ab5760403660031901126103ab5760043561188d611cea565b9060018060a01b03908160005460101c16906040518092632474521560e21b82526000600483015233602483015281604460209586935afa90811561039f5760009161199c575b501561198a5780600052603582526001604060002001546119355760009081526035909152604090819020676765c793fa10079d601b1b60018201556006810180546001600160a01b03191693909416929092179092559054600590910155005b60405162461bcd60e51b815260048101839052602760248201527f53616665456e67696e652f636f6c6c61746572616c2d747970652d616c726561604482015266191e4b5a5b9a5d60ca1b6064820152608490fd5b604051631886ea7d60e11b8152600490fd5b6119b39150833d85116103985761038a8183611dbe565b856118d4565b346103ab5760003660031901126103ab576020603c54604051908152f35b346103ab576119e536611d40565b600054604051632474521560e21b8152600080516020612383833981519152600482015233602482015291936020936001600160a01b0393909285908290604490829060101c88165afa90811561039f57600091611ad1575b5015611142578216806000526039845260406000205490611a5f8683611e65565b9182106103ab576000526039845260406000205516806000526038825260406000205491611a8d8484611e65565b9283106103ab5760389160005252604060002055603c54611aae8282611e65565b9081106103ab57603c55611ac5603b549182611e65565b9081106103ab57603b55005b611ae89150853d87116103985761038a8183611dbe565b86611a3e565b346103ab5760203660031901126103ab576001600160a01b03611b0f611cd4565b1660005260396020526020604060002054604051908152f35b346103ab57611b3636611d16565b600054604051632474521560e21b81526000805160206123838339815191526004820152336024820152602092916001600160a01b03919084908290604490829060101c86165afa90811561039f57600091611bff575b501561114257611bce603892611bfa96611bab600160335414611e19565b60005260358552604060002060018101611bc6838254612182565b905554612254565b93169182600052818152611be784604060002054612182565b9260005252604060002055603b54612182565b603b55005b611c169150843d86116103985761038a8183611dbe565b86611b8d565b346103ab5760003660031901126103ab5760005460405160109190911c6001600160a01b03168152602090f35b346103ab5760203660031901126103ab5760043563ffffffff60e01b81168091036103ab576000546301ffc9a760e01b835260048301919091526020908290602490829060101c6001600160a01b03165afa801561039f57602091600091611cb7575b506040519015158152f35b611cce9150823d81116103985761038a8183611dbe565b82611cac565b600435906001600160a01b03821682036103ab57565b602435906001600160a01b03821682036103ab57565b604435906001600160a01b03821682036103ab57565b60609060031901126103ab57600435906024356001600160a01b03811681036103ab579060443590565b60609060031901126103ab576001600160a01b039060043582811681036103ab579160243590811681036103ab579060443590565b60c09060031901126103ab57600435906001600160a01b0360243581811681036103ab579160443582811681036103ab579160643590811681036103ab57906084359060a43590565b601f909101601f19168101906001600160401b03821190821017610d4257604052565b908160209103126103ab575180151581036103ab5790565b8115611e03570490565b634e487b7160e01b600052601260045260246000fd5b15611e2057565b60405162461bcd60e51b815260206004820152601e60248201527f53616665456e67696e652f6e6f742d636f6e7472616374456e61626c656400006044820152606490fd5b91908201809211611e7257565b634e487b7160e01b600052601160045260246000fd5b91908203918211611e7257565b9060008281526020926035845260409060078284200154156000146120da578083526035855243600783852001555b8083526035855281832060060154825163313ce56760e01b8152600496916001600160a01b039081169183818a81865afa9081156120d057918793918593859161208c575b5060ff1660128103611fe45750602490603a54169187519485938492632a5001c960e01b84528d8401525af1908115611fda578591611fa9575b505b633b9aca0090818102918183041490151715611f9657600794959691611f86611f73603593603e54906122f3565b8589528383526005878a200154906122f3565b9387525282852001554392200155565b634e487b7160e01b855260118752602485fd5b90508181813d8311611fd3575b611fc08183611dbe565b81010312611fcf575138611f43565b8480fd5b503d611fb6565b84513d87823e3d90fd5b92919350603a54169260248a8989519687948593632a5001c960e01b85528401525af191821561208257869261204f575b506012036012811161203c57604d811161203c579061203791600a0a90611df9565b611f45565b634e487b7160e01b865260118852602486fd5b9091508281813d831161207b575b6120678183611dbe565b8101031261207757519038612015565b8580fd5b503d61205d565b85513d88823e3d90fd5b929450509181813d83116120c9575b6120a58183611dbe565b810103126120c5575160ff811681036120c55791839160ff889490611f09565b8680fd5b503d61209b565b86513d89823e3d90fd5b6120ed60078385200154603f5490611e65565b4311611ec4575050509050565b1561210157565b60405162461bcd60e51b815260206004820152601660248201527514d85999515b99da5b994bdb9bdd0b585b1b1bddd95960521b6044820152606490fd5b9060018060a01b0380911691169081600052603460205260406000208160005260205260016040600020541491141790565b600160ff1b8114611e725760000390565b60008083128015949391929190806121db5761219e8284611e65565b955b906121d1575b156121cd578212908115916121c2575b50156121bf5750565b80fd5b9050831015386121b6565b8280fd5b50818511156121a6565b6121ed6121e783612171565b84611e88565b956121a0565b9091906000908184129081158261223b578361220f8784611e88565b965b13801590612231575b1561222d57916121c25750156121bf5750565b8380fd5b508186111561221a565b8361224e61224888612171565b84611e65565b96612211565b600080821293929091600160ff1b9180820283821487166122df578281058214831517156122df578096611fcf578115938415612298575b50505050156121bf5750565b909192936122cb5781146000198314166122b75705143880808061228c565b634e487b7160e01b84526011600452602484fd5b634e487b7160e01b85526012600452602485fd5b634e487b7160e01b85526011600452602485fd5b676765c793fa10079d601b1b808202929190811582850482141715611e72578304036103ab5761232291611df9565b90565b60009291801591821561233c575b5050156103ab57565b80820294509150811582850482141715611e725761235a9084611df9565b14388061233356fe3b5d4cc60d3ec3516ee8ae083bd60934f6eb2a6c54b1229985c41bfb092b26034f14c8366fa999817edc9f29824eb88a00cc31225e2156f399da4bc91049eb10b0fdd1623e42dbffda4acd8bd643e1cb69f00f0e83abeaa8150ee42cf0fd105ea26469706673582212200f652882ff815ebfdcbd130d823205dc2eb20733ee49c4d60853502d91de579a64736f6c63430008110033",
+  "deployedBytecode": "0x608080604052600436101561001357600080fd5b60003560e01c90816301ffc9a714611c495750806303ee9f2214611c1c5780630e9e11d314611b2857806311005b0714611aee5780631b142820146119d75780631d2a783d146119b957806320d8a59f1461187157806327a0bb33146117d35780632efcc866146117b557806338013f021461178c5780633d4225041461173b57806341b3a0d91461171d578063438280dd146116e2578063476bb6ef146114b5578063485cc9551461123c5780634a11825e146111715780634e14a967146110045780634e5111a614610f3357806362a1e17b14610f1557806371d0fb4114610eda57806375b238fc14610ebe57806376e0b4ca14610e765780638543d5e014610e58578063894ba83314610d935780638e5313e014610d5857806399bec3151461086a578063a39b55801461084c578063b38234f314610811578063bd5f5be6146107e8578063c5b748c0146107ca578063d07900bb14610749578063d0e8fa821461070e578063d2351cee146106e5578063d49d7867146106a3578063d4b9311d14610589578063d94d420814610546578063da49bada146104f5578063dc97e84e146104ba578063e401f2e71461049e578063e9c2651814610475578063efabcadc146103ea578063fabde80c146103b05763fe4f5890146101f857600080fd5b346103ab5760403660031901126103ab57600435602435906044602060018060a01b0360005460101c1660405192838092632474521560e21b825260008051602061236383398151915260048301523360248301525afa90811561039f57600091610371575b501561035f57610272600160335414611e19565b70676c6f62616c446562744365696c696e6760781b81036102945750603d555b005b6e726564656d7074696f6e507269636560881b81036102b35750603e55005b7664656661756c744c69717569646174696f6e526174696f60481b81036102da5750604055005b7a1cd859995d1e541c9a58d955985b1a59109b1bd8dad05b5bdd5b9d602a1b0361030357603f55005b60405162461bcd60e51b815260206004820152602e60248201527f53616665456e67696e652f6d6f64696679506172616d65746572732d756e726560448201526d636f676e697a65642d706172616d60901b6064820152608490fd5b60405163599a6c3360e11b8152600490fd5b610392915060203d8111610398575b61038a8183611dbe565b810190611de1565b3861025e565b503d610380565b6040513d6000823e3d90fd5b600080fd5b346103ab5760203660031901126103ab576001600160a01b036103d1611cd4565b1660005260386020526020604060002054604051908152f35b346103ab576103f836611d40565b919061040c610407338461213f565b6120fa565b6001600160a01b03918216600081815260386020526040902054906104318583611e88565b9182116103ab576000526038602052604060002055168060005261045b6040600020549283611e65565b9182106103ab576000526038602052604060002055600080f35b346103ab5760003660031901126103ab5760206040516000805160206123638339815191528152f35b346103ab5760203660031901126103ab57610292600435611e95565b346103ab5760003660031901126103ab5760206040517f9a9aef7c1247d5fc769b0185c052913e39673da29a880317dfd20ebf86f26a498152f35b346103ab5760403660031901126103ab5761050e611cd4565b610516611cea565b9060018060a01b038091166000526034602052604060002091166000526020526020604060002054604051908152f35b346103ab5760203660031901126103ab5761055f611cd4565b33600052603460205260406000209060018060a01b03166000526020526001604060002055600080f35b346103ab5760603660031901126103ab57600435602435906044359160018060a01b0360005460101c16906040518092632474521560e21b8252600080516020612363833981519152600483015233602483015281604460209586935afa90811561039f57600091610686575b501561035f5761060a600160335414611e19565b6a646562744365696c696e6760a81b8103610632575060359160005252600260406000200155005b683232b13a233637b7b960b91b810361065b575060359160005252600360406000200155600080f35b6f6c69717569646174696f6e526174696f60801b036103035760359160005252600560406000200155005b61069d9150833d85116103985761038a8183611dbe565b856105f6565b346103ab5760203660031901126103ab576106bc611cd4565b33600052603460205260406000209060018060a01b031660005260205260006040812055600080f35b346103ab5760003660031901126103ab5760206040516000805160206123a38339815191528152f35b346103ab5760003660031901126103ab5760206040517f76d0567582f23e1e9d7a13eeba60f9aea9d69b8da87ca27a8bf3698b35c653db8152f35b346103ab5760203660031901126103ab576004356000526035602052610100604060002080549060018101549060028101546003820154600483015490600584015492600760018060a01b0360068701541695015495604051978852602088015260408701526060860152608085015260a084015260c083015260e0820152f35b346103ab5760003660031901126103ab576020603e54604051908152f35b346103ab5760003660031901126103ab5760206040516000805160206123838339815191528152f35b346103ab5760003660031901126103ab5760206040517fd83f5343da19b478b15a140c301a868be9e02603958f38fbd822b9d5c0a289168152f35b346103ab5760003660031901126103ab576020603f54604051908152f35b346103ab5761087836611d75565b9061088b60016033979694975414611e19565b846000526036602052604060002060018060a01b038416600052602052604060002095604051946040860160018060401b03988782108a831117610d425760019160405280548852015460208701526108e387611e95565b8660005260356020526040600020604051986101008a01908a821090821117610d42576040528054895260076001820154918260208c0152600281015460408c0152600381015460608c0152600481015460808c0152600581015460a08c015260018060a01b0360068201541660c08c0152015460e08a015215610cf15761096c838751612182565b865261097c846020880151612182565b602087015261098c848951612182565b885261099c8460208a0151612254565b936109b060208a0151602089015190612325565b906109bd86603b54612182565b80603b556109d18b5160208d015190612325565b60408c0151101590603d5410151660008213151715610cae576000851215600082131516610a05895160808d015190612325565b831115811715610c7357610a19338961213f565b1715610c3357610a29338461213f565b60008613151715610bf3576000610a40338661213f565b9112151715610bb3576020870151159060608a015111151715610b7757610a8e610ac79388600052603760205260406000209260018060a01b031692836000526020526040600020546121f3565b9087600052603760205260406000209060005260205260406000205560018060a01b031691826000526038602052604060002054612182565b90600052603860205260406000205582600052603660205260406000209060018060a01b0316600052602052600160206040600020928051845501519101556000526035602052600760e0604060002092805184556020810151600185015560408101516002850155606081015160038501556080810151600485015560a081015160058501556006840160018060a01b0360c08301511660018060a01b03198254161790550151910155600080f35b60405162461bcd60e51b815260206004820152601460248201527329b0b332a2b733b4b73297b232b13a233637b7b960611b6044820152606490fd5b60405162461bcd60e51b815260206004820152601860248201527753616665456e67696e652f6e6f742d616c6c6f7765642d7760401b6044820152606490fd5b60405162461bcd60e51b815260206004820152601860248201527729b0b332a2b733b4b73297b737ba16b0b63637bbb2b216bb60411b6044820152606490fd5b60405162461bcd60e51b815260206004820152601860248201527753616665456e67696e652f6e6f742d616c6c6f7765642d7560401b6044820152606490fd5b60405162461bcd60e51b815260206004820152601360248201527253616665456e67696e652f6e6f742d7361666560681b6044820152606490fd5b60405162461bcd60e51b815260206004820152601b60248201527a14d85999515b99da5b994bd8d95a5b1a5b99cb595e18d959591959602a1b6044820152606490fd5b60405162461bcd60e51b815260206004820152602360248201527f53616665456e67696e652f636f6c6c61746572616c2d747970652d6e6f742d696044820152621b9a5d60ea1b6064820152608490fd5b634e487b7160e01b600052604160045260246000fd5b346103ab5760003660031901126103ab5760206040517fe453bacb314e78dcd5192e6b1a2b1f0e7c76e92f6b7e429a6a90f04e39db3b768152f35b346103ab5760003660031901126103ab57600054604051632474521560e21b81526000805160206123a38339815191526004820152336024820152906020908290604490829060101c6001600160a01b03165afa90811561039f57600091610e3a575b5015610e285760006033557f2d4b4ecff7bd7503135271925520a2f6c0d98c9473ffc1a1e72c92502f51b25e600080a1005b60405163bb0684b760e01b8152600490fd5b610e52915060203d81116103985761038a8183611dbe565b81610df6565b346103ab5760003660031901126103ab576020603b54604051908152f35b346103ab5760403660031901126103ab57610e8f611cea565b600435600052603760205260406000209060018060a01b03166000526020526020604060002054604051908152f35b346103ab5760003660031901126103ab57602060405160008152f35b346103ab5760003660031901126103ab5760206040517f880a91047114272656e533301261260c75e4d11543ac7303d6fe4204579ec7278152f35b346103ab5760003660031901126103ab576020604054604051908152f35b346103ab5760803660031901126103ab57600435610f4f611cea565b610f57611d00565b9060643592610f69610407338461213f565b60008181526037602090815260408083206001600160a01b03958616808552908352922054909391610f9b8783611e88565b9182116103ab578360005260378552604060002090600052845260406000205581600052603783526040600020931692836000528252610fe16040600020549485611e65565b9384106103ab576000526037815260406000209160005252604060002055600080f35b346103ab5761101236611d75565b9490939160018060a01b03918260005460101c16946040518096632474521560e21b825260008051602061238383398151915260048301523360248301528160446020998a935afa90811561039f57600091611154575b5015611142576110f96110d661113d996039978560005260368a528760406000209116600052895260018a8160406000208860005260358d526110b26040600020938254612182565b8155016110c0848254612182565b90556110cd838254612182565b81550154612254565b9783600052603788528560406000209316928360005288526040600020546121f3565b9160005260378652604060002090600052855260406000205516918260005281815261112a846040600020546121f3565b9260005252604060002055603c546121f3565b603c55005b604051635e9e090760e01b8152600490fd5b61116b9150873d89116103985761038a8183611dbe565b89611069565b346103ab5761117f36611d16565b600054604051632474521560e21b815260008051602061238383398151915260048201523360248201526020926001600160a01b039290919084908290604490829060101c87165afa90811561039f5760009161121f575b5015611142576112029185600052603784526040600020941693846000528352604060002054612182565b926000526037815260406000209160005252604060002055600080f35b6112369150843d86116103985761038a8183611dbe565b866111d7565b346103ab5760403660031901126103ab57611255611cd4565b61125d611cea565b60005460ff8160081c1615908180926114a8575b8015611491575b156114355760ff19811660011760005581611423575b506000549160ff8360081c16156113ca5762010000600160b01b03601085901b1662010000600160b01b031984168117600055936001600160a01b0391908216801590811561136d575b5061135b576001603355676765c793fa10079d601b1b603e556001603f556b04d8c55aefb8c05b5c0000006040551660018060a01b0319603a541617603a5561131d57005b610100600160b01b03191617600055604051600181527f7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb384740249890602090a1005b6040516384d942fd60e01b8152600490fd5b6040516301ffc9a760e01b8152637965db0b60e01b60048201529150602090829060249082905afa90811561039f576000916113ac575b5015866112d8565b6113c4915060203d81116103985761038a8183611dbe565b866113a4565b60405162461bcd60e51b815260206004820152602b60248201527f496e697469616c697a61626c653a20636f6e7472616374206973206e6f74206960448201526a6e697469616c697a696e6760a81b6064820152608490fd5b61ffff1916610101176000558361128e565b60405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b6064820152608490fd5b50303b1580156112785750600160ff821614611278565b50600160ff821610611271565b346103ab5760a03660031901126103ab576004356114d1611cea565b6114d9611d00565b9160643592608435906114eb83611e95565b60008381526036602090815260408083206001600160a01b0388811685529083528184209085168452818420968452603583529220825491979295909290916115359082906121f3565b865561156460016115578189019361154e8986546121f3565b85558554612182565b9384815501958654612182565b80955554946115a260018401549461159c61159461158c611585898c612325565b988a612325565b9a339061213f565b91339061213f565b166120fa565b54906115b360048401548093612325565b84116116a357906115c391612325565b851161166457600301548093159110151715611624571591101517156115e557005b6064906040519062461bcd60e51b82526004820152601860248201527714d85999515b99da5b994bd919589d119b1bdbdc8b591cdd60421b6044820152fd5b60405162461bcd60e51b815260048101859052601860248201527753616665456e67696e652f64656274466c6f6f722d73726360401b6044820152606490fd5b60405162461bcd60e51b815260048101879052601760248201527614d85999515b99da5b994bdb9bdd0b5cd859994b591cdd604a1b6044820152606490fd5b60405162461bcd60e51b815260048101899052601760248201527653616665456e67696e652f6e6f742d736166652d73726360481b6044820152606490fd5b346103ab5760003660031901126103ab5760206040517f39f61ca2a1a28fee144218173ec637b649a353e4026b2738c673800e5bf1437b8152f35b346103ab5760003660031901126103ab576020603354604051908152f35b346103ab5760403660031901126103ab57611754611cea565b600435600052603660205260406000209060018060a01b03166000526020526040806000206001815491015482519182526020820152f35b346103ab5760003660031901126103ab57603a546040516001600160a01b039091168152602090f35b346103ab5760003660031901126103ab576020603d54604051908152f35b346103ab5760203660031901126103ab576004353360005260396020526040600020546118008282611e88565b9081116103ab57336000526039602052604060002055603860205260406000205461182b8282611e88565b9081116103ab57336000526038602052604060002055603c5461184e8282611e88565b9081116103ab57603c55611865603b549182611e88565b9081116103ab57603b55005b346103ab5760403660031901126103ab5760043561188d611cea565b9060018060a01b03908160005460101c16906040518092632474521560e21b82526000600483015233602483015281604460209586935afa90811561039f5760009161199c575b501561198a5780600052603582526001604060002001546119355760009081526035909152604090819020676765c793fa10079d601b1b60018201556006810180546001600160a01b03191693909416929092179092559054600590910155005b60405162461bcd60e51b815260048101839052602760248201527f53616665456e67696e652f636f6c6c61746572616c2d747970652d616c726561604482015266191e4b5a5b9a5d60ca1b6064820152608490fd5b604051631886ea7d60e11b8152600490fd5b6119b39150833d85116103985761038a8183611dbe565b856118d4565b346103ab5760003660031901126103ab576020603c54604051908152f35b346103ab576119e536611d40565b600054604051632474521560e21b8152600080516020612383833981519152600482015233602482015291936020936001600160a01b0393909285908290604490829060101c88165afa90811561039f57600091611ad1575b5015611142578216806000526039845260406000205490611a5f8683611e65565b9182106103ab576000526039845260406000205516806000526038825260406000205491611a8d8484611e65565b9283106103ab5760389160005252604060002055603c54611aae8282611e65565b9081106103ab57603c55611ac5603b549182611e65565b9081106103ab57603b55005b611ae89150853d87116103985761038a8183611dbe565b86611a3e565b346103ab5760203660031901126103ab576001600160a01b03611b0f611cd4565b1660005260396020526020604060002054604051908152f35b346103ab57611b3636611d16565b600054604051632474521560e21b81526000805160206123838339815191526004820152336024820152602092916001600160a01b03919084908290604490829060101c86165afa90811561039f57600091611bff575b501561114257611bce603892611bfa96611bab600160335414611e19565b60005260358552604060002060018101611bc6838254612182565b905554612254565b93169182600052818152611be784604060002054612182565b9260005252604060002055603b54612182565b603b55005b611c169150843d86116103985761038a8183611dbe565b86611b8d565b346103ab5760003660031901126103ab5760005460405160109190911c6001600160a01b03168152602090f35b346103ab5760203660031901126103ab5760043563ffffffff60e01b81168091036103ab576000546301ffc9a760e01b835260048301919091526020908290602490829060101c6001600160a01b03165afa801561039f57602091600091611cb7575b506040519015158152f35b611cce9150823d81116103985761038a8183611dbe565b82611cac565b600435906001600160a01b03821682036103ab57565b602435906001600160a01b03821682036103ab57565b604435906001600160a01b03821682036103ab57565b60609060031901126103ab57600435906024356001600160a01b03811681036103ab579060443590565b60609060031901126103ab576001600160a01b039060043582811681036103ab579160243590811681036103ab579060443590565b60c09060031901126103ab57600435906001600160a01b0360243581811681036103ab579160443582811681036103ab579160643590811681036103ab57906084359060a43590565b601f909101601f19168101906001600160401b03821190821017610d4257604052565b908160209103126103ab575180151581036103ab5790565b8115611e03570490565b634e487b7160e01b600052601260045260246000fd5b15611e2057565b60405162461bcd60e51b815260206004820152601e60248201527f53616665456e67696e652f6e6f742d636f6e7472616374456e61626c656400006044820152606490fd5b91908201809211611e7257565b634e487b7160e01b600052601160045260246000fd5b91908203918211611e7257565b9060008281526020926035845260409060078284200154156000146120da578083526035855243600783852001555b8083526035855281832060060154825163313ce56760e01b8152600496916001600160a01b039081169183818a81865afa9081156120d057918793918593859161208c575b5060ff1660128103611fe45750602490603a54169187519485938492632a5001c960e01b84528d8401525af1908115611fda578591611fa9575b505b633b9aca0090818102918183041490151715611f9657600794959691611f86611f73603593603e54906122f3565b8589528383526005878a200154906122f3565b9387525282852001554392200155565b634e487b7160e01b855260118752602485fd5b90508181813d8311611fd3575b611fc08183611dbe565b81010312611fcf575138611f43565b8480fd5b503d611fb6565b84513d87823e3d90fd5b92919350603a54169260248a8989519687948593632a5001c960e01b85528401525af191821561208257869261204f575b506012036012811161203c57604d811161203c579061203791600a0a90611df9565b611f45565b634e487b7160e01b865260118852602486fd5b9091508281813d831161207b575b6120678183611dbe565b8101031261207757519038612015565b8580fd5b503d61205d565b85513d88823e3d90fd5b929450509181813d83116120c9575b6120a58183611dbe565b810103126120c5575160ff811681036120c55791839160ff889490611f09565b8680fd5b503d61209b565b86513d89823e3d90fd5b6120ed60078385200154603f5490611e65565b4311611ec4575050509050565b1561210157565b60405162461bcd60e51b815260206004820152601660248201527514d85999515b99da5b994bdb9bdd0b585b1b1bddd95960521b6044820152606490fd5b9060018060a01b0380911691169081600052603460205260406000208160005260205260016040600020541491141790565b600160ff1b8114611e725760000390565b60008083128015949391929190806121db5761219e8284611e65565b955b906121d1575b156121cd578212908115916121c2575b50156121bf5750565b80fd5b9050831015386121b6565b8280fd5b50818511156121a6565b6121ed6121e783612171565b84611e88565b956121a0565b9091906000908184129081158261223b578361220f8784611e88565b965b13801590612231575b1561222d57916121c25750156121bf5750565b8380fd5b508186111561221a565b8361224e61224888612171565b84611e65565b96612211565b600080821293929091600160ff1b9180820283821487166122df578281058214831517156122df578096611fcf578115938415612298575b50505050156121bf5750565b909192936122cb5781146000198314166122b75705143880808061228c565b634e487b7160e01b84526011600452602484fd5b634e487b7160e01b85526012600452602485fd5b634e487b7160e01b85526011600452602485fd5b676765c793fa10079d601b1b808202929190811582850482141715611e72578304036103ab5761232291611df9565b90565b60009291801591821561233c575b5050156103ab57565b80820294509150811582850482141715611e725761235a9084611df9565b14388061233356fe3b5d4cc60d3ec3516ee8ae083bd60934f6eb2a6c54b1229985c41bfb092b26034f14c8366fa999817edc9f29824eb88a00cc31225e2156f399da4bc91049eb10b0fdd1623e42dbffda4acd8bd643e1cb69f00f0e83abeaa8150ee42cf0fd105ea26469706673582212200f652882ff815ebfdcbd130d823205dc2eb20733ee49c4d60853502d91de579a64736f6c63430008110033",
+  "devdoc": {
+    "custom:changes": "Replaced MakerDAO’s `authorizedAccounts` with `SuAuthenticatedNonUpgradeable` for access control.                 Removed `LibNote` for event logging, requiring custom events (TODO).                 Added `ISuOracleAggregator` integration for dynamic safety price updates.                 Introduced `redemptionPrice`, `safetyPriceValidBlockAmount`, and `defaultLiquidationRatio`.                 Moved structs to `ISafeEngine` interface.",
+    "custom:events": "No events are defined; custom events need to be added (as noted in FIXME).                Example placeholder events are included in comments but not emitted due to lack of definition.",
+    "custom:security": "Only enabled contracts (`contractEnabled == 1`) allow state-changing operations.                 Administrative functions are restricted by SuAuthenticatedNonUpgradeable roles (DAO, Admin, DisablerAccess).                 Only authorized users/contracts (via `cdpRights`) can modify specific Safes or balances.                 Safety price updates rely on ISuOracleAggregator, which must provide reliable price feeds.",
+    "custom:usage": "- **Initialization**: Deploy with access control and oracle addresses.   ```solidity   SafeEngine safeEngine = new SafeEngine(accessControlAddress, oracleAddress);   ``` - **Collateral Type Setup**: Initialize a collateral type with its token address.   ```solidity   safeEngine.initializeCollateralType(\"ETH-A\", ethTokenAddress);   ``` - **Parameter Modification**: DAO updates debt ceilings, redemption price, or liquidation ratios.   ```solidity   safeEngine.modifyParameters(\"globalDebtCeiling\", newCeiling); // Update global debt ceiling   safeEngine.modifyParameters(\"ETH-A\", \"debtCeiling\", newCeiling); // Update collateral debt ceiling   ``` - **Safe Operations**: Users or adapters modify Safe collateral/debt via DssProxyActions or direct calls.   ```solidity   safeEngine.modifySAFECollateralization(\"ETH-A\", safe, collateralSrc, debtDst, deltaCollateral, deltaDebt);   ``` - **Price Updates**: Trigger safety price updates for a collateral type.   ```solidity   safeEngine.updateSafetyPrice(\"ETH-A\"); // Refresh safety price from oracle   ``` - **Disabling**: DisablerAccess accounts can disable the contract.   ```solidity   safeEngine.disableContract(); // Halt operations   ```",
+    "details": "Manages collateral, debt, and StablePro coin balances for Safes, tracks global and per-collateral-type debt limits,      and enforces collateralization ratios using safety prices from an oracle. Supports operations like collateral      deposit/withdrawal, debt generation/repayment, liquidation, and settlement. Uses SuAuthenticatedNonUpgradeable for      access control and integrates with ISuOracleAggregator for price feeds. Can be disabled by authorized accounts to      halt operations. This contract is a fork of MakerDAO’s Vat.sol, adapted for StableUnit with features like dynamic      safety price updates and redemption price.",
+    "kind": "dev",
+    "methods": {
+      "approveSAFEModification(address)": {
+        "details": "Sets `cdpRights[msg.sender][usr] = 1`.",
+        "params": {
+          "usr": "Address to grant modification rights."
+        }
+      },
+      "confiscateSAFECollateralAndDebt(bytes32,address,address,address,int256,int256)": {
+        "custom:access": "OnlyCDPAccess",
+        "details": "Transfers collateral and debt to counterparties, typically for auctions. Requires CDP access permissions.",
+        "params": {
+          "cdp": "Address of the Safe to confiscate.",
+          "collateralCounterparty": "Address to debit collateral from.",
+          "collateralType": "Unique identifier for the collateral type.",
+          "debtCounterparty": "Address to debit debt from.",
+          "deltaCollateral": "Amount to confiscate collateral [wad].",
+          "deltaDebt": "Amount to confiscate debt [wad]."
+        }
+      },
+      "constructor": {
+        "custom:oz-upgrades-unsafe-allow": "constructor"
+      },
+      "createUnbackedDebt(address,address,uint256)": {
+        "custom:access": "OnlyCDPAccess",
+        "details": "Increases debt and coin balances for destination addresses. Requires CDP access permissions.",
+        "params": {
+          "coinDestination": "Address to assign the StablePro coins.",
+          "debtDestination": "Address to assign the unbacked debt.",
+          "rad": "Amount of unbacked debt to create [rad]."
+        }
+      },
+      "denySAFEModification(address)": {
+        "details": "Sets `cdpRights[msg.sender][usr] = 0`.",
+        "params": {
+          "usr": "Address to revoke modification rights."
+        }
+      },
+      "disableContract()": {
+        "custom:access": "OnlyDisablerAccess",
+        "details": "Sets `contractEnabled` to 0 and emits a placeholder event. Only callable by DisablerAccess accounts."
+      },
+      "initialize(address,address)": {
+        "details": "Sets initial state: contract enabled, redemption price to 1e27, safety price validity to 1 block,      and default liquidation ratio to 150%. Inherits access control from SuAuthenticatedNonUpgradeable.",
+        "params": {
+          "accessControl": "Address of the access control singleton contract.",
+          "oracle": "Address of the ISuOracleAggregator contract."
+        }
+      },
+      "initializeCollateralType(bytes32,address)": {
+        "custom:access": "OnlyAdmin",
+        "details": "Sets accumulated rate to 1e27 and assigns the collateral token address and default liquidation ratio.      Reverts if already initialized. Only callable by Admin.",
+        "params": {
+          "collateralAddress": "Address of the collateral token contract.",
+          "collateralType": "Unique identifier for the collateral type (e.g., \"ETH-A\")."
+        }
+      },
+      "modifyCollateralBalance(bytes32,address,int256)": {
+        "custom:access": "OnlyCDPAccess",
+        "details": "Adds or subtracts collateral tokens, typically called by CollateralJoin adapters.      Requires caller to have CDP access permissions.",
+        "params": {
+          "collateralType": "Unique identifier for the collateral type.",
+          "usr": "Address to modify the collateral balance for.",
+          "wad": "Amount to add (positive) or subtract (negative) [wad]."
+        }
+      },
+      "modifyParameters(bytes32,bytes32,uint256)": {
+        "custom:access": "OnlyDAO",
+        "details": "Updates parameters like debt ceiling, debt floor, or liquidation ratio.      Requires contract to be enabled. Only callable by DAO.",
+        "params": {
+          "collateralType": "Unique identifier for the collateral type.",
+          "data": "New value for the parameter.",
+          "what": "Parameter to modify (e.g., \"debtCeiling\", \"liquidationRatio\")."
+        }
+      },
+      "modifyParameters(bytes32,uint256)": {
+        "custom:access": "OnlyDAO",
+        "details": "Updates parameters like global debt ceiling, redemption price, default liquidation ratio, or safety price validity.      Requires contract to be enabled. Only callable by DAO.",
+        "params": {
+          "data": "New value for the parameter.",
+          "what": "Parameter to modify (e.g., \"globalDebtCeiling\", \"redemptionPrice\")."
+        }
+      },
+      "modifySAFECollateralization(bytes32,address,address,address,int256,int256)": {
+        "details": "Updates Safe state, checks debt ceilings, collateralization ratio, and permissions.      Requires contract to be enabled and collateral type to be initialized.",
+        "params": {
+          "cdp": "Address of the Safe to modify.",
+          "collateralSource": "Address to debit/credit collateral.",
+          "collateralType": "Unique identifier for the collateral type.",
+          "debtDestination": "Address to debit/credit debt.",
+          "deltaCollateral": "Amount to add (positive) or remove (negative) collateral [wad].",
+          "deltaDebt": "Amount to add (positive) or remove (negative) debt [wad]."
+        }
+      },
+      "settleDebt(uint256)": {
+        "details": "Reduces debt and coin balances for the caller, typically used by AccountingEngine.",
+        "params": {
+          "rad": "Amount of debt to settle [rad]."
+        }
+      },
+      "supportsInterface(bytes4)": {
+        "details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+      },
+      "transferCollateral(bytes32,address,address,uint256)": {
+        "details": "Requires the caller to have permission to modify the source address’s Safe.",
+        "params": {
+          "collateralType": "Unique identifier for the collateral type.",
+          "dst": "Destination address to credit collateral to.",
+          "src": "Source address to debit collateral from.",
+          "wad": "Amount of collateral to transfer [wad]."
+        }
+      },
+      "transferInternalCoins(address,address,uint256)": {
+        "details": "Requires the caller to have permission to modify the source address’s Safe.",
+        "params": {
+          "dst": "Destination address to credit coins to.",
+          "rad": "Amount of StablePro coins to transfer [rad].",
+          "src": "Source address to debit coins from."
+        }
+      },
+      "transferSAFECollateralAndDebt(bytes32,address,address,int256,int256)": {
+        "details": "Updates source and destination Safe states, ensuring collateralization and debt floor requirements.      Requires caller to have permission for both Safes.",
+        "params": {
+          "collateralType": "Unique identifier for the collateral type.",
+          "deltaCollateral": "Amount to transfer collateral [wad].",
+          "deltaDebt": "Amount to transfer debt [wad].",
+          "dst": "Address of the destination Safe.",
+          "src": "Address of the source Safe."
+        }
+      },
+      "updateAccumulatedRate(bytes32,address,int256)": {
+        "custom:access": "OnlyCDPAccess",
+        "details": "Adjusts the collateral type’s rate and credits surplus to the destination address.      Requires contract to be enabled and CDP access permissions.",
+        "params": {
+          "accumulatedRate": "Change in accumulated rate [ray].",
+          "collateralType": "Unique identifier for the collateral type.",
+          "surplusDst": "Address to credit surplus StablePro coins."
+        }
+      },
+      "updateSafetyPrice(bytes32)": {
+        "details": "Fetches the collateral’s fiat price from ISuOracleAggregator, adjusts for token decimals,      and calculates the safety price as (realPrice / redemptionPrice / liquidationRatio).      Only updates if the current safety price is unset or expired based on `safetyPriceValidBlockAmount`.",
+        "params": {
+          "collateralType": "Unique identifier for the collateral type."
+        }
+      }
+    },
+    "title": "SafeEngine",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "ORACLE()": {
+        "notice": "Oracle aggregator providing collateral price feeds."
+      },
+      "approveSAFEModification(address)": {
+        "notice": "Grants a user permission to modify the caller’s Safe."
+      },
+      "cdpRights(address,address)": {
+        "notice": "Maps Safe owners to operators with permission to modify their Safes."
+      },
+      "coinBalance(address)": {
+        "notice": "Tracks internal StablePro coin balances per user [rad]."
+      },
+      "collateralTypes(bytes32)": {
+        "notice": "Maps collateral types to their configuration (e.g., debt ceiling, safety price)."
+      },
+      "confiscateSAFECollateralAndDebt(bytes32,address,address,address,int256,int256)": {
+        "notice": "Confiscates collateral and debt from a Safe during liquidation."
+      },
+      "contractEnabled()": {
+        "notice": "Tracks whether the contract is enabled (1) or disabled (0)."
+      },
+      "createUnbackedDebt(address,address,uint256)": {
+        "notice": "Creates unbacked debt, typically for bad debt handling."
+      },
+      "debtBalance(address)": {
+        "notice": "Tracks debt balances per user, offsetting coin balances [rad]."
+      },
+      "defaultLiquidationRatio()": {
+        "notice": "Default liquidation ratio set for new collateral types (e.g., 150%) [ray]."
+      },
+      "denySAFEModification(address)": {
+        "notice": "Revokes a user’s permission to modify the caller’s Safe."
+      },
+      "disableContract()": {
+        "notice": "Disables the contract, preventing further state-changing operations."
+      },
+      "globalDebt()": {
+        "notice": "Total debt issued across all Safes [rad]."
+      },
+      "globalDebtCeiling()": {
+        "notice": "Maximum debt allowed across all Safes [rad]."
+      },
+      "globalUnbackedDebt()": {
+        "notice": "Total unbacked debt not covered by collateral [rad]."
+      },
+      "initialize(address,address)": {
+        "notice": "Initializes the SafeEngine with access control and oracle addresses."
+      },
+      "initializeCollateralType(bytes32,address)": {
+        "notice": "Initializes a new collateral type with its token address."
+      },
+      "modifyCollateralBalance(bytes32,address,int256)": {
+        "notice": "Modifies a user’s collateral balance for a collateral type."
+      },
+      "modifyParameters(bytes32,bytes32,uint256)": {
+        "notice": "Modifies parameters for a specific collateral type."
+      },
+      "modifyParameters(bytes32,uint256)": {
+        "notice": "Modifies global protocol parameters."
+      },
+      "modifySAFECollateralization(bytes32,address,address,address,int256,int256)": {
+        "notice": "Modifies a Safe’s collateral and debt, ensuring collateralization requirements."
+      },
+      "redemptionPrice()": {
+        "notice": "Reference price per StablePro, defaulting to 1e27 (1:1 USD) [ray]."
+      },
+      "safes(bytes32,address)": {
+        "notice": "Maps collateral types and Safe addresses to their state (collateral and debt)."
+      },
+      "safetyPriceValidBlockAmount()": {
+        "notice": "Number of blocks a safety price remains valid."
+      },
+      "settleDebt(uint256)": {
+        "notice": "Settles debt using available StablePro coin balance."
+      },
+      "tokenCollateral(bytes32,address)": {
+        "notice": "Tracks collateral balances per collateral type and user [wad]."
+      },
+      "transferCollateral(bytes32,address,address,uint256)": {
+        "notice": "Transfers collateral between two addresses for a collateral type."
+      },
+      "transferInternalCoins(address,address,uint256)": {
+        "notice": "Transfers internal StablePro coins between two addresses."
+      },
+      "transferSAFECollateralAndDebt(bytes32,address,address,int256,int256)": {
+        "notice": "Transfers collateral and debt between two Safes."
+      },
+      "updateAccumulatedRate(bytes32,address,int256)": {
+        "notice": "Updates the accumulated stability fee rate for a collateral type."
+      },
+      "updateSafetyPrice(bytes32)": {
+        "notice": "Updates the safety price for a collateral type using oracle data."
+      }
+    },
+    "notice": "Core accounting and state management contract for collateralized debt positions (Safes) in the StableUnit protocol.",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 1226,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "_initialized",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint8"
+      },
+      {
+        "astId": 1229,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "_initializing",
+        "offset": 1,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 24747,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "ACCESS_CONTROL_SINGLETON",
+        "offset": 2,
+        "slot": "0",
+        "type": "t_contract(ISuAccessControl)31989"
+      },
+      {
+        "astId": 25018,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "__gap",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_array(t_uint256)50_storage"
+      },
+      {
+        "astId": 47163,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "contractEnabled",
+        "offset": 0,
+        "slot": "51",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 47184,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "cdpRights",
+        "offset": 0,
+        "slot": "52",
+        "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+      },
+      {
+        "astId": 47246,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "collateralTypes",
+        "offset": 0,
+        "slot": "53",
+        "type": "t_mapping(t_bytes32,t_struct(CollateralType)53460_storage)"
+      },
+      {
+        "astId": 47254,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "safes",
+        "offset": 0,
+        "slot": "54",
+        "type": "t_mapping(t_bytes32,t_mapping(t_address,t_struct(SAFE)53465_storage))"
+      },
+      {
+        "astId": 47261,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "tokenCollateral",
+        "offset": 0,
+        "slot": "55",
+        "type": "t_mapping(t_bytes32,t_mapping(t_address,t_uint256))"
+      },
+      {
+        "astId": 47266,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "coinBalance",
+        "offset": 0,
+        "slot": "56",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 47271,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "debtBalance",
+        "offset": 0,
+        "slot": "57",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 47275,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "ORACLE",
+        "offset": 0,
+        "slot": "58",
+        "type": "t_contract(ISuOracleAggregator)33132"
+      },
+      {
+        "astId": 47278,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "globalDebt",
+        "offset": 0,
+        "slot": "59",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 47281,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "globalUnbackedDebt",
+        "offset": 0,
+        "slot": "60",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 47284,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "globalDebtCeiling",
+        "offset": 0,
+        "slot": "61",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 47287,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "redemptionPrice",
+        "offset": 0,
+        "slot": "62",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 47290,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "safetyPriceValidBlockAmount",
+        "offset": 0,
+        "slot": "63",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 47293,
+        "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+        "label": "defaultLiquidationRatio",
+        "offset": 0,
+        "slot": "64",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_uint256)50_storage": {
+        "base": "t_uint256",
+        "encoding": "inplace",
+        "label": "uint256[50]",
+        "numberOfBytes": "1600"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_contract(ISuAccessControl)31989": {
+        "encoding": "inplace",
+        "label": "contract ISuAccessControl",
+        "numberOfBytes": "20"
+      },
+      "t_contract(ISuOracleAggregator)33132": {
+        "encoding": "inplace",
+        "label": "contract ISuOracleAggregator",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(address => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_uint256)"
+      },
+      "t_mapping(t_address,t_struct(SAFE)53465_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct ISafeEngine.SAFE)",
+        "numberOfBytes": "32",
+        "value": "t_struct(SAFE)53465_storage"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_mapping(t_bytes32,t_mapping(t_address,t_struct(SAFE)53465_storage))": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => mapping(address => struct ISafeEngine.SAFE))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_struct(SAFE)53465_storage)"
+      },
+      "t_mapping(t_bytes32,t_mapping(t_address,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => mapping(address => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_uint256)"
+      },
+      "t_mapping(t_bytes32,t_struct(CollateralType)53460_storage)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => struct ISafeEngine.CollateralType)",
+        "numberOfBytes": "32",
+        "value": "t_struct(CollateralType)53460_storage"
+      },
+      "t_struct(CollateralType)53460_storage": {
+        "encoding": "inplace",
+        "label": "struct ISafeEngine.CollateralType",
+        "members": [
+          {
+            "astId": 53445,
+            "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+            "label": "debtAmount",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 53447,
+            "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+            "label": "accumulatedRate",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 53449,
+            "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+            "label": "debtCeiling",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 53451,
+            "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+            "label": "debtFloor",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 53453,
+            "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+            "label": "safetyPrice",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 53455,
+            "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+            "label": "liquidationRatio",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 53457,
+            "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+            "label": "collateralAddress",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_address"
+          },
+          {
+            "astId": 53459,
+            "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+            "label": "safetyPriceBlockNumber",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "256"
+      },
+      "t_struct(SAFE)53465_storage": {
+        "encoding": "inplace",
+        "label": "struct ISafeEngine.SAFE",
+        "members": [
+          {
+            "astId": 53462,
+            "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+            "label": "lockedCollateral",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 53464,
+            "contract": "contracts/makerdao/core/SafeEngine.sol:SafeEngine",
+            "label": "generatedDebt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      },
+      "t_uint8": {
+        "encoding": "inplace",
+        "label": "uint8",
+        "numberOfBytes": "1"
+      }
+    }
+  }
+}
