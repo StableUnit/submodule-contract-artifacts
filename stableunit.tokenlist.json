@@ -125,8 +125,8 @@
         },
         {
           "address": "0xfA4B91d63e7cAb716dD049A23C56F70237C6DDBB",
-          "name": "PENDLE-LPT USDe",
-          "symbol": "PENDLE-LPT",
+          "name": "PT-eUSDE-29MAY2025",
+          "symbol": "PT-eUSDE-29MAY2025",
           "protocolName": "Pendle",
           "group": "Pendle",
           "decimals": 18
