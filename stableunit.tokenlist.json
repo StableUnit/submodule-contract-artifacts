@@ -14,13 +14,6 @@
       "chainId": 137,
       "tokens": [
         {
-          "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-          "name": "Wrapped BNB",
-          "symbol": "WBNB",
-          "decimals": 18,
-          "group": "BNB"
-        },
-        {
           "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
           "name": "Wrapped Ether",
           "symbol": "WETH",
@@ -117,6 +110,13 @@
     {
       "chainId": 56,
       "tokens": [
+        {
+          "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+          "name": "Wrapped BNB",
+          "symbol": "WBNB",
+          "decimals": 18,
+          "group": "BNB"
+        },
         {
           "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
           "name": "WETH",
