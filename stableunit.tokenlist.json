@@ -157,25 +157,25 @@
           "isDisabled": true
         },
         {
-          "address": "0x1591D78bDf17E623AE0a5bF1D536Ea29E04446D6",
+          "address": "0x77777773DFC018aa45aBe8ab9aaeA1aFc6777777",
           "name": "StablePro",
           "symbol": "StablePro",
           "decimals": 18
         },
         {
-          "address": "0x1591D78bDf17E623AE0a5bF1D536Ea29E04446D6",
+          "address": "0x77777773DFC018aa45aBe8ab9aaeA1aFc6777777",
           "name": "USDPro",
           "symbol": "USDPro",
           "decimals": 18
         },
         {
-          "address": "0xDB2Cb125093Ab4DFF69D648f93048D97925E4FdA",
+          "address": "0x004588061bcAb733d74286EB18D4d0D87881d9B5",
           "name": "SuDAO",
           "symbol": "SuDAO",
           "decimals": 18
         },
         {
-          "address": "0xC70A852B717E9977f56812A5F585C3ddba051C83",
+          "address": "0xe337e46e0384ae3FB04B77eaAa508F20524799b5",
           "name": "VeSuDAO",
           "symbol": "VeSuDAO",
           "decimals": 18
