@@ -157,6 +157,12 @@
           "isDisabled": true
         },
         {
+          "address": "0x55d398326f99059fF775485246999027B3197955",
+          "name": "USDT",
+          "symbol": "USDT",
+          "decimals": 18
+        },
+        {
           "address": "0x77777773DFC018aa45aBe8ab9aaeA1aFc6777777",
           "name": "StablePro",
           "symbol": "StablePro",
