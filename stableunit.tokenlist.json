@@ -163,13 +163,13 @@
           "decimals": 18
         },
         {
-          "address": "0x77777773DFC018aa45aBe8ab9aaeA1aFc6777777",
+          "address": "0x68c449feCD4437f8c39458fD88e56D19c2078551",
           "name": "StablePro",
           "symbol": "StablePro",
           "decimals": 18
         },
         {
-          "address": "0x77777773DFC018aa45aBe8ab9aaeA1aFc6777777",
+          "address": "0x68c449feCD4437f8c39458fD88e56D19c2078551",
           "name": "USDPro",
           "symbol": "USDPro",
           "decimals": 18
@@ -181,7 +181,7 @@
           "decimals": 18
         },
         {
-          "address": "0xe337e46e0384ae3FB04B77eaAa508F20524799b5",
+          "address": "0x407c4C66876C6943Bfb26a1349B22111c35FE9a0",
           "name": "VeSuDAO",
           "symbol": "VeSuDAO",
           "decimals": 18
