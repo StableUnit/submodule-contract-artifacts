@@ -139,6 +139,12 @@
           "decimals": 18
         },
         {
+          "address": "0x46a15b0b27311cedf172ab29e4f4766fbe7f4364",
+          "name": "NFT Pancake V3 Position (ETH-USDT)",
+          "symbol": "NFT ETH-USDT-V3-POS",
+          "decimals": -1
+        },
+        {
           "address": "0x80Eb9A1b48df52534430a7Dc11e63c73669d5A06",
           "name": "Curve USDX/USDT",
           "symbol": "USDX/USDT",
